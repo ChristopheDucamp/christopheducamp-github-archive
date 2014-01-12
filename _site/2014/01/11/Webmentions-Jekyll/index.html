@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Webmentions et Jekyll</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- mise en valeur syntaxe CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- CSS personnalisee -->
+        <link rel="stylesheet" href="/css/main.css">
+        
+        <!-- OpenID - delegation IndieAuth --> 
+       	<link rel="openid.server" href="https://indieauth.com/openid"/>
+		<link rel="openid.delegate" href="http://christopheducamp.com/"/>
+
+		<!-- indieauth sms + e-mail google -->
+		<link href="sms:+33632039796" rel="me">
+		<link class="u-email" href="mailto:christophe.ducamp@gmail.com" rel="me">
+
+
+       <link rel="shortcut icon" href="/logo.jpg" />
+         <meta name="mobile-web-app-capable" content="yes" />
+         <link rel="apple-touch-icon-precomposed" href="/logo.jpg" />
+
+       <!-- webmention.herokuapp.com -->
+       <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Je reprends la route...</a></h1>
+            <a class="extra" href="/">accueil</a>
+          </div>
+
+          <article class="h-entry">
+<h2 class="p-name">Webmentions et Jekyll</h2>
+<!-- #todo indiewebify - ajouter url permaliens et catégories --> 
+
+<div class="e-content post">
+<p>Après la première expérimentation de <a href="https://eschnou.com/entry/testing-indieweb-federation-with-waterpigscouk-aaronpareckicom-and--62-24908.html">fédération de commentaires #indieweb chez Laurent</a> aidé de quelques <a href="http://indiewebcamp.com/WordPress#Essential_IndieWeb_plugins">plugins WordPress</a>, je (chrono)rêve depuis <time class="dt-published" datetime="2013-09-15"><a href="http://christopheducamp.com/w/Parser_les_webmentions">septembre dernier </a></time> de parvenir à faire tourner simplement la brique de construction <a href="http://indiewebcamp.com/webmention-fr">webmention</a> sur quelques <strong>simples pages HTML statiques</strong>. </p>
+
+<p><span class="h-card" rel="colleague met"><a href="http://voxpelli.com/">Pelle Wessman</a></span> a lancé en <time class="dt-published" datetime="2013-12-13">décembre dernier</time> un <a href="http://voxpelli.com/2013/12/webmentions-for-static-pages/">service qui peut recevoir et embarquer les Webmentions</a> pour les sites statiques. </p>
+
+<p>Ce post n&#39;est à cette heure qu&#39;un premier test en cours à valider et sujet à réglages divers. 
+L&#39;option pourra s&#39;avérer bien pratique pour toutes  <a href="http://indiewebcamp.com/Jekyll-fr">les instances indieweb motorisées par Jekyll</a>.</p>
+
+<p>Pour mémoire, webmention est une des briques de construction essentielles pour gravir l&#39;échelon <a href="http://indiewebcamp.com/IndieMark#Level_2">IndieMark niveau 2</a>.</p>
+
+<p>Si vous souhaitez essayer, le service reste ouvert avec deux comptes restant disponibles sur <a href="http://webmention.herokuapp.com">webmention.herokuapp.com</a>.</p>
+
+<h2>Lost in Webmention</h2>
+
+<p>Espérant pouvoir faire tourner cette brique en 2014,  toute aide reste bienvenue pour m&#39;aider à <a href="http://waterpigs.co.uk/notes/4QbH5C/">souhaiter une bonne année à Barnaby et quelques collègues indieweb</a>.</p>
+
+<p>P.S. à cette heure, la webmention a été envoyée par le service web <a href="http://indiewebify.me">indiewebify.me</a></p>
+
+</div>
+
+
+
+
+<footer>
+<span  class="p-category entry-tags"><a href="/tags/index.html#webmention" title="Pages taguées webmention" rel="tag" class="tag">webmention</a> <a href="/tags/index.html#jekyll" title="Pages taguées jekyll" rel="tag" class="tag">jekyll</a> </span>
+<p class="meta"><time class="dt-published" datetime="2014-01-11T14:47:00+01:00">
+  Samedi 11 janvier 2014
+</time> - <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" /> Christophe Ducamp</a>
+- <a class="u-url" href="/2014/01/11/Webmentions-Jekyll/">permalien</a></p>
+</footer>
+</article>
+
+<div>
+  Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
+  <form action="https://webmention.herokuapp.com/api/webmention" method="post">
+    <input name="source" type="url" placeholder="http://exemple.com/mon-post-cool" />
+    <input name="target" value="http://christopheducamp.com/2014/01/11/Webmentions-Jekyll/" type="hidden">
+    <input value="Envoyer la Webmention" type="submit">
+  </form>
+</div>
+
+<section class="webmention">
+<script id="webmention-hosted">
+  (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+  }());
+</script>
+</section>
+
+
+
+
+          <div class="footer">
+            <div class="contact">
+              <p class="h-card">
+                <span class="microcard"><img class="u-photo" src="/logo.jpg" alt="photo de @mikiane" /><a class="u-url" rel="me" href="http://christopheducamp.com">Christophe Ducamp</a></span><br />
+                <span class="p-note">Explorateur Indieweb</span><br />
+                <a rel="me" class="u-email" href="mailto:xtof@myadatalabs.com">xtof@mydatalabs.com</a>
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a rel="me" href="https://github.com/ChristopheDucamp">github.com/ChristopheDucamp</a><br />
+                <a rel="me" href="https://twitter.com/xtof_fr">twitter.com/xtof_fr</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

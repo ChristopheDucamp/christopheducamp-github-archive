@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Créer un Dépôt sur GitHub</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- mise en valeur syntaxe CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- CSS personnalisee -->
+        <link rel="stylesheet" href="/css/main.css">
+        
+        <!-- OpenID - delegation IndieAuth --> 
+       	<link rel="openid.server" href="https://indieauth.com/openid"/>
+		<link rel="openid.delegate" href="http://christopheducamp.com/"/>
+
+		<!-- indieauth sms + e-mail google -->
+		<link href="sms:+33632039796" rel="me">
+		<link class="u-email" href="mailto:christophe.ducamp@gmail.com" rel="me">
+
+
+       <link rel="shortcut icon" href="/logo.jpg" />
+         <meta name="mobile-web-app-capable" content="yes" />
+         <link rel="apple-touch-icon-precomposed" href="/logo.jpg" />
+
+       <!-- webmention.herokuapp.com -->
+       <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Je reprends la route...</a></h1>
+            <a class="extra" href="/">accueil</a>
+          </div>
+
+          <article class="h-entry">
+<h2 class="p-name">Créer un Dépôt sur GitHub</h2>
+<!-- #todo indiewebify - ajouter url permaliens et catégories --> 
+
+<div class="e-content post">
+<p>Lien de référence : <span class="h-cite"><cite class="p-name u-url"><a href="https://help.github.com/articles/create-a-repo">Create A Repo</a></cite></span></p>
+
+<p>Si vous vous trouvez sur cette page, je peux supposer que vous <a href="/2013/12/15/Github-pour-nuls-partie-1/">débutez sur Git et GitHub</a>. Ce petit guide vous fera réviser quelques fondamentaux et vous expliquera comment faire vos premiers pas sur GitHub.</p>
+
+<h2>Produire un nouveau dépôt sur GitHub</h2>
+
+<p>Chaque fois que vous produisez un <em>commit</em> (instantané) avec Git, il est stocké dans un dépôt (aussi appelé &quot;repo&quot;). Pour déposer votre projet sur GitHub, vous devrez disposer d&#39;un dépôt GitHub pour le faire vivre.</p>
+
+<p><em>Plus sur les dépôts</em> : Git stocke tous vos fichiers projets dans un dépôt. Si vous pouvez voir les fichiers cachés sur votre système, vous verrez un sous-répertoire appelé &quot;.git&quot; dans le répertoire du projet où vous avez lancé <code>git init</code>. C&#39;est l&#39;endroit où Git stocke tous vos commits avec tout ce dont il a besoin. En plus de votre répertoire local, vous pouvez avoir aussi des dépôts distants (comme les dépôts sur GitHub). Les dépôts distants sont les mêmes que votre dépôt local, mais ils sont juste stockés sur un serveur ou un ordinateur distant pour faciliter la collaboration, les sauvegardes et d&#39;autres trucs géniaux.</p>
+
+<p>Cliquez sur <a href="https://github.com/repositories/new">New Repository</a>.</p>
+
+<p><img src="https://github.s3.amazonaws.com/docs/bootcamp_2_newrepo.jpg" alt="image" title="cliquez sur New Repository"></p>
+
+<p>Remplissez l&#39;information sur cette page : </p>
+
+<ul>
+<li>Nom de votre dépôt </li>
+<li>Description (en option)</li>
+<li>Public ou Privé (L&#39;option privé est payante)</li>
+</ul>
+
+<p>Et une fois terminé, cliquez sur &quot;Create Repository.&quot;</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/help/bootcamp_2_repoinfo.png" alt="image" title="cliquez sur New Repository"></p>
+
+<p>Félicitations ! Vous avez créé avec brio votre premier &quot;repo&quot; (dépôt en français.) !</p>
+
+<h2>Créez un README pour votre dépôt</h2>
+
+<p>Bien qu&#39;un fichier README ne soit pas un élément obligatoire d&#39;un repo GitHub, c&#39;est une très bonne habitude à prendre que d&#39;en placer un. Les READMEs sont un endroit génial pour décrire vore projet ou ajouter un peu de documentation comme savoir comment installer ou utiliser votre projet. Vous pourriez y ajouter une information de contact — si votre projet devient populaire, les personnes voudront vous aider.</p>
+
+<h4>Plus sur les READMEs</h4>
+
+<p>Si vous ajoutez un fichier avec le nom de fichier &quot;README&quot; dans votre repo, il sera automatiquement affiché sur la page d&#39;accueil de votre repo. Cool non ? GitHub supporte différents formats de fichiers README. Celui dans ce tutoriel donnera un fichier texte basique mais les autres formats comme <code>.markdown</code> ou <code>.textile</code> peuvent être utilisés pour restituer du contenu HTML comme des liens et des titres. Pour plus d&#39;informations sur les formats de marquage supportés, regardez <a href="https://github.com/github/markup">https://github.com/github/markup</a>.</p>
+
+<h3>Étape 1 : Créez le fichier README</h3>
+
+<p>Dans votre fenêtre de terminal, tapez le code suivant : </p>
+
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>mkdir ~/Hello-World
+
+<span class="c"># Crée un répertoire pour votre projet nommé &quot;Hello-World&quot; dans votre répertoire utilisateur local</span>
+
+<span class="nv">$ </span><span class="nb">cd</span> ~/Hello-World
+<span class="c"># Modifie le répertoire de travail en cours pour votre nouveau répertoire fraîchement créé</span>
+
+<span class="nv">$ </span>git init
+<span class="c"># Installe les fichiers Git nécessaire</span>
+<span class="c"># Initialise le répertoire vite Git dans /Users/you/Hello-World/.git/</span>
+
+<span class="nv">$ </span>touch README
+<span class="c"># Crée un fichier nommé &quot;README&quot; dans votre répertoire local Hello-World</span>
+</code></pre></div>
+
+<p>Ouvrez le nouveau fichier README trouvé dans votre répertoire <code>Hello-World</code> dans un éditeur de texte et ajoutez le texte &quot;Hello World!&quot; Une fois terminé, sauvegardez et fermez le fichier.</p>
+
+<h3>Étape 2 : Committez votre README</h3>
+
+<p>Maintenant que vous avez installé votre README, il est temps de le committer. Un commit est en fait un instantané de tous les fichiers dans votre projet à un moment donné. Dans la fenêtre de Terminal, tapez le code suivant : </p>
+
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git add README
+<span class="c"># fait entrer en scène le fichier README, et l&#39;ajoute à la liste des fichiers à committer</span>
+
+<span class="nv">$ </span>git commit -m <span class="s1">&#39;premier commit&#39;</span>
+<span class="c"># Committe vos fichiers, en ajoutant le message &quot;premier commit&quot;</span>
+</code></pre></div>
+
+<h4>Plus sur les commits</h4>
+
+<p>Pensez à un commit comme un instantané de votre projet - code, fichiers, tout - à un instant t. Après votre premier commit, git ne sauvegardera que les fichiers qui ont été modifiés, d&#39;où le gain d&#39;espace.</p>
+
+<p>Attention : git fera de son mieux pour compresser vos fichiers, mais les gros fichiers et les binaires peuvent amener un dépôt à devenir obèse et peu maniable. Essayez d&#39;éviter de committer des choses comme des ficihers compressés (zips, rars, jars), du code compilé (fichiers object, bibliothèques, exécutables), sauvegardes de database et fichiers média (flv, psd, musique, films)</p>
+
+<h3>Étape 3 : Poussez votre commit</h3>
+
+<p>À ce stade, tout ce que vous avez produit réside dans votre dépôt local, ce qui veut dire que vous n&#39;avez encore rien fait sur GitHub. Pour connecter votre dépôt local à votre compte GitHub, vous devrez régler un <code>remote</code> pour votre dépôt et pousser vos commits dedans.</p>
+
+<h4>Plus sur les remotes</h4>
+
+<p>Un <em>remote</em> est un dépôt stocké sur un autre ordinateur, dans ce cas sur le serveur de GitHub. C&#39;est une pratique standard (et aussi par défaut dans certains cas) que de donner le nom <code>origin</code> au <em>remote</em> qui pointe vers votre dépôt principal hors du site (par exemple, votre dépôt GitHub).</p>
+
+<p>Git supporte de nombreux remotes. Ceci est communément utilisé au moment de <em>forker</em> un dépôt.</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git remote add origin https://github.com/username/Hello-World.git
+<span class="c"># Crée un remote nommé &quot;origin&quot; pointant votre dépôt GitHub</span>
+
+<span class="nv">$ </span>git push origin master
+<span class="c"># Envoie vos commits dans la branche &quot;master&quot; sur GitHub</span>
+</code></pre></div>
+
+<p>(<strong>Truc</strong> : Remarquez que le chemin vers votre URL distante (remote) --Hello-World.git--correspond à celui que vous avez créé sur GitHub. Ceci est sensible à la casse, et il est important de conserver la même.)</p>
+
+<p>Maintenant si vous regardez votre dépôt sur GitHub, vous verrez que votre README y a été ajouté.</p>
+
+<p><img src="https://github.s3.amazonaws.com/docs/bootcamp_2_updatedreadme.jpg" alt="image"> </p>
+
+<p>Votre README a été créé.</p>
+
+<h2>Fêtez ça !</h2>
+
+<p>Félicitations ! Vous avez maintenant créé un repo sur GitHub, créé un README, l&#39;avez committé et poussé vers GitHub. Que voulez-vous faire ensuite ?</p>
+
+<ul>
+<li><a href="/2013/12/10/installer-git/">Installer Git</a></li>
+<li><strong>Créer un Repo</strong></li>
+<li><a href="/2013/12/16/forker-un-repo-github/">Forker un Repo</a></li>
+<li><a href="/2013/12/16/github-etre-social/">Être Social</a></li>
+</ul>
+
+<h2>Ailleurs</h2>
+
+<ul>
+<li><a href="http://git-scm.com/book/fr/Les-bases-de-Git-D%C3%A9marrer-un-d%C3%A9p%C3%B4t-Git">Les bases de Git - Démarrer un dépôt Git</a> - pour réviser et apprendre à cloner un dépôt existant.</li>
+</ul>
+
+<p><img src="http://imgs.xkcd.com/comics/git_commit.png" alt="image"></p>
+
+</div>
+
+
+
+
+<footer>
+<span  class="p-category entry-tags"></span>
+<p class="meta"><time class="dt-published" datetime="2013-12-16T10:19:00Z">
+  Lundi 16 décembre 2013
+</time> - <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" /> Christophe Ducamp</a>
+- <a class="u-url" href="/2013/12/16/creer-un-repo-GitHub/">permalien</a></p>
+</footer>
+</article>
+
+<div>
+  Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
+  <form action="https://webmention.herokuapp.com/api/webmention" method="post">
+    <input name="source" type="url" placeholder="http://exemple.com/mon-post-cool" />
+    <input name="target" value="http://christopheducamp.com/2013/12/16/creer-un-repo-GitHub/" type="hidden">
+    <input value="Envoyer la Webmention" type="submit">
+  </form>
+</div>
+
+<section class="webmention">
+<script id="webmention-hosted">
+  (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+  }());
+</script>
+</section>
+
+
+
+
+          <div class="footer">
+            <div class="contact">
+              <p class="h-card">
+                <span class="microcard"><img class="u-photo" src="/logo.jpg" alt="photo de @mikiane" /><a class="u-url" rel="me" href="http://christopheducamp.com">Christophe Ducamp</a></span><br />
+                <span class="p-note">Explorateur Indieweb</span><br />
+                <a rel="me" class="u-email" href="mailto:xtof@myadatalabs.com">xtof@mydatalabs.com</a>
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a rel="me" href="https://github.com/ChristopheDucamp">github.com/ChristopheDucamp</a><br />
+                <a rel="me" href="https://twitter.com/xtof_fr">twitter.com/xtof_fr</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

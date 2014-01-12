@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>GitHub pour Mac : Lancer un dépôt</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- mise en valeur syntaxe CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- CSS personnalisee -->
+        <link rel="stylesheet" href="/css/main.css">
+        
+        <!-- OpenID - delegation IndieAuth --> 
+       	<link rel="openid.server" href="https://indieauth.com/openid"/>
+		<link rel="openid.delegate" href="http://christopheducamp.com/"/>
+
+		<!-- indieauth sms + e-mail google -->
+		<link href="sms:+33632039796" rel="me">
+		<link class="u-email" href="mailto:christophe.ducamp@gmail.com" rel="me">
+
+
+       <link rel="shortcut icon" href="/logo.jpg" />
+         <meta name="mobile-web-app-capable" content="yes" />
+         <link rel="apple-touch-icon-precomposed" href="/logo.jpg" />
+
+       <!-- webmention.herokuapp.com -->
+       <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Je reprends la route...</a></h1>
+            <a class="extra" href="/">accueil</a>
+          </div>
+
+          <article class="h-entry">
+<h2 class="p-name">GitHub pour Mac : Lancer un dépôt</h2>
+<!-- #todo indiewebify - ajouter url permaliens et catégories --> 
+
+<div class="e-content post">
+<p><a href="https://help.github.com/articles/branching-out">Lien de référence</a></p>
+
+<p>Plutôt que de <a href="/2013/12/06/github-pour-mac-travailler-avec-des-repos/">cloner un repo pré-existant</a> - commençons cette fois-ci par créer un tout nouveau projet.</p>
+
+<p>Cliquez sur &quot;Repositories&quot; tout en haut de la fenêtre de l&#39;app, de manière à revenir dans la vue principale Repositories. Vous remarquerez que tous les dépôts locaux que vous avez ajoutés à l&#39;app sont listés sous &#39;My Repositories&#39; dans la barre latérale. Tous les repos provenant de GitHub.com auxquels vous avez accès - sans tenir compte de savoir si vous les avez clonés à cette heure - seront listés sous votre nom d&#39;utilisateur.</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/mac/repository/un-cloned-repos.jpg" alt="image" title="Une liste de repos non clonés"></p>
+
+<p>Pour créer un tout nouveau repo à partir de GitHub pour Mac, cliquez sur le bouton &quot;+&quot; tout en bas de la fenêtre de l&#39;app et sélectionnez &quot;Create New Repository&quot;.</p>
+
+<p><strong>Truc</strong> : Pour ajouter des repos qui sont déjà sur votre machine, mais pas encore suivis par GitHub pour Mac, vous pouvez utiliser &quot;Add Local Repository&quot; ici à partir du menu, ou glisser et déposer simplement les répertoires du repo sur la fenêtre de l&#39;app.</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/mac/repository/create-and-add.jpg" alt="image" title="Bouton ajouter et créer"></p>
+
+<p>Donnez à votre nouveau repo un nom (et une description en option) et utilisez le bouton &quot;Choose&quot; pour sélectionner un dossier pour placer dedans votre copie locale.</p>
+
+<p>Si vous disposez d&#39;un plan GitHub payant, vous pouvez cocher &quot;Keep this code private&quot; pour vous assurer que votre copie distante ne peut être vue que par vous-même et les collaborateurs autorisés. En le laissant désactivé, ceci créera un repo open source sur GitHub.com.</p>
+
+<p>Assurez-vous d&#39;avoir sélectionné le compte GitHub correct (si vous en utilisez plus d&#39;un), puis cliquez sur  &quot;Create Repository&quot; afin d&#39;initialiser le repo, créez la copie locale, ajoutez-la à GitHub pour Mac et, si vous avez choisi de la pousser vers GitHub.com, créez une version distante que vous pouvez synchroniser.</p>
+
+<p>C&#39;est toujours une bonne idée de démarrer par l&#39;ajout d&#39;un fichier <code>README</code> au repo. Créez un fichier  <code>README.txt</code> ou `README.md (pour <a href="2013/12/22/markdow-avenir-ecriture/">Markdown</a>), puis committez-le vers le repo à partir de la vue Changes.</p>
+
+<h2>Branches</h2>
+
+<p>La branche principale d&#39;un repo est généralement appelée <code>master</code>, et représente une version relativement stable du projet sur lequel vous travaillez. À ce stade, toutes les modifications que vous avez produites ont été faites sur la branche <code>master</code>.</p>
+
+<p>Si vous produisez une app ou un site web, vous pourriez par exemple avoir tout un paquet de différentes fonctionnalités ou idées en progrès à tout moment - certaines d&#39;entre elles étant prêtes à lancer, et d&#39;autres qui ne le sont pas. Pour cette raison, <code>master</code> existe comme un point central à pour y incorporer dedans d&#39;autres &quot;branches&quot; de travail.</p>
+
+<p>*<em>Truc *</em>: Si vous voulez committer directement sur <code>master</code>, l&#39;app ne vous arrêtera pas. Néanmoins, ceci ne se prête en soi pas très bien pour travailler de façon collaborative, et vos modifications seront plus difficiles à suivre et maintenir au fur et à mesure que le projet grandit.</p>
+
+<p>Cliquez sur l&#39;onglet &quot;Branches&quot; pour entrer dans la vue Branches. Une fois que vous avez produit un commit initial, vous serez automatiquement transportés vers la toute-nouvelle branche <code>master</code> créée - que vous pourrez voir sélectionnée sous l&#39;en-tête &quot;Current branch&quot;.</p>
+
+<p>Pour créer une nouvelle branche en dehors de <code>master</code>, cliquez sur le bouton &quot;+&quot; à droite de la ligne <code>master</code>. Tapez le nom de votre nouvelle branche à l&#39;intérieur du champ de texte qui apparaît, et cliquez sur  &quot;Branch&quot; pour la créer.</p>
+
+<p><img src="2013/12/22/markdow-avenir-ecriture/" alt="image" title="Photo de la nouvelle branche"></p>
+
+<p>À ce stade, votre nouvelle branche deviendra aussi la branche en cours. Les modifications que vous produirez sur votre copie locale n&#39;impacteront pas la branche <code>master, ainsi vous êtes libres d&#39;expérimenter et de committer des modifications, en toute sécurité sachant que cette branche n&#39;a pas besoin d&#39;être fusionnée dans la branche</code>master` jusqu&#39;à ce que vous soyez prêts, ou jusqu&#39;à ce que quelqu&#39;un avec qui vous travaillez ait révisé vos modifications.</p>
+
+<p>Si vous voulez néanmoins revenir vers votre <code>master</code>, double-cliquez simplement sur la ligne <code>master</code>dans la vue Branches. Les fichiers dans le repo sur le disque seront automatiquement mis à jour avec les contenus qui sont sur <code>master</code></p>
+
+<p>Les branches sont uniquement locales quand elles sont créées pour la première fois, et ne sont pas automatiquement publiées vers le repo distant. Une fois que vous êtes prêt pour pousser vos modifications sur GitHub, cliquez sur le bouton &quot;Publish&quot; juste à côté de la branche dans la vue Branches, ou sur le bouton &quot;Publish Branch&quot; dans la barre de titre de la fenêtre.</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/mac/branch/publish-branch.jpg" alt="image" title="Le bouton publish branch"></p>
+
+<p>Quand il existe des modifications non committées sur une branche et que vous basculez ensuite vers une branche différente, GitHub pour Mac &#39;planque par magie&#39; les modifications afin qu&#39;elles restent intactes quand vous revenez en arrière ! </p>
+
+<p><strong>Truc</strong> : Vous pouvez switcher rapidement entre les branches et en créer à partir de n&#39;importe quel onglet en pressant la touche Command-B ou en cliquant sur l&#39;icône de la branche placée en bas et à gauche de la fenêtre.</p>
+
+<h2>Célébrer</h2>
+
+<p>Bravo ! Maintenant que vous avez créé des branches dans votre projet ceci vous permet à vous et vos collaborateurs d&#39;essayer plein de trucs merveilleux - sans aucun risque de mettre la pagaille dans la branche <code>master</code>.</p>
+
+<p>Etes-vous 100% sûr que votre chose géniale soit prête à être incorporée à l&#39;intérieur de <code>master</code>? Il semble alors que vous soyez prêt pour <a href="/2013/12/07/github-fusion-branches/">fusionner</a>.</p>
+
+</div>
+
+
+
+
+<footer>
+<span  class="p-category entry-tags"></span>
+<p class="meta"><time class="dt-published" datetime="2013-12-07T00:00:00+01:00">
+  Samedi 7 décembre 2013
+</time> - <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" /> Christophe Ducamp</a>
+- <a class="u-url" href="/2013/12/07/github-lancer-un-depot/">permalien</a></p>
+</footer>
+</article>
+
+<div>
+  Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
+  <form action="https://webmention.herokuapp.com/api/webmention" method="post">
+    <input name="source" type="url" placeholder="http://exemple.com/mon-post-cool" />
+    <input name="target" value="http://christopheducamp.com/2013/12/07/github-lancer-un-depot/" type="hidden">
+    <input value="Envoyer la Webmention" type="submit">
+  </form>
+</div>
+
+<section class="webmention">
+<script id="webmention-hosted">
+  (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+  }());
+</script>
+</section>
+
+
+
+
+          <div class="footer">
+            <div class="contact">
+              <p class="h-card">
+                <span class="microcard"><img class="u-photo" src="/logo.jpg" alt="photo de @mikiane" /><a class="u-url" rel="me" href="http://christopheducamp.com">Christophe Ducamp</a></span><br />
+                <span class="p-note">Explorateur Indieweb</span><br />
+                <a rel="me" class="u-email" href="mailto:xtof@myadatalabs.com">xtof@mydatalabs.com</a>
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a rel="me" href="https://github.com/ChristopheDucamp">github.com/ChristopheDucamp</a><br />
+                <a rel="me" href="https://twitter.com/xtof_fr">twitter.com/xtof_fr</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

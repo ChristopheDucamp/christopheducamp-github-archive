@@ -1,0 +1,12 @@
+name: Je reprends la route...
+markdown: redcarpet
+pygments: true
+permalink: /:year/:month/:day/:title/
+excerpt_separator: noifniof3nioaniof3nioafafinoafnoif
+#repository: https://github.com/christopheducamp/christopheducamp.github.io
+
+ftp_host: ftp.christopheducamp.com
+ftp_username: christoplj
+ftp_dir: /www
+ftp_passive: false
+

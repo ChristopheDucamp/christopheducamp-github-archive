@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Quelques Astuces sur le Terminal</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- mise en valeur syntaxe CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- CSS personnalisee -->
+        <link rel="stylesheet" href="/css/main.css">
+        
+        <!-- OpenID - delegation IndieAuth --> 
+       	<link rel="openid.server" href="https://indieauth.com/openid"/>
+		<link rel="openid.delegate" href="http://christopheducamp.com/"/>
+
+		<!-- indieauth sms + e-mail google -->
+		<link href="sms:+33632039796" rel="me">
+		<link class="u-email" href="mailto:christophe.ducamp@gmail.com" rel="me">
+
+
+       <link rel="shortcut icon" href="/logo.jpg" />
+         <meta name="mobile-web-app-capable" content="yes" />
+         <link rel="apple-touch-icon-precomposed" href="/logo.jpg" />
+
+       <!-- webmention.herokuapp.com -->
+       <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Je reprends la route...</a></h1>
+            <a class="extra" href="/">accueil</a>
+          </div>
+
+          <article class="h-entry">
+<h2 class="p-name">Quelques Astuces sur le Terminal</h2>
+<!-- #todo indiewebify - ajouter url permaliens et catégories --> 
+
+<div class="e-content post">
+<p>Les <a href="/2013/12/09/anti-seche-ligne-de-commande/">blocs de code comme ceux-ci</a> sur cette page font partie d&#39;un langage de programmation appelé <code>Bash</code>. Pour utiliser des programmes <code>Bash</code>, nous devons utiliser Terminal, une application livrée avec votre Mac, généralement trouvée dans /Applications/Utilitaires. </p>
+
+<p><img src="https://github.s3.amazonaws.com/docs/bootcamp_1_mac_terminal.jpg" alt="image" title="Ouvrez le Terminal"></p>
+
+<h1>Saisie</h1>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">echo</span> <span class="s1">&#39;Ceci est du texte saisi&#39;</span>
+<span class="c"># Ce truc d&#39;aide vous dit ce qui se passe.</span>
+</code></pre></div>
+  
+
+<p>Une ligne qui commence par un signe dollar ($) indique une ligne de programme Bash que vous devez taper. Pour y entrer, tapez le texte qui suit le $, et pressez la touche entrée à la fin de chaque ligne. Vous pouvez survoler votre souris sur chaque ligne pour une explication de ce que fait le programme.</p>
+
+<h1>Output</h1>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># Ceci est un texte output.</span>
+</code></pre></div>
+
+<p>Une ligne qui ne commence pas par un $ est un texte <em>output</em> destiné à vous donner de l&#39;information ou vous dire que faire ensuite. Nous avons coloré le texte output en vert dans ces tutoriels d&#39;amorçage.</p>
+
+<h1>Input Spécifique à l&#39;Utilisateur</h1>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">echo</span> <span class="s1">&#39;username&#39;</span>
+<span class="c"># Affiche le texte dans les marques de citations.</span>
+</code></pre></div>
+
+<p>Les aires de texte en jaune représentent votre info personnelle, les repos, etc. Si ça fait partie d&#39;une ligne ($) input, vous devriez le remplacer avec vos propres infos quand vous le saisissez. Si cela fait partie de texte output, c&#39;est juste pour votre références. Cela affichera automatiquement votre propre info dans le Terminal.</p>
+
+<ul>
+<li><p><strong>Bon à savoir</strong> : Il y aura des moments où quand vous taperez du code et frapperez la touche entrée, tout ce qui vous sera donné sera une autre invitation à saisir. Quelques actions que vous exécutez dans le Terminal n&#39;ont pas d&#39;ouput. Pas de panique, même s&#39;il y avait un problème avec votre code, le Terminal vous le fera savoir.</p></li>
+<li><p><strong>Bon à savoir</strong> : Pour des raisons de sécurité, le Terminal n&#39;affichera pas ce que vous saisissez quand vous rentrerez des mots de passe. Tapez simplement votre mot de passe et pressez la touche entrée.</p></li>
+</ul>
+
+</div>
+
+
+
+
+<footer>
+<span  class="p-category entry-tags"></span>
+<p class="meta"><time class="dt-published" datetime="2013-12-10T14:36:00Z">
+  Mardi 10 décembre 2013
+</time> - <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" /> Christophe Ducamp</a>
+- <a class="u-url" href="/2013/12/10/terminal-trucs/">permalien</a></p>
+</footer>
+</article>
+
+<div>
+  Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
+  <form action="https://webmention.herokuapp.com/api/webmention" method="post">
+    <input name="source" type="url" placeholder="http://exemple.com/mon-post-cool" />
+    <input name="target" value="http://christopheducamp.com/2013/12/10/terminal-trucs/" type="hidden">
+    <input value="Envoyer la Webmention" type="submit">
+  </form>
+</div>
+
+<section class="webmention">
+<script id="webmention-hosted">
+  (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+  }());
+</script>
+</section>
+
+
+
+
+          <div class="footer">
+            <div class="contact">
+              <p class="h-card">
+                <span class="microcard"><img class="u-photo" src="/logo.jpg" alt="photo de @mikiane" /><a class="u-url" rel="me" href="http://christopheducamp.com">Christophe Ducamp</a></span><br />
+                <span class="p-note">Explorateur Indieweb</span><br />
+                <a rel="me" class="u-email" href="mailto:xtof@myadatalabs.com">xtof@mydatalabs.com</a>
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a rel="me" href="https://github.com/ChristopheDucamp">github.com/ChristopheDucamp</a><br />
+                <a rel="me" href="https://twitter.com/xtof_fr">twitter.com/xtof_fr</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

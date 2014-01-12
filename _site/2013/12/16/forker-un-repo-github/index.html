@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Forker un Repo sur GitHub</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- mise en valeur syntaxe CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- CSS personnalisee -->
+        <link rel="stylesheet" href="/css/main.css">
+        
+        <!-- OpenID - delegation IndieAuth --> 
+       	<link rel="openid.server" href="https://indieauth.com/openid"/>
+		<link rel="openid.delegate" href="http://christopheducamp.com/"/>
+
+		<!-- indieauth sms + e-mail google -->
+		<link href="sms:+33632039796" rel="me">
+		<link class="u-email" href="mailto:christophe.ducamp@gmail.com" rel="me">
+
+
+       <link rel="shortcut icon" href="/logo.jpg" />
+         <meta name="mobile-web-app-capable" content="yes" />
+         <link rel="apple-touch-icon-precomposed" href="/logo.jpg" />
+
+       <!-- webmention.herokuapp.com -->
+       <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Je reprends la route...</a></h1>
+            <a class="extra" href="/">accueil</a>
+          </div>
+
+          <article class="h-entry">
+<h2 class="p-name">Forker un Repo sur GitHub</h2>
+<!-- #todo indiewebify - ajouter url permaliens et catégories --> 
+
+<div class="e-content post">
+<p>Lien de référence : <span class="h-cite"><cite class="p-name u-url"><a href="https://help.github.com/articles/fork-a-repo">Fork A Repo</a></cite></span></p>
+
+<p>Si vous vous trouvez sur cette page, je peux supposer que vous <a href="/2013/12/15/Github-pour-nuls-partie-1/">débutez sur Git et GitHub</a>. Ce petit guide vous fera réviser quelques fondamentaux et vous aidera à faire vos premiers pas sur GitHub.</p>
+
+<h2>Contribuer sur un projet</h2>
+
+<p>À un certain stade, vous vous retrouvez en situation de vouloir contribuer sur le projet de quelqu&#39;un d&#39;autre, ou vous aimeriez utiliser le projet de quelqu&#39;un comme point de départ pour  votre propre projet. Ceci est connu comme le &quot;fork&quot; ou bifurcation. Pour ce tutoriel, nous utiliserons le projet <a href="https://github.com/octocat/Spoon-Knife">Spoon-Knife</a>, hébergé sur GitHub.com.</p>
+
+<h3>Étape 1 : Forker le dépôt &quot;Spoon-Knife&quot;</h3>
+
+<p>Pour forker ce projet, cliquez sur le bouton &quot;Fork&quot; dans le dépôt GitHub.com.</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/help/Bootcamp-Fork.png" alt="Image"> </p>
+
+<h3>Étape 2: Cloner votre fork</h3>
+
+<p>Vous avez forké avec succès le dépôt Spoon-Knife, mais à ce stade, il n&#39;existe que sur GitHub. 
+Pour pouvoir travailler sur le projet, vous devrez le <em>cloner</em>, à savoir rapatrier une copie sur votre machine locale.</p>
+
+<p>Faites tourner le code qui suit :</p>
+
+<div class="highlight"><pre><code class="bash">git clone https://github.com/username/Spoon-Knife.git
+<span class="c"># Clone votre fork du dépôt à l&#39;intérieur du répertoire en cours dans le terminal</span>
+</code></pre></div>
+  
+
+<h3>Étape 3 : Configurer les remotes</h3>
+
+<p>Quand un dépôt est cloné, il a un <em>remote</em> par défaut appelé <code>origin</code> qui pointe vers votre fork sur GitHub, et non pas le dépôt original à partir duquel il a été forké. Pour garder une trace du dépôt original, vous devez ajouter un autre remote appelé <code>upstream</code> :</p>
+
+<h4>Plus sur les remotes</h4>
+
+<p>Un <em>remote</em> est un dépôt stocké sur un autre ordinateur, dans ce cas sur le serveur de GitHub. C&#39;est une pratique standard (et aussi le défaut quand vous clonez un dépôt) de donner le nom <code>origin</code> au remote qui pointe vers votre dépôt principal hors du site (par exemple, votre dépôt GitHub).</p>
+
+<p>Git supporte plusieurs remotes. Ceci s&#39;utilise communément au moment de forker un dépôt.</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd </span>Spoon-Knife
+<span class="c"># Change le répertoire actif dans le terminal vers le nouveau répertoire fraîchement cloné &quot;Spoon-Knife&quot;</span>
+git remote add upstream https://github.com/octocat/Spoon-Knife.git
+<span class="c"># Assigne le dépôt original à un remote nommé &quot;upstream&quot;</span>
+git fetch upstream
+<span class="c"># Rapatrie les modifications non présentes dans votre dépôt local, sans modifier vos fichiers</span>
+</code></pre></div>
+  
+
+<h2>Plein de Trucs Restent À Faire !</h2>
+
+<p>Vous avez forké avec succès un dépôt, mais vous avez maintenant plein d&#39;autres choses cools à faire : </p>
+
+<h3>Pousser des commits</h3>
+
+<p>Une fois que vous avez produit quelques commits vers un dépôt forké et que vous voulez les pousser vers votre dépôt forké, vous faites ça de la même façon que vous le feriez avec un dépôt normal : </p>
+
+<div class="highlight"><pre><code class="bash">git push origin master
+<span class="c"># Pousse les commits vers votre dépôt remote (distant) stocké sur GitHub</span>
+</code></pre></div>
+  
+
+<h4>Plus sur les commits</h4>
+
+<p>Pensez à un <em>commit</em> comme un instantané de votre projet - code, fichiers, tout - à un instant t. Après votre premier commit, git ne sauvegardera que les fichiers qui ont été modifiés, d&#39;où le gain d&#39;espace.</p>
+
+<p><strong>Attention :</strong> git fera de son mieux pour compresser vos fichiers, mais les gros fichiers et les binaires peuvent amener un dépôt à devenir obèse et peu maniable. Essayez d&#39;éviter de committer des choses comme des ficihers compressés (zips, rars, jars), du code compilé (fichiers object, bibliothèques, exécutables), sauvegardes de database et fichiers média (flv, psd, musique, films)</p>
+
+<h3>Rentrer des modifications upstream</h3>
+
+<p>Si le dépôt original que vous avez forké pour votre projet est mis à jour, vous pouvez ajouter ces mises à jour à votre fork en faisant tourner la commande suivante : </p>
+
+<div class="highlight"><pre><code class="bash">git fetch upstream
+<span class="c"># Rapatrie toutes les nouvelles modifications provenant du dépôt original</span>
+git merge upstream/master
+<span class="c"># Fusionne toutes les modifications rapatriées à l&#39;intérieur de vos fichiers de travail</span>
+</code></pre></div>
+
+<h4>Quelle est la différence entre fetch et  pull ?</h4>
+
+<p>Il y a deux moyens de recevoir des commits provenant d&#39;un dépôt distant ou d&#39;une branche : <code>git fetch</code> et <code>git pull</code>. Bien que ces deux commandes puissent sembler similaires, il existe des différences que vous devriez comprendre :</p>
+
+<h5>Pull</h5>
+
+<div class="highlight"><pre><code class="bash">git pull upstream master
+<span class="c"># Tire les commits provenant de &#39;upstream&#39; et les stocke dans le dépôt local</span>
+</code></pre></div>
+
+<p>Quand vous utilisez <code>git pull</code>, git essaye automatiquement de faire le travail à votre place. C&#39;est sensible au contexte, ainsi git fusionnera tous les les commits tirés (pull) à l&#39;intérieur de la branche dans laquelle vous êtes en train de travailler. Une chose à garder à l&#39;esprit, est que <code>git pull</code> fusionne automatiquement les commits sans vous laisser d&#39;abord les réviser. Si vous ne gérez pas vos branches de très près, vous pourriez rencontrer des conflits fréquents.</p>
+
+<h5>Fetch &amp; Merge</h5>
+
+<div class="highlight"><pre><code class="bash">git fetch upstream
+<span class="c"># Rapatrie tous les nouveaux commits provenant du dépôt original</span>
+git merge upstream/master
+<span class="c"># Fusionne tous les commits rapatriés à l&#39;intérieur de vos fichiers de travail</span>
+</code></pre></div>
+
+<p>Quand vous lancez <code>git fetch</code>, git retrouve tous les nouveaux commits provenant du <code>remote</code> cible que vous n&#39;avez pas et les stocke dans votre dépôt local. Néanmoins, il ne les fusionne pas dans votre branche actuelle. Ceci est tout particulièrement utile si vous avez besoin de conserver votre dépôt à jour mais travaillez sur quelque chose qui pourrait se casser si vous mettiez vos fichiers à jour. Pour intégrer les commits à l&#39;intérieur de votre branche locale, vous utilisez <code>git merge</code>. Ceci combine les branches spécifiées et vous alerte en cas de conflits.</p>
+
+<h3>Créer des branches</h3>
+
+<p>Brancher vous permet de construire de nouvelles fonctionnalités ou de tester de nouvelles idées, sans mettre votre projet principal en péril. Dans git, <code>branch</code>er est une sorte de bookmark qui référence le dernier commit produit dans la branche. Ceci produit des branches très petites et faciles à travailler.</p>
+
+<h5>Comment j&#39;utilise les branches ?</h5>
+
+<p>Les branches sont vraiment faciles à travailler et vous épargneront beaucoup de maux de têtes, tout spécialement quand vous travaillez avec beaucoup de gens. Pour créer une branche et commencer à travailler dedans, lancez ces commandes : </p>
+
+<div class="highlight"><pre><code class="bash">git branch *mabranche*
+<span class="c"># Crée une nouvelle branche nommée &quot;mabranche&quot;</span>
+git checkout *mabranche*
+<span class="c"># Transforme &quot;mabranche&quot; en branche active</span>
+</code></pre></div>
+
+<p>Alternativement, vous pouvez utiliser le raccourci :</p>
+
+<div class="highlight"><pre><code class="bash">git checkout -b *mabranche*
+<span class="c"># Crée une nouvelle branche nommée &quot;mabranche&quot; et la transforme en granche active</span>
+</code></pre></div>
+
+<p>Pour basculer entre les branches, utilisez <code>git checkout</code>.</p>
+
+<div class="highlight"><pre><code class="bash">git checkout master
+<span class="c"># Transforme &quot;master&quot; en branche active</span>
+git checkout *mabranche*
+<span class="c"># Transforme &quot;mabranche&quot; en branche active</span>
+</code></pre></div>
+
+<p>Une fois que vous avez fini de travailler sur votre branche et quand vous êtes prêt à la combiner en retour à l&#39;intérieur de la branche <code>master</code>, utilisez <code>merge</code>.</p>
+
+<div class="highlight"><pre><code class="bash">git checkout master
+<span class="c"># Fait de &quot;master&quot; la branche active</span>
+git merge *mabranche*
+<span class="c"># Fusionne les commits provenant de &quot;mabranche&quot; à l&#39;intérieur de &quot;master&quot;</span>
+git branch -d *mabranche*
+<span class="c"># Efface la branche &quot;mabranche&quot;</span>
+</code></pre></div>
+
+<p><strong>Truc</strong> : Quand vous switchez entre les branches, les fichiers sur lesquels vous travaillez (la &quot;copie de travail&quot;) sont mis à jour pour renvoyer les modifications dans la nouvelles branche. Si vous avez des modifications que vous n&#39;avez pas committées, git s&#39;assurera que vous ne les perdez pas. Git fait aussi très attention durant les fusions et les pulls pour vous assurer que vous ne perdez pas de modifications. <strong>En cas de doute, committez tôt et committez souvent</strong>.</p>
+
+<h3>Demandes de Pull</h3>
+
+<p>Si vous espérez contribuez en retour sur le fork original, vous pouvez envoyer à l&#39;auteur original une <a href="https://help.github.com/articles/using-pull-requests">demande de pull</a>.</p>
+
+<h3>Ne plus suivre le dépôt principal</h3>
+
+<p>Quand vous forkez un dépôt populaire, vous pouvez vous retrouver avec beaucoup de mises à jour non voulues. Pour vous désabonner des mises à jour sur le dépôt original, cliquez sur le bouton &quot;Unwatch&quot; sur le <strong>dépôt principal</strong> et sélectionnez &quot;Not Watching&quot;.</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/help/Bootcamp-Not-Watching.png" alt="image" title="Cliquez sur Unwatch"></p>
+
+<h3>Effacer votre fork</h3>
+
+<p>À un certain stade, vous pouvez décider de vouloir effacer votre fork. Pour effacer un fork, suivez simplement les mêmes étapes comme vous <a href="https://help.github.com/articles/deleting-a-repository">effaceriez un dépôt normal</a>.</p>
+
+<h3>Bravo</h3>
+
+<p>Vous avez désormais forké un dépôt. Que voulez-vous faire ensuite ?</p>
+
+<ul>
+<li><a href="/2013/12/10/installer-git/">Installer Git</a></li>
+<li><a href="/2013/12/16/creer_un_repo_GitHub/">Créer un Repo</a></li>
+<li><strong>Forker un Repo</strong></li>
+<li><a href="/2013/12/16/github-etre-social/">Etre Social</a></li>
+</ul>
+
+</div>
+
+
+
+
+<footer>
+<span  class="p-category entry-tags"></span>
+<p class="meta"><time class="dt-published" datetime="2013-12-16T14:36:00Z">
+  Lundi 16 décembre 2013
+</time> - <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" /> Christophe Ducamp</a>
+- <a class="u-url" href="/2013/12/16/forker-un-repo-github/">permalien</a></p>
+</footer>
+</article>
+
+<div>
+  Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
+  <form action="https://webmention.herokuapp.com/api/webmention" method="post">
+    <input name="source" type="url" placeholder="http://exemple.com/mon-post-cool" />
+    <input name="target" value="http://christopheducamp.com/2013/12/16/forker-un-repo-github/" type="hidden">
+    <input value="Envoyer la Webmention" type="submit">
+  </form>
+</div>
+
+<section class="webmention">
+<script id="webmention-hosted">
+  (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+  }());
+</script>
+</section>
+
+
+
+
+          <div class="footer">
+            <div class="contact">
+              <p class="h-card">
+                <span class="microcard"><img class="u-photo" src="/logo.jpg" alt="photo de @mikiane" /><a class="u-url" rel="me" href="http://christopheducamp.com">Christophe Ducamp</a></span><br />
+                <span class="p-note">Explorateur Indieweb</span><br />
+                <a rel="me" class="u-email" href="mailto:xtof@myadatalabs.com">xtof@mydatalabs.com</a>
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a rel="me" href="https://github.com/ChristopheDucamp">github.com/ChristopheDucamp</a><br />
+                <a rel="me" href="https://twitter.com/xtof_fr">twitter.com/xtof_fr</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

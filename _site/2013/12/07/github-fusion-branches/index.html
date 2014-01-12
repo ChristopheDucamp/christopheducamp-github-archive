@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>GitHub pour Mac : Fusionner des Branches</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- mise en valeur syntaxe CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- CSS personnalisee -->
+        <link rel="stylesheet" href="/css/main.css">
+        
+        <!-- OpenID - delegation IndieAuth --> 
+       	<link rel="openid.server" href="https://indieauth.com/openid"/>
+		<link rel="openid.delegate" href="http://christopheducamp.com/"/>
+
+		<!-- indieauth sms + e-mail google -->
+		<link href="sms:+33632039796" rel="me">
+		<link class="u-email" href="mailto:christophe.ducamp@gmail.com" rel="me">
+
+
+       <link rel="shortcut icon" href="/logo.jpg" />
+         <meta name="mobile-web-app-capable" content="yes" />
+         <link rel="apple-touch-icon-precomposed" href="/logo.jpg" />
+
+       <!-- webmention.herokuapp.com -->
+       <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Je reprends la route...</a></h1>
+            <a class="extra" href="/">accueil</a>
+          </div>
+
+          <article class="h-entry">
+<h2 class="p-name">GitHub pour Mac : Fusionner des Branches</h2>
+<!-- #todo indiewebify - ajouter url permaliens et catégories --> 
+
+<div class="e-content post">
+<p><a href="https://help.github.com/articles/merging-branches">Lien de référence</a></p>
+
+<p>Une fois que vous avez produit  une nouvelle branche et fini le travail sur votre dernière idée, vous voudrez fusionner les modifications dans <code>master</code> (ou peut-être une autre branche), de manière à ce qu&#39;elles fassent partie du principal corps de travail.</p>
+
+<p>Si vous travaillez comme membre d&#39;une équipe, c&#39;est une bonne pratique d&#39;avoir une révision de votre branche par vos collègues (peut-être en produisant une pull request sur GitHub.com) avant de la fusionner.</p>
+
+<p>Pour fusionner une branche dans GitHub pour Mac :</p>
+
+<ol>
+<li>Cliquez sur le bouton &quot;Merge View&quot; sur l&#39;onglet Branches.</li>
+<li>Cliquez et faites glissez le handle de la branche dont vous voulez fusionner les modifications (votre nouvelle branche), et déposez-le dans la boîte de gauche. Le handle à glisser peut être trouvé sur le côté gauche de la ligne de la branche.</li>
+<li>Tirez et ramenez la branche à l&#39;intérieur de laquelle vous voulez fusionnez les modifications (par ex., <code>master</code>), et déposez-la dans la boîte de droite.</li>
+<li>Cliquez sur &quot;Merge Branches.&quot;</li>
+</ol>
+
+<p><img src="https://github-images.s3.amazonaws.com/mac/changes/merging-20130109-131344.jpg" alt="image" title="Fusion de Branche dans GitHub pour Mac"></p>
+
+<p>Une fois que vous avez fusionné, vous pouvez ne plus avoir besoin de la branche à partir de laquelle vous avez fusionné. Vous pouvez l&#39;effacer à partir des repos local et distant en cliquant sur la petite flèche dans la ligne de la branche, et en sélectionnant &quot;Delete&quot; à partir du menu qui apparaît.</p>
+
+<p>*<em>Attention *</em>: Si vous fusionnez deux branches ensemble qui ont des conflits de modifications sur des lignes particulières, GitHub pour Mac affichera ce &quot;Conflict&quot; dans la vue Changes. Vous devrez utiliser l&#39;éditeur de texte de votre choix afin de résoudre manuellement les conflits et puis committer les modifications.</p>
+
+<h2>Célébrez !</h2>
+
+<p>Bravo ! Ceci couvre les fondamentaux pour démarrer avec GitHub pour Mac ! Vous devriez désormais être plus à l&#39;aise pour utiliser GitHub pour Mac afin d&#39;enfourcher toute la puissance de Git et GitHub pour vos propres projets.</p>
+
+<p>Prochaine étape, vous pourriez aimer envisager d&#39;en <a href="/2013/12/15/Github-pour-nuls-partie-1/">savoir un peu plus sur Git</a>, ou <a href="/2013/12/10/installer-git/">participer au Bootcamp</a>.</p>
+
+</div>
+
+
+
+
+<footer>
+<span  class="p-category entry-tags"></span>
+<p class="meta"><time class="dt-published" datetime="2013-12-07T00:00:00+01:00">
+  Samedi 7 décembre 2013
+</time> - <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" /> Christophe Ducamp</a>
+- <a class="u-url" href="/2013/12/07/github-fusion-branches/">permalien</a></p>
+</footer>
+</article>
+
+<div>
+  Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
+  <form action="https://webmention.herokuapp.com/api/webmention" method="post">
+    <input name="source" type="url" placeholder="http://exemple.com/mon-post-cool" />
+    <input name="target" value="http://christopheducamp.com/2013/12/07/github-fusion-branches/" type="hidden">
+    <input value="Envoyer la Webmention" type="submit">
+  </form>
+</div>
+
+<section class="webmention">
+<script id="webmention-hosted">
+  (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+  }());
+</script>
+</section>
+
+
+
+
+          <div class="footer">
+            <div class="contact">
+              <p class="h-card">
+                <span class="microcard"><img class="u-photo" src="/logo.jpg" alt="photo de @mikiane" /><a class="u-url" rel="me" href="http://christopheducamp.com">Christophe Ducamp</a></span><br />
+                <span class="p-note">Explorateur Indieweb</span><br />
+                <a rel="me" class="u-email" href="mailto:xtof@myadatalabs.com">xtof@mydatalabs.com</a>
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a rel="me" href="https://github.com/ChristopheDucamp">github.com/ChristopheDucamp</a><br />
+                <a rel="me" href="https://twitter.com/xtof_fr">twitter.com/xtof_fr</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

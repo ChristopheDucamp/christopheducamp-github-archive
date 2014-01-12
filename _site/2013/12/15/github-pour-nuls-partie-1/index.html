@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>GitHub Pour les Nuls : Pas de Panique, Lancez-Vous ! (Première Partie)</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- mise en valeur syntaxe CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- CSS personnalisee -->
+        <link rel="stylesheet" href="/css/main.css">
+        
+        <!-- OpenID - delegation IndieAuth --> 
+       	<link rel="openid.server" href="https://indieauth.com/openid"/>
+		<link rel="openid.delegate" href="http://christopheducamp.com/"/>
+
+		<!-- indieauth sms + e-mail google -->
+		<link href="sms:+33632039796" rel="me">
+		<link class="u-email" href="mailto:christophe.ducamp@gmail.com" rel="me">
+
+
+       <link rel="shortcut icon" href="/logo.jpg" />
+         <meta name="mobile-web-app-capable" content="yes" />
+         <link rel="apple-touch-icon-precomposed" href="/logo.jpg" />
+
+       <!-- webmention.herokuapp.com -->
+       <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Je reprends la route...</a></h1>
+            <a class="extra" href="/">accueil</a>
+          </div>
+
+          <article class="h-entry">
+<h2 class="p-name">GitHub Pour les Nuls : Pas de Panique, Lancez-Vous ! (Première Partie)</h2>
+<!-- #todo indiewebify - ajouter url permaliens et catégories --> 
+
+<div class="e-content post">
+<p>Traduction d&#39;un article original de <span class="p-author h-card"><a href="http://otakujournalist.com/about-the-author/">Lauren Orsini</a></span> publié le <time class="dt-published" value="2013-11-30">30 septembre 2013</time> pour ReadWriteWeb. Seul le <a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#feed=/author/lauren-orsini&amp;awesm=%7EomyHpouFOs03MN">lien original fait référence</a>. </p>
+
+<p>La traduction reste à raffiner avec la pratique de cet outil. <a href="/news/2013/12/16/GitHub-pour-nuls-partie-2/">Seconde partie en cours d&#39;étude</a> pour me lancer sous peu dans les premiers <em>commits</em> à la ligne de commande. Mise en forme prévue pour le plan de route <a href="http://indiewebamp.com">indieweb</a> 2014. Merci. - <span class="u-syndication"><a href="https://twitter.com/xtof_fr/status/412238889739247616">xtof_fr</a></span></p>
+
+<h3><em>GitHub est plus qu&#39;un simple outil de programmation. Si vous voulez collaborer sur n&#39;importe quoi, vous devriez l&#39;essayer. 1ère Partie pour apprendre à démarrer sur GitHub.</em></h3>
+
+<p>Nous sommes en 2013 et pas moyen d&#39;y échapper : vous devrez apprendre comment utiliser GitHub.</p>
+
+<p>Pourquoi ? Parce que c&#39;est un réseau social qui change drastiquement notre façon de travailler. Ayant démarré sous forme de plateforme collaborative pour développeurs, GitHub est désormais le plus grand espace de stockage de travaux collaboratifs dans le monde. Que vous soyez intéressé(e) pour participer à ce cerveau global ou tout simplement pour partir à la recherche de cet énorme réservoir de connaissances, vous vous devez d&#39;y être.</p>
+
+<p>En étant simplement membre, vous pourrez croiser le fer avec ce qu&#39;aiment <a href="https://github.com/google">Google</a> et <a href="https://github.com/facebook">Facebook</a>. Avant que Github n&#39;existe, les grandes sociétés créaient leurs bases de connaissance surtout en privé. Mais lorsque vous accédez à leurs comptes GitHub, vous êtes libres de télécharger, étudier et construire dessus tout ce que vous voulez sur ce qu&#39;elles ajoutent sur ce réseau. Aussi, qu&#39;attendez-vous ?</p>
+
+<h2>Chercher des Réponses GitHub</h2>
+
+<p>Aussi gênant que cela puisse paraître, j&#39;ai écrit ce tutoriel parce que je me sentais vraiment perdue dans tous les articles de type “GitHub pour Débutants”. Probablement parce qu&#39;à la différence de la plupart des utilisateurs de Github, je manque de bagage solide en programmation. Et je ne m&#39;y retrouvais pas non plus dans les tutoriels d&#39;utilisation de Github, pour construire une vitrine de quelques travaux de programmation.</p>
+
+<p>Voir aussi : <a href="http://readwrite.com/2013/11/18/github-tom-preston-warner">Tom Preston-Werner de Github : Comment Nous Sommes Devenus Mainstream</a></p>
+
+<p>Ce que vous pourriez ignorer, c&#39;est qu&#39;il existe plein de raisons d&#39;utiliser GitHub même si vous n&#39;êtes pas programmeur. Selon les vidéos de tutoriels GitHub, tout travailleur du savoir peut en tirer profit, “knowledge worker” s&#39;entendant ici pour désigner la plupart des professionnels faisant usage d&#39;un ordinateur.</p>
+
+<p>Par conséquent, si vous avez déjà lâché prise sur la compréhension d&#39;utilisation de Github, cet article est pour vous.</p>
+
+<p>L&#39;un des principaux malentendus concernant GitHub est que c&#39;est un outil de développement, faisant partie de la panoplie de tout programmeur, comme le sont les langages de programmation et les compilateurs. Cependant, GitHub en lui-même n&#39;est rien de plus qu&#39;un réseau social comme Facebook ou Flickr. Vous construisez un profil, vous y déposez des projets à partager et vous vous connectez avec d&#39;autres utilisateurs en suivant leurs comptes. Même si la plupart des utilisateurs y déposent des projets de programmes ou de code, rien ne vous empêche d&#39;y placer des textes ou tout type de fichier à présenter dans vos répertoires de projets.</p>
+
+<p><img src="http://xtof.me/images/2013/ma-page-github.png" alt="image" title="ma première page github"></p>
+
+<p>Vous pouvez déjà avoir plus d&#39;une dizaine de comptes sociaux... voici pourquoi vous devriez être sur Github : il dispose des meilleures Conditions Générales d&#39;Utilisation. Si vous regardez la section F des <a href="https://help.github.com/articles/github-terms-of-service">conditions générales</a>, vous verrez que Github fait tout pour vous assurer que vous conservez la propriété complète de tous les projets que vous déposez sur le site : </p>
+
+<blockquote>We claim no intellectual property rights over the material you provide to the Service. Your profile and materials uploaded remain yours.<footer><a href="https://help.github.com/articles/github-terms-of-service">conditions générales GitHub</a>
+</footer></blockquote>
+
+<p>En outre, vous pouvez véritablement utiliser GitHub sans connaître UNE SEULE LIGNE de code. Vous n&#39;avez pas besoin de tutoriel pour vous enregistrer et vous promener. Mais mon point de vue est que GitHub a le mérite de nous apprendre à faire les choses dures en premier, ce qui veut dire, utiliser le bon vieux code Git. Après tout, GitHub est parvenu à produire l&#39;une des interfaces graphiques sans effort pour le langage de programmation Git.</p>
+
+<h1>C&#39;est Quoi Git ?</h1>
+
+<p>Remercions le célèbre développeur de logiciel <a href="http://fr.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a> pour Git, le logiciel qui fait tourner le coeur de GitHub. (Et tant que vous y êtes, remercions-le aussi pour le système d&#39;exploitation Linux). <strong>Git est un logiciel de contrôle de version</strong>, ce qui signifie qu&#39;il gère les modifications d&#39;un projet sans écraser n&#39;importe quelle partie du projet. Et il ne risque pas de disparaître, tout particulièrement parce que Torvalds et ses collègues développeurs du noyau utilisent Git pour aider à développer le noyau coeur de Linux.</p>
+
+<p>Pourquoi utiliser quelque chose comme Git ? Supposons que vous mettiez à jour avec un collègue des pages sur le même site web. Vous faites des modifications, vous les sauvegardez et les versez sur le site. À ce stade, tout va bien. Le problème survient quand votre collègue travaille sur la même page que vous en même temps. L&#39;un de vous va voir son travail écrasé.</p>
+
+<p>Une <a href="http://git-scm.com/video/what-is-version-control">application de contrôle de version</a> comme Git empêche ça d&#39;arriver. Vous et votre collègue pouvez chacun de votre côté verser vos révisions sur la même page, et Git sauvegardera deux copies. Plus tard, vous pourrez fusionner vos modifications sans perdre le travail dans le processus. Vous pouvez même revenir en arrière à tout moment, parce que Git conserve une &quot;copie instantanée&quot; de tous les changements produits.</p>
+
+<p>Le problème avec Git est qu&#39;il est vieux. Si vieux que nous devons utiliser la ligne de commande -ou l&#39;application Terminal si vous êtes sur Mac - afin d&#39;y accéder, et y taper dedans des bouts de code comme les hackers des années 90. Ceci peut être une proposition difficile pour les utilisateurs d&#39;ordinateurs modernes. C&#39;est là où Github entre dans la danse.</p>
+
+<p><img src="http://xtof.me/images/2013/Terminal-Accueil-github.png" alt="image" title="Ma fenêtre de Terminal"></p>
+
+<p>GitHub facilite l&#39;utilisation de Git sur deux points. Premièrement, si vous <a href="https://help.github.com/articles/set-up-git">téléchargez le logiciel GitHub</a> sur votre ordinateur, GitHub  fournit une interface visuelle pour vous aider à gérer localement vos projets avec les contrôles de version. Deuxièmement, créer un compte sur GitHub.com emmène vos projets sur le web avec des contrôles de versions, et leur attache des fonctionnalités de réseaux sociaux.</p>
+
+<p>Vous pouvez naviguer sur les projets d&#39;autres utilisateurs de Github, et même y télécharger des copies pour vous afin de les modifier, apprendre ou les enrichir. D&#39;autres utilisateurs peuvent faire de même avec vos projets publics, repérer vos erreurs et vous suggérer des corrections. De toute façon, aucune donnée ne se perd parce que Git sauvegarde un “instantané” de chaque modification.</p>
+
+<p>Bien qu&#39;il soit possible d&#39;utiliser GitHub sans apprendre Git, il y a une énorme différence entre l&#39;utilisation et la compréhension. Avant de connaître Git, je savais utiliser GitHub, mais je ne comprenais pas pourquoi. Dans ce tutoriel, nous apprendrons comment utiliser Git à la ligne de commande.</p>
+
+<h1>Les Mots que les Personnes Utilisent quand Elles Parlent de Git</h1>
+
+<p>Dans ce tutoriel, il y a quelques mots que j&#39;utiliserai sans arrêt, aucun d&#39;eux dont je n&#39;avais entendu parler avant d&#39;avoir démarré l&#39;apprentissage. Voici les plus connus : </p>
+
+<p><strong>Ligne de Commande</strong> : Le programme de l&#39;ordinateur que nous utilisons pour entrer des commandes Git. Sur un Mac, ça s&#39;appelle Terminal. Sur un PC, c&#39;est un programme non-natif que vous téléchargez lorsque vous téléchargez Git pour la première fois (nous ferons ça dans la section suivante). Dans les deux cas, au lieu d&#39;utiliser une souris, vous saisissez des commandes basées sur le texte, connues comme des invites de commande.</p>
+
+<p><strong>Dépôt :</strong> Un répertoire ou un espace de stockage où vos projets peuvent vivre. Parfois les utilisateurs GitHub raccourcissent ça en &quot;repo&quot;. Il peut être local vers un répertoire sur votre ordinateur, ou ce peut être un espace de stockage sur GitHub ou un autre hébergeur en ligne. Vous pouvez conserver des fichiers de code, des fichiers texte, des images, à l&#39;intérieur d&#39;un dépôt.</p>
+
+<p><strong>Contrôle de Version :</strong> Basiquement, l&#39;objectif pour lequel Git a été conçu. Quand vous avez un fichier Microsoft Word, vous l&#39;écrasez à chaque fois que vous faites une nouvelle sauvegarde, ou sinon vous sauvegardez plusieurs versions. Avec Git, vous n&#39;êtes plus obligé de faire ça. Il conserve des &quot;instantanés&quot; de chaque point dans l&#39;historique d&#39;un projet, par conséquent vous ne pouvez jamais le perdre ou l&#39;écraser.</p>
+
+<p><strong>Commit :</strong> C&#39;est la commande qui donne à Git toute sa puissance. Quand vous &quot;committez&quot;, vous prenez un &quot;instantané&quot;, une &quot;photo&quot; de votre dépôt à ce stade, vous donnant un checkpoint que vous pouvez ensuite évaluer de nouveau ou restaurer votre projet à tout état précédent.</p>
+
+<p><strong>Branche :</strong> Comment plusieurs personnes travaillant sur un projet en même temps sans que Git ne s&#39;embrouille ? Généralement, elles se &quot;débranchent&quot; du projet principal avec leurs propres versions pleines de modifications qu&#39;elles ont chacune produites de leur côté. Après avoir fait ça, il est temps de &quot;fusionner&quot; cette branche là avec le &quot;master&quot;, le répertoire principal du projet.</p>
+
+<h2>Commandes Spécifiques Git</h2>
+
+<p>Le fait que Git ait été conçu avec un gros projet comme Linux, il existe un paquet de commandes Git. Néanmoins, pour utiliser les basiques de Git, vous n&#39;aurez besoin de connaître que quelques termes. Ils commencent tous de la même façon avec le mot &quot;git&quot;.</p>
+
+<p><code>git init</code> : Initialise un nouveau dépôt Git. Jusqu&#39;à ce que vous exécutiez cette commande dans un dépôt ou répertoire, c&#39;est simplement un répertoire normal. Seulement après avoir entré cette commande, il accepte les commandes Git qui suivent.</p>
+
+<p><code>git config</code> : raccourci de “configurer,” ceci est tout particulièrement utile quand vous paramétrez Git pour la première fois.</p>
+
+<p><code>git help</code> : Oublié une commande ? Saisissez-ça dans la ligne de commande pour ramener les 21 commandes les plus courues de Git. Vous pouvez aussi être plus spécifique et saisir “git help init” ou tout autre terme pour voir comment utiliser et configurer une commande spécifique git.</p>
+
+<p><code>git status</code> : Vérifie le statut de votre repository. Voir quels fichiers sont à l&#39;intérieur, quels sont les changements ayant besoin d&#39;être gardés en mémoire, et sur quelle branche du repository vous êtes en train de travailler.</p>
+
+<p><code>git add</code> : Ceci n&#39;ajoute <em>pas</em> de nouveaux fichiers dans votre dépôt. Au lieu de cela, cela porte de nouveaux fichiers à l&#39;attention de Git. Après que vous ayez ajouté des fichiers, ils sont inclus dans les &quot;instantanés&quot; du dépôt Git.</p>
+
+<p><code>git commit</code> : la commande la plus importante de Git. Après avoir fait toute sorte de modification, vous saisissez ça afin de prendre un “instantané” du dépôt. Généralement cela s&#39;écrit sous la forme <code>git commit -m “Message ici“</code>. Le -m indique que la section suivante de la commande devrait être lue comme un message.</p>
+
+<p><code>git branch</code> : Vous travaillez avec plusieurs collaborateurs et voulez produire des modifications de votre côté ? Cette commande vous permet de construire une nouvelle branche, ou une timeline de commits, de modifications et d&#39;ajouts de fichiers qui sont complètement les vôtres. Votre titre va après la commande. Si vous vouliez créer une nouvelle branche appelée &quot;chats&quot;, vous saisiriez <code>git branch chats</code>.</p>
+
+<p><code>git checkout</code> : Permet littéralement de rapatrier un dépôt dans lequel vous n&#39;êtes pas. C&#39;est une commande de navigation qui vous laisse migrer vers le répertoire que vous voulez rapatrier. Vous pouvez utiliser cette commande sous la forme <code>git checkout master</code> pour rapatrier la branche master, ou <code>git checkout chats</code> pour rapatrier une autre branche.</p>
+
+<p><code>git merge</code> : Quand vous avez terminé de travailler sur une branche, vous pouvez fusionner vos modifications vers la branche master, qui est visible pour tous les collaborateurs. <code>git merge cats</code> prendrait toutes les modifications que vous avez faites sur la branche “cats” et les ajoutera à la la branche master.</p>
+
+<p><code>git push</code> : Si vous travaillez sur votre ordinateur local, et voulez que vos commits soient visibles aussi sur Github, vous &quot;push&quot;ez les modifications vers Github avec cette commande.</p>
+
+<p><code>git pull</code> : Si vous travaillez sur votre ordinateur local, et su vous voulez la version la plus à jour de votre repository pour travailler dessus, vous “pull”ez (tirez) les modifications provenant de Github avec cette commande.</p>
+
+<h2>Paramétrer GitHub ET Git Pour La Première Fois</h2>
+
+<p><img src="http://xtof.me/images/2013/Github-Page-Enregistrement.png" alt="Image" title="page d&#39;enregistrement github."></p>
+
+<p>Premièrement, vous devrez <a href="https://github.com/">vous enregistrer</a> pour disposer d&#39;un compte sur GitHub.com. C&#39;est aussi simple que de s&#39;enregistrer sur n&#39;importe quel autre réseau social. Conservez l&#39;e-mail que vous avez choisi à portée de main ; nous en aurons besoin de nouveau.</p>
+
+<p>Vous pourriez vous arrêter là et github fonctionnerait bien. Mais si vous voulez travailler sur votre projet sur votre ordinateur local, vous devez avoir installé Git. En fait, Github ne fonctionnera pas sur votre ordinateur local si vous n&#39;installez pas Git. <a href="http://git-scm.com/downloads">Téléchargez et installez la dernière version de Git pour Windows, Mac ou Linux selon votre machine</a>.</p>
+
+<p><img src="http://xtof.me/images/2013/git-scm.com-pour-telecharger-Git.png" alt="image" title="http://git-scm.com/, l&#39;endroit où vous téléchargez Git.">&quot; </p>
+
+<p>Désormais, il est temps de passer à la ligne de commande. Sur Windows, ça veut dire démarrer l&#39;app Git Bash que vous venez d&#39;installer, et sur MacOSX, c&#39;est le bon vieux Terminal. Il est temps de vous présenter à Git. Saisissez le code qui suit : </p>
+
+<div class="highlight"><pre><code class="bash">git config --global user.name <span class="s2">&quot;Votre Nom Ici&quot;</span>
+</code></pre></div>
+
+<p>Naturellement, vous devrez remplacer “Votre Nom Ici” avec votre propre nom entre guillemets. Ce peut être votre nom légal, votre pseudo en ligne ou tout ce que vous voudrez. Git s&#39;en moque, il a juste besoin de savoir à qui créditer les commits et les projets futurs.</p>
+
+<p>Puis, dites-lui votre e-mail et assurez-vous que c&#39;est le même email que vous avez utilisé quand vous vous êtes enregistré pour votre compte Github. Faites comme suit : </p>
+
+<div class="highlight"><pre><code class="bash">git config --global user.email <span class="s2">&quot;votre_email@votre_email.com&quot;</span>
+</code></pre></div>
+
+<p>C&#39;est tout ce que vous devez faire pour démarrer Git sur votre ordinateur. Cependant, du fait que vous venez de créer un compte Github.com, il est probable que vous ne souhaitiez pas gérer simplement votre projet localement, mais aussi en ligne. Si vous voulez, vous pouvez aussi paramétrer Git de façon à ce qu&#39;il ne vous demande pas de vous connecter à votre compte Github à chaque fois que vous voulez lui parler. Pour les besoins de ce tutoriel, ce n&#39;est pas un grand problème parce que nous ne lui parlerons qu&#39;une fois. Le tutoriel complet pour faire ça est <a href="https://help.github.com/articles/set-up-git">situé sur Github</a>.</p>
+
+<p><img src="http://christopheducamp.com/images/2013/Terminal-Config-git-nomutilisateur-email.png" alt="image" title="Les toutes premières commandes de Git."></p>
+
+<h2>Créez Votre Dépôt En Ligne</h2>
+
+<p>Maintenant que vous avez tout réglé, il est temps de créer un endroit pour placer votre projet à faire vivre. Tant Git que Github font référence à cela en tant que repository, ou &quot;repo&quot; pour le raccourci, un répertoire digital ou un espace de stockage où vous pouvez accéder à votre projet, ses fichiers, et toutes les versions de ses fichiers que Git a sauvegardés. </p>
+
+<p>Revenons sur GitHub.com et cliquez sur la petite icône de texte à côté de votre nom d&#39;utilisateur. Ou allez vers la nouvelle page repository si toutes les icônes sont les mêmes. Donnez à votre dépôt un nom court et mémorisable. Allez-y et rendez-le public, n&#39;ayez pas peur de montrer votre tentative d&#39;apprendre Github ! </p>
+
+<p><img src="http://xtof.me/images/2013/github-creer-nouveau-repo.png" alt="image" title="Créer un nouveau repository sur GitHub">. </p>
+
+<p>Ne vous inquiétez pas de cliquer sur le bouton radio à côté intitulé “Initialize this repository with a README.” Un fichier Readme est généralement un fichier texte qui explique sommairement le projet. Mais nous pouvons produire localement notre propre fichier <code>Readme</code>.</p>
+
+<p>Cliquez sur le bouton vert “Create Repository” et c&#39;est fait. Vous disposez d&#39;un espace en ligne pour votre projet restant à faire vivre.</p>
+
+<h2>Créer Votre Dépôt Local</h2>
+
+<p>Ainsi vous venons juste de créer un espace pour votre projet en ligne, mais ce n&#39;est pas l&#39;endroit où nous travaillerons dessus. Le plus gros de votre travail sera produit sur votre ordinateur. Par conséquent, nous devons en fait refléter ce repository que nous venons juste de produire sous un répertoire local.</p>
+
+<p>C&#39;est l&#39;endroit où nous produisons quelques saisies de ligne de commande faisant partie de chaque tutoriel Git qui me chahute le plus, aussi j&#39;irai vraiment lentement.</p>
+
+<p>Saisissez d&#39;abord : </p>
+
+<div class="highlight"><pre><code class="bash">mkdir ~/MonProjet
+</code></pre></div>
+
+<p><code>mkdir</code> est le raccourci de &quot;make directory&quot;. Ce n&#39;est en réalité pas une ligne de commande Git, mais une commande générale de navigation provenant du temps avant les interfaces ordinateurs visuelles. Le <code>~/</code> vous assure que nous construisons le dépôt tout en haut de la structure du fichier de notre ordinateur, au lieu d&#39;un répertoire coincé dans quelque autre répertoire qui serait plus difficile à retrouver. En fait, si vous saisissez <code>~/</code> dans la fenêtre de votre navigateur, cela vous ramènera vers le répertoire local le plus haut de votre ordinateur. Pour moi, en utilisant Chrome sur un Mac, cela affiche mon répertoire Users.</p>
+
+<p>Remarquez aussi que je l&#39;ai appelé <code>MonProjet</code>, le même nom que j&#39;ai donné au dépôt Github que nous avons produit précédemment. Assurez-vous aussi de garder une cohérence sur votre nom.</p>
+
+<p>Puis, saisissez :</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ~/MonProjet
+</code></pre></div>
+
+<p><code>cd</code> signifie change directory, et c&#39;est aussi une commande de navigation. Nous venons de produire un répertoire, et nous voulons maintenant migrer vers ce répertoire et aller dedans. Une fois que nous avons tapé cettte commande, nous sommes transportés à l&#39;intérieur de MonProjet.</p>
+
+<p>Maintenant, nous allons pour finir utiliser une commande Git. 
+Pour votre prochaine ligne, saisissez : </p>
+
+<div class="highlight"><pre><code class="bash">git init
+</code></pre></div>
+
+<p>Vous savez que vous utilisez une commande Git car elle démarre toujours par <code>git</code>. Init signifie &quot;initialiser&quot;. Souvenez-vous comment les deux précédentes commandes que nous avons saisies étaient des termes généraux de ligne de commande ? Quand nous tapons ce code à l&#39;intérieur, cela dit à l&#39;ordinateur de reconnaître ce répertoire comme un dépôt local Git. 
+Si vous ouvrez le répertoire, il ne s&#39;affichera pas différemment, parce que ce nouveau répertoire Git est un fichier caché à l&#39;intérieur du dépôt dédié.</p>
+
+<p><img src="http://xtof.me/images/2013/Terminal-Git-Creer-Repo.png" alt="Image" title="Créer un dépôt local Git en trois étapes."> </p>
+
+<p>Néanmoins, votre ordinateur réalise maintenant que ce répertoire est <em>git-ready</em>, et vous pouvez commencer à entrer des commandes Git. Maintenant, vous disposez à la fois d&#39;un dépôt local et en ligne pour votre projet. 
+Dans la <a href="/2013/12/16/GitHub-pour-nuls-partie-2/">seconde partie</a>, vous apprendrez comment faire votre premier commit vers des dépôts locaux et sur Github. Et vous en saurez plus sur quelques ressources géniales de Github.</p>
+
+<h2>Voir aussi</h2>
+
+<ul>
+<li><span class="h-cite"><cite class="p-name u-url"><a href="http://lifehacker.com/5983680/how-the-heck-do-i-use-github">How the Heck Do I Use Github?</a></cite> (<span class=p-publisher>Lifehacker</span> <span class="h-card p-author">Adam Dachis</span> <time class="dt-published">2013-12-02</time>)</span></li>
+</ul>
+
+</div>
+
+
+
+
+<footer>
+<span  class="p-category entry-tags"></span>
+<p class="meta"><time class="dt-published" datetime="2013-12-15T20:14:00+01:00">
+  Dimanche 15 décembre 2013
+</time> - <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" /> Christophe Ducamp</a>
+- <a class="u-url" href="/2013/12/15/github-pour-nuls-partie-1/">permalien</a></p>
+</footer>
+</article>
+
+<div>
+  Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
+  <form action="https://webmention.herokuapp.com/api/webmention" method="post">
+    <input name="source" type="url" placeholder="http://exemple.com/mon-post-cool" />
+    <input name="target" value="http://christopheducamp.com/2013/12/15/github-pour-nuls-partie-1/" type="hidden">
+    <input value="Envoyer la Webmention" type="submit">
+  </form>
+</div>
+
+<section class="webmention">
+<script id="webmention-hosted">
+  (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+  }());
+</script>
+</section>
+
+
+
+
+          <div class="footer">
+            <div class="contact">
+              <p class="h-card">
+                <span class="microcard"><img class="u-photo" src="/logo.jpg" alt="photo de @mikiane" /><a class="u-url" rel="me" href="http://christopheducamp.com">Christophe Ducamp</a></span><br />
+                <span class="p-note">Explorateur Indieweb</span><br />
+                <a rel="me" class="u-email" href="mailto:xtof@myadatalabs.com">xtof@mydatalabs.com</a>
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a rel="me" href="https://github.com/ChristopheDucamp">github.com/ChristopheDucamp</a><br />
+                <a rel="me" href="https://twitter.com/xtof_fr">twitter.com/xtof_fr</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

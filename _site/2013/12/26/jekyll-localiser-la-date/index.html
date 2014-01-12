@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Comment localiser la date en français dans Jekyll ?</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- mise en valeur syntaxe CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- CSS personnalisee -->
+        <link rel="stylesheet" href="/css/main.css">
+        
+        <!-- OpenID - delegation IndieAuth --> 
+       	<link rel="openid.server" href="https://indieauth.com/openid"/>
+		<link rel="openid.delegate" href="http://christopheducamp.com/"/>
+
+		<!-- indieauth sms + e-mail google -->
+		<link href="sms:+33632039796" rel="me">
+		<link class="u-email" href="mailto:christophe.ducamp@gmail.com" rel="me">
+
+
+       <link rel="shortcut icon" href="/logo.jpg" />
+         <meta name="mobile-web-app-capable" content="yes" />
+         <link rel="apple-touch-icon-precomposed" href="/logo.jpg" />
+
+       <!-- webmention.herokuapp.com -->
+       <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Je reprends la route...</a></h1>
+            <a class="extra" href="/">accueil</a>
+          </div>
+
+          <article class="h-entry">
+<h2 class="p-name">Comment localiser la date en français dans Jekyll ?</h2>
+<!-- #todo indiewebify - ajouter url permaliens et catégories --> 
+
+<div class="e-content post">
+<p>Vous venez d&#39;<a href="http://jekyllrb.com/docs/quickstart/">installer Jekyll en 3 lignes de commande</a> et souhaiteriez afficher toutes les dates en français ? Non programmeur comme moi, vous vous sentez déroutés par la <a href="http://jekyllrb.com/docs/templates/">doc officielle</a> sur les templates et le langage de programmation <a href="http://docs.shopify.com/themes/liquid-basics">Liquid de Shopify</a>.</p>
+
+<p>Pas de panique... </p>
+
+<p>Sans avoir étudié le truc en profondeur, l&#39;affichage des dates se fait en utilisant les tags <code>page.date</code> (ou <code>post.date</code>) fournis par Liquid. </p>
+
+<p>Rappelons qu&#39;en <em>sortie de boîte</em>, Jekyll dispose de deux pages html de structure intégrant des dates variables :  </p>
+
+<ul>
+<li><code>index.html</code> à la racine </li>
+<li><code>post.html</code> dans le répertoire &#39;_layouts&#39;</li>
+</ul>
+
+<p>Les filtres de dates <code>date_to_string</code> proposés à cette heure dans la documentation Jekyll affichent </p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">26 Dec 2013
+26 December 2013
+</code></pre></div>
+<p>Si beaucoup de sites utilisent ce format, vous pourriez trouver utile de reprendre la main sur la date ? 
+Afficher par exemple le mois en français et sans lettre capitale comme <a href="http://fr.wikipedia.org/wiki/Date#Dans_des_lettres">dans les en-têtes de lettres</a>. </p>
+
+<p>Faute de pouvoir faire tourner le <a href="https://github.com/gacha/gacha.id.lv/blob/master/_plugins/i18n_filter.rb">plugin de localisation i18n_filter</a> recommandé par <a href="http://www.toam.fr/20-05-2013-guide-demarrage-jekyll/">Toam, dans son excellent tutoriel de démarrage Jekyll</a>, je me suis inspiré des <a href="http://alanwsmith.com/jekyll-liquid-date-formatting-examples">très nombreux exemples</a> fournis par <span class="h-card"><a href="http://alanwsmith.com">Alan W. Smith</a></span> pour utiliser le filtre “<code>date:</code>” de Liquid. 
+Bookmarkez cette page ! c&#39;est une mine d&#39;or pour devenir un mage de la manipulation des <a href="http://fr.wiktionary.org/wiki/quanti%C3%A8me#Nom_commun">quantièmes</a> dans Jekyll. </p>
+
+<p>Et par curiosité, jetez aussi un oeil au <a href="http://docs.shopify.com/themes/liquid-basics/output#date">Filtre Date Liquid</a> qui offre quelques éléments basiques pour la mise en page des dates. </p>
+
+<p>Commencez doucement et simplement à vous entraîner en permutant quelques lettres de tag/filtre comme  <code>%B, %d %Y</code> pour maîtriser les formats de dates simples <strong>en anglais</strong> (<code>B</code> étant substitué par le nom du mois écrit en toutes lettres, <code>d</code> le jour du mois de 01 à 31 et <code>Y</code> l&#39;année). </p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">December, 26 2013
+</code></pre></div>
+<p><br>  </p>
+
+<h2>Une date en français lisible-pour-les-humains</h2>
+
+<p>Si vous êtes n00b comme moi sur Jekyll, la localisation des dates en français vous demandera plus d&#39;efforts. <a href="http://christopheducamp.com/w/Jekyll-localiser-la-date#localisation_du_mois">Cliquez ici</a> pour visualiser les premiers échantillons de code utilisés pour afficher la date en langage clair comme suit : </p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">Jeudi 26 décembre 2013
+</code></pre></div>
+<p>... et pour le plaisir, une variante tout en bas de casses et le nom du mois abrégé que j&#39;adapterai pour lister les posts triés par dates en page d&#39;accueil : </p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">jeudi 26 déc. 2013
+</code></pre></div>
+<h2>Date-machine ISO-8601</h2>
+
+<p>Vous aurez aussi besoin d&#39;une représentation <a href="http://christopheducamp.com/w/ISO_8601#ISO_8601">iso 8601</a> pour intégration dans l&#39;élément <a href="http://html5doctor.com/the-time-element/">time</a>. Utilisez <code>%Y-%m-%d</code> ou plus simplement le filtre <code><a href="http://jekyllrb.com/docs/templates/#filters">date<em>to</em>xmlschema</a></code> pour une version longue intégrant horaire et fuseau : </p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">2013-12-26 
+2013-12-26T04:47:00+01:00 
+</code></pre></div>
+<p><br></p>
+
+<p>Non programmeur, je serais vraiment intéressé pour trouver des solutions plus concises, propres et recommandables à ceux qui souhaitent essayer Jekyll en français ? 
+Très preneur de vos frameworks, plugins et/ou tous vos points d&#39;optimisation en langage clair pour compléter ce <a href="http://christopheducamp.com/w/Jekyll-localiser-la-date#localisation_du_mois">bout de code <em>rapide et crade</em></a> fonctionnel à cette heure en local sur la <a href="http://jekyllrb.com/news/2013/12/17/jekyll-1-4-2-released/">version 1.4.2</a>. </p>
+
+<h2>Ressources externes</h2>
+
+<ul>
+<li>La <a href="http://fr.wikipedia.org/wiki/Date#La_date_dans_les_pays">date dans les pays</a>. En France, nous utilisons  &quot;Nom du jour Jour Mois Année&quot;. (ex. : <code>Jeudi 26 décembre 2013</code>)</li>
+<li><a href="http://alanwsmith.com/jekyll-liquid-date-formatting-examples">Jekyll (and GitHub Pages) Liquid Date Formatting Examples</a> - Une page bourrée d&#39;exemples (en anglais) sur la mise en forme des dates. Indispensable pour approfondir et devenir un mage de manipulation des dates dans Liquid.</li>
+<li>Le <a href="http://docs.shopify.com/themes/liquid-basics/output#date">Filtre Date Liquid</a></li>
+<li><a href="http://jekyllrb.com/docs/templates/">Les filtres et tags dans Jekyll</a> - la documentation officielle de Jekyll</li>
+</ul>
+
+<h2>Réagir</h2>
+
+<p>Faute de savoir installer <a href="http://indiewebcamp.com/webmention">webmention</a> sur Jekyll, ce post reste  <span rel="syndication" class="u-syndication"><a href="https://twitter.com/xtof_fr/statuses/416076519794946048">ouvert à tous vos commentaires sur twitter</a></span> - <a href="http://twitter.com/xtof_fr">@xtof</a></p>
+
+</div>
+
+
+
+
+<footer>
+<span  class="p-category entry-tags"><a href="/tags/index.html#hack" title="Pages taguées hack" rel="tag" class="tag">hack</a> <a href="/tags/index.html#jekyll" title="Pages taguées jekyll" rel="tag" class="tag">jekyll</a> <a href="/tags/index.html#date" title="Pages taguées date" rel="tag" class="tag">date</a> <a href="/tags/index.html#howto" title="Pages taguées howto" rel="tag" class="tag">howto</a> <a href="/tags/index.html#localization" title="Pages taguées localization" rel="tag" class="tag">localization</a> </span>
+<p class="meta"><time class="dt-published" datetime="2013-12-26T04:47:00+01:00">
+  Jeudi 26 décembre 2013
+</time> - <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" /> Christophe Ducamp</a>
+- <a class="u-url" href="/2013/12/26/jekyll-localiser-la-date/">permalien</a></p>
+</footer>
+</article>
+
+<div>
+  Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
+  <form action="https://webmention.herokuapp.com/api/webmention" method="post">
+    <input name="source" type="url" placeholder="http://exemple.com/mon-post-cool" />
+    <input name="target" value="http://christopheducamp.com/2013/12/26/jekyll-localiser-la-date/" type="hidden">
+    <input value="Envoyer la Webmention" type="submit">
+  </form>
+</div>
+
+<section class="webmention">
+<script id="webmention-hosted">
+  (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+  }());
+</script>
+</section>
+
+
+
+
+          <div class="footer">
+            <div class="contact">
+              <p class="h-card">
+                <span class="microcard"><img class="u-photo" src="/logo.jpg" alt="photo de @mikiane" /><a class="u-url" rel="me" href="http://christopheducamp.com">Christophe Ducamp</a></span><br />
+                <span class="p-note">Explorateur Indieweb</span><br />
+                <a rel="me" class="u-email" href="mailto:xtof@myadatalabs.com">xtof@mydatalabs.com</a>
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a rel="me" href="https://github.com/ChristopheDucamp">github.com/ChristopheDucamp</a><br />
+                <a rel="me" href="https://twitter.com/xtof_fr">twitter.com/xtof_fr</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
