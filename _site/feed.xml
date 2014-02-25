@@ -3,8 +3,8 @@
   <channel>
     <title>sur la route de l&#39;indieweb...</title>
     <description>une route indieweb</description>
-    <link></link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://christopheducamp.com</link>
+    <atom:link href="http://christopheducamp.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Design : Joel Glovier rhabille Jekyll</title>
@@ -24,13 +24,13 @@
 
 &lt;h2&gt;Pour les geeks,  les détails techniques du Pull Request&lt;/h2&gt;
 
-&lt;p&gt;Le travail presque achevé a été effectué sur &lt;code&gt;jekyll-new&lt;/code&gt;, un repo séparé : &lt;a href=&quot;jekyll-new.joelglovier.com&quot;&gt;jekyll-new.joelglovier.com&lt;/a&gt;.  Tous les détails pour les geeks et les commentaires de Joel peuvent être trouvés et seront à suivre en live ces prochains jours sur la PR &lt;a href=&quot;https://github.com/jekyll/jekyll/pull/2050&quot;&gt;https://github.com/jekyll/jekyll/pull/2050&lt;/a&gt; pour validation des dernières révisions.&lt;/p&gt;
+&lt;p&gt;Le travail presque achevé a été effectué sur &lt;code&gt;jekyll-new&lt;/code&gt;, un repo séparé : &lt;a href=&quot;http://jekyll-new.joelglovier.com&quot;&gt;jekyll-new.joelglovier.com&lt;/a&gt;.  Tous les détails pour les geeks et les commentaires de Joel peuvent être trouvés et seront à suivre en live ces prochains jours sur la PR &lt;a href=&quot;https://github.com/jekyll/jekyll/pull/2050&quot;&gt;https://github.com/jekyll/jekyll/pull/2050&lt;/a&gt; pour validation des dernières révisions.&lt;/p&gt;
 
 &lt;p&gt;Merci Joël. &lt;em&gt;Keep on the good work.&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 25 Feb 2014 00:00:00 +0100</pubDate>
-        <link>//2014/02/25/nouveau-template-jekyll-par-joel-glovier/</link>
-        <guid isPermaLink="true">//2014/02/25/nouveau-template-jekyll-par-joel-glovier/</guid>
+        <link>http://christopheducamp.com//2014/02/25/nouveau-template-jekyll-par-joel-glovier/</link>
+        <guid isPermaLink="true">http://christopheducamp.com//2014/02/25/nouveau-template-jekyll-par-joel-glovier/</guid>
       </item>
     
       <item>
@@ -64,8 +64,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 09 Feb 2014 00:00:00 +0100</pubDate>
-        <link>//2014/02/09/rakefile/</link>
-        <guid isPermaLink="true">//2014/02/09/rakefile/</guid>
+        <link>http://christopheducamp.com//2014/02/09/rakefile/</link>
+        <guid isPermaLink="true">http://christopheducamp.com//2014/02/09/rakefile/</guid>
       </item>
     
       <item>
@@ -182,8 +182,8 @@ Regardez la page &lt;a href=&quot;http://github.com/zkarpinski/Jekyll-Admin/blob
 &lt;p&gt;Les Pages GitHub sont motorisées en coulisses par Jekyll, par conséquent si vous cherchez un hébergement zéro-tracas, une solution à coût zéro, les Pages GitHub sont un moyen génial pour &lt;a href=&quot;http://pages.github.com/&quot;&gt;héberger gratuitement votre site web-motorisé-par-Jekyll&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Jan 2014 08:30:00 +0100</pubDate>
-        <link>//2014/01/12/deploiement-Jekyll/</link>
-        <guid isPermaLink="true">//2014/01/12/deploiement-Jekyll/</guid>
+        <link>http://christopheducamp.com//2014/01/12/deploiement-Jekyll/</link>
+        <guid isPermaLink="true">http://christopheducamp.com//2014/01/12/deploiement-Jekyll/</guid>
       </item>
     
       <item>
@@ -206,8 +206,8 @@ L&amp;#39;option pourra s&amp;#39;avérer bien pratique pour toutes  &lt;a href=
 &lt;p&gt;P.S. à cette heure, la webmention a été envoyée par le service web &lt;a href=&quot;http://indiewebify.me&quot;&gt;indiewebify.me&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 11 Jan 2014 14:47:00 +0100</pubDate>
-        <link>//2014/01/11/Webmentions-Jekyll/</link>
-        <guid isPermaLink="true">//2014/01/11/Webmentions-Jekyll/</guid>
+        <link>http://christopheducamp.com//2014/01/11/Webmentions-Jekyll/</link>
+        <guid isPermaLink="true">http://christopheducamp.com//2014/01/11/Webmentions-Jekyll/</guid>
       </item>
     
       <item>
@@ -275,8 +275,8 @@ Très preneur de vos frameworks, plugins et/ou tous vos points d&amp;#39;optimis
 &lt;p&gt;Faute de savoir installer &lt;a href=&quot;http://indiewebcamp.com/webmention&quot;&gt;webmention&lt;/a&gt; sur Jekyll, ce post reste  &lt;span rel=&quot;syndication&quot; class=&quot;u-syndication&quot;&gt;&lt;a href=&quot;https://twitter.com/xtof_fr/statuses/416076519794946048&quot;&gt;ouvert à tous vos commentaires sur twitter&lt;/a&gt;&lt;/span&gt; - &lt;a href=&quot;http://twitter.com/xtof_fr&quot;&gt;@xtof&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 26 Dec 2013 04:47:00 +0100</pubDate>
-        <link>//2013/12/26/jekyll-localiser-la-date/</link>
-        <guid isPermaLink="true">//2013/12/26/jekyll-localiser-la-date/</guid>
+        <link>http://christopheducamp.com//2013/12/26/jekyll-localiser-la-date/</link>
+        <guid isPermaLink="true">http://christopheducamp.com//2013/12/26/jekyll-localiser-la-date/</guid>
       </item>
     
       <item>
@@ -351,8 +351,8 @@ La dernière moitié de la décennie a donné naissance à un tout un tas de nou
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 22 Dec 2013 13:00:00 +0100</pubDate>
-        <link>//2013/12/22/markdow-avenir-ecriture/</link>
-        <guid isPermaLink="true">//2013/12/22/markdow-avenir-ecriture/</guid>
+        <link>http://christopheducamp.com//2013/12/22/markdow-avenir-ecriture/</link>
+        <guid isPermaLink="true">http://christopheducamp.com//2013/12/22/markdow-avenir-ecriture/</guid>
       </item>
     
       <item>
@@ -735,8 +735,8 @@ Nous pouvons faire ça exactement de la même façon qu&amp;#39;avant. Vérifiez
 &lt;p&gt;Si ça vous intéresse de vous taper un peu de code, &lt;a href=&quot;https://github.com/maban/christmas-recipes&quot;&gt;tous les fichiers de ce tutoriel sont disponibles sur GitHub&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sat, 21 Dec 2013 14:15:00 +0100</pubDate>
-        <link>//2013/12/21/demarrer-avec-pages-github/</link>
-        <guid isPermaLink="true">//2013/12/21/demarrer-avec-pages-github/</guid>
+        <link>http://christopheducamp.com//2013/12/21/demarrer-avec-pages-github/</link>
+        <guid isPermaLink="true">http://christopheducamp.com//2013/12/21/demarrer-avec-pages-github/</guid>
       </item>
     
       <item>
@@ -822,8 +822,8 @@ Nous pouvons faire ça exactement de la même façon qu&amp;#39;avant. Vérifiez
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 16 Dec 2013 23:35:44 +0000</pubDate>
-        <link>//2013/12/16/github-etre-social/</link>
-        <guid isPermaLink="true">//2013/12/16/github-etre-social/</guid>
+        <link>http://christopheducamp.com//2013/12/16/github-etre-social/</link>
+        <guid isPermaLink="true">http://christopheducamp.com//2013/12/16/github-etre-social/</guid>
       </item>
     
       <item>
@@ -990,8 +990,8 @@ git branch -d *mabranche*
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 16 Dec 2013 14:36:00 +0000</pubDate>
-        <link>//2013/12/16/forker-un-repo-github/</link>
-        <guid isPermaLink="true">//2013/12/16/forker-un-repo-github/</guid>
+        <link>http://christopheducamp.com//2013/12/16/forker-un-repo-github/</link>
+        <guid isPermaLink="true">http://christopheducamp.com//2013/12/16/forker-un-repo-github/</guid>
       </item>
     
       <item>
@@ -1115,8 +1115,8 @@ git branch -d *mabranche*
 &lt;p&gt;&lt;img src=&quot;http://imgs.xkcd.com/comics/git_commit.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 16 Dec 2013 10:19:00 +0000</pubDate>
-        <link>//2013/12/16/creer-un-repo-GitHub/</link>
-        <guid isPermaLink="true">//2013/12/16/creer-un-repo-GitHub/</guid>
+        <link>http://christopheducamp.com//2013/12/16/creer-un-repo-GitHub/</link>
+        <guid isPermaLink="true">http://christopheducamp.com//2013/12/16/creer-un-repo-GitHub/</guid>
       </item>
     
   </channel>

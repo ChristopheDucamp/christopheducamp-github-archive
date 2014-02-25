@@ -23,7 +23,7 @@ Premiers pas rapides ce soir sur un premier test d'implémentation. Joué au *Ch
 
 ## Pour les geeks,  les détails techniques du Pull Request
 
-Le travail presque achevé a été effectué sur `jekyll-new`, un repo séparé : [jekyll-new.joelglovier.com](jekyll-new.joelglovier.com).  Tous les détails pour les geeks et les commentaires de Joel peuvent être trouvés et seront à suivre en live ces prochains jours sur la PR [https://github.com/jekyll/jekyll/pull/2050](https://github.com/jekyll/jekyll/pull/2050) pour validation des dernières révisions.
+Le travail presque achevé a été effectué sur `jekyll-new`, un repo séparé : [jekyll-new.joelglovier.com](http://jekyll-new.joelglovier.com).  Tous les détails pour les geeks et les commentaires de Joel peuvent être trouvés et seront à suivre en live ces prochains jours sur la PR [https://github.com/jekyll/jekyll/pull/2050](https://github.com/jekyll/jekyll/pull/2050) pour validation des dernières révisions.
 
 Merci Joël. *Keep on the good work.*
 
