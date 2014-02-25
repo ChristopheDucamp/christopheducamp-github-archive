@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>GitHub : Être Social</title>
+    <title>Jekyll : Générer un Post avec Rakefile</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="/2013/12/16/github-etre-social//" />
+    <link rel="canonical" href="/2014/02/09/rakefile//" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -69,92 +69,40 @@
       <div class="post h-entry hentry">
 
   <header class="post-header">
-    <h1 class="p-name entry-title">GitHub : Être Social</h1>
-    <p class="meta"><time class="dt-published" datetime="2013-12-16T23:35:44Z">
-  Lundi 16 décembre 2013
+    <h1 class="p-name entry-title">Jekyll : Générer un Post avec Rakefile</h1>
+    <p class="meta"><time class="dt-published" datetime="2014-02-09T00:00:00+01:00">
+  Dimanche 9 février 2014
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="/2013/12/16/github-etre-social/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="/2014/02/09/rakefile/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
-  <p><strong>Lien de référence</strong> : <span class="h-cite"><cite class="p-name u-url"><a href="https://help.github.com/articles/be-social">Create A Repo</a></cite></span></p>
+  <p><em>Les nom et permalien de ce post ont été générés automatiquement à l&#39;aide de <code>rakefile</code>...</em></p>
 
-<p>Si vous vous trouvez sur cette page, je peux supposer que vous <a href="/2013/12/15/Github-pour-nuls-partie-1/">débutez sur Git et GitHub</a>. Ce petit guide vous fera réviser quelques fondamentaux et vous aidera pour vos premiers pas sur GitHub.</p>
+<p>J&#39;envisage ce trimestre de raffiner sérieusement l&#39;architecture et le design de ce site personnel destiné à quelques futurs tests d&#39;<em><a href="http://indiewebify.me">indiewebification</a></em>. Bien d&#39;accord avec vous, ce site bien que fonctionnel demeure vraiment très moche (et qui plus est, ennuyeux au possible !)  Ne souhaitant pas tomber dans la facilité d&#39;installer un <a href="http://jekyllthemes.org/">magnifique thème pré-construit</a> sans rien y comprendre, je me donne encore quelques mois pour étudier  quelques fondamentaux CSS avant de m&#39;aventurer sur les pentes escarpées du &quot;look and feel&quot;.  Pour ceux qui seraient pressés de chevaucher Jekyll, je ne peux que recommander la lecture de l&#39;excellent guide <a href="https://github.com/bebraw/yeswejekyll">Yes We Jekyll</a> publié l&#39;année dernière par @<span class='h-card'><a href="https://twitter.com/bebraw">bebraw</a></span>.  </p>
 
-<h2>Suivez Un Ami</h2>
+<p>Outre quelques excellentes <a href="http://yeswejekyll.com/#from_meek_to_neat">sections de design</a> pour débutants, ce guide regorge d&#39;astuces. Parmi lesquelles, un truc bien utile et facile à mettre en place pour <em>éviter —aux paresseux comme moi— de créer manuellement les noms de fichiers des posts</em>.</p>
 
-<p>L&#39;une des fonctionnalités géniales de GitHub est la capacité de pouvoir voir sur quoi d&#39;autres personnes travaillent et avec qui elles se connectent. Quand vous suivez quelqu&#39;un, vous recevrez des notifications de son activité GitHub sur votre tableau de bord.</p>
+<h3>Comment éviter de créer un fichier de post à la main ?</h3>
 
-<h3>Étape 1 : Choisir un ami.</h3>
+<p><a href="http://yeswejekyll.com/#_posts">Seule la section originale fait rérérence</a> : </p>
 
-<p>Pourquoi ne pas suivre l&#39;une de ces personnes vraiment cools de l&#39;IndieWebCamp ou de GitHub (sans oublier tanuki leur animal !) :</p>
+<p>Jekyll fournit quelques utilitaires qui facilitent la maintenance d&#39;un blog. Le répertoire  <code>_posts</code>, comme vous avez pu peut-être <a href="http://jekyllrb.com/docs/posts/">l&#39;étudier dans la documentation</a>, contient tous vos posts de blog. Il utilise une forme spécifique de schéma de nommage. Mais plutôt que de produire ces fichiers à la main, je recommande d&#39;utiliser <a href="https://github.com/plusjade/jekyll-bootstrap/blob/master/Rakefile">jekyll-bootstrap Rakefile</a>. </p>
 
-<p><span rel="muse met colleague"><a href="https://github.com/tantek"><img src="https://0.gravatar.com/avatar/02cd45622e90350cc061aaaa02229195" alt="image" title="tantek"></a></span>
-<span rel="muse met colleague"><a href="https://github.com/aaronpk"><img src="https://2.gravatar.com/avatar/11954e59b49809173d48133ec4047fce" alt="image" title="aaronpk"></a></span>
-<span rel="muse met colleague"><a href="https://github.com/caseorganic"><img src="https://2.gravatar.com/avatar/c4778863737ffb3769f44e2d4a8bf758" alt="image" title="caseorganic"></a></span>
-<a href="https://github.com/laurenorsini"><img src="https://0.gravatar.com/avatar/7f7c17c191205b76ecef70e10fa3f38b" alt="image" title="laurenorsini"></a>
-<span rel="muse friend met colleague"><a href="https://github.com/thierrymarianne"><img src="https://1.gravatar.com/avatar/28a7b9aa6dcdb0f426769c82b6e62b12" alt="image" title="thierrymarianne"></a></span>
-<span rel="muse met colleague"><a href="https://github.com/kevinmarks"><img src="https://2.gravatar.com/avatar/b7c6ec292365e3d9ab7bdceda01ea532" alt="image" title="kevinmarks"></a></span>
-<span rel="muse met colleague"><a href="https://github.com/evanp"><img src="https://2.gravatar.com/avatar/d54b3146dc0b7e92cf252e508c280abd" alt="image" title="evan"></a></span>
-<a href="https://github.com/jlord"><img src="https://secure.gravatar.com/avatar/e26a281b6bd0c2145e8d0fcc834a56fb" alt="image" title="jlord"></a>
-<a href="https://github.com/mojombo"><img src="https://secure.gravatar.com/avatar/25c7c18223fb42a4c6ae1c8db6f50f9b" alt="image" title="mojombo"></a>
-<a href="https://github.com/tekkub"><img src="https://secure.gravatar.com/avatar/472814aac7576b67da59ea79fcbf7d66" alt="image"></a>
-<a href="https://github.com/muan"><img src="https://secure.gravatar.com/avatar/3aeb5655cf56bb8cc5583da71c757dc4" alt="image"></a>
-<a href="https://github.com/mdo"><img src="https://secure.gravatar.com/avatar/bc4ab438f7a4ce1c406aadc688427f2c" alt="image"></a></p>
+<p>Copiez simplement le fichier <code>rakefile</code> à la racine de votre projet et examinez-le si le cœur vous en dit.</p>
 
-<h3>Étape 2 : Suivez cet ami (sans lui foutre les jetons !)</h3>
+<p>La tâche <code>rake</code>se lance à la ligne de commande et crée un nom de fichier proprement formaté avec la date et le FrontMatter YAML. Assurez-vous de bien spécifier son titre. Par défaut, la date générée sera la date du jour.</p>
 
-<p>Une fois que vous êtes sur une de ses pages, cliquez sur le bouton &quot;follow&quot;.</p>
+<p>Examinez le fichier généré et remplissez les détails et le contenu. Par défaut, il pointera sur un layout <code>post</code>.</p>
 
-<p><img src="https://github-images.s3.amazonaws.com/help/follow-user-button.png" alt="image" title="Bouton utilisateur Follow"></p>
+<p>Afin de générer un post de blog (et si ce n&#39;est pas encore fait ?), créez d&#39;abord un répertoire <code>_posts</code> et après ça, lancez simplement <code>rake post title=&quot;Nom de Votre Post&quot;</code>. </p>
 
-<p>Bravo ! Vous suivez maintenant un ami.</p>
-
-<h2>Suivre un Projet</h2>
-
-<p>Arrivé à un certain stade, vous pourriez vouloir rester informé(e) sur un projet spécifique. Nous avons fait en sorte que ce soit facile à faire.</p>
-
-<h3>Regarder un projet</h3>
-
-<p>Notre ami l&#39;Octocat a un projet appelé <a href="https://github.com/octocat/Hello-World">Hello World</a> que nous aimerions suivre.</p>
-
-<p>Une fois que vous êtes sur la page projet, vous remarquerez qu&#39;il y a un bouton &quot;watch&quot; en haut de la page. Cliquez dessus.</p>
-
-<p><img src="https://github-images.s3.amazonaws.com/help/repo-actions-watch.png" alt="Image" title="Watch repository button"></p>
-
-<p>Félicitations ! Vous suiviez désormais le projet <em>Hello World</em>. Si l&#39;Octocat le met à jour, vous verrez cela arriver dans votre tableau de bord.</p>
-
-<h2>Encore Plus de Choses À Faire</h2>
-
-<p>Vous avez fait l&#39;essentiel du parcours d&#39;interaction sociale offert par GitHub, mais ne vous arrêtez pas là ! Regardez ces autres fonctionnalités sociales :</p>
-
-<h3>Demandes de Pull</h3>
-
-<p><img src="https://github-images.s3.amazonaws.com/help/repo-actions-pullrequest.png" alt="Image" title="Pull Request Button"></p>
-
-<p>Vous pourriez vouloir contribuer sur le projet de quelqu&#39;un d&#39;autre, que ce soit pour ajouter des fonctionnalités ou réparer des bugs. Après avoir fait vos modifications, vous pouvez le faire savoir à l&#39;auteur original en lui envoyant une <a href="https://help.github.com/articles/using-pull-requests">demande de pull</a>.</p>
-
-<h3>Problèmes</h3>
-
-<p><img src="https://github-images.s3.amazonaws.com/help/repo-tabs-issues.png" alt="Image" title="Bouton Issues"></p>
-
-<p>Quand vous collaborez sur un projet avec quelqu&#39;un, vous traversez parfois des problèmes ayant besoin d&#39;être résolus. Pour vous aider à conserver une trace de ces problèmes, chaque dépôt GitHub dispose d&#39;une section appelée &quot;Issues&quot;. Par exemple, <a href="https://github.com/octocat/Spoon-Knife/issues">regardez les problèmes pour le dépôt Spoon-Knife</a>.</p>
-
-<h3>Organisations</h3>
-
-<p><img src="https://github-images.s3.amazonaws.com/help/dashboard-contextswitcher.png" alt="Image" title="Liste déroulante pour changer de contexte de compte"></p>
-
-<p>Vous-êtes-vous déjà confronté à vouloir collaborer avec plusieurs développeurs sur un même projet ? Vous pouvez manager tout le monde avec les Organsiations ! Avec une organisation, vous pouvez constituer des équipes avec des permissions spéciales, disposer d&#39;un profil public d&#39;organisation, et garder une trace de l&#39;activité dans l&#39;organisation.</p>
-
-<h2>Fêtons ça !</h2>
-
-<p>Bravo ! Vous êtes un vrai mondain.</p>
+<h3>Quelques trucs en rapport à étudier cette année</h3>
 
 <ul>
-<li><a href="/2013/12/10/installer-git/">Installer Git</a></li>
-<li><a href="/2013/12/16/creer_un_repo_GitHub/">Créer un Repo</a></li>
-<li><a href="/2013/12/16/forker-un-repo-github/">Forker un Repo</a></li>
-<li><strong>Etre Social</strong></li>
+<li> La tâche <code>rake</code>n&#39;écrase jamais les posts existants à moins que vous ne lui disiez de le faire</li>
+<li>Passer des paramètres de date et des tags (instructions de ligne de commande à étudier)</li>
+<li><a href="https://github.com/avillafiorita/jekyll-rakefile">jekyll-rakefile</a> : Un <code>rakefile</code> pour simplifier la prévisualisation et le déploiement de sites web jekyll. </li>
 </ul>
 
   </article>
@@ -166,7 +114,7 @@ Christophe Ducamp</a> • <a class="u-url" href="/2013/12/16/github-etre-social/
   Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
   <form action="https://webmention.herokuapp.com/api/webmention" method="post">
     <input name="source" type="url" placeholder="http://exemple.com/mon-post-cool" />
-    <input name="target" value="http://christopheducamp.com/2013/12/16/github-etre-social/" type="hidden">
+    <input name="target" value="http://christopheducamp.com/2014/02/09/rakefile/" type="hidden">
     <input value="Envoyer la Webmention" type="submit">
   </form>
 </div>

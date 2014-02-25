@@ -1,9 +1,10 @@
-name: Je reprends la route...
+name: sur la route de l'indieweb...
 markdown: redcarpet
-pygments: true
+highlighter : pygments
 permalink: /:year/:month/:day/:title/
-excerpt_separator: noifniof3nioaniof3nioafafinoafnoif
 #repository: https://github.com/christopheducamp/christopheducamp.github.io
+description: une route indieweb
+#url: "http://christopheducamp.com"
 
 ftp_host: ftp.christopheducamp.com
 ftp_username: christoplj
