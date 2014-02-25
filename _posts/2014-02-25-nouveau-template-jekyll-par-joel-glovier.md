@@ -1,18 +1,17 @@
 ---
 layout: post
-title: "Le Nouveau Template Jekyll de Joel Glovier (GitHub)"
-description: "Le nouveau thème de base Jekyll"
+title: "Design : Joel Glovier rhabille Jekyll"
+description: "En avant-première, le nouveau thème par défaut de Jekyll"
 category: template 
 tags: [jekyll, design]
 
 
 ---
-## En avant-première, le nouveau thème par défaut de Jekyll 
 
 <blockquote class="twitter-tweet" lang="fr"><p>Just finished an upgrade of the default <a href="https://twitter.com/jekyllrb">@jekyllrb</a> blog theme. <a href="https://t.co/hpLZs2RS4R">https://t.co/hpLZs2RS4R</a> (or preview it: <a href="http://t.co/QAJmm9wS8Q">http://t.co/QAJmm9wS8Q</a>)</p>&mdash; Joel Glovier (@jglovier) <a href="https://twitter.com/jglovier/statuses/438062229108563968">24 Février 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Cela fait quelques jours que je suis avec intérêt les évolutions de <a class="h-card" href="http://joelglovier.com/">Joel</a> sur son repo [jekyll-new](https://github.com/jglovier/jekyll-new), le nouveau template qui devrait être implémenté par défaut dans la future version de Jekyll 2.0. 
+Cela fait quelques jours que je savoure avec grand intérêt les évolutions de <a class="h-card" href="http://joelglovier.com/">Joel</a> sur son repo [jekyll-new](https://github.com/jglovier/jekyll-new), le nouveau template qui sera implémenté par défaut dans la version 2.0. à venir de Jekyll (motorisation puissante de génération de sites web). 
 
 Très simple et épuré, ce template se montre au premier coup d'oeil carrément plus élégant et pro que la version "out-of-the-box" existante qui décorait ce site...  
 

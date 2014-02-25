@@ -7,14 +7,12 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Le Nouveau Template Jekyll de Joel Glovier (GitHub)</title>
-        <description>&lt;h2&gt;En avant-première, le nouveau thème par défaut de Jekyll&lt;/h2&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;fr&quot;&gt;&lt;p&gt;Just finished an upgrade of the default &lt;a href=&quot;https://twitter.com/jekyllrb&quot;&gt;@jekyllrb&lt;/a&gt; blog theme. &lt;a href=&quot;https://t.co/hpLZs2RS4R&quot;&gt;https://t.co/hpLZs2RS4R&lt;/a&gt; (or preview it: &lt;a href=&quot;http://t.co/QAJmm9wS8Q&quot;&gt;http://t.co/QAJmm9wS8Q&lt;/a&gt;)&lt;/p&gt;&amp;mdash; Joel Glovier (@jglovier) &lt;a href=&quot;https://twitter.com/jglovier/statuses/438062229108563968&quot;&gt;24 Février 2014&lt;/a&gt;&lt;/blockquote&gt;
+        <title>Design : Joel Glovier rhabille Jekyll</title>
+        <description>&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;fr&quot;&gt;&lt;p&gt;Just finished an upgrade of the default &lt;a href=&quot;https://twitter.com/jekyllrb&quot;&gt;@jekyllrb&lt;/a&gt; blog theme. &lt;a href=&quot;https://t.co/hpLZs2RS4R&quot;&gt;https://t.co/hpLZs2RS4R&lt;/a&gt; (or preview it: &lt;a href=&quot;http://t.co/QAJmm9wS8Q&quot;&gt;http://t.co/QAJmm9wS8Q&lt;/a&gt;)&lt;/p&gt;&amp;mdash; Joel Glovier (@jglovier) &lt;a href=&quot;https://twitter.com/jglovier/statuses/438062229108563968&quot;&gt;24 Février 2014&lt;/a&gt;&lt;/blockquote&gt;
 
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;Cela fait quelques jours que je suis avec intérêt les évolutions de &lt;a class=&quot;h-card&quot; href=&quot;http://joelglovier.com/&quot;&gt;Joel&lt;/a&gt; sur son repo &lt;a href=&quot;https://github.com/jglovier/jekyll-new&quot;&gt;jekyll-new&lt;/a&gt;, le nouveau template qui devrait être implémenté par défaut dans la future version de Jekyll 2.0. &lt;/p&gt;
+&lt;p&gt;Cela fait quelques jours que je savoure avec grand intérêt les évolutions de &lt;a class=&quot;h-card&quot; href=&quot;http://joelglovier.com/&quot;&gt;Joel&lt;/a&gt; sur son repo &lt;a href=&quot;https://github.com/jglovier/jekyll-new&quot;&gt;jekyll-new&lt;/a&gt;, le nouveau template qui sera implémenté par défaut dans la version 2.0. à venir de Jekyll (motorisation puissante de génération de sites web). &lt;/p&gt;
 
 &lt;p&gt;Très simple et épuré, ce template se montre au premier coup d&amp;#39;oeil carrément plus élégant et pro que la version &amp;quot;out-of-the-box&amp;quot; existante qui décorait ce site...  &lt;/p&gt;
 
