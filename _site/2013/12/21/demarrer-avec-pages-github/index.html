@@ -7,7 +7,7 @@
     <title>Démarrer avec Pages GitHub (Plus Bonus Jekyll)</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="/2013/12/21/demarrer-avec-pages-github//" />
+    <link rel="canonical" href="/2013/12/21/demarrer-avec-pages-github/" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -461,7 +461,6 @@ Nous pouvons faire ça exactement de la même façon qu&#39;avant. Vérifiez vot
     url = url && url[0] ? url[0].href : false;
     sn.type = "text/javascript"; sn.async = true;
     sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
-    sn.src = sn.src.substring(0, sn.src.length - 3);
     s.parentNode.insertBefore(sn, s);
   }());
 </script>

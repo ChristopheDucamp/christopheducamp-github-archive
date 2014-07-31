@@ -7,7 +7,7 @@
     <title>Comment Déployer Jekyll</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="/2014/01/12/deploiement-Jekyll//" />
+    <link rel="canonical" href="/2014/01/12/deploiement-Jekyll/" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -212,7 +212,6 @@ Regardez la page <a href="http://github.com/zkarpinski/Jekyll-Admin/blob/master/
     url = url && url[0] ? url[0].href : false;
     sn.type = "text/javascript"; sn.async = true;
     sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
-    sn.src = sn.src.substring(0, sn.src.length - 3);
     s.parentNode.insertBefore(sn, s);
   }());
 </script>
