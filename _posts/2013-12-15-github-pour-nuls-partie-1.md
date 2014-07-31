@@ -6,7 +6,7 @@ categories: github git tutoriel
 ---
 Traduction d'un article original de <span class="p-author h-card">[Lauren Orsini](http://otakujournalist.com/about-the-author/)</span> publié le <time class="dt-published" value="2013-11-30">30 septembre 2013</time> pour ReadWriteWeb. Seul le [lien original fait référence](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#feed=/author/lauren-orsini&awesm=~omyHpouFOs03MN). 
 
-La traduction reste à raffiner avec la pratique de cet outil. [Seconde partie en cours d'étude](/news/2013/12/16/GitHub-pour-nuls-partie-2/) pour me lancer sous peu dans les premiers *commits* à la ligne de commande. Mise en forme prévue pour le plan de route [indieweb](http://indiewebamp.com) 2014. Merci. - <span class="u-syndication">[xtof_fr](https://twitter.com/xtof_fr/status/412238889739247616)</span>
+La traduction reste à raffiner avec la pratique de cet outil. [Seconde partie en cours d'étude](/2013/12/16/gitHub-pour-nuls-partie-2/) pour me lancer sous peu dans les premiers *commits* à la ligne de commande. Mise en forme prévue pour le plan de route [indieweb](http://indiewebamp.com) 2014. Merci. - <span class="u-syndication">[xtof_fr](https://twitter.com/xtof_fr/status/412238889739247616)</span>
 
 ### *GitHub est plus qu'un simple outil de programmation. Si vous voulez collaborer sur n'importe quoi, vous devriez l'essayer. 1ère Partie pour apprendre à démarrer sur GitHub.*
 
@@ -172,7 +172,7 @@ Si vous ouvrez le répertoire, il ne s'affichera pas différemment, parce que ce
 ![Image](http://xtof.me/images/2013/Terminal-Git-Creer-Repo.png "Créer un dépôt local Git en trois étapes.") 
 
 Néanmoins, votre ordinateur réalise maintenant que ce répertoire est *git-ready*, et vous pouvez commencer à entrer des commandes Git. Maintenant, vous disposez à la fois d'un dépôt local et en ligne pour votre projet. 
-Dans la [seconde partie](/2013/12/16/GitHub-pour-nuls-partie-2/), vous apprendrez comment faire votre premier commit vers des dépôts locaux et sur Github. Et vous en saurez plus sur quelques ressources géniales de Github.
+Dans la [seconde partie](/2013/12/16/gitHub-pour-nuls-partie-2/), vous apprendrez comment faire votre premier commit vers des dépôts locaux et sur Github. Et vous en saurez plus sur quelques ressources géniales de Github.
 
 ## Voir aussi 
 

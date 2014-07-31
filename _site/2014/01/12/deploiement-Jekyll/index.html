@@ -7,7 +7,7 @@
     <title>Comment Déployer Jekyll</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="http://christopheducamp.com/2014/01/12/deploiement-Jekyll//" />
+    <link rel="canonical" href="/2014/01/12/deploiement-Jekyll//" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -34,7 +34,7 @@
 
 </head>
 
-    <body>
+    <body class="h-feed">
 
     <header class="site-header">
 
@@ -73,7 +73,7 @@
     <p class="meta"><time class="dt-published" datetime="2014-01-12T08:30:00+01:00">
   Dimanche 12 janvier 2014
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/2014/01/12/deploiement-Jekyll/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="/2014/01/12/deploiement-Jekyll/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
@@ -91,16 +91,14 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Par exemple, le fichier <code>_config.yml</code> de cette instance hébergée chez OVH se présente comme suit : </p>
 
-<div class="highlight"><pre><code class="yaml"><span class="l-Scalar-Plain">ftp_host</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">ftp.christopheducamp.com</span>
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">ftp_host</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">ftp.christopheducamp.com</span>
 <span class="l-Scalar-Plain">ftp_username</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">monnomutilisateur</span>
 <span class="l-Scalar-Plain">ftp_dir</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/www</span>
-<span class="l-Scalar-Plain">ftp_passive</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">false</span>
-</code></pre></div>
+<span class="l-Scalar-Plain">ftp_passive</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">false</span></code></pre></div>
 
 <p>Pour générer le site et le déployer, il me suffit alors de reprendre la ligne de commande, de me placer à la racine du projet puis de taper la commande :</p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>glynn
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>glynn</code></pre></div>
 
 <p>(C&#39;est la solution que j&#39;ai retenue pour le moment : une ligne de commande puis un mot de passe, et tout le site est régénéré et mis en ligne !)</p>
 
@@ -121,36 +119,32 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Pour faire qu&#39;un serveur distant gère le déploiement pour vous à chaque fois que vous poussez des modifications en utilisant Git, vous pouvez créer un compte utilisateur qui dispose de toutes les clés publiques qui sont autorisées pour déployer dans son fichier <code>authorized_keys</code>.  Une fois cela mis en place, régler le hook post-receive se fait comme suit : </p>
 
-<div class="highlight"><pre><code class="bash">laptop<span class="nv">$ </span>ssh deployer@example.com
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">laptop<span class="nv">$ </span>ssh deployer@example.com
 server<span class="nv">$ </span>mkdir monrepo.git
 server<span class="nv">$ </span><span class="nb">cd </span>monrepo.git
 server<span class="nv">$ </span>git --bare init
 server<span class="nv">$ </span>cp hooks/post-receive.sample hooks/post-receive
-server<span class="nv">$ </span>mkdir /var/www/monrepo
-</code></pre></div>
+server<span class="nv">$ </span>mkdir /var/www/monrepo</code></pre></div>
 
 <p>Ensuite ajoutez les lignes suivantes aux hooks/post-receive et assurez-vous que Jekyll soit installé sur le serveur :</p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">GIT_REPO</span><span class="o">=</span><span class="nv">$HOME</span>/monrepo.git
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">GIT_REPO</span><span class="o">=</span><span class="nv">$HOME</span>/monrepo.git
 <span class="nv">TMP_GIT_CLONE</span><span class="o">=</span><span class="nv">$HOME</span>/tmp/monrepo
 <span class="nv">PUBLIC_WWW</span><span class="o">=</span>/var/www/monrepo
 
 git clone <span class="nv">$GIT_REPO</span> <span class="nv">$TMP_GIT_CLONE</span>
 jekyll build -s <span class="nv">$TMP_GIT_CLONE</span> -d <span class="nv">$PUBLIC_WWW</span>
 rm -Rf <span class="nv">$TMP_GIT_CLONE</span>
-<span class="nb">exit</span>
-</code></pre></div>
+<span class="nb">exit</span></code></pre></div>
 
 <p>Pour finir, faites tourner la commande suivante sur n&#39;importe quel ordinateur d&#39;utilisateur ayant de déployer en utilisant ce hook : </p>
 
-<div class="highlight"><pre><code class="bash">laptops<span class="nv">$ </span>git remote add deploy deployer@exemple.com:~/monrepo.git
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">laptops<span class="nv">$ </span>git remote add deploy deployer@exemple.com:~/monrepo.git</code></pre></div>
 
 <p>Déployer est maintenant aussi facile que de dire à nginx ou Apache de regarder 
 <code>/var/www/monrepo</code> et de faire tourner ce qui suit : </p>
 
-<div class="highlight"><pre><code class="bash">laptops<span class="nv">$ </span>git push deploy master
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">laptops<span class="nv">$ </span>git push deploy master</code></pre></div>
 
 <h3>Rake</h3>
 
@@ -192,13 +186,13 @@ Regardez la page <a href="http://github.com/zkarpinski/Jekyll-Admin/blob/master/
   
 <ul>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#déploiement" title="Pages taguées déploiement">déploiement</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#déploiement" title="Pages taguées déploiement">déploiement</a></li>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#jekyll" title="Pages taguées jekyll">jekyll</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#jekyll" title="Pages taguées jekyll">jekyll</a></li>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#FTP" title="Pages taguées FTP">FTP</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#FTP" title="Pages taguées FTP">FTP</a></li>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#glynn" title="Pages taguées glynn">glynn</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#glynn" title="Pages taguées glynn">glynn</a></li>
 
 </ul>
 <div>
@@ -218,6 +212,7 @@ Regardez la page <a href="http://github.com/zkarpinski/Jekyll-Admin/blob/master/
     url = url && url[0] ? url[0].href : false;
     sn.type = "text/javascript"; sn.async = true;
     sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    sn.src = sn.src.substring(0, sn.src.length - 3);
     s.parentNode.insertBefore(sn, s);
   }());
 </script>

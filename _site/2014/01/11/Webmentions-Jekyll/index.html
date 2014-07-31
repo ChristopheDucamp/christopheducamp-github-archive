@@ -7,7 +7,7 @@
     <title>Webmentions et Jekyll</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="http://christopheducamp.com/2014/01/11/Webmentions-Jekyll//" />
+    <link rel="canonical" href="/2014/01/11/Webmentions-Jekyll//" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -34,7 +34,7 @@
 
 </head>
 
-    <body>
+    <body class="h-feed">
 
     <header class="site-header">
 
@@ -73,7 +73,7 @@
     <p class="meta"><time class="dt-published" datetime="2014-01-11T14:47:00+01:00">
   Samedi 11 janvier 2014
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/2014/01/11/Webmentions-Jekyll/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="/2014/01/11/Webmentions-Jekyll/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
@@ -98,9 +98,9 @@ L&#39;option pourra s&#39;avérer bien pratique pour toutes  <a href="http://ind
   
 <ul>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#webmention" title="Pages taguées webmention">webmention</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#webmention" title="Pages taguées webmention">webmention</a></li>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#jekyll" title="Pages taguées jekyll">jekyll</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#jekyll" title="Pages taguées jekyll">jekyll</a></li>
 
 </ul>
 <div>
@@ -120,6 +120,7 @@ L&#39;option pourra s&#39;avérer bien pratique pour toutes  <a href="http://ind
     url = url && url[0] ? url[0].href : false;
     sn.type = "text/javascript"; sn.async = true;
     sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    sn.src = sn.src.substring(0, sn.src.length - 3);
     s.parentNode.insertBefore(sn, s);
   }());
 </script>

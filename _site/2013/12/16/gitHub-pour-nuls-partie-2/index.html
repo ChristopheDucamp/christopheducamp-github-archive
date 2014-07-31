@@ -7,7 +7,7 @@
     <title>GitHub pour les Débutants : Consignez, Poussez et Foncez !</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="http://christopheducamp.com/2013/12/16/gitHub-pour-nuls-partie-2//" />
+    <link rel="canonical" href="/2013/12/16/gitHub-pour-nuls-partie-2//" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -34,7 +34,7 @@
 
 </head>
 
-    <body>
+    <body class="h-feed">
 
     <header class="site-header">
 
@@ -73,7 +73,7 @@
     <p class="meta"><time class="dt-published" datetime="2013-12-16T00:01:00+01:00">
   Lundi 16 décembre 2013
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/2013/12/16/gitHub-pour-nuls-partie-2/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="/2013/12/16/gitHub-pour-nuls-partie-2/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
@@ -81,7 +81,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <h3><em>Maintenant que nous connaissons les concepts Git, il est temps de jouer. Voici venue la deuxième partie de notre série.</em></h3>
 
-<p>Dans la <a href="/2013/12/15/Github-pour-nuls-partie-1/">1<up>ère</sup> partie de ce tutoriel GitHub en deux parties</a>, nous avons examiné les principales utilisations de GitHub, commencé le processus d&#39;enregistrement d&#39;un compte GitHub et pour finir, nous avons créé notre propre dépôt local pour le code.</p>
+<p>Dans la <a href="/2013/12/15/github-pour-nuls-partie-1/">1<up>ère</sup> partie de ce tutoriel GitHub en deux parties</a>, nous avons examiné les principales utilisations de GitHub, commencé le processus d&#39;enregistrement d&#39;un compte GitHub et pour finir, nous avons créé notre propre dépôt local pour le code.</p>
 
 <p>Ces premières étapes étant accomplies, ajoutons désormais la première partie de notre projet en <strong>produisant notre premier &quot;commit&quot; sur GitHub.</strong> À la fin de la première partie, nous avions créé un dépôt local appelé <code>MonProjet</code>, qui, visualisé à la ligne de commande, ressemble à cette impression-écran : </p>
 
@@ -89,40 +89,35 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Toujours en fenêtre Terminal, à la prochaine ligne, entrez : </p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>touch Lisez-moi.txt
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>touch Lisez-moi.txt</code></pre></div>
 
 <p>Une fois de plus, <em>ceci n&#39;est pas</em> une commande Git. C&#39;est simplement un autre standard de navigation (une &quot;invite de commande&quot;). <code>touch</code> signifie en fait &quot;créer&quot;. Tout ce que vous écrivez après, c&#39;est le nom de la chose créée. Si vous allez sur votre répertoire local en utilisant le Finder ou le menu Démarrer, vous verrez qu&#39;un fichier vide intitulé <code>Lisez-moi.txt</code> se niche désormais à l&#39;intérieur. Vous auriez pu varier le plaisir avec quelque chose comme “Lisez-moi.doc” ou “Wiki.gif,” .</p>
 
 <p>Désormais, vous pouvez voir clairement votre nouveau fichier <code>Lisez-moi</code>. Mais Git le peut-il aussi ? Regardons ça. Tapez :</p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git status
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git status</code></pre></div>
 
 <p>La ligne de commande, généralement passive jusqu&#39;à ce stade, vous renvoie quelques lignes de texte similaires à ce qui suit : </p>
 
-<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># On branch master</span>
 <span class="c">#</span>
 <span class="c"># Untracked files:</span>
 <span class="c">#</span>
 <span class="c">#   (use &quot;git add ...&quot; to include in what will be committed)</span>
 <span class="c">#</span>
-<span class="c">#         Lisez-moi.txt</span>
-</code></pre></div>
+<span class="c">#         Lisez-moi.txt</span></code></pre></div>
 
 <p>Que se passe-t-il ? </p>
 
 <p>Tout d&#39;abord, vous êtes sur la branche <code>master</code> de votre projet, ce qui a du sens puisque nous ne l&#39;avons pas &quot;débranchée&quot; du projet. Il n&#39;y a aucune raison à cela, puisque nous travaillons seul. Deuxièmement, <code>Lisez-moi.txt</code> est listé comme un fichier “untracked”, ce qui signifie que Git l&#39;ignore à cette heure. Pour faire en sorte que Git remarque que le fichier est là, saisissez : </p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git add Lisez-moi.txt
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git add Lisez-moi.txt</code></pre></div>
 
 <p><img src="http://xtof.me/images/2013/Terminal-Git-add-lisezmoi.txt.png" alt="image"></p>
 
 <p>Remarquez comment la ligne de commande vous glisse un truc ici ? Très bien, nous avons ajouté notre premier fichier, aussi est-il temps à ce stade de prendre un &quot;instantané&quot; du projet, ou de le &quot;consigner&quot; : </p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git commit -m <span class="s2">&quot;Ajout Lisez-moi.txt&quot;</span>
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git commit -m <span class="s2">&quot;Ajout Lisez-moi.txt&quot;</span></code></pre></div>
 
 <p><img src="http://xtof.me/images/2013/Terminal-git-commit-Lisez-moi.txt.png" alt="image" title="notre premier commit."></p>
 
@@ -142,15 +137,13 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Supposons que nous ayons un dépôt GitHub appelé “MonProjet” situé sur <code>https://github.com/nomutilisateur/MonProjet.git</code>. Bien sûr, <code>nomutilisateur</code> devrait être remplacé par votre véritable nom d&#39;utilisateur Github, et <code>MonProjet</code> devrait être remplacé par le véritable titre que vous avez donné à votre premier dépôt GitHub.</p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git remote add origin https://github.com/nomutilisateur/MonProjet.git
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote add origin https://github.com/nomutilisateur/MonProjet.git</code></pre></div>
 
 <p>La première partie est connue ; nous avons déjà utilisé <code>git add</code> avec les fichiers. Nous avons ajouté après le mot <code>origin</code> pour indiquer un nouvel endroit à partir duquel viendront les fichiers. <code>remote</code> est un descripteur de <code>origin</code>, pour indiquer que l&#39;original n&#39;est <em>pas</em> sur l&#39;ordinateur, mais quelque part en ligne.</p>
 
 <p>Git sait désormais qu&#39;il existe un dépôt distant et que c&#39;est là où vous voulez envoyer vos modifications du dépôt local. Pour confirmer, saisissez cela pour déposer :</p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git remote -v
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote -v</code></pre></div>
  
 
 <p><img src="http://xtof.me/images/2013/Terminal-git-remove-v.png" alt="image" title="ajout repo  distant et git remote-v"></p>
@@ -159,8 +152,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Maintenant, nous voulons téléverser, ou &quot;<code>push</code>&quot;er, nos modifications vers le dépôt distant Github. C&#39;est facile. Tapez simplement :</p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git push
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git push</code></pre></div>
 
 <p>La ligne de commande vous soufflera plusieurs lignes, et le mot final qu&#39;elle recrachera ressemblera à quelque chose comme “everything up-to-date.”</p>
 
@@ -188,54 +180,45 @@ C&#39;est là où s&#39;arrête ce tutoriel de débutant.</p>
 
 <p>Ouvrez la Ligne de Commande et changez de répertoire jusqu&#39;à ce vous soyez dans le répertoire <code>icecream</code>, là où sont stockés vos designs.</p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span><span class="nb">cd</span> ~/icecream
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> ~/icecream</code></pre></div>
 
 <p>Puis, réinitialisez Git de manière à pouvoir démarrer en utilisant des commandes Git à l&#39;intérieur du répertoire. Le dossier est désormais un dépôt Git.</p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git init
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git init</code></pre></div>
 
 <p>Attendez, est-ce le bon fichier ? Voici comment vérifier et vous assurer que c&#39;est bien l&#39;endroit où vous avez stocké votre design : </p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git status
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git status</code></pre></div>
 
 <p>Et c&#39;est ce que Git vous dira en retour :</p>
 
-<div class="highlight"><pre><code class="bash"><span class="c"># Untracked files:</span>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Untracked files:</span>
 <span class="c">#   (use &quot;git add ...&quot; to include in what will be committed)</span>
 <span class="c">#</span>
 
-<span class="c">#       chocolat.jpeg</span>
-</code></pre></div>
+<span class="c">#       chocolat.jpeg</span></code></pre></div>
 
 <p>Ayé ils sont ici ! Ajoutez-les dans votre dépôt local Git pour qu&#39;ils soient suivis par Git.</p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git add chocolat.jpeg
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git add chocolat.jpeg</code></pre></div>
 
 <p>Maintenant, faites un “instantané” du dépôt tel qu&#39;il est maintenant avec la commande commit : </p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git commit -m <span class="s2">&quot;Ajoute chocolat.jpeg.&quot;</span>
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git commit -m <span class="s2">&quot;Ajoute chocolat.jpeg.&quot;</span></code></pre></div>
 
 <p>Bravo ! Mais vos collègues, acharnés au boulot dans leurs propres dépôts locaux, ne peuvent pas voir votre tout nouveau design ! Ceci parce que le projet principal est stocké dans le compte Github de la société (username: 123WebDesign) dans le dépôt intitulé “icecream.”</p>
 
 <p>Parce que vous ne vous êtes pas encore connecté au dépôt GitHub, votre ordinateur ne sait même pas qu&#39;il existe. Aussi, déclarez votre dépôt local : </p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git remote add origin https://github.com/123WebDesign/icecream.git
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote add origin https://github.com/123WebDesign/icecream.git</code></pre></div>
 
 <p>Et double-checkez pour vous assurer qu&#39;il le connaît :</p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git remote -v
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote -v</code></pre></div>
 
 <p>Pour finir, c&#39;est le moment que vous attendiez. Téléversez ce délicieux sundae sur le projet : </p>
 
-<div class="highlight"><pre><code class="bash">git push
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git push</code></pre></div>
 
 <p>Tut tut ! Avec tous ces outils à portée de mains, il est clair que Git et le service GitHub ne sont pas que pour les programmeurs.</p>
 
@@ -259,13 +242,13 @@ C&#39;est là où s&#39;arrête ce tutoriel de débutant.</p>
   
 <ul>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#hack" title="Pages taguées hack">hack</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#hack" title="Pages taguées hack">hack</a></li>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#github" title="Pages taguées github">github</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#github" title="Pages taguées github">github</a></li>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#howto" title="Pages taguées howto">howto</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#howto" title="Pages taguées howto">howto</a></li>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#versioncontrol" title="Pages taguées versioncontrol">versioncontrol</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#versioncontrol" title="Pages taguées versioncontrol">versioncontrol</a></li>
 
 </ul>
 <div>
@@ -285,6 +268,7 @@ C&#39;est là où s&#39;arrête ce tutoriel de débutant.</p>
     url = url && url[0] ? url[0].href : false;
     sn.type = "text/javascript"; sn.async = true;
     sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    sn.src = sn.src.substring(0, sn.src.length - 3);
     s.parentNode.insertBefore(sn, s);
   }());
 </script>

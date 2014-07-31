@@ -3,8 +3,8 @@
   <channel>
     <title>sur la route de l&#39;indieweb...</title>
     <description>une route indieweb</description>
-    <link>http://christopheducamp.com</link>
-    <atom:link href="http://christopheducamp.com/feed.xml" rel="self" type="application/rss+xml" />
+    <link></link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Design : Joel Glovier rhabille Jekyll</title>
@@ -29,8 +29,8 @@
 &lt;p&gt;Merci Joël. &lt;em&gt;Keep on the good work.&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 25 Feb 2014 00:00:00 +0100</pubDate>
-        <link>http://christopheducamp.com//2014/02/25/nouveau-template-jekyll-par-joel-glovier/</link>
-        <guid isPermaLink="true">http://christopheducamp.com//2014/02/25/nouveau-template-jekyll-par-joel-glovier/</guid>
+        <link>//2014/02/25/nouveau-template-jekyll-par-joel-glovier/</link>
+        <guid isPermaLink="true">//2014/02/25/nouveau-template-jekyll-par-joel-glovier/</guid>
       </item>
     
       <item>
@@ -64,8 +64,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 09 Feb 2014 00:00:00 +0100</pubDate>
-        <link>http://christopheducamp.com//2014/02/09/rakefile/</link>
-        <guid isPermaLink="true">http://christopheducamp.com//2014/02/09/rakefile/</guid>
+        <link>//2014/02/09/rakefile/</link>
+        <guid isPermaLink="true">//2014/02/09/rakefile/</guid>
       </item>
     
       <item>
@@ -84,16 +84,14 @@
 
 &lt;p&gt;Par exemple, le fichier &lt;code&gt;_config.yml&lt;/code&gt; de cette instance hébergée chez OVH se présente comme suit : &lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;ftp_host&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;ftp.christopheducamp.com&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;ftp_host&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;ftp.christopheducamp.com&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;ftp_username&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;monnomutilisateur&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;ftp_dir&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/www&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;ftp_passive&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;false&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;ftp_passive&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;false&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Pour générer le site et le déployer, il me suffit alors de reprendre la ligne de commande, de me placer à la racine du projet puis de taper la commande :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;glynn
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;glynn&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;(C&amp;#39;est la solution que j&amp;#39;ai retenue pour le moment : une ligne de commande puis un mot de passe, et tout le site est régénéré et mis en ligne !)&lt;/p&gt;
 
@@ -114,36 +112,32 @@
 
 &lt;p&gt;Pour faire qu&amp;#39;un serveur distant gère le déploiement pour vous à chaque fois que vous poussez des modifications en utilisant Git, vous pouvez créer un compte utilisateur qui dispose de toutes les clés publiques qui sont autorisées pour déployer dans son fichier &lt;code&gt;authorized_keys&lt;/code&gt;.  Une fois cela mis en place, régler le hook post-receive se fait comme suit : &lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;laptop&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh deployer@example.com
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;laptop&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh deployer@example.com
 server&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir monrepo.git
 server&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;monrepo.git
 server&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git --bare init
 server&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;cp hooks/post-receive.sample hooks/post-receive
-server&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir /var/www/monrepo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+server&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir /var/www/monrepo&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Ensuite ajoutez les lignes suivantes aux hooks/post-receive et assurez-vous que Jekyll soit installé sur le serveur :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;GIT_REPO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/monrepo.git
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;GIT_REPO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/monrepo.git
 &lt;span class=&quot;nv&quot;&gt;TMP_GIT_CLONE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/tmp/monrepo
 &lt;span class=&quot;nv&quot;&gt;PUBLIC_WWW&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/var/www/monrepo
 
 git clone &lt;span class=&quot;nv&quot;&gt;$GIT_REPO&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$TMP_GIT_CLONE&lt;/span&gt;
 jekyll build -s &lt;span class=&quot;nv&quot;&gt;$TMP_GIT_CLONE&lt;/span&gt; -d &lt;span class=&quot;nv&quot;&gt;$PUBLIC_WWW&lt;/span&gt;
 rm -Rf &lt;span class=&quot;nv&quot;&gt;$TMP_GIT_CLONE&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Pour finir, faites tourner la commande suivante sur n&amp;#39;importe quel ordinateur d&amp;#39;utilisateur ayant de déployer en utilisant ce hook : &lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;laptops&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add deploy deployer@exemple.com:~/monrepo.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;laptops&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add deploy deployer@exemple.com:~/monrepo.git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Déployer est maintenant aussi facile que de dire à nginx ou Apache de regarder 
 &lt;code&gt;/var/www/monrepo&lt;/code&gt; et de faire tourner ce qui suit : &lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;laptops&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push deploy master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;laptops&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push deploy master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;Rake&lt;/h3&gt;
 
@@ -182,8 +176,8 @@ Regardez la page &lt;a href=&quot;http://github.com/zkarpinski/Jekyll-Admin/blob
 &lt;p&gt;Les Pages GitHub sont motorisées en coulisses par Jekyll, par conséquent si vous cherchez un hébergement zéro-tracas, une solution à coût zéro, les Pages GitHub sont un moyen génial pour &lt;a href=&quot;http://pages.github.com/&quot;&gt;héberger gratuitement votre site web-motorisé-par-Jekyll&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Jan 2014 08:30:00 +0100</pubDate>
-        <link>http://christopheducamp.com//2014/01/12/deploiement-Jekyll/</link>
-        <guid isPermaLink="true">http://christopheducamp.com//2014/01/12/deploiement-Jekyll/</guid>
+        <link>//2014/01/12/deploiement-Jekyll/</link>
+        <guid isPermaLink="true">//2014/01/12/deploiement-Jekyll/</guid>
       </item>
     
       <item>
@@ -206,8 +200,8 @@ L&amp;#39;option pourra s&amp;#39;avérer bien pratique pour toutes  &lt;a href=
 &lt;p&gt;P.S. à cette heure, la webmention a été envoyée par le service web &lt;a href=&quot;http://indiewebify.me&quot;&gt;indiewebify.me&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 11 Jan 2014 14:47:00 +0100</pubDate>
-        <link>http://christopheducamp.com//2014/01/11/Webmentions-Jekyll/</link>
-        <guid isPermaLink="true">http://christopheducamp.com//2014/01/11/Webmentions-Jekyll/</guid>
+        <link>//2014/01/11/Webmentions-Jekyll/</link>
+        <guid isPermaLink="true">//2014/01/11/Webmentions-Jekyll/</guid>
       </item>
     
       <item>
@@ -226,7 +220,7 @@ L&amp;#39;option pourra s&amp;#39;avérer bien pratique pour toutes  &lt;a href=
 &lt;/ul&gt;
 
 &lt;p&gt;Les filtres de dates &lt;code&gt;date_to_string&lt;/code&gt; proposés à cette heure dans la documentation Jekyll affichent &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;26 Dec 2013
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;26 Dec 2013
 26 December 2013
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Si beaucoup de sites utilisent ce format, vous pourriez trouver utile de reprendre la main sur la date ? 
@@ -238,22 +232,22 @@ Bookmarkez cette page ! c&amp;#39;est une mine d&amp;#39;or pour devenir un mage
 &lt;p&gt;Et par curiosité, jetez aussi un oeil au &lt;a href=&quot;http://docs.shopify.com/themes/liquid-basics/output#date&quot;&gt;Filtre Date Liquid&lt;/a&gt; qui offre quelques éléments basiques pour la mise en page des dates. &lt;/p&gt;
 
 &lt;p&gt;Commencez doucement et simplement à vous entraîner en permutant quelques lettres de tag/filtre comme  &lt;code&gt;%B, %d %Y&lt;/code&gt; pour maîtriser les formats de dates simples &lt;strong&gt;en anglais&lt;/strong&gt; (&lt;code&gt;B&lt;/code&gt; étant substitué par le nom du mois écrit en toutes lettres, &lt;code&gt;d&lt;/code&gt; le jour du mois de 01 à 31 et &lt;code&gt;Y&lt;/code&gt; l&amp;#39;année). &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;December, 26 2013
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;December, 26 2013
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br&gt;  &lt;/p&gt;
 
 &lt;h2&gt;Une date en français lisible-pour-les-humains&lt;/h2&gt;
 
 &lt;p&gt;Si vous êtes n00b comme moi sur Jekyll, la localisation des dates en français vous demandera plus d&amp;#39;efforts. &lt;a href=&quot;http://christopheducamp.com/w/Jekyll-localiser-la-date#localisation_du_mois&quot;&gt;Cliquez ici&lt;/a&gt; pour visualiser les premiers échantillons de code utilisés pour afficher la date en langage clair comme suit : &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;Jeudi 26 décembre 2013
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Jeudi 26 décembre 2013
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;... et pour le plaisir, une variante tout en bas de casses et le nom du mois abrégé que j&amp;#39;adapterai pour lister les posts triés par dates en page d&amp;#39;accueil : &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;jeudi 26 déc. 2013
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;jeudi 26 déc. 2013
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;Date-machine ISO-8601&lt;/h2&gt;
 
 &lt;p&gt;Vous aurez aussi besoin d&amp;#39;une représentation &lt;a href=&quot;http://christopheducamp.com/w/ISO_8601#ISO_8601&quot;&gt;iso 8601&lt;/a&gt; pour intégration dans l&amp;#39;élément &lt;a href=&quot;http://html5doctor.com/the-time-element/&quot;&gt;time&lt;/a&gt;. Utilisez &lt;code&gt;%Y-%m-%d&lt;/code&gt; ou plus simplement le filtre &lt;code&gt;&lt;a href=&quot;http://jekyllrb.com/docs/templates/#filters&quot;&gt;date&lt;em&gt;to&lt;/em&gt;xmlschema&lt;/a&gt;&lt;/code&gt; pour une version longue intégrant horaire et fuseau : &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;2013-12-26 
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;2013-12-26 
 2013-12-26T04:47:00+01:00 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -275,8 +269,8 @@ Très preneur de vos frameworks, plugins et/ou tous vos points d&amp;#39;optimis
 &lt;p&gt;Faute de savoir installer &lt;a href=&quot;http://indiewebcamp.com/webmention&quot;&gt;webmention&lt;/a&gt; sur Jekyll, ce post reste  &lt;span rel=&quot;syndication&quot; class=&quot;u-syndication&quot;&gt;&lt;a href=&quot;https://twitter.com/xtof_fr/statuses/416076519794946048&quot;&gt;ouvert à tous vos commentaires sur twitter&lt;/a&gt;&lt;/span&gt; - &lt;a href=&quot;http://twitter.com/xtof_fr&quot;&gt;@xtof&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 26 Dec 2013 04:47:00 +0100</pubDate>
-        <link>http://christopheducamp.com//2013/12/26/jekyll-localiser-la-date/</link>
-        <guid isPermaLink="true">http://christopheducamp.com//2013/12/26/jekyll-localiser-la-date/</guid>
+        <link>//2013/12/26/jekyll-localiser-la-date/</link>
+        <guid isPermaLink="true">//2013/12/26/jekyll-localiser-la-date/</guid>
       </item>
     
       <item>
@@ -351,8 +345,8 @@ La dernière moitié de la décennie a donné naissance à un tout un tas de nou
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 22 Dec 2013 13:00:00 +0100</pubDate>
-        <link>http://christopheducamp.com//2013/12/22/markdow-avenir-ecriture/</link>
-        <guid isPermaLink="true">http://christopheducamp.com//2013/12/22/markdow-avenir-ecriture/</guid>
+        <link>//2013/12/22/markdow-avenir-ecriture/</link>
+        <guid isPermaLink="true">//2013/12/22/markdow-avenir-ecriture/</guid>
       </item>
     
       <item>
@@ -400,8 +394,7 @@ proposent une &lt;em&gt;pull request&lt;/em&gt;, je veux simplement que cette mo
 
 &lt;p&gt;Bon, pour moi, cela donne…&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /Users/Anna/Sites/christmas-recipes 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /Users/Anna/Sites/christmas-recipes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;Créer une branche spéciale sur Pages GitHub&lt;/h3&gt;
 
@@ -411,8 +404,7 @@ proposent une &lt;em&gt;pull request&lt;/em&gt;, je veux simplement que cette mo
 
 &lt;p&gt;Assurez-vous que vous êtes toujours dans le répertoire &lt;code&gt;christmas-recipes&lt;/code&gt;, puis entrez cette commande pour créer la branche &lt;code&gt;gh-pages&lt;/code&gt; :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git checkout --orphan gh-pages
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git checkout --orphan gh-pages&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Cette option &lt;code&gt;--orphan&lt;/code&gt; pourrait être nouvelle pour vous. Une branche orpheline est une branche vide déconnectée de la branche à partir de laquelle elle a été créée, et elle démarre sans commits, 
 pour se transformer en branche spéciale autonome. &lt;code&gt;checkout&lt;/code&gt; nous fait basculer de la branche où nous étions vers cette branche.&lt;/p&gt;
@@ -466,8 +458,7 @@ Maintenant, nous savons que ça fonctionne et pouvons ajouter un peu de marquage
 
 &lt;p&gt;De retour dans le Terminal, nous allons installer Jekyll…&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install jekyll
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install jekyll&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;… et attendez que le programme se lance. Ceci peut prendre un certain temps. Cela pourrait même être si long que vous pourriez croire que c&amp;#39;est cassé, mais résistez à l&amp;#39;envie de balancer votre clavier comme j&amp;#39;ai pu le faire.&lt;/p&gt;
 
@@ -477,27 +468,23 @@ Maintenant, nous savons que ça fonctionne et pouvons ajouter un peu de marquage
 
 &lt;p&gt;Maintenant, nous allons dire à Jekyll d&amp;#39;installer un nouveau projet dans le dépôt, qui se niche dans le répertoire &lt;em&gt;Sites&lt;/em&gt; (le vôtre est peut-être à un endroit différent). Souvenez-vous, nous pouvons glisser-déposer le répertoire à l&amp;#39;intérieur de la fenêtre de terminal après la commande.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new /Users/Anna/Sites/christmas-recipes
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new /Users/Anna/Sites/christmas-recipes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Si tout se déroule comme prévu, nous devrions recevoir ce message d&amp;#39;erreur : &lt;code&gt;Conflict: /Users/Anna/Sites/christmas-recipes exists and is not empty&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Rassurez-vous, tout va bien. C&amp;#39;est tout simplement déroutant parce que nous avons reçu ce fichier &lt;code&gt;index.html&lt;/code&gt; probablement avec un fichier &lt;code&gt;README.md&lt;/code&gt; que nous avons créé précédemment. Aussi, migrez tout ça pour le moment sur votre bureau et lancez de nouveau la commande.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new /Users/Anna/Sites/christmas-recipes
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new /Users/Anna/Sites/christmas-recipes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Cela devrait vous dire que site est installé.&lt;/p&gt;
 
 &lt;p&gt;Vérifiez que vous êtes bien dans le dépôt, et sinon, naviguez jusqu&amp;#39;à lui en tapant &lt;code&gt;cd&lt;/code&gt;, glissez-déposez le répertoire &lt;code&gt;christmas-recipes&lt;/code&gt; à l&amp;#39;intérieur du terminal…&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /Users/Anna/Sites/christmas-recipes
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /Users/Anna/Sites/christmas-recipes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;…et tapez cette commande pour dire à Jekyll de fonctionner :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll serve --watch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll serve --watch&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;En ajoutant &lt;code&gt;--watch&lt;/code&gt; à la fin, nous forçons Jekyll à reconstruire le site à chaque fois que nous sauvegardons. 
 Nous ne sommes donc plus obligés de lui indiquer de mettre à jour à chaque fois que nous visualisons les modifications. Nous devrons faire tourner ça à chaque fois que nous travaillons sur le projet, sinon les modifications ne seront pas prises en considération. 
@@ -514,11 +501,10 @@ Il y a un répertoire appelé &lt;code&gt;_site&lt;/code&gt;, et c&amp;#39;est l
 
 &lt;p&gt;Remplacez les contenus du fichier &lt;code&gt;_config.yml&lt;/code&gt; avec ça :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;name: Recettes de Noël&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;name: Recettes de Noël&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
 markdown: redcarpet
 pygments: &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;
-baseurl: /christmas-recipes
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+baseurl: /christmas-recipes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;Paramétrer vos fichiers&lt;/h3&gt;
 
@@ -540,21 +526,19 @@ baseurl: /christmas-recipes
 
 &lt;p&gt;Dans &lt;code&gt;head.html&lt;/code&gt;, copiez ce qui suit : &lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Démarrer avec Pages GitHub (Plus Bonus Jekyll)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//css/main.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/css/main.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;et dans &lt;code&gt;foot.html&lt;/code&gt; :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;À chaque fois que nous voudrons ramener quelque chose à partir du répertoire &lt;code&gt;_includes&lt;/code&gt;, 
 nous pourrons utiliser &lt;code&gt;{% include nomfichier.html %}&lt;/code&gt; dans le fichier layout — je vous présenterai comment régler ça à la prochaine étape.&lt;/p&gt;
@@ -565,7 +549,7 @@ nous pourrons utiliser &lt;code&gt;{% include nomfichier.html %}&lt;/code&gt; da
 À l&amp;#39;intérieur de ce répertoire, il y a un fichier &lt;code&gt;default.html&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Effacez tout dans le fichier &lt;code&gt;default.html&lt;/code&gt; et placez-ce code dedans pour le remplacer :&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;{% include head.html %}
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;{% include head.html %}
 
 &amp;lt;h1&amp;gt;{{ page.title }}&amp;lt;/h1&amp;gt;
 
@@ -575,11 +559,10 @@ nous pourrons utiliser &lt;code&gt;{% include nomfichier.html %}&lt;/code&gt; da
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Ceci est une page vraiment basique avec un en-tête, un pied de page, un titre de page et un peu de contenu. Pour activer ce template sur une page, revenez à l&amp;#39;intérieur de la page &lt;code&gt;index.html&lt;/code&gt; et ajoutez ce morceau de code tout en haut du fichier :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;default&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Accueil&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Maintenant, sauvegardez le fichier &lt;code&gt;index.html&lt;/code&gt; et pressez la touche de &lt;strong&gt;rafraîchissement&lt;/strong&gt; du navigateur. 
 Nous devrions voir un en-tête là où &lt;code&gt;{{ page.title }}&lt;/code&gt; était placé dans le layout, qui correspond à ce qui vient après &lt;code&gt;title:&lt;/code&gt; sur la page elle-même (dans notre cas, Accueil). 
@@ -603,7 +586,7 @@ Restons super simple. &lt;/p&gt;
 
 &lt;p&gt;Dans le répertoire &lt;code&gt;_layouts&lt;/code&gt;, créons un fichier appelé &lt;code&gt;recette.html&lt;/code&gt; et collons ce qui suit à l&amp;#39;intérieur:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;{% include head.html %}
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{% include head.html %}
 
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;main&amp;gt;&lt;/span&gt;
 
@@ -618,8 +601,7 @@ Restons super simple. &lt;/p&gt;
 
 {% include nav.html %}
 
-{% include foot.html %}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+{% include foot.html %}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Ceci est notre template. Le contenu qui va sur le layout &lt;code&gt;recette&lt;/code&gt; contient un titre de page, le contenu de la recette, une attribution de l&amp;#39;auteur de la recette et un lien d&amp;#39;attribution.&lt;/p&gt;
 
@@ -628,7 +610,7 @@ Restons super simple. &lt;/p&gt;
 &lt;p&gt;Créez un nouveau fichier dans la racine du répertoire &lt;code&gt;recettes-noel&lt;/code&gt; et appelez-le &lt;code&gt;gingerbread.md&lt;/code&gt;. 
 Copiez ce qui suit à l&amp;#39;intérieur : &lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;recette&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Biscuit au Pain d&amp;#39;Epices&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;auteur-recette&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;HungryJenny&lt;/span&gt;
@@ -656,8 +638,7 @@ Copiez ce qui suit à l&amp;#39;intérieur : &lt;/p&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;4. Tip some flour onto the work surface and knead the dough until smooth.&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;5. Preheat the oven to 180°C.&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;6. Roll the dough out flat and use a shaped cutter to make as many cookies as you like.&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;7. Transfer the cookies to a tray and bake in the oven for 15 minutes. Lightly dust the cookies with icing sugar.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;7. Transfer the cookies to a tray and bake in the oven for 15 minutes. Lightly dust the cookies with icing sugar.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;Créer un nouveau layout&lt;/h3&gt;
 
@@ -666,7 +647,7 @@ Restons super simple. &lt;/p&gt;
 
 &lt;p&gt;Dans le répertoire &lt;code&gt;_layouts&lt;/code&gt;, créons un fichier appelé &lt;code&gt;recette.html&lt;/code&gt; et collons dedans ce qui suit :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt; {% include head.html %}
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{% include head.html %}
 
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;main&amp;gt;&lt;/span&gt;
 
@@ -683,8 +664,7 @@ Restons super simple. &lt;/p&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/main&amp;gt;&lt;/span&gt;
 
     {% include nav.html %}
-    {% include foot.html %}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    {% include foot.html %}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Ceci est notre template. Le contenu qui va sur le layout &lt;code&gt;recette&lt;/code&gt; contient un titre de page, le contenu de la recette, une attribution de l&amp;#39;auteur de la recette et un lien d&amp;#39;attribution.&lt;/p&gt;
 
@@ -696,7 +676,7 @@ Restons super simple. &lt;/p&gt;
 
 &lt;p&gt;Dans votre répertoire &lt;code&gt;_includes&lt;/code&gt;, créez un nouveau fichier appelé &lt;code&gt;nav.html&lt;/code&gt;. Voici un peu de code qui générera vore navigation : &lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;nav-primary&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navigation&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;nav-primary&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navigation&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
         {% for p in site.pages %}
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
@@ -705,8 +685,7 @@ Restons super simple. &lt;/p&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
         {% endfor %}
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Ceci va chercher sur toutes les pages et générer une liste de toutes ces pages, et donner l&amp;#39;item de navigation qui est actuellement actif, une classe active afin que nous puissions la mettre en forme différemment.&lt;/p&gt;
 
@@ -735,8 +714,8 @@ Nous pouvons faire ça exactement de la même façon qu&amp;#39;avant. Vérifiez
 &lt;p&gt;Si ça vous intéresse de vous taper un peu de code, &lt;a href=&quot;https://github.com/maban/christmas-recipes&quot;&gt;tous les fichiers de ce tutoriel sont disponibles sur GitHub&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sat, 21 Dec 2013 14:15:00 +0100</pubDate>
-        <link>http://christopheducamp.com//2013/12/21/demarrer-avec-pages-github/</link>
-        <guid isPermaLink="true">http://christopheducamp.com//2013/12/21/demarrer-avec-pages-github/</guid>
+        <link>//2013/12/21/demarrer-avec-pages-github/</link>
+        <guid isPermaLink="true">//2013/12/21/demarrer-avec-pages-github/</guid>
       </item>
     
       <item>
@@ -821,9 +800,9 @@ Nous pouvons faire ça exactement de la même façon qu&amp;#39;avant. Vérifiez
 &lt;li&gt;&lt;strong&gt;Etre Social&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Mon, 16 Dec 2013 23:35:44 +0000</pubDate>
-        <link>http://christopheducamp.com//2013/12/16/github-etre-social/</link>
-        <guid isPermaLink="true">http://christopheducamp.com//2013/12/16/github-etre-social/</guid>
+        <pubDate>Tue, 17 Dec 2013 00:35:44 +0100</pubDate>
+        <link>//2013/12/17/github-etre-social/</link>
+        <guid isPermaLink="true">//2013/12/17/github-etre-social/</guid>
       </item>
     
       <item>
@@ -849,9 +828,8 @@ Pour pouvoir travailler sur le projet, vous devrez le &lt;em&gt;cloner&lt;/em&gt
 
 &lt;p&gt;Faites tourner le code qui suit :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git clone https://github.com/username/Spoon-Knife.git
-&lt;span class=&quot;c&quot;&gt;# Clone votre fork du dépôt à l&amp;#39;intérieur du répertoire en cours dans le terminal&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git clone https://github.com/username/Spoon-Knife.git
+&lt;span class=&quot;c&quot;&gt;# Clone votre fork du dépôt à l&amp;#39;intérieur du répertoire en cours dans le terminal&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   
 
 &lt;h3&gt;Étape 3 : Configurer les remotes&lt;/h3&gt;
@@ -864,13 +842,12 @@ Pour pouvoir travailler sur le projet, vous devrez le &lt;em&gt;cloner&lt;/em&gt
 
 &lt;p&gt;Git supporte plusieurs remotes. Ceci s&amp;#39;utilise communément au moment de forker un dépôt.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;Spoon-Knife
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;Spoon-Knife
 &lt;span class=&quot;c&quot;&gt;# Change le répertoire actif dans le terminal vers le nouveau répertoire fraîchement cloné &amp;quot;Spoon-Knife&amp;quot;&lt;/span&gt;
 git remote add upstream https://github.com/octocat/Spoon-Knife.git
 &lt;span class=&quot;c&quot;&gt;# Assigne le dépôt original à un remote nommé &amp;quot;upstream&amp;quot;&lt;/span&gt;
 git fetch upstream
-&lt;span class=&quot;c&quot;&gt;# Rapatrie les modifications non présentes dans votre dépôt local, sans modifier vos fichiers&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;c&quot;&gt;# Rapatrie les modifications non présentes dans votre dépôt local, sans modifier vos fichiers&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   
 
 &lt;h2&gt;Plein de Trucs Restent À Faire !&lt;/h2&gt;
@@ -881,9 +858,8 @@ git fetch upstream
 
 &lt;p&gt;Une fois que vous avez produit quelques commits vers un dépôt forké et que vous voulez les pousser vers votre dépôt forké, vous faites ça de la même façon que vous le feriez avec un dépôt normal : &lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git push origin master
-&lt;span class=&quot;c&quot;&gt;# Pousse les commits vers votre dépôt remote (distant) stocké sur GitHub&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git push origin master
+&lt;span class=&quot;c&quot;&gt;# Pousse les commits vers votre dépôt remote (distant) stocké sur GitHub&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   
 
 &lt;h4&gt;Plus sur les commits&lt;/h4&gt;
@@ -896,11 +872,10 @@ git fetch upstream
 
 &lt;p&gt;Si le dépôt original que vous avez forké pour votre projet est mis à jour, vous pouvez ajouter ces mises à jour à votre fork en faisant tourner la commande suivante : &lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git fetch upstream
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git fetch upstream
 &lt;span class=&quot;c&quot;&gt;# Rapatrie toutes les nouvelles modifications provenant du dépôt original&lt;/span&gt;
 git merge upstream/master
-&lt;span class=&quot;c&quot;&gt;# Fusionne toutes les modifications rapatriées à l&amp;#39;intérieur de vos fichiers de travail&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;c&quot;&gt;# Fusionne toutes les modifications rapatriées à l&amp;#39;intérieur de vos fichiers de travail&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h4&gt;Quelle est la différence entre fetch et  pull ?&lt;/h4&gt;
 
@@ -908,19 +883,17 @@ git merge upstream/master
 
 &lt;h5&gt;Pull&lt;/h5&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git pull upstream master
-&lt;span class=&quot;c&quot;&gt;# Tire les commits provenant de &amp;#39;upstream&amp;#39; et les stocke dans le dépôt local&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git pull upstream master
+&lt;span class=&quot;c&quot;&gt;# Tire les commits provenant de &amp;#39;upstream&amp;#39; et les stocke dans le dépôt local&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Quand vous utilisez &lt;code&gt;git pull&lt;/code&gt;, git essaye automatiquement de faire le travail à votre place. C&amp;#39;est sensible au contexte, ainsi git fusionnera tous les les commits tirés (pull) à l&amp;#39;intérieur de la branche dans laquelle vous êtes en train de travailler. Une chose à garder à l&amp;#39;esprit, est que &lt;code&gt;git pull&lt;/code&gt; fusionne automatiquement les commits sans vous laisser d&amp;#39;abord les réviser. Si vous ne gérez pas vos branches de très près, vous pourriez rencontrer des conflits fréquents.&lt;/p&gt;
 
 &lt;h5&gt;Fetch &amp;amp; Merge&lt;/h5&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git fetch upstream
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git fetch upstream
 &lt;span class=&quot;c&quot;&gt;# Rapatrie tous les nouveaux commits provenant du dépôt original&lt;/span&gt;
 git merge upstream/master
-&lt;span class=&quot;c&quot;&gt;# Fusionne tous les commits rapatriés à l&amp;#39;intérieur de vos fichiers de travail&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;c&quot;&gt;# Fusionne tous les commits rapatriés à l&amp;#39;intérieur de vos fichiers de travail&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Quand vous lancez &lt;code&gt;git fetch&lt;/code&gt;, git retrouve tous les nouveaux commits provenant du &lt;code&gt;remote&lt;/code&gt; cible que vous n&amp;#39;avez pas et les stocke dans votre dépôt local. Néanmoins, il ne les fusionne pas dans votre branche actuelle. Ceci est tout particulièrement utile si vous avez besoin de conserver votre dépôt à jour mais travaillez sur quelque chose qui pourrait se casser si vous mettiez vos fichiers à jour. Pour intégrer les commits à l&amp;#39;intérieur de votre branche locale, vous utilisez &lt;code&gt;git merge&lt;/code&gt;. Ceci combine les branches spécifiées et vous alerte en cas de conflits.&lt;/p&gt;
 
@@ -932,35 +905,31 @@ git merge upstream/master
 
 &lt;p&gt;Les branches sont vraiment faciles à travailler et vous épargneront beaucoup de maux de têtes, tout spécialement quand vous travaillez avec beaucoup de gens. Pour créer une branche et commencer à travailler dedans, lancez ces commandes : &lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git branch *mabranche*
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git branch *mabranche*
 &lt;span class=&quot;c&quot;&gt;# Crée une nouvelle branche nommée &amp;quot;mabranche&amp;quot;&lt;/span&gt;
 git checkout *mabranche*
-&lt;span class=&quot;c&quot;&gt;# Transforme &amp;quot;mabranche&amp;quot; en branche active&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;c&quot;&gt;# Transforme &amp;quot;mabranche&amp;quot; en branche active&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Alternativement, vous pouvez utiliser le raccourci :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git checkout -b *mabranche*
-&lt;span class=&quot;c&quot;&gt;# Crée une nouvelle branche nommée &amp;quot;mabranche&amp;quot; et la transforme en granche active&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git checkout -b *mabranche*
+&lt;span class=&quot;c&quot;&gt;# Crée une nouvelle branche nommée &amp;quot;mabranche&amp;quot; et la transforme en granche active&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Pour basculer entre les branches, utilisez &lt;code&gt;git checkout&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git checkout master
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git checkout master
 &lt;span class=&quot;c&quot;&gt;# Transforme &amp;quot;master&amp;quot; en branche active&lt;/span&gt;
 git checkout *mabranche*
-&lt;span class=&quot;c&quot;&gt;# Transforme &amp;quot;mabranche&amp;quot; en branche active&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;c&quot;&gt;# Transforme &amp;quot;mabranche&amp;quot; en branche active&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Une fois que vous avez fini de travailler sur votre branche et quand vous êtes prêt à la combiner en retour à l&amp;#39;intérieur de la branche &lt;code&gt;master&lt;/code&gt;, utilisez &lt;code&gt;merge&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git checkout master
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git checkout master
 &lt;span class=&quot;c&quot;&gt;# Fait de &amp;quot;master&amp;quot; la branche active&lt;/span&gt;
 git merge *mabranche*
 &lt;span class=&quot;c&quot;&gt;# Fusionne les commits provenant de &amp;quot;mabranche&amp;quot; à l&amp;#39;intérieur de &amp;quot;master&amp;quot;&lt;/span&gt;
 git branch -d *mabranche*
-&lt;span class=&quot;c&quot;&gt;# Efface la branche &amp;quot;mabranche&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;c&quot;&gt;# Efface la branche &amp;quot;mabranche&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Truc&lt;/strong&gt; : Quand vous switchez entre les branches, les fichiers sur lesquels vous travaillez (la &amp;quot;copie de travail&amp;quot;) sont mis à jour pour renvoyer les modifications dans la nouvelles branche. Si vous avez des modifications que vous n&amp;#39;avez pas committées, git s&amp;#39;assurera que vous ne les perdez pas. Git fait aussi très attention durant les fusions et les pulls pour vous assurer que vous ne perdez pas de modifications. &lt;strong&gt;En cas de doute, committez tôt et committez souvent&lt;/strong&gt;.&lt;/p&gt;
 
@@ -989,9 +958,9 @@ git branch -d *mabranche*
 &lt;li&gt;&lt;a href=&quot;/2013/12/16/github-etre-social/&quot;&gt;Etre Social&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Mon, 16 Dec 2013 14:36:00 +0000</pubDate>
-        <link>http://christopheducamp.com//2013/12/16/forker-un-repo-github/</link>
-        <guid isPermaLink="true">http://christopheducamp.com//2013/12/16/forker-un-repo-github/</guid>
+        <pubDate>Mon, 16 Dec 2013 15:36:00 +0100</pubDate>
+        <link>//2013/12/16/forker-un-repo-github/</link>
+        <guid isPermaLink="true">//2013/12/16/forker-un-repo-github/</guid>
       </item>
     
       <item>
@@ -1036,7 +1005,7 @@ git branch -d *mabranche*
 
 &lt;p&gt;Dans votre fenêtre de terminal, tapez le code suivant : &lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir ~/Hello-World
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir ~/Hello-World
 
 &lt;span class=&quot;c&quot;&gt;# Crée un répertoire pour votre projet nommé &amp;quot;Hello-World&amp;quot; dans votre répertoire utilisateur local&lt;/span&gt;
 
@@ -1048,8 +1017,7 @@ git branch -d *mabranche*
 &lt;span class=&quot;c&quot;&gt;# Initialise le répertoire vite Git dans /Users/you/Hello-World/.git/&lt;/span&gt;
 
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;touch README
-&lt;span class=&quot;c&quot;&gt;# Crée un fichier nommé &amp;quot;README&amp;quot; dans votre répertoire local Hello-World&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;c&quot;&gt;# Crée un fichier nommé &amp;quot;README&amp;quot; dans votre répertoire local Hello-World&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Ouvrez le nouveau fichier README trouvé dans votre répertoire &lt;code&gt;Hello-World&lt;/code&gt; dans un éditeur de texte et ajoutez le texte &amp;quot;Hello World!&amp;quot; Une fois terminé, sauvegardez et fermez le fichier.&lt;/p&gt;
 
@@ -1057,12 +1025,11 @@ git branch -d *mabranche*
 
 &lt;p&gt;Maintenant que vous avez installé votre README, il est temps de le committer. Un commit est en fait un instantané de tous les fichiers dans votre projet à un moment donné. Dans la fenêtre de Terminal, tapez le code suivant : &lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add README
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add README
 &lt;span class=&quot;c&quot;&gt;# fait entrer en scène le fichier README, et l&amp;#39;ajoute à la liste des fichiers à committer&lt;/span&gt;
 
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit -m &lt;span class=&quot;s1&quot;&gt;&amp;#39;premier commit&amp;#39;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# Committe vos fichiers, en ajoutant le message &amp;quot;premier commit&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;c&quot;&gt;# Committe vos fichiers, en ajoutant le message &amp;quot;premier commit&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h4&gt;Plus sur les commits&lt;/h4&gt;
 
@@ -1080,12 +1047,11 @@ git branch -d *mabranche*
 
 &lt;p&gt;Git supporte de nombreux remotes. Ceci est communément utilisé au moment de &lt;em&gt;forker&lt;/em&gt; un dépôt.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add origin https://github.com/username/Hello-World.git
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add origin https://github.com/username/Hello-World.git
 &lt;span class=&quot;c&quot;&gt;# Crée un remote nommé &amp;quot;origin&amp;quot; pointant votre dépôt GitHub&lt;/span&gt;
 
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push origin master
-&lt;span class=&quot;c&quot;&gt;# Envoie vos commits dans la branche &amp;quot;master&amp;quot; sur GitHub&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;c&quot;&gt;# Envoie vos commits dans la branche &amp;quot;master&amp;quot; sur GitHub&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;(&lt;strong&gt;Truc&lt;/strong&gt; : Remarquez que le chemin vers votre URL distante (remote) --Hello-World.git--correspond à celui que vous avez créé sur GitHub. Ceci est sensible à la casse, et il est important de conserver la même.)&lt;/p&gt;
 
@@ -1114,9 +1080,9 @@ git branch -d *mabranche*
 
 &lt;p&gt;&lt;img src=&quot;http://imgs.xkcd.com/comics/git_commit.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 16 Dec 2013 10:19:00 +0000</pubDate>
-        <link>http://christopheducamp.com//2013/12/16/creer-un-repo-GitHub/</link>
-        <guid isPermaLink="true">http://christopheducamp.com//2013/12/16/creer-un-repo-GitHub/</guid>
+        <pubDate>Mon, 16 Dec 2013 11:19:00 +0100</pubDate>
+        <link>//2013/12/16/creer-un-repo-GitHub/</link>
+        <guid isPermaLink="true">//2013/12/16/creer-un-repo-GitHub/</guid>
       </item>
     
   </channel>

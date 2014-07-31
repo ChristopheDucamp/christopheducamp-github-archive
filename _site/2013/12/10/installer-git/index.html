@@ -7,7 +7,7 @@
     <title>Installer Git</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="http://christopheducamp.com/2013/12/10/installer-git//" />
+    <link rel="canonical" href="/2013/12/10/installer-git//" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -34,7 +34,7 @@
 
 </head>
 
-    <body>
+    <body class="h-feed">
 
     <header class="site-header">
 
@@ -70,10 +70,10 @@
 
   <header class="post-header">
     <h1 class="p-name entry-title">Installer Git</h1>
-    <p class="meta"><time class="dt-published" datetime="2013-12-10T21:44:00Z">
+    <p class="meta"><time class="dt-published" datetime="2013-12-10T22:44:00+01:00">
   Mardi 10 décembre 2013
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/2013/12/10/installer-git/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="/2013/12/10/installer-git/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
@@ -103,18 +103,16 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Premièrement vous devez dire à git votre nom, de manière à ce qu&#39;il puisse proprement étiqueter les commits que vous produisez.</p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git config --global user.name <span class="s2">&quot;Votre Nom Ici&quot;</span>
-<span class="c"># Règle le nom par défaut pour git à utiliser quand vous committez</span>
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git config --global user.name <span class="s2">&quot;Votre Nom Ici&quot;</span>
+<span class="c"># Règle le nom par défaut pour git à utiliser quand vous committez</span></code></pre></div>
   
 
 <h2>E-mail</h2>
 
 <p>Git sauvegarde votre adresse e-mail à l&#39;intérieur des commits que vous produisez. Nous utilisons l&#39;adresse e-mail pour associer vos commits à votre compte GitHub. </p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git config --global user.email <span class="s2">&quot;votre_email@exemple.com&quot;</span>
-<span class="c"># Règle l&#39;e-mail par défaut pour git à utiliser quand vous committez</span>
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git config --global user.email <span class="s2">&quot;votre_email@exemple.com&quot;</span>
+<span class="c"># Règle l&#39;e-mail par défaut pour git à utiliser quand vous committez</span></code></pre></div>
   
 
 <p>Votre adresse e-mail pour Git devrait être la même que celle associée à votre compte GitHub. Si ce n&#39;est pas le cas, regardez <a href="https://help.github.com/articles/how-do-i-change-my-primary-email-address">ce guide</a> pour aider à ajouter des e-mails à votre compte GitHub. Si vous voulez cacher votre adresse e-mail, <a href="https://help.github.com/articles/keeping-your-email-address-private">ce guide</a> peut vous être utile.</p>
@@ -123,13 +121,12 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Les étapes listées au-dessus vous montrent comment régler globalement votre info utilisateur. Ceci veut dire que quel que soit le dépôt sur lequel vous travaillez sur votre ordinateur, vous produirez des commits sous cet utilisateur. Si vous vous retrouvez confronté à devoir produire des commits avec une info-utilisateur différente pour un dépôt spécifique (peut-être pour le travail vs. projets personnels), vous devrez changer l&#39;info dans ce même dépôt. </p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span><span class="nb">cd </span>mon_autre_repo
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd </span>mon_autre_repo
 <span class="c"># Change le repo de travail vers le repo vers lequel vous souhaitez basculer l&#39;info pour </span>
 <span class="nv">$ </span>git config user.name <span class="s2">&quot;Nom Different&quot;</span>
 <span class="c"># Regle le nom d&#39;utilisateur pour ce repo spécifique</span>
 <span class="nv">$ </span>git config user.email <span class="s2">&quot;e-mail-different@email.com&quot;</span>
-<span class="c"># Regle l&#39;e-mail d&#39;utilisateur pour ce repo spécifique</span>
-</code></pre></div>
+<span class="c"># Regle l&#39;e-mail d&#39;utilisateur pour ce repo spécifique</span></code></pre></div>
 
 <p>Désormais vos commits seront associés à ces nouveaux nom-d-utilisateur et e-mail dans le repo spécifié.</p>
 
@@ -145,14 +142,13 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Vous pouvez vérifier cela en essayant de lancer la commande suivante :</p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git credential-osxkeychain
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git credential-osxkeychain
 <span class="c"># Test du cred helper</span>
-Usage : git credential-osxkeychain &lt;get<span class="p">|</span>store<span class="p">|</span>erase&gt;
-</code></pre></div>
+Usage : git credential-osxkeychain &lt;get<span class="p">|</span>store<span class="p">|</span>erase&gt;</code></pre></div>
 
 <p>Si vous n&#39;avez pas le helper, vous pouvez le télécharger avec curl : </p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git credential-osxkeychain
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git credential-osxkeychain
 <span class="c"># Test du cred helper</span>
 <span class="c"># git: &#39;credential-osxkeychain&#39; n&#39;est pas une commande git. Voir &#39;git --help&#39;.</span>
 
@@ -161,22 +157,19 @@ Usage : git credential-osxkeychain &lt;get<span class="p">|</span>store<span cla
 <span class="c"># Télécharge le helper</span>
 
 <span class="nv">$ </span>chmod u+x git-credential-osxkeychain
-<span class="c"># Répare les permissions sur le fichier pour le faire tourner</span>
-</code></pre></div>
+<span class="c"># Répare les permissions sur le fichier pour le faire tourner</span></code></pre></div>
 
 <p>Maintenant vous devez installer le helper à l&#39;intérieur du même répertoire où Git lui-même est installé.</p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>sudo mv git-credential-osxkeychain <span class="se">\</span>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>sudo mv git-credential-osxkeychain <span class="se">\</span>
   <span class="s2">&quot;$(dirname $(which git))/git-credential-osxkeychain&quot;</span>
 <span class="c"># Migre le helper vers le chemin où git est installé</span>
-<span class="c"># Password: [entrez votre mot de passe]</span>
-</code></pre></div>
+<span class="c"># Password: [entrez votre mot de passe]</span></code></pre></div>
 
 <p>Pour dire à git d&#39;utiliser osxkeychain, réglez simplement la config globale git :</p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git config --global credential.helper osxkeychain
-<span class="c"># règle git pour utiliser le osxkeychain credential helper</span>
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git config --global credential.helper osxkeychain
+<span class="c"># règle git pour utiliser le osxkeychain credential helper</span></code></pre></div>
 
 <p>La prochaine fois que vous clonerez une URL HTTPS qui requiert un mot de passe, vous serez averti de rentrer votre nom d&#39;utilisateur et mot de passe, et d&#39;autoriser l&#39;accès à la OSX keychain. Après ça, les <code>username</code> et <code>password</code> seront stockés dans votre keychain et vous ne serez plus obligés de les saisir à nouveau dans git.</p>
 
@@ -215,6 +208,7 @@ Usage : git credential-osxkeychain &lt;get<span class="p">|</span>store<span cla
     url = url && url[0] ? url[0].href : false;
     sn.type = "text/javascript"; sn.async = true;
     sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    sn.src = sn.src.substring(0, sn.src.length - 3);
     s.parentNode.insertBefore(sn, s);
   }());
 </script>

@@ -7,7 +7,7 @@
     <title>Github Pour Mac : Faire des Modifications</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="http://christopheducamp.com/2013/12/06/github-produire-des-modifications//" />
+    <link rel="canonical" href="/2013/12/06/github-produire-des-modifications//" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -34,7 +34,7 @@
 
 </head>
 
-    <body>
+    <body class="h-feed">
 
     <header class="site-header">
 
@@ -73,7 +73,7 @@
     <p class="meta"><time class="dt-published" datetime="2013-12-06T00:00:00+01:00">
   Vendredi 6 décembre 2013
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/2013/12/06/github-produire-des-modifications/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="/2013/12/06/github-produire-des-modifications/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
@@ -83,7 +83,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>GitHub pour Mac dispose d&#39;un raccourci très pratique pour que vous puissiez rapidement voir vos dépôts dans le Finder – survolez et posez-vous sur le dépôt dans la vue des dépôts principaux et faites un control-clic, puis sélectionnez &quot;Show in Finder&quot; dans le menu contextuel qui apparaît.</p>
 
-<p><img src="http://christopheducamp.com/assets/images/Github-Mac-ShowInFinder.png" alt="UI Github pour Mac"></p>
+<p><img src="/assets/images/Github-Mac-ShowInFinder.png" alt="UI Github pour Mac"></p>
 
 <h2>Faire une modification</h2>
 
@@ -100,7 +100,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Revenez sur Github pour Mac et double-cliquez sur &quot;Spoon-Knife&quot; dans la vue des dépôts principaux. Ceci vous conduira à la vue Historique, où vous pourrez voir les précédents <em>commits</em> d&#39;autres personnes. Néanmoins si vous cliquez sur l&#39;onglet &quot;Changes&quot; sur la gauche, vous entrerez dans la vue Changes, où vous pouvez voir que le fichier README est maintenant mis en valeur comme étant modifié. Sur la droite, vous pouvez voir une &quot;diff&quot; affichant les lignes ayant été modifiées.</p>
 
-<p><img src="http://christopheducamp.com/images/GitHub-Changes-view.png" alt="image" title="Visualisation des Modifications"></p>
+<p><img src="/images/GitHub-Changes-view.png" alt="image" title="Visualisation des Modifications"></p>
 
 <h2>Committez vos modifications localement</h2>
 
@@ -144,6 +144,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
     url = url && url[0] ? url[0].href : false;
     sn.type = "text/javascript"; sn.async = true;
     sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    sn.src = sn.src.substring(0, sn.src.length - 3);
     s.parentNode.insertBefore(sn, s);
   }());
 </script>

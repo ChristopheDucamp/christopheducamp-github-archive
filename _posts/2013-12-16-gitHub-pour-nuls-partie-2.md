@@ -9,7 +9,7 @@ tags: hack github howto versioncontrol
 
 ### *Maintenant que nous connaissons les concepts Git, il est temps de jouer. Voici venue la deuxième partie de notre série.*
 
-Dans la [1<up>ère</sup> partie de ce tutoriel GitHub en deux parties](/2013/12/15/Github-pour-nuls-partie-1/), nous avons examiné les principales utilisations de GitHub, commencé le processus d'enregistrement d'un compte GitHub et pour finir, nous avons créé notre propre dépôt local pour le code.
+Dans la [1<up>ère</sup> partie de ce tutoriel GitHub en deux parties](/2013/12/15/github-pour-nuls-partie-1/), nous avons examiné les principales utilisations de GitHub, commencé le processus d'enregistrement d'un compte GitHub et pour finir, nous avons créé notre propre dépôt local pour le code.
 
 Ces premières étapes étant accomplies, ajoutons désormais la première partie de notre projet en **produisant notre premier "commit" sur GitHub.** À la fin de la première partie, nous avions créé un dépôt local appelé `MonProjet`, qui, visualisé à la ligne de commande, ressemble à cette impression-écran : 
 

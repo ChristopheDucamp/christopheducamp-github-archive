@@ -7,7 +7,7 @@
     <title>Comment localiser la date en français dans Jekyll ?</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="http://christopheducamp.com/2013/12/26/jekyll-localiser-la-date//" />
+    <link rel="canonical" href="/2013/12/26/jekyll-localiser-la-date//" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -34,7 +34,7 @@
 
 </head>
 
-    <body>
+    <body class="h-feed">
 
     <header class="site-header">
 
@@ -73,7 +73,7 @@
     <p class="meta"><time class="dt-published" datetime="2013-12-26T04:47:00+01:00">
   Jeudi 26 décembre 2013
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/2013/12/26/jekyll-localiser-la-date/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="/2013/12/26/jekyll-localiser-la-date/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
@@ -91,7 +91,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 </ul>
 
 <p>Les filtres de dates <code>date_to_string</code> proposés à cette heure dans la documentation Jekyll affichent </p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">26 Dec 2013
+<div class="highlight"><pre><code class="language-text" data-lang="text">26 Dec 2013
 26 December 2013
 </code></pre></div>
 <p>Si beaucoup de sites utilisent ce format, vous pourriez trouver utile de reprendre la main sur la date ? 
@@ -103,22 +103,22 @@ Bookmarkez cette page ! c&#39;est une mine d&#39;or pour devenir un mage de la m
 <p>Et par curiosité, jetez aussi un oeil au <a href="http://docs.shopify.com/themes/liquid-basics/output#date">Filtre Date Liquid</a> qui offre quelques éléments basiques pour la mise en page des dates. </p>
 
 <p>Commencez doucement et simplement à vous entraîner en permutant quelques lettres de tag/filtre comme  <code>%B, %d %Y</code> pour maîtriser les formats de dates simples <strong>en anglais</strong> (<code>B</code> étant substitué par le nom du mois écrit en toutes lettres, <code>d</code> le jour du mois de 01 à 31 et <code>Y</code> l&#39;année). </p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">December, 26 2013
+<div class="highlight"><pre><code class="language-text" data-lang="text">December, 26 2013
 </code></pre></div>
 <p><br>  </p>
 
 <h2>Une date en français lisible-pour-les-humains</h2>
 
 <p>Si vous êtes n00b comme moi sur Jekyll, la localisation des dates en français vous demandera plus d&#39;efforts. <a href="http://christopheducamp.com/w/Jekyll-localiser-la-date#localisation_du_mois">Cliquez ici</a> pour visualiser les premiers échantillons de code utilisés pour afficher la date en langage clair comme suit : </p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">Jeudi 26 décembre 2013
+<div class="highlight"><pre><code class="language-text" data-lang="text">Jeudi 26 décembre 2013
 </code></pre></div>
 <p>... et pour le plaisir, une variante tout en bas de casses et le nom du mois abrégé que j&#39;adapterai pour lister les posts triés par dates en page d&#39;accueil : </p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">jeudi 26 déc. 2013
+<div class="highlight"><pre><code class="language-text" data-lang="text">jeudi 26 déc. 2013
 </code></pre></div>
 <h2>Date-machine ISO-8601</h2>
 
 <p>Vous aurez aussi besoin d&#39;une représentation <a href="http://christopheducamp.com/w/ISO_8601#ISO_8601">iso 8601</a> pour intégration dans l&#39;élément <a href="http://html5doctor.com/the-time-element/">time</a>. Utilisez <code>%Y-%m-%d</code> ou plus simplement le filtre <code><a href="http://jekyllrb.com/docs/templates/#filters">date<em>to</em>xmlschema</a></code> pour une version longue intégrant horaire et fuseau : </p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">2013-12-26 
+<div class="highlight"><pre><code class="language-text" data-lang="text">2013-12-26 
 2013-12-26T04:47:00+01:00 
 </code></pre></div>
 <p><br></p>
@@ -143,15 +143,15 @@ Très preneur de vos frameworks, plugins et/ou tous vos points d&#39;optimisatio
   
 <ul>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#hack" title="Pages taguées hack">hack</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#hack" title="Pages taguées hack">hack</a></li>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#jekyll" title="Pages taguées jekyll">jekyll</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#jekyll" title="Pages taguées jekyll">jekyll</a></li>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#date" title="Pages taguées date">date</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#date" title="Pages taguées date">date</a></li>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#howto" title="Pages taguées howto">howto</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#howto" title="Pages taguées howto">howto</a></li>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#localization" title="Pages taguées localization">localization</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#localization" title="Pages taguées localization">localization</a></li>
 
 </ul>
 <div>
@@ -171,6 +171,7 @@ Très preneur de vos frameworks, plugins et/ou tous vos points d&#39;optimisatio
     url = url && url[0] ? url[0].href : false;
     sn.type = "text/javascript"; sn.async = true;
     sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    sn.src = sn.src.substring(0, sn.src.length - 3);
     s.parentNode.insertBefore(sn, s);
   }());
 </script>

@@ -7,7 +7,7 @@
     <title>Créer un Dépôt sur GitHub</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="http://christopheducamp.com/2013/12/16/creer-un-repo-GitHub//" />
+    <link rel="canonical" href="/2013/12/16/creer-un-repo-GitHub//" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -34,7 +34,7 @@
 
 </head>
 
-    <body>
+    <body class="h-feed">
 
     <header class="site-header">
 
@@ -70,10 +70,10 @@
 
   <header class="post-header">
     <h1 class="p-name entry-title">Créer un Dépôt sur GitHub</h1>
-    <p class="meta"><time class="dt-published" datetime="2013-12-16T10:19:00Z">
+    <p class="meta"><time class="dt-published" datetime="2013-12-16T11:19:00+01:00">
   Lundi 16 décembre 2013
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/2013/12/16/creer-un-repo-GitHub/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="/2013/12/16/creer-un-repo-GitHub/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
@@ -117,7 +117,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Dans votre fenêtre de terminal, tapez le code suivant : </p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>mkdir ~/Hello-World
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>mkdir ~/Hello-World
 
 <span class="c"># Crée un répertoire pour votre projet nommé &quot;Hello-World&quot; dans votre répertoire utilisateur local</span>
 
@@ -129,8 +129,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 <span class="c"># Initialise le répertoire vite Git dans /Users/you/Hello-World/.git/</span>
 
 <span class="nv">$ </span>touch README
-<span class="c"># Crée un fichier nommé &quot;README&quot; dans votre répertoire local Hello-World</span>
-</code></pre></div>
+<span class="c"># Crée un fichier nommé &quot;README&quot; dans votre répertoire local Hello-World</span></code></pre></div>
 
 <p>Ouvrez le nouveau fichier README trouvé dans votre répertoire <code>Hello-World</code> dans un éditeur de texte et ajoutez le texte &quot;Hello World!&quot; Une fois terminé, sauvegardez et fermez le fichier.</p>
 
@@ -138,12 +137,11 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Maintenant que vous avez installé votre README, il est temps de le committer. Un commit est en fait un instantané de tous les fichiers dans votre projet à un moment donné. Dans la fenêtre de Terminal, tapez le code suivant : </p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git add README
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git add README
 <span class="c"># fait entrer en scène le fichier README, et l&#39;ajoute à la liste des fichiers à committer</span>
 
 <span class="nv">$ </span>git commit -m <span class="s1">&#39;premier commit&#39;</span>
-<span class="c"># Committe vos fichiers, en ajoutant le message &quot;premier commit&quot;</span>
-</code></pre></div>
+<span class="c"># Committe vos fichiers, en ajoutant le message &quot;premier commit&quot;</span></code></pre></div>
 
 <h4>Plus sur les commits</h4>
 
@@ -161,12 +159,11 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Git supporte de nombreux remotes. Ceci est communément utilisé au moment de <em>forker</em> un dépôt.</p>
 
-<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>git remote add origin https://github.com/username/Hello-World.git
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote add origin https://github.com/username/Hello-World.git
 <span class="c"># Crée un remote nommé &quot;origin&quot; pointant votre dépôt GitHub</span>
 
 <span class="nv">$ </span>git push origin master
-<span class="c"># Envoie vos commits dans la branche &quot;master&quot; sur GitHub</span>
-</code></pre></div>
+<span class="c"># Envoie vos commits dans la branche &quot;master&quot; sur GitHub</span></code></pre></div>
 
 <p>(<strong>Truc</strong> : Remarquez que le chemin vers votre URL distante (remote) --Hello-World.git--correspond à celui que vous avez créé sur GitHub. Ceci est sensible à la casse, et il est important de conserver la même.)</p>
 
@@ -217,6 +214,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
     url = url && url[0] ? url[0].href : false;
     sn.type = "text/javascript"; sn.async = true;
     sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    sn.src = sn.src.substring(0, sn.src.length - 3);
     s.parentNode.insertBefore(sn, s);
   }());
 </script>

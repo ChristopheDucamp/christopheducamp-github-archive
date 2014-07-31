@@ -7,7 +7,7 @@
     <title>GitHub : Être Social</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="http://christopheducamp.com/2013/12/16/github-etre-social//" />
+    <link rel="canonical" href="/2013/12/17/github-etre-social//" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -34,7 +34,7 @@
 
 </head>
 
-    <body>
+    <body class="h-feed">
 
     <header class="site-header">
 
@@ -70,10 +70,10 @@
 
   <header class="post-header">
     <h1 class="p-name entry-title">GitHub : Être Social</h1>
-    <p class="meta"><time class="dt-published" datetime="2013-12-16T23:35:44Z">
-  Lundi 16 décembre 2013
+    <p class="meta"><time class="dt-published" datetime="2013-12-17T00:35:44+01:00">
+  Mardi 17 décembre 2013
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/2013/12/16/github-etre-social/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="/2013/12/17/github-etre-social/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
@@ -166,7 +166,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
   Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
   <form action="https://webmention.herokuapp.com/api/webmention" method="post">
     <input name="source" type="url" placeholder="http://exemple.com/mon-post-cool" />
-    <input name="target" value="http://christopheducamp.com/2013/12/16/github-etre-social/" type="hidden">
+    <input name="target" value="http://christopheducamp.com/2013/12/17/github-etre-social/" type="hidden">
     <input value="Envoyer la Webmention" type="submit">
   </form>
 </div>
@@ -179,6 +179,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
     url = url && url[0] ? url[0].href : false;
     sn.type = "text/javascript"; sn.async = true;
     sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    sn.src = sn.src.substring(0, sn.src.length - 3);
     s.parentNode.insertBefore(sn, s);
   }());
 </script>

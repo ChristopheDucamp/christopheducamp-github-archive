@@ -7,7 +7,7 @@
     <title>Forker un Repo sur GitHub</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="http://christopheducamp.com/2013/12/16/forker-un-repo-github//" />
+    <link rel="canonical" href="/2013/12/16/forker-un-repo-github//" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -34,7 +34,7 @@
 
 </head>
 
-    <body>
+    <body class="h-feed">
 
     <header class="site-header">
 
@@ -70,10 +70,10 @@
 
   <header class="post-header">
     <h1 class="p-name entry-title">Forker un Repo sur GitHub</h1>
-    <p class="meta"><time class="dt-published" datetime="2013-12-16T14:36:00Z">
+    <p class="meta"><time class="dt-published" datetime="2013-12-16T15:36:00+01:00">
   Lundi 16 décembre 2013
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/2013/12/16/forker-un-repo-github/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="/2013/12/16/forker-un-repo-github/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
@@ -98,9 +98,8 @@ Pour pouvoir travailler sur le projet, vous devrez le <em>cloner</em>, à savoir
 
 <p>Faites tourner le code qui suit :</p>
 
-<div class="highlight"><pre><code class="bash">git clone https://github.com/username/Spoon-Knife.git
-<span class="c"># Clone votre fork du dépôt à l&#39;intérieur du répertoire en cours dans le terminal</span>
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/username/Spoon-Knife.git
+<span class="c"># Clone votre fork du dépôt à l&#39;intérieur du répertoire en cours dans le terminal</span></code></pre></div>
   
 
 <h3>Étape 3 : Configurer les remotes</h3>
@@ -113,13 +112,12 @@ Pour pouvoir travailler sur le projet, vous devrez le <em>cloner</em>, à savoir
 
 <p>Git supporte plusieurs remotes. Ceci s&#39;utilise communément au moment de forker un dépôt.</p>
 
-<div class="highlight"><pre><code class="bash"><span class="nb">cd </span>Spoon-Knife
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>Spoon-Knife
 <span class="c"># Change le répertoire actif dans le terminal vers le nouveau répertoire fraîchement cloné &quot;Spoon-Knife&quot;</span>
 git remote add upstream https://github.com/octocat/Spoon-Knife.git
 <span class="c"># Assigne le dépôt original à un remote nommé &quot;upstream&quot;</span>
 git fetch upstream
-<span class="c"># Rapatrie les modifications non présentes dans votre dépôt local, sans modifier vos fichiers</span>
-</code></pre></div>
+<span class="c"># Rapatrie les modifications non présentes dans votre dépôt local, sans modifier vos fichiers</span></code></pre></div>
   
 
 <h2>Plein de Trucs Restent À Faire !</h2>
@@ -130,9 +128,8 @@ git fetch upstream
 
 <p>Une fois que vous avez produit quelques commits vers un dépôt forké et que vous voulez les pousser vers votre dépôt forké, vous faites ça de la même façon que vous le feriez avec un dépôt normal : </p>
 
-<div class="highlight"><pre><code class="bash">git push origin master
-<span class="c"># Pousse les commits vers votre dépôt remote (distant) stocké sur GitHub</span>
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git push origin master
+<span class="c"># Pousse les commits vers votre dépôt remote (distant) stocké sur GitHub</span></code></pre></div>
   
 
 <h4>Plus sur les commits</h4>
@@ -145,11 +142,10 @@ git fetch upstream
 
 <p>Si le dépôt original que vous avez forké pour votre projet est mis à jour, vous pouvez ajouter ces mises à jour à votre fork en faisant tourner la commande suivante : </p>
 
-<div class="highlight"><pre><code class="bash">git fetch upstream
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git fetch upstream
 <span class="c"># Rapatrie toutes les nouvelles modifications provenant du dépôt original</span>
 git merge upstream/master
-<span class="c"># Fusionne toutes les modifications rapatriées à l&#39;intérieur de vos fichiers de travail</span>
-</code></pre></div>
+<span class="c"># Fusionne toutes les modifications rapatriées à l&#39;intérieur de vos fichiers de travail</span></code></pre></div>
 
 <h4>Quelle est la différence entre fetch et  pull ?</h4>
 
@@ -157,19 +153,17 @@ git merge upstream/master
 
 <h5>Pull</h5>
 
-<div class="highlight"><pre><code class="bash">git pull upstream master
-<span class="c"># Tire les commits provenant de &#39;upstream&#39; et les stocke dans le dépôt local</span>
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git pull upstream master
+<span class="c"># Tire les commits provenant de &#39;upstream&#39; et les stocke dans le dépôt local</span></code></pre></div>
 
 <p>Quand vous utilisez <code>git pull</code>, git essaye automatiquement de faire le travail à votre place. C&#39;est sensible au contexte, ainsi git fusionnera tous les les commits tirés (pull) à l&#39;intérieur de la branche dans laquelle vous êtes en train de travailler. Une chose à garder à l&#39;esprit, est que <code>git pull</code> fusionne automatiquement les commits sans vous laisser d&#39;abord les réviser. Si vous ne gérez pas vos branches de très près, vous pourriez rencontrer des conflits fréquents.</p>
 
 <h5>Fetch &amp; Merge</h5>
 
-<div class="highlight"><pre><code class="bash">git fetch upstream
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git fetch upstream
 <span class="c"># Rapatrie tous les nouveaux commits provenant du dépôt original</span>
 git merge upstream/master
-<span class="c"># Fusionne tous les commits rapatriés à l&#39;intérieur de vos fichiers de travail</span>
-</code></pre></div>
+<span class="c"># Fusionne tous les commits rapatriés à l&#39;intérieur de vos fichiers de travail</span></code></pre></div>
 
 <p>Quand vous lancez <code>git fetch</code>, git retrouve tous les nouveaux commits provenant du <code>remote</code> cible que vous n&#39;avez pas et les stocke dans votre dépôt local. Néanmoins, il ne les fusionne pas dans votre branche actuelle. Ceci est tout particulièrement utile si vous avez besoin de conserver votre dépôt à jour mais travaillez sur quelque chose qui pourrait se casser si vous mettiez vos fichiers à jour. Pour intégrer les commits à l&#39;intérieur de votre branche locale, vous utilisez <code>git merge</code>. Ceci combine les branches spécifiées et vous alerte en cas de conflits.</p>
 
@@ -181,35 +175,31 @@ git merge upstream/master
 
 <p>Les branches sont vraiment faciles à travailler et vous épargneront beaucoup de maux de têtes, tout spécialement quand vous travaillez avec beaucoup de gens. Pour créer une branche et commencer à travailler dedans, lancez ces commandes : </p>
 
-<div class="highlight"><pre><code class="bash">git branch *mabranche*
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git branch *mabranche*
 <span class="c"># Crée une nouvelle branche nommée &quot;mabranche&quot;</span>
 git checkout *mabranche*
-<span class="c"># Transforme &quot;mabranche&quot; en branche active</span>
-</code></pre></div>
+<span class="c"># Transforme &quot;mabranche&quot; en branche active</span></code></pre></div>
 
 <p>Alternativement, vous pouvez utiliser le raccourci :</p>
 
-<div class="highlight"><pre><code class="bash">git checkout -b *mabranche*
-<span class="c"># Crée une nouvelle branche nommée &quot;mabranche&quot; et la transforme en granche active</span>
-</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git checkout -b *mabranche*
+<span class="c"># Crée une nouvelle branche nommée &quot;mabranche&quot; et la transforme en granche active</span></code></pre></div>
 
 <p>Pour basculer entre les branches, utilisez <code>git checkout</code>.</p>
 
-<div class="highlight"><pre><code class="bash">git checkout master
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git checkout master
 <span class="c"># Transforme &quot;master&quot; en branche active</span>
 git checkout *mabranche*
-<span class="c"># Transforme &quot;mabranche&quot; en branche active</span>
-</code></pre></div>
+<span class="c"># Transforme &quot;mabranche&quot; en branche active</span></code></pre></div>
 
 <p>Une fois que vous avez fini de travailler sur votre branche et quand vous êtes prêt à la combiner en retour à l&#39;intérieur de la branche <code>master</code>, utilisez <code>merge</code>.</p>
 
-<div class="highlight"><pre><code class="bash">git checkout master
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git checkout master
 <span class="c"># Fait de &quot;master&quot; la branche active</span>
 git merge *mabranche*
 <span class="c"># Fusionne les commits provenant de &quot;mabranche&quot; à l&#39;intérieur de &quot;master&quot;</span>
 git branch -d *mabranche*
-<span class="c"># Efface la branche &quot;mabranche&quot;</span>
-</code></pre></div>
+<span class="c"># Efface la branche &quot;mabranche&quot;</span></code></pre></div>
 
 <p><strong>Truc</strong> : Quand vous switchez entre les branches, les fichiers sur lesquels vous travaillez (la &quot;copie de travail&quot;) sont mis à jour pour renvoyer les modifications dans la nouvelles branche. Si vous avez des modifications que vous n&#39;avez pas committées, git s&#39;assurera que vous ne les perdez pas. Git fait aussi très attention durant les fusions et les pulls pour vous assurer que vous ne perdez pas de modifications. <strong>En cas de doute, committez tôt et committez souvent</strong>.</p>
 
@@ -260,6 +250,7 @@ git branch -d *mabranche*
     url = url && url[0] ? url[0].href : false;
     sn.type = "text/javascript"; sn.async = true;
     sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    sn.src = sn.src.substring(0, sn.src.length - 3);
     s.parentNode.insertBefore(sn, s);
   }());
 </script>

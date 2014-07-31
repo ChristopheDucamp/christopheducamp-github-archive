@@ -39,3 +39,6 @@ Les aires de texte en jaune représentent votre info personnelle, les repos, etc
 
 - **Bon à savoir** : Pour des raisons de sécurité, le Terminal n'affichera pas ce que vous saisissez quand vous rentrerez des mots de passe. Tapez simplement votre mot de passe et pressez la touche entrée.
 
+## Ressources 
+- [Un index complet pour la ligne de commande Apple OS X](http://ss64.com/osx/)
+

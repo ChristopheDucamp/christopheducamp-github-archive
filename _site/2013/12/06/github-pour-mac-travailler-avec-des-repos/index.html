@@ -7,7 +7,7 @@
     <title>Github Pour Mac : Travailler avec des dépôts</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="http://christopheducamp.com/2013/12/06/github-pour-mac-travailler-avec-des-repos//" />
+    <link rel="canonical" href="/2013/12/06/github-pour-mac-travailler-avec-des-repos//" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -34,7 +34,7 @@
 
 </head>
 
-    <body>
+    <body class="h-feed">
 
     <header class="site-header">
 
@@ -73,7 +73,7 @@
     <p class="meta"><time class="dt-published" datetime="2013-12-06T00:00:00+01:00">
   Vendredi 6 décembre 2013
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/2013/12/06/github-pour-mac-travailler-avec-des-repos/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="/2013/12/06/github-pour-mac-travailler-avec-des-repos/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
@@ -141,6 +141,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
     url = url && url[0] ? url[0].href : false;
     sn.type = "text/javascript"; sn.async = true;
     sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    sn.src = sn.src.substring(0, sn.src.length - 3);
     s.parentNode.insertBefore(sn, s);
   }());
 </script>

@@ -7,7 +7,7 @@
     <title>Markdown : Le Futur de l'Écriture</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="http://christopheducamp.com/2013/12/22/markdow-avenir-ecriture//" />
+    <link rel="canonical" href="/2013/12/22/markdow-avenir-ecriture//" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -34,7 +34,7 @@
 
 </head>
 
-    <body>
+    <body class="h-feed">
 
     <header class="site-header">
 
@@ -73,7 +73,7 @@
     <p class="meta"><time class="dt-published" datetime="2013-12-22T13:00:00+01:00">
   Dimanche 22 décembre 2013
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/2013/12/22/markdow-avenir-ecriture/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="/2013/12/22/markdow-avenir-ecriture/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
@@ -168,6 +168,7 @@ La dernière moitié de la décennie a donné naissance à un tout un tas de nou
     url = url && url[0] ? url[0].href : false;
     sn.type = "text/javascript"; sn.async = true;
     sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    sn.src = sn.src.substring(0, sn.src.length - 3);
     s.parentNode.insertBefore(sn, s);
   }());
 </script>
