@@ -34,6 +34,7 @@
 
 </head>
 
+
     <body class="h-feed">
 
     <header class="site-header">
@@ -172,20 +173,24 @@ create mode <span class="m">100644</span> index.html
 <p>Cela pourrait avoir duré 10 minutes, mais après ça vous pourrez voir votre toute nouvelle page créée sur <code>http://nomutilisateur.github.io/Nom-du-Projet/</code>. Si vous faites des mises à jour, assurez-vous de pousser vers la branche <code>gh-pages</code>.</p>
 
   </article>
-  
-<ul>
+
+<div class="tags">  
+<ul class="tag-list">
 
 </ul>
-<div>
-  Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
+</div>
+
+<div class="note-footer">
+<p>Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
   <form action="https://webmention.herokuapp.com/api/webmention" method="post">
     <input name="source" type="url" placeholder="http://exemple.com/mon-post-cool" />
     <input name="target" value="http://christopheducamp.com/2013/12/12/mac-osx-guide-page-projet-github/" type="hidden">
     <input value="Envoyer la Webmention" type="submit">
   </form>
-</div>
+
 
 <section class="webmention">
+<p>Réactions (webmentions)</p>
 <script id="webmention-hosted">
   (function () {
     var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
@@ -197,8 +202,10 @@ create mode <span class="m">100644</span> index.html
   }());
 </script>
 </section>
+</div>
 
 </div>
+
       </div>
     </div>
 

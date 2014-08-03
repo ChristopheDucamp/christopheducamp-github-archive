@@ -7,6 +7,124 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Redirections URLs dans Jekyll</title>
+        <description>&lt;p&gt;&lt;em&gt;Inspiré pour reprendre l&amp;#39;étude de l&amp;#39;&lt;a href=&quot;http://indiewebcamp.com/IndieMark&quot;&gt;IndieMark&lt;/a&gt; sur cette instance Jekyll. Une inspiration particulièrement dopée par &lt;a href=&quot;http://www.pierre-o.fr/blog/2014/07/30/indieweb/&quot;&gt;l&amp;#39;arrivée sur IndieWeb&lt;/a&gt; de &lt;a rel=&quot;colleague&quot; title=&quot;Pierre Ozoux&quot; href=&quot;http://www.pierre-o.fr/&quot; class=&quot;h-card microcard&quot;&gt;Pierre Ozoux&lt;/a&gt;. Et par le dépannage webmention reçu de &lt;span class=&quot;h-card microcard&quot; rel=&quot;muse friend met&quot;&gt;&lt;img class=&quot;u-photo&quot; src=&quot;https://michielbdejong.com/img/agonda.png&quot; /&gt;&lt;a href=&quot;https://michielbdejong.com/&quot;&gt;Michiel&lt;/a&gt;&lt;/span&gt;, notre ami sauveur du web passé à Paris &lt;time datetime=&quot;2014-07-30&quot;&gt;mercredi dernier&lt;/time&gt; pour le premier &lt;a href=&quot;http://www.meetup.com/Paris-Meetup-pour-la-decentralisation-dInternet/events/193618842/&quot;&gt;meetup de décentralisation du net chez Mozilla&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Le &lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;moteur de génération de &amp;quot;permashortlinks&amp;quot;&lt;/a&gt; bâti hier par Pierre pour son instance Octopress (un framework Jekyll) m&amp;#39;a clairement éclairé pour parvenir à construire ici quelques premières  &lt;a href=&quot;http://indiewebcamp.com/permashortcitation&quot;&gt;citations de permaliens-raccourcis&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;L&amp;#39;installation de &lt;strong&gt;permaliens-raccourcis&lt;/strong&gt; n&amp;#39;est pas qu&amp;#39;un &lt;em&gt;truc de maniaque&lt;/em&gt; adopté par les membres de l&amp;#39;IndieWebCamp... C&amp;#39;est aussi un &lt;a href=&quot;http://indiewebcamp.com/IndieMark#Level_2_syndication&quot;&gt;pré-requis pour passer le niveau 2 de l&amp;#39;IndieMark&lt;/a&gt; ! &lt;/p&gt;
+
+&lt;h2&gt;Qu&amp;#39;est-ce qu&amp;#39;un Permalien-Raccourci ?&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Un &lt;strong&gt;&lt;dfn&gt;permalien&lt;/dfn&gt;&lt;/strong&gt; est une URL qui représente et retrouve un post unique. Un &lt;strong&gt;&lt;dfn&gt;permalien-court&lt;/dfn&gt;&lt;/strong&gt; (ou permalien-raccourci ?) est une URL utilisant un nom de domaine personnel raccourci qui se dilate vers un permalien.&lt;footer&gt;&lt;a class=&quot;p-name u-url&quot; href=&quot;http://indiewebcamp.com/permalinks-fr&quot;&gt;source wiki IndieWebCamp&lt;/a&gt;&lt;/footer&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;Démarrage à la ligne de commande. Ouvrez votre fenêtre de terminal et installez la gem Jekyll de redirection :&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ gem install jekyll-redirect-from
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Une fois la &lt;em&gt;gem&lt;/em&gt; installée dans votre environnement, ajoutez ces deux lignes dans votre fichier local &lt;code&gt;_config.yml&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;gems&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;jekyll-redirect-from&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Usages pressentis&lt;/h2&gt;
+
+&lt;p&gt;L&amp;#39;objet de cette gem de redirection peut ainsi permettre à un auteur de spécifier une (ou plusieurs !) URL(s) pour un même post ou une même page.&lt;/p&gt;
+
+&lt;p&gt;Pour utiliser ces urls courtes qui pointeront toutes vers votre URL canonique, inspirez-vous de la série qui suit. 
+Ajoutez votre adaptation au Panneau YAML de votre post ou page : &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Mon super post&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;redirect_from&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/post/123456789/&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/post/123456789/mon-super-post/&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/2014-08-02/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Exemple pour ce post :&lt;/h2&gt;
+
+&lt;p&gt;Pour le premier permalien-raccourci fonctionnel de ce post, j&amp;#39;ai volontairement choisi un format solide, quelque peu inspiré de &lt;span class=&quot;h-card&quot;&gt;&lt;a href=&quot;http://tantek.com/&quot;&gt;Tantek&lt;/a&gt;&lt;/span&gt;, à savoir l&amp;#39;année suivie du quantième ce qui pourrait ressembler à :  &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://xtof.me/2014-214/&quot;&gt;xtof.me/2014-214/&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;citation du permalien-raccourci : (xtof.me 2014/214)&lt;/li&gt;
+&lt;li&gt;Version un peu plus longue : &lt;a href=&quot;http://xtof.me/indielog/2014-214&quot;&gt;xtof.me indielog/2014-214&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Prochaine étape : Parvenir à Modifier le Rakefile&lt;/h2&gt;
+
+&lt;p&gt;Une recherche de patterns est en cours afin de trouver un modèle de raccourci d&amp;#39;&lt;a href=&quot;http://christopheducamp.com/b/2013-04-14/les-urls-sont-pour-les-humains/&quot;&gt;URL parlante et ayant du sens&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Quant à l&amp;#39;automatisation de ce processus de redirection, je serais preneur de toute aide pour décrypter les &lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;conseils de Pierre&lt;/a&gt; afin de parvenir à adapter &lt;a href=&quot;https://github.com/ChristopheDucamp/christopheducamp.github.io/blob/master/rakefile&quot;&gt;mon fichier &lt;code&gt;Rakefile&lt;/code&gt;&lt;/a&gt;.  &lt;/p&gt;
+
+&lt;p&gt;Le message d&amp;#39;erreur renvoyé à cette heure : &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;rake post &lt;span class=&quot;nv&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Les Collections de Jekyll&amp;quot;&lt;/span&gt;
+rake aborted!
+undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;#39;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; nil:NilClass
+
+Tasks: &lt;span class=&quot;nv&quot;&gt;TOP&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&amp;gt; post
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;See full trace by running task with --trace&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Dernier truc à savoir :&lt;/strong&gt; Les redirections avec un slash à la fin génèrent un sous-répertoire correspondant contenant un fichier &lt;code&gt;index.html&lt;/code&gt;, alors que les redirections sans un slash à la fin générent un &lt;code&gt;nomfichier&lt;/code&gt; correspondant sans extension et sans sous-répertoire.&lt;/p&gt;
+
+&lt;h2&gt;Liens Ressources :&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Lien de référence : &lt;a href=&quot;https://github.com/jekyll/jekyll-redirect-from&quot;&gt;Jekyll-redirect-from&lt;/a&gt; - Github&lt;/li&gt;
+&lt;li&gt;Lisez le post technique &lt;cite class=&quot;h-cite&quot;&gt;&lt;strong&gt;&lt;span class=&quot;url p-name&quot;&gt;&lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;Permashortlinks&lt;/a&gt;&lt;/span&gt;&lt;/strong&gt; de &lt;abbr class=&quot;p-author h-card&quot; title=&quot;Pierre Ozoux&quot;&gt;Pierre&lt;/abbr&gt; pour des indications sur la modification du fichier Rakefile (&lt;time class=&quot;dt-published&quot;&gt;2014-08-02&lt;/time&gt;)&lt;/cite&gt; &lt;/li&gt;
+&lt;li&gt;Les &lt;a href=&quot;http://jekyllrb.com/docs/permalinks/&quot;&gt;permaliens de Jekyll&lt;/a&gt; : la page de référence pour connaître toutes les variables à utiliser dans vos permaliens.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Ailleurs&lt;/h2&gt;
+
+&lt;p&gt;Ce post est distribué sur &lt;a href=&quot;https://twitter.com/xtof_fr/status/495695580291928064&quot; rel=&quot;syndication&quot; class=&quot;u-syndication&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 02 Aug 2014 00:00:00 +0200</pubDate>
+        <link>//2014/08/02/redirections-urls-dans-jekyll/</link>
+        <guid isPermaLink="true">//2014/08/02/redirections-urls-dans-jekyll/</guid>
+      </item>
+    
+      <item>
+        <title>La quantification de soi à la recherche de sens</title>
+        <description>&lt;h2&gt;De la critique sur les usages et la pertinence des offres actuelles de l&amp;#39;auto-mesure.&lt;/h2&gt;
+
+&lt;p&gt;&lt;q&gt;Pourquoi le mouvement du Quantified Self peine à décoller ?&lt;/q&gt;   titre Télérama dans un &lt;a href=&quot;http://www.telerama.fr/techno/corpsmachine/quantified-self/&quot;&gt;excellent article critique paru&lt;/a&gt; au sein du webdocumentaire &lt;q&gt;&lt;a href=&quot;http://www.telerama.fr/techno/corpsmachine/&quot;&gt;Quand le Corps Humain devient Machine&lt;/a&gt;&lt;/q&gt;.&lt;/p&gt;
+
+&lt;p&gt;En super-bonus, découvrez notamment les points de vue éclairés de Nicolas Geraud et Remy Bourganel, co-producteurs de &lt;a href=&quot;http://www.meetup.com/QSParis/events/157838832/&quot;&gt;notre dernière rencontre consacrée au design&lt;/a&gt; : &lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;(...) Pourquoi ce mouvement peine-t-il à décoller alors qu’il a apparemment tout pour réussir ? Est-ce trop tôt ? « Où sont les nouveaux usages ?, questionne Nicolas Géraud, ancien du Commissariat à l’énergie atomique et aux énergies alternatives (CEA) et sociologue des usages. Le Quantified Self repose sur une fascination d’ingénieur : un jour, on s’est aperçu qu’on pouvait mettre des capteurs dans des chaussures pour quantifier une course. » Qu’est-ce que cette mesure a changé dans la performance ? Les données recueillies sont difficiles à analyser – ce qui est assez paraxodal. Le « bon sens » juge quel est le chiffre plus véridique et objectif, mais c’est oublier que les données dépendent du contexte. Les passionnés comptent sans arrêt leur pas, les sportifs uniquement quand ils courent, d’autres délaissent le capteur quand ses données les dépriment. Il est difficile d’analyser des données qui n’ont pas un cadre commun, comme lors de compétitions sportives. « Qu’est-ce que la quantification dit de notre rapport à nous-même ? Beaucoup de choses. Mais alors, le propos devient qualitatif, et non pas quantitatif », estime Nicolas Géraud. (...)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;(...) Le groupe Quantified Self Paris lui-même remarque que ces outils génèrent une “fatigue cognitive”. D’après eux, ces services ne seront adoptés que s’ils mènent à une « expérience stimulante, engageante et signifiante, qui transcende la question technologique ». Certaines entreprises du secteur s’orientent vers de nouvelles stratégies pour transmettre les données et prévenir l’abandon de leurs produits : elles délaissent les graphiques trop abstraits et utilisent les données dans l’optique de prodiguer des conseils pratiques et concrets.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Rémy Bourganel, qui a cofondé l’IDN (Identité numérique mobile), le laboratoire de design de l’École nationale supérieure des arts décoratifs, s’est emparé de ces questionnements. Le prototype de l’IDN, baptisé Folo, donne sur écran des conseils prodigués par des coachs virtuels, comme celui-ci, aléatoire : Demain, la journée sera ensoleillée. Et si tu allais faire un tour dans ce parc vers 9h ? Un de tes amis a l’habitude d’y aller, vous pourrez peut-être vous croiser.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Les chercheurs de l’IDN le reconnaissent : le manque de contexte limite les conseils à donner. « La plupart du temps, quand on détecte un problème, on peut juste conseiller d’aller consulter un médecin », constate Rémy Bourganel. Ils réfléchissent alors à « une façon de garder de la distance, de ne pas être soumis à l’outil ». Sur Folo, l’utilisateur peut paramétrer son ou ses coachs : ils seront cassants, encourageants, maternants, selon ses envies. « Ces coachs auront alors des approches différentes et pourront s’affronter à travers des conseils contradictoires », imagine Remy Bourganel.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;À titre personnel, tous mes objets sont effectivement remisés au placard faute d&amp;#39;expérience stimulante. Très impatient d&amp;#39;utiliser Folo ! Durant l&amp;#39;été, je poursuis avec joie l&amp;#39;expérimentation des fonctionnalités &amp;quot;sommeil&amp;quot; et &amp;quot;podomètre&amp;quot; de mon nouveau coach jawbone UP qui résiste enfin à l&amp;#39;eau et aux lavages machine... &lt;/p&gt;
+
+&lt;p&gt;Pour info, les prochaines rencontres du QSParis/MyDataLabs restent à programmer et co-produire pour la rentrée. Au programme : redesigner l&amp;#39;accueil web de mydatalabs et focus sur deux rencontres orientées sur la santé et l&amp;#39;habitat. Vos suggestions, propositions et contributions sont les bienvenues même durant les vacances ! &lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Jul 2014 00:00:00 +0200</pubDate>
+        <link>//2014/07/31/la-quantification-de-soi--la-recherche-de-sens/</link>
+        <guid isPermaLink="true">//2014/07/31/la-quantification-de-soi--la-recherche-de-sens/</guid>
+      </item>
+    
+      <item>
         <title>Design : Joel Glovier rhabille Jekyll</title>
         <description>&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;fr&quot;&gt;&lt;p&gt;Just finished an upgrade of the default &lt;a href=&quot;https://twitter.com/jekyllrb&quot;&gt;@jekyllrb&lt;/a&gt; blog theme. &lt;a href=&quot;https://t.co/hpLZs2RS4R&quot;&gt;https://t.co/hpLZs2RS4R&lt;/a&gt; (or preview it: &lt;a href=&quot;http://t.co/QAJmm9wS8Q&quot;&gt;http://t.co/QAJmm9wS8Q&lt;/a&gt;)&lt;/p&gt;&amp;mdash; Joel Glovier (@jglovier) &lt;a href=&quot;https://twitter.com/jglovier/statuses/438062229108563968&quot;&gt;24 Février 2014&lt;/a&gt;&lt;/blockquote&gt;
 
@@ -803,286 +921,6 @@ Nous pouvons faire ça exactement de la même façon qu&amp;#39;avant. Vérifiez
         <pubDate>Tue, 17 Dec 2013 00:35:44 +0100</pubDate>
         <link>//2013/12/17/github-etre-social/</link>
         <guid isPermaLink="true">//2013/12/17/github-etre-social/</guid>
-      </item>
-    
-      <item>
-        <title>Forker un Repo sur GitHub</title>
-        <description>&lt;p&gt;Lien de référence : &lt;span class=&quot;h-cite&quot;&gt;&lt;cite class=&quot;p-name u-url&quot;&gt;&lt;a href=&quot;https://help.github.com/articles/fork-a-repo&quot;&gt;Fork A Repo&lt;/a&gt;&lt;/cite&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Si vous vous trouvez sur cette page, je peux supposer que vous &lt;a href=&quot;/2013/12/15/Github-pour-nuls-partie-1/&quot;&gt;débutez sur Git et GitHub&lt;/a&gt;. Ce petit guide vous fera réviser quelques fondamentaux et vous aidera à faire vos premiers pas sur GitHub.&lt;/p&gt;
-
-&lt;h2&gt;Contribuer sur un projet&lt;/h2&gt;
-
-&lt;p&gt;À un certain stade, vous vous retrouvez en situation de vouloir contribuer sur le projet de quelqu&amp;#39;un d&amp;#39;autre, ou vous aimeriez utiliser le projet de quelqu&amp;#39;un comme point de départ pour  votre propre projet. Ceci est connu comme le &amp;quot;fork&amp;quot; ou bifurcation. Pour ce tutoriel, nous utiliserons le projet &lt;a href=&quot;https://github.com/octocat/Spoon-Knife&quot;&gt;Spoon-Knife&lt;/a&gt;, hébergé sur GitHub.com.&lt;/p&gt;
-
-&lt;h3&gt;Étape 1 : Forker le dépôt &amp;quot;Spoon-Knife&amp;quot;&lt;/h3&gt;
-
-&lt;p&gt;Pour forker ce projet, cliquez sur le bouton &amp;quot;Fork&amp;quot; dans le dépôt GitHub.com.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github-images.s3.amazonaws.com/help/Bootcamp-Fork.png&quot; alt=&quot;Image&quot;&gt; &lt;/p&gt;
-
-&lt;h3&gt;Étape 2: Cloner votre fork&lt;/h3&gt;
-
-&lt;p&gt;Vous avez forké avec succès le dépôt Spoon-Knife, mais à ce stade, il n&amp;#39;existe que sur GitHub. 
-Pour pouvoir travailler sur le projet, vous devrez le &lt;em&gt;cloner&lt;/em&gt;, à savoir rapatrier une copie sur votre machine locale.&lt;/p&gt;
-
-&lt;p&gt;Faites tourner le code qui suit :&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git clone https://github.com/username/Spoon-Knife.git
-&lt;span class=&quot;c&quot;&gt;# Clone votre fork du dépôt à l&amp;#39;intérieur du répertoire en cours dans le terminal&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-  
-
-&lt;h3&gt;Étape 3 : Configurer les remotes&lt;/h3&gt;
-
-&lt;p&gt;Quand un dépôt est cloné, il a un &lt;em&gt;remote&lt;/em&gt; par défaut appelé &lt;code&gt;origin&lt;/code&gt; qui pointe vers votre fork sur GitHub, et non pas le dépôt original à partir duquel il a été forké. Pour garder une trace du dépôt original, vous devez ajouter un autre remote appelé &lt;code&gt;upstream&lt;/code&gt; :&lt;/p&gt;
-
-&lt;h4&gt;Plus sur les remotes&lt;/h4&gt;
-
-&lt;p&gt;Un &lt;em&gt;remote&lt;/em&gt; est un dépôt stocké sur un autre ordinateur, dans ce cas sur le serveur de GitHub. C&amp;#39;est une pratique standard (et aussi le défaut quand vous clonez un dépôt) de donner le nom &lt;code&gt;origin&lt;/code&gt; au remote qui pointe vers votre dépôt principal hors du site (par exemple, votre dépôt GitHub).&lt;/p&gt;
-
-&lt;p&gt;Git supporte plusieurs remotes. Ceci s&amp;#39;utilise communément au moment de forker un dépôt.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;Spoon-Knife
-&lt;span class=&quot;c&quot;&gt;# Change le répertoire actif dans le terminal vers le nouveau répertoire fraîchement cloné &amp;quot;Spoon-Knife&amp;quot;&lt;/span&gt;
-git remote add upstream https://github.com/octocat/Spoon-Knife.git
-&lt;span class=&quot;c&quot;&gt;# Assigne le dépôt original à un remote nommé &amp;quot;upstream&amp;quot;&lt;/span&gt;
-git fetch upstream
-&lt;span class=&quot;c&quot;&gt;# Rapatrie les modifications non présentes dans votre dépôt local, sans modifier vos fichiers&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-  
-
-&lt;h2&gt;Plein de Trucs Restent À Faire !&lt;/h2&gt;
-
-&lt;p&gt;Vous avez forké avec succès un dépôt, mais vous avez maintenant plein d&amp;#39;autres choses cools à faire : &lt;/p&gt;
-
-&lt;h3&gt;Pousser des commits&lt;/h3&gt;
-
-&lt;p&gt;Une fois que vous avez produit quelques commits vers un dépôt forké et que vous voulez les pousser vers votre dépôt forké, vous faites ça de la même façon que vous le feriez avec un dépôt normal : &lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git push origin master
-&lt;span class=&quot;c&quot;&gt;# Pousse les commits vers votre dépôt remote (distant) stocké sur GitHub&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-  
-
-&lt;h4&gt;Plus sur les commits&lt;/h4&gt;
-
-&lt;p&gt;Pensez à un &lt;em&gt;commit&lt;/em&gt; comme un instantané de votre projet - code, fichiers, tout - à un instant t. Après votre premier commit, git ne sauvegardera que les fichiers qui ont été modifiés, d&amp;#39;où le gain d&amp;#39;espace.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Attention :&lt;/strong&gt; git fera de son mieux pour compresser vos fichiers, mais les gros fichiers et les binaires peuvent amener un dépôt à devenir obèse et peu maniable. Essayez d&amp;#39;éviter de committer des choses comme des ficihers compressés (zips, rars, jars), du code compilé (fichiers object, bibliothèques, exécutables), sauvegardes de database et fichiers média (flv, psd, musique, films)&lt;/p&gt;
-
-&lt;h3&gt;Rentrer des modifications upstream&lt;/h3&gt;
-
-&lt;p&gt;Si le dépôt original que vous avez forké pour votre projet est mis à jour, vous pouvez ajouter ces mises à jour à votre fork en faisant tourner la commande suivante : &lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git fetch upstream
-&lt;span class=&quot;c&quot;&gt;# Rapatrie toutes les nouvelles modifications provenant du dépôt original&lt;/span&gt;
-git merge upstream/master
-&lt;span class=&quot;c&quot;&gt;# Fusionne toutes les modifications rapatriées à l&amp;#39;intérieur de vos fichiers de travail&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h4&gt;Quelle est la différence entre fetch et  pull ?&lt;/h4&gt;
-
-&lt;p&gt;Il y a deux moyens de recevoir des commits provenant d&amp;#39;un dépôt distant ou d&amp;#39;une branche : &lt;code&gt;git fetch&lt;/code&gt; et &lt;code&gt;git pull&lt;/code&gt;. Bien que ces deux commandes puissent sembler similaires, il existe des différences que vous devriez comprendre :&lt;/p&gt;
-
-&lt;h5&gt;Pull&lt;/h5&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git pull upstream master
-&lt;span class=&quot;c&quot;&gt;# Tire les commits provenant de &amp;#39;upstream&amp;#39; et les stocke dans le dépôt local&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Quand vous utilisez &lt;code&gt;git pull&lt;/code&gt;, git essaye automatiquement de faire le travail à votre place. C&amp;#39;est sensible au contexte, ainsi git fusionnera tous les les commits tirés (pull) à l&amp;#39;intérieur de la branche dans laquelle vous êtes en train de travailler. Une chose à garder à l&amp;#39;esprit, est que &lt;code&gt;git pull&lt;/code&gt; fusionne automatiquement les commits sans vous laisser d&amp;#39;abord les réviser. Si vous ne gérez pas vos branches de très près, vous pourriez rencontrer des conflits fréquents.&lt;/p&gt;
-
-&lt;h5&gt;Fetch &amp;amp; Merge&lt;/h5&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git fetch upstream
-&lt;span class=&quot;c&quot;&gt;# Rapatrie tous les nouveaux commits provenant du dépôt original&lt;/span&gt;
-git merge upstream/master
-&lt;span class=&quot;c&quot;&gt;# Fusionne tous les commits rapatriés à l&amp;#39;intérieur de vos fichiers de travail&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Quand vous lancez &lt;code&gt;git fetch&lt;/code&gt;, git retrouve tous les nouveaux commits provenant du &lt;code&gt;remote&lt;/code&gt; cible que vous n&amp;#39;avez pas et les stocke dans votre dépôt local. Néanmoins, il ne les fusionne pas dans votre branche actuelle. Ceci est tout particulièrement utile si vous avez besoin de conserver votre dépôt à jour mais travaillez sur quelque chose qui pourrait se casser si vous mettiez vos fichiers à jour. Pour intégrer les commits à l&amp;#39;intérieur de votre branche locale, vous utilisez &lt;code&gt;git merge&lt;/code&gt;. Ceci combine les branches spécifiées et vous alerte en cas de conflits.&lt;/p&gt;
-
-&lt;h3&gt;Créer des branches&lt;/h3&gt;
-
-&lt;p&gt;Brancher vous permet de construire de nouvelles fonctionnalités ou de tester de nouvelles idées, sans mettre votre projet principal en péril. Dans git, &lt;code&gt;branch&lt;/code&gt;er est une sorte de bookmark qui référence le dernier commit produit dans la branche. Ceci produit des branches très petites et faciles à travailler.&lt;/p&gt;
-
-&lt;h5&gt;Comment j&amp;#39;utilise les branches ?&lt;/h5&gt;
-
-&lt;p&gt;Les branches sont vraiment faciles à travailler et vous épargneront beaucoup de maux de têtes, tout spécialement quand vous travaillez avec beaucoup de gens. Pour créer une branche et commencer à travailler dedans, lancez ces commandes : &lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git branch *mabranche*
-&lt;span class=&quot;c&quot;&gt;# Crée une nouvelle branche nommée &amp;quot;mabranche&amp;quot;&lt;/span&gt;
-git checkout *mabranche*
-&lt;span class=&quot;c&quot;&gt;# Transforme &amp;quot;mabranche&amp;quot; en branche active&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Alternativement, vous pouvez utiliser le raccourci :&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git checkout -b *mabranche*
-&lt;span class=&quot;c&quot;&gt;# Crée une nouvelle branche nommée &amp;quot;mabranche&amp;quot; et la transforme en granche active&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Pour basculer entre les branches, utilisez &lt;code&gt;git checkout&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git checkout master
-&lt;span class=&quot;c&quot;&gt;# Transforme &amp;quot;master&amp;quot; en branche active&lt;/span&gt;
-git checkout *mabranche*
-&lt;span class=&quot;c&quot;&gt;# Transforme &amp;quot;mabranche&amp;quot; en branche active&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Une fois que vous avez fini de travailler sur votre branche et quand vous êtes prêt à la combiner en retour à l&amp;#39;intérieur de la branche &lt;code&gt;master&lt;/code&gt;, utilisez &lt;code&gt;merge&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git checkout master
-&lt;span class=&quot;c&quot;&gt;# Fait de &amp;quot;master&amp;quot; la branche active&lt;/span&gt;
-git merge *mabranche*
-&lt;span class=&quot;c&quot;&gt;# Fusionne les commits provenant de &amp;quot;mabranche&amp;quot; à l&amp;#39;intérieur de &amp;quot;master&amp;quot;&lt;/span&gt;
-git branch -d *mabranche*
-&lt;span class=&quot;c&quot;&gt;# Efface la branche &amp;quot;mabranche&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Truc&lt;/strong&gt; : Quand vous switchez entre les branches, les fichiers sur lesquels vous travaillez (la &amp;quot;copie de travail&amp;quot;) sont mis à jour pour renvoyer les modifications dans la nouvelles branche. Si vous avez des modifications que vous n&amp;#39;avez pas committées, git s&amp;#39;assurera que vous ne les perdez pas. Git fait aussi très attention durant les fusions et les pulls pour vous assurer que vous ne perdez pas de modifications. &lt;strong&gt;En cas de doute, committez tôt et committez souvent&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h3&gt;Demandes de Pull&lt;/h3&gt;
-
-&lt;p&gt;Si vous espérez contribuez en retour sur le fork original, vous pouvez envoyer à l&amp;#39;auteur original une &lt;a href=&quot;https://help.github.com/articles/using-pull-requests&quot;&gt;demande de pull&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;Ne plus suivre le dépôt principal&lt;/h3&gt;
-
-&lt;p&gt;Quand vous forkez un dépôt populaire, vous pouvez vous retrouver avec beaucoup de mises à jour non voulues. Pour vous désabonner des mises à jour sur le dépôt original, cliquez sur le bouton &amp;quot;Unwatch&amp;quot; sur le &lt;strong&gt;dépôt principal&lt;/strong&gt; et sélectionnez &amp;quot;Not Watching&amp;quot;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github-images.s3.amazonaws.com/help/Bootcamp-Not-Watching.png&quot; alt=&quot;image&quot; title=&quot;Cliquez sur Unwatch&quot;&gt;&lt;/p&gt;
-
-&lt;h3&gt;Effacer votre fork&lt;/h3&gt;
-
-&lt;p&gt;À un certain stade, vous pouvez décider de vouloir effacer votre fork. Pour effacer un fork, suivez simplement les mêmes étapes comme vous &lt;a href=&quot;https://help.github.com/articles/deleting-a-repository&quot;&gt;effaceriez un dépôt normal&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;Bravo&lt;/h3&gt;
-
-&lt;p&gt;Vous avez désormais forké un dépôt. Que voulez-vous faire ensuite ?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;/2013/12/10/installer-git/&quot;&gt;Installer Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/2013/12/16/creer_un_repo_GitHub/&quot;&gt;Créer un Repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Forker un Repo&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/2013/12/16/github-etre-social/&quot;&gt;Etre Social&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Mon, 16 Dec 2013 15:36:00 +0100</pubDate>
-        <link>//2013/12/16/forker-un-repo-github/</link>
-        <guid isPermaLink="true">//2013/12/16/forker-un-repo-github/</guid>
-      </item>
-    
-      <item>
-        <title>Créer un Dépôt sur GitHub</title>
-        <description>&lt;p&gt;Lien de référence : &lt;span class=&quot;h-cite&quot;&gt;&lt;cite class=&quot;p-name u-url&quot;&gt;&lt;a href=&quot;https://help.github.com/articles/create-a-repo&quot;&gt;Create A Repo&lt;/a&gt;&lt;/cite&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Si vous vous trouvez sur cette page, je peux supposer que vous &lt;a href=&quot;/2013/12/15/Github-pour-nuls-partie-1/&quot;&gt;débutez sur Git et GitHub&lt;/a&gt;. Ce petit guide vous fera réviser quelques fondamentaux et vous expliquera comment faire vos premiers pas sur GitHub.&lt;/p&gt;
-
-&lt;h2&gt;Produire un nouveau dépôt sur GitHub&lt;/h2&gt;
-
-&lt;p&gt;Chaque fois que vous produisez un &lt;em&gt;commit&lt;/em&gt; (instantané) avec Git, il est stocké dans un dépôt (aussi appelé &amp;quot;repo&amp;quot;). Pour déposer votre projet sur GitHub, vous devrez disposer d&amp;#39;un dépôt GitHub pour le faire vivre.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Plus sur les dépôts&lt;/em&gt; : Git stocke tous vos fichiers projets dans un dépôt. Si vous pouvez voir les fichiers cachés sur votre système, vous verrez un sous-répertoire appelé &amp;quot;.git&amp;quot; dans le répertoire du projet où vous avez lancé &lt;code&gt;git init&lt;/code&gt;. C&amp;#39;est l&amp;#39;endroit où Git stocke tous vos commits avec tout ce dont il a besoin. En plus de votre répertoire local, vous pouvez avoir aussi des dépôts distants (comme les dépôts sur GitHub). Les dépôts distants sont les mêmes que votre dépôt local, mais ils sont juste stockés sur un serveur ou un ordinateur distant pour faciliter la collaboration, les sauvegardes et d&amp;#39;autres trucs géniaux.&lt;/p&gt;
-
-&lt;p&gt;Cliquez sur &lt;a href=&quot;https://github.com/repositories/new&quot;&gt;New Repository&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.s3.amazonaws.com/docs/bootcamp_2_newrepo.jpg&quot; alt=&quot;image&quot; title=&quot;cliquez sur New Repository&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Remplissez l&amp;#39;information sur cette page : &lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Nom de votre dépôt &lt;/li&gt;
-&lt;li&gt;Description (en option)&lt;/li&gt;
-&lt;li&gt;Public ou Privé (L&amp;#39;option privé est payante)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Et une fois terminé, cliquez sur &amp;quot;Create Repository.&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github-images.s3.amazonaws.com/help/bootcamp_2_repoinfo.png&quot; alt=&quot;image&quot; title=&quot;cliquez sur New Repository&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Félicitations ! Vous avez créé avec brio votre premier &amp;quot;repo&amp;quot; (dépôt en français.) !&lt;/p&gt;
-
-&lt;h2&gt;Créez un README pour votre dépôt&lt;/h2&gt;
-
-&lt;p&gt;Bien qu&amp;#39;un fichier README ne soit pas un élément obligatoire d&amp;#39;un repo GitHub, c&amp;#39;est une très bonne habitude à prendre que d&amp;#39;en placer un. Les READMEs sont un endroit génial pour décrire vore projet ou ajouter un peu de documentation comme savoir comment installer ou utiliser votre projet. Vous pourriez y ajouter une information de contact — si votre projet devient populaire, les personnes voudront vous aider.&lt;/p&gt;
-
-&lt;h4&gt;Plus sur les READMEs&lt;/h4&gt;
-
-&lt;p&gt;Si vous ajoutez un fichier avec le nom de fichier &amp;quot;README&amp;quot; dans votre repo, il sera automatiquement affiché sur la page d&amp;#39;accueil de votre repo. Cool non ? GitHub supporte différents formats de fichiers README. Celui dans ce tutoriel donnera un fichier texte basique mais les autres formats comme &lt;code&gt;.markdown&lt;/code&gt; ou &lt;code&gt;.textile&lt;/code&gt; peuvent être utilisés pour restituer du contenu HTML comme des liens et des titres. Pour plus d&amp;#39;informations sur les formats de marquage supportés, regardez &lt;a href=&quot;https://github.com/github/markup&quot;&gt;https://github.com/github/markup&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;Étape 1 : Créez le fichier README&lt;/h3&gt;
-
-&lt;p&gt;Dans votre fenêtre de terminal, tapez le code suivant : &lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir ~/Hello-World
-
-&lt;span class=&quot;c&quot;&gt;# Crée un répertoire pour votre projet nommé &amp;quot;Hello-World&amp;quot; dans votre répertoire utilisateur local&lt;/span&gt;
-
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Hello-World
-&lt;span class=&quot;c&quot;&gt;# Modifie le répertoire de travail en cours pour votre nouveau répertoire fraîchement créé&lt;/span&gt;
-
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git init
-&lt;span class=&quot;c&quot;&gt;# Installe les fichiers Git nécessaire&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# Initialise le répertoire vite Git dans /Users/you/Hello-World/.git/&lt;/span&gt;
-
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;touch README
-&lt;span class=&quot;c&quot;&gt;# Crée un fichier nommé &amp;quot;README&amp;quot; dans votre répertoire local Hello-World&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Ouvrez le nouveau fichier README trouvé dans votre répertoire &lt;code&gt;Hello-World&lt;/code&gt; dans un éditeur de texte et ajoutez le texte &amp;quot;Hello World!&amp;quot; Une fois terminé, sauvegardez et fermez le fichier.&lt;/p&gt;
-
-&lt;h3&gt;Étape 2 : Committez votre README&lt;/h3&gt;
-
-&lt;p&gt;Maintenant que vous avez installé votre README, il est temps de le committer. Un commit est en fait un instantané de tous les fichiers dans votre projet à un moment donné. Dans la fenêtre de Terminal, tapez le code suivant : &lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add README
-&lt;span class=&quot;c&quot;&gt;# fait entrer en scène le fichier README, et l&amp;#39;ajoute à la liste des fichiers à committer&lt;/span&gt;
-
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit -m &lt;span class=&quot;s1&quot;&gt;&amp;#39;premier commit&amp;#39;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# Committe vos fichiers, en ajoutant le message &amp;quot;premier commit&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h4&gt;Plus sur les commits&lt;/h4&gt;
-
-&lt;p&gt;Pensez à un commit comme un instantané de votre projet - code, fichiers, tout - à un instant t. Après votre premier commit, git ne sauvegardera que les fichiers qui ont été modifiés, d&amp;#39;où le gain d&amp;#39;espace.&lt;/p&gt;
-
-&lt;p&gt;Attention : git fera de son mieux pour compresser vos fichiers, mais les gros fichiers et les binaires peuvent amener un dépôt à devenir obèse et peu maniable. Essayez d&amp;#39;éviter de committer des choses comme des ficihers compressés (zips, rars, jars), du code compilé (fichiers object, bibliothèques, exécutables), sauvegardes de database et fichiers média (flv, psd, musique, films)&lt;/p&gt;
-
-&lt;h3&gt;Étape 3 : Poussez votre commit&lt;/h3&gt;
-
-&lt;p&gt;À ce stade, tout ce que vous avez produit réside dans votre dépôt local, ce qui veut dire que vous n&amp;#39;avez encore rien fait sur GitHub. Pour connecter votre dépôt local à votre compte GitHub, vous devrez régler un &lt;code&gt;remote&lt;/code&gt; pour votre dépôt et pousser vos commits dedans.&lt;/p&gt;
-
-&lt;h4&gt;Plus sur les remotes&lt;/h4&gt;
-
-&lt;p&gt;Un &lt;em&gt;remote&lt;/em&gt; est un dépôt stocké sur un autre ordinateur, dans ce cas sur le serveur de GitHub. C&amp;#39;est une pratique standard (et aussi par défaut dans certains cas) que de donner le nom &lt;code&gt;origin&lt;/code&gt; au &lt;em&gt;remote&lt;/em&gt; qui pointe vers votre dépôt principal hors du site (par exemple, votre dépôt GitHub).&lt;/p&gt;
-
-&lt;p&gt;Git supporte de nombreux remotes. Ceci est communément utilisé au moment de &lt;em&gt;forker&lt;/em&gt; un dépôt.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add origin https://github.com/username/Hello-World.git
-&lt;span class=&quot;c&quot;&gt;# Crée un remote nommé &amp;quot;origin&amp;quot; pointant votre dépôt GitHub&lt;/span&gt;
-
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push origin master
-&lt;span class=&quot;c&quot;&gt;# Envoie vos commits dans la branche &amp;quot;master&amp;quot; sur GitHub&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;(&lt;strong&gt;Truc&lt;/strong&gt; : Remarquez que le chemin vers votre URL distante (remote) --Hello-World.git--correspond à celui que vous avez créé sur GitHub. Ceci est sensible à la casse, et il est important de conserver la même.)&lt;/p&gt;
-
-&lt;p&gt;Maintenant si vous regardez votre dépôt sur GitHub, vous verrez que votre README y a été ajouté.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.s3.amazonaws.com/docs/bootcamp_2_updatedreadme.jpg&quot; alt=&quot;image&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Votre README a été créé.&lt;/p&gt;
-
-&lt;h2&gt;Fêtez ça !&lt;/h2&gt;
-
-&lt;p&gt;Félicitations ! Vous avez maintenant créé un repo sur GitHub, créé un README, l&amp;#39;avez committé et poussé vers GitHub. Que voulez-vous faire ensuite ?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;/2013/12/10/installer-git/&quot;&gt;Installer Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Créer un Repo&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/2013/12/16/forker-un-repo-github/&quot;&gt;Forker un Repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/2013/12/16/github-etre-social/&quot;&gt;Être Social&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;Ailleurs&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://git-scm.com/book/fr/Les-bases-de-Git-D%C3%A9marrer-un-d%C3%A9p%C3%B4t-Git&quot;&gt;Les bases de Git - Démarrer un dépôt Git&lt;/a&gt; - pour réviser et apprendre à cloner un dépôt existant.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://imgs.xkcd.com/comics/git_commit.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 16 Dec 2013 11:19:00 +0100</pubDate>
-        <link>//2013/12/16/creer-un-repo-GitHub/</link>
-        <guid isPermaLink="true">//2013/12/16/creer-un-repo-GitHub/</guid>
       </item>
     
   </channel>

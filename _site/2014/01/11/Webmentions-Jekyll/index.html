@@ -34,6 +34,7 @@
 
 </head>
 
+
     <body class="h-feed">
 
     <header class="site-header">
@@ -95,24 +96,28 @@ L&#39;option pourra s&#39;avérer bien pratique pour toutes  <a href="http://ind
 <p>P.S. à cette heure, la webmention a été envoyée par le service web <a href="http://indiewebify.me">indiewebify.me</a></p>
 
   </article>
-  
-<ul>
+
+<div class="tags">  
+<ul class="tag-list">
 
 <li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#webmention" title="Pages taguées webmention">webmention</a></li>
 
 <li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#jekyll" title="Pages taguées jekyll">jekyll</a></li>
 
 </ul>
-<div>
-  Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
+</div>
+
+<div class="note-footer">
+<p>Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
   <form action="https://webmention.herokuapp.com/api/webmention" method="post">
     <input name="source" type="url" placeholder="http://exemple.com/mon-post-cool" />
     <input name="target" value="http://christopheducamp.com/2014/01/11/Webmentions-Jekyll/" type="hidden">
     <input value="Envoyer la Webmention" type="submit">
   </form>
-</div>
+
 
 <section class="webmention">
+<p>Réactions (webmentions)</p>
 <script id="webmention-hosted">
   (function () {
     var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
@@ -124,8 +129,10 @@ L&#39;option pourra s&#39;avérer bien pratique pour toutes  <a href="http://ind
   }());
 </script>
 </section>
+</div>
 
 </div>
+
       </div>
     </div>
 

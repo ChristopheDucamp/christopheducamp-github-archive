@@ -36,6 +36,63 @@ a:visited { color: #205caa; }
 }
 
 
+.note-footer {
+  border: #ddd 1px solid;
+  padding: 20px;
+  background-color: #f5f5f5;
+  -webkit-border-bottom-left-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -moz-border-radius-bottomright: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/**
+ * tag list
+ */
+.tag-list {
+  list-style-type: none;
+  margin: 0;
+}
+.tag-list li {
+  display: inline;
+}
+.tag-list a {
+  color: #606060;
+  background-color: #F7F7F9;
+  border: 1px solid #E1E1E8;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 2px 4px;
+  margin-right: 4px;
+  font-size: 12px;
+  -ms-box-shadow: 0 0 1px rgba(0,0,0,0.7),
+                  inset 0 0 15px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 0 1px rgba(0,0,0,0.7),
+                 inset 0 0 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 1px rgba(0,0,0,0.7),
+                  inset 0 0 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.7),
+                     inset 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1px rgba(0,0,0,0.7),
+              inset 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.tag-list a:hover {
+  color: #232323;
+  text-decoration: none;
+  background-color: #e8e8eb; 
+  border: 1px solid #d2d2d9;
+}
+.tag-list a span {
+  vertical-align: super;
+  font-size: 80%;
+}
+
+
+
+  
 /* Layout Styles */
 /* ----------------------------------------------------------*/
 
@@ -436,12 +493,69 @@ a:visited { color: #205caa; }
   border: 1px solid #d2d2d9;
 }
 
+
+/** 
+ * Bricolage mise en forme des webmentions 
+ */
+
+.webmention-mention {
+  padding-left: 9%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+
+.webmention-name, .webmention-summary {
+  margin: 10px 0;
+}
+
+
+.webmention-author {
+  color: #08C;
+  font-size: .9em;
+  background-color: #F7F7F9;
+  border: 1px solid #E1E1E8;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0px 4px;
+  -ms-box-shadow: 0 0 1px rgba(0,0,0,0.7),
+                  inset 0 0 15px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 0 1px rgba(0,0,0,0.7),
+                 inset 0 0 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 1px rgba(0,0,0,0.7),
+                  inset 0 0 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.7),
+                     inset 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1px rgba(0,0,0,0.7),
+              inset 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.webmention-published {
+  display: block;
+  font-size: .7em;
+  color: inherit;
+}
+
+
+.webmention-author img {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 7%;
+  border-radius: 240px;
+  
+
+
+
 /** bricolage sidestuff **/ 
 
-div.sidestuff
+div.sidestuff {
 float: right;
 line-height: 1.2;
 list-style: none outside none;
 margin: -4em -1em 0px 0px;
 padding: 0px 0px 2em;
 font-size: 0.5em;
+}
+

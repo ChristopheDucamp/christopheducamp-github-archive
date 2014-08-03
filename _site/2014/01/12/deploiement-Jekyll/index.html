@@ -34,6 +34,7 @@
 
 </head>
 
+
     <body class="h-feed">
 
     <header class="site-header">
@@ -183,8 +184,9 @@ Regardez la page <a href="http://github.com/zkarpinski/Jekyll-Admin/blob/master/
 <p>Les Pages GitHub sont motorisées en coulisses par Jekyll, par conséquent si vous cherchez un hébergement zéro-tracas, une solution à coût zéro, les Pages GitHub sont un moyen génial pour <a href="http://pages.github.com/">héberger gratuitement votre site web-motorisé-par-Jekyll</a>.</p>
 
   </article>
-  
-<ul>
+
+<div class="tags">  
+<ul class="tag-list">
 
 <li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#déploiement" title="Pages taguées déploiement">déploiement</a></li>
 
@@ -195,16 +197,19 @@ Regardez la page <a href="http://github.com/zkarpinski/Jekyll-Admin/blob/master/
 <li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#glynn" title="Pages taguées glynn">glynn</a></li>
 
 </ul>
-<div>
-  Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
+</div>
+
+<div class="note-footer">
+<p>Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
   <form action="https://webmention.herokuapp.com/api/webmention" method="post">
     <input name="source" type="url" placeholder="http://exemple.com/mon-post-cool" />
     <input name="target" value="http://christopheducamp.com/2014/01/12/deploiement-Jekyll/" type="hidden">
     <input value="Envoyer la Webmention" type="submit">
   </form>
-</div>
+
 
 <section class="webmention">
+<p>Réactions (webmentions)</p>
 <script id="webmention-hosted">
   (function () {
     var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
@@ -216,8 +221,10 @@ Regardez la page <a href="http://github.com/zkarpinski/Jekyll-Admin/blob/master/
   }());
 </script>
 </section>
+</div>
 
 </div>
+
       </div>
     </div>
 

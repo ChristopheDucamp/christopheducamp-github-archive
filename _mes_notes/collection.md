@@ -1,13 +1,13 @@
 ---
 layout: default
 title:  "Les Collections !"
-date:   2014-05-31
+date:   2014-07-31
 categories: jekyll collections
 ---
 
 
 
-Les collections dans Jekyll 2.0
+# Les collections dans Jekyll 2.0
 
 Tout dans votre site Jekyll n'est pas un post ou une page. Vous voudrez peut-être documenter différentes méthodes dans votre projet OpenSource, l'annuaire des membres d'une équipe ou une liste d'albums de musique. Les collections vous permettent de définir un nouveau type de document qui se comporte comme le font normalement les Pages ou les Posts, mais disposent aussi de leurs propres propriétés uniques et d'un espace-nom.
 
@@ -33,11 +33,11 @@ collections:
 ### Étape 2 : Ajouter votre Contenu 
 
 Créez un dossier correspondant (par ex. `<source>/_ma_collection`) et ajoutez-y des documents.
-Le front-matter YAML est lu comme de la data s'il existe, si non, alors tout est simplement just stuck in the Document's `content` attribute.
+Le front-matter YAML est lu comme de la data s'il existe, si non, alors tout est simplement placé dans l'attribut `content` du Document.
 
-Note: the folder must be named identical to the collection you defined in you config.yml file, with the addition of the preceding `_` character.
+Note : le répertoire doit être nommé de la même manière que la colleciton que vous avez définie dans votre fichier config.yml, en le faisant précéder du caractère`_`.
 
-### Step 3: Optionally render your collection's documents into independent files
+### Étape 3 : En option, restituez vos documents de votre collection en fichiers indépendants
 
 If you'd like Jekyll to create a public-facing, rendered version of each document in your collection, set the `output` key to `true` in your collection metadata in your `_config.yml`:
 
@@ -104,9 +104,9 @@ For example, if you have `_my_collection/some_subdir/some_doc.md`, it will be wr
 
 ### Collections
 
-Each collection is accessible via the `site` Liquid variable. For example, if you want to access the `albums` collection found in `_albums`, you'd use `site.albums`. Each collection is itself an array of documents (e.g. `site.albums` is an array of documents, much like `site.pages` and `site.posts`). See below for how to access attributes of those documents.
+Chaque collection est accesible via la variable Liquid `site`. Par exemple, si vous voulez accéder à la collection `albums` trouvée dans `_albums`, vous utiliseriez `site.albums`. Chaque collection est en elle-même une série de documents (par ex. `site.albums` est une série de documents, tout comme `site.pages` et `site.posts`). Voir ci-dessous pour savoir comment accéder aux attributs de ces documents.
 
-The collections are also available under `site.collections`, with the metadata you specified in your `_config.yml` (if present) and the following information:
+Les collections sont aussi disponibles sous `site.collections`, avec la métadonnée que vous avez spécifiée dans votre `_config.yml` (si présent) et l'information qui suit : 
 
 <div class="mobile-side-scroller">
 <table>
@@ -123,7 +123,7 @@ The collections are also available under `site.collections`, with the metadata y
       </td>
       <td>
         <p>
-          The name of your collection, e.g. <code>my_collection</code>.
+          Le nom de votre collection, par ex. <code>ma_collection</code>.
         </p>
       </td>
     </tr>
@@ -133,7 +133,7 @@ The collections are also available under `site.collections`, with the metadata y
       </td>
       <td>
         <p>
-          An array of <a href="#documents">documents</a>.
+          Une série de <a href="#documents">documents</a>.
         </p>
       </td>
     </tr>

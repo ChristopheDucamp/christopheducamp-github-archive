@@ -11,4 +11,14 @@ ftp_username: christoplj
 ftp_dir: /www
 ftp_passive: false
 
+collections:
+  mes_notes:
+    output: true
+
+gems:
+  - jekyll-redirect-from
+
+
+    
+
 

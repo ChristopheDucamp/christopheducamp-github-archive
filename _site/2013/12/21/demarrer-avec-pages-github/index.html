@@ -34,6 +34,7 @@
 
 </head>
 
+
     <body class="h-feed">
 
     <header class="site-header">
@@ -440,20 +441,24 @@ Nous pouvons faire ça exactement de la même façon qu&#39;avant. Vérifiez vot
 <p>Si ça vous intéresse de vous taper un peu de code, <a href="https://github.com/maban/christmas-recipes">tous les fichiers de ce tutoriel sont disponibles sur GitHub</a>.</p>
 
   </article>
-  
-<ul>
+
+<div class="tags">  
+<ul class="tag-list">
 
 </ul>
-<div>
-  Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
+</div>
+
+<div class="note-footer">
+<p>Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
   <form action="https://webmention.herokuapp.com/api/webmention" method="post">
     <input name="source" type="url" placeholder="http://exemple.com/mon-post-cool" />
     <input name="target" value="http://christopheducamp.com/2013/12/21/demarrer-avec-pages-github/" type="hidden">
     <input value="Envoyer la Webmention" type="submit">
   </form>
-</div>
+
 
 <section class="webmention">
+<p>Réactions (webmentions)</p>
 <script id="webmention-hosted">
   (function () {
     var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
@@ -465,8 +470,10 @@ Nous pouvons faire ça exactement de la même façon qu&#39;avant. Vérifiez vot
   }());
 </script>
 </section>
+</div>
 
 </div>
+
       </div>
     </div>
 

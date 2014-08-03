@@ -34,6 +34,7 @@
 
 </head>
 
+
     <body class="h-feed">
 
     <header class="site-header">
@@ -229,20 +230,24 @@ git branch -d *mabranche*
 </ul>
 
   </article>
-  
-<ul>
+
+<div class="tags">  
+<ul class="tag-list">
 
 </ul>
-<div>
-  Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
+</div>
+
+<div class="note-footer">
+<p>Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
   <form action="https://webmention.herokuapp.com/api/webmention" method="post">
     <input name="source" type="url" placeholder="http://exemple.com/mon-post-cool" />
     <input name="target" value="http://christopheducamp.com/2013/12/16/forker-un-repo-github/" type="hidden">
     <input value="Envoyer la Webmention" type="submit">
   </form>
-</div>
+
 
 <section class="webmention">
+<p>Réactions (webmentions)</p>
 <script id="webmention-hosted">
   (function () {
     var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
@@ -254,8 +259,10 @@ git branch -d *mabranche*
   }());
 </script>
 </section>
+</div>
 
 </div>
+
       </div>
     </div>
 

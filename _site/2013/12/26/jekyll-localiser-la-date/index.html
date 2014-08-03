@@ -34,6 +34,7 @@
 
 </head>
 
+
     <body class="h-feed">
 
     <header class="site-header">
@@ -140,8 +141,9 @@ Très preneur de vos frameworks, plugins et/ou tous vos points d&#39;optimisatio
 <p>Faute de savoir installer <a href="http://indiewebcamp.com/webmention">webmention</a> sur Jekyll, ce post reste  <span rel="syndication" class="u-syndication"><a href="https://twitter.com/xtof_fr/statuses/416076519794946048">ouvert à tous vos commentaires sur twitter</a></span> - <a href="http://twitter.com/xtof_fr">@xtof</a></p>
 
   </article>
-  
-<ul>
+
+<div class="tags">  
+<ul class="tag-list">
 
 <li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#hack" title="Pages taguées hack">hack</a></li>
 
@@ -154,16 +156,19 @@ Très preneur de vos frameworks, plugins et/ou tous vos points d&#39;optimisatio
 <li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#localization" title="Pages taguées localization">localization</a></li>
 
 </ul>
-<div>
-  Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
+</div>
+
+<div class="note-footer">
+<p>Vous avez écrit une réponse à ce post ? Faites-moi connaître l'URL :
   <form action="https://webmention.herokuapp.com/api/webmention" method="post">
     <input name="source" type="url" placeholder="http://exemple.com/mon-post-cool" />
     <input name="target" value="http://christopheducamp.com/2013/12/26/jekyll-localiser-la-date/" type="hidden">
     <input value="Envoyer la Webmention" type="submit">
   </form>
-</div>
+
 
 <section class="webmention">
+<p>Réactions (webmentions)</p>
 <script id="webmention-hosted">
   (function () {
     var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
@@ -175,8 +180,10 @@ Très preneur de vos frameworks, plugins et/ou tous vos points d&#39;optimisatio
   }());
 </script>
 </section>
+</div>
 
 </div>
+
       </div>
     </div>
 
