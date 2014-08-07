@@ -5,6 +5,7 @@ redirect_from:
   - /2014-214/
   - /2014-214/permashortlink/
   - /indielog/2014-214/
+  - /s/23.htm
 
 description: "Raccourcir les URLs dans Jekyll"
 tags: [jekyll, indieweb, permalink, permalien, permashortlink, bricolage]
