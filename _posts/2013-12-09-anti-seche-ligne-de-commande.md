@@ -23,8 +23,10 @@ Si vous démarrez dans la [fenêtre de Terminal](/2013-12-10-terminal-trucs)
 - `git checkout master` : bascule la branche vers master
 - `git branch -a` : affiche les branches existantes pour le dépôt particulier
 
+## Liens et Ressources : 
 
-Pour les traductions des commandes, se référer à l'index de l'ouvrage de référence sur Git traduit en français : [git-scm/book](http://git-scm.com/book/fr)
+- Le [guide d'Atlassian](https://www.atlassian.com/git/tutorial/git-basics) a de très bons tutoriels en langage clair pour mieux comprendre et compléter cette anti-sèche de Git.
+- Pour les traductions des commandes, se référer à l'index de l'ouvrage de référence sur Git traduit en français : [git-scm/book](http://git-scm.com/book/fr)
 
 
 ## Glossaire ligne de commande (pour mémoire)
