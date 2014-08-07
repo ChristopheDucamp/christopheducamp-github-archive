@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Créer un Dépôt sur GitHub</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="/2013/12/16/creer-un-repo-GitHub/" />
+    <meta name="description" content="selfdogfood sur jekyll" />
+    <link rel="canonical" href="http://christopheducamp.com/2013/12/16/creer-un-repo-GitHub/" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -74,7 +74,7 @@
     <p class="meta"><time class="dt-published" datetime="2013-12-16T11:19:00+01:00">
   Lundi 16 décembre 2013
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="/2013/12/16/creer-un-repo-GitHub/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/2013/12/16/creer-un-repo-GitHub/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
@@ -82,39 +82,39 @@ Christophe Ducamp</a> • <a class="u-url" href="/2013/12/16/creer-un-repo-GitHu
 
 <p>Si vous vous trouvez sur cette page, je peux supposer que vous <a href="/2013/12/15/Github-pour-nuls-partie-1/">débutez sur Git et GitHub</a>. Ce petit guide vous fera réviser quelques fondamentaux et vous expliquera comment faire vos premiers pas sur GitHub.</p>
 
-<h2>Produire un nouveau dépôt sur GitHub</h2>
+<h2 id="produire-un-nouveau-dpt-sur-github">Produire un nouveau dépôt sur GitHub</h2>
 
-<p>Chaque fois que vous produisez un <em>commit</em> (instantané) avec Git, il est stocké dans un dépôt (aussi appelé &quot;repo&quot;). Pour déposer votre projet sur GitHub, vous devrez disposer d&#39;un dépôt GitHub pour le faire vivre.</p>
+<p>Chaque fois que vous produisez un <em>commit</em> (instantané) avec Git, il est stocké dans un dépôt (aussi appelé “repo”). Pour déposer votre projet sur GitHub, vous devrez disposer d’un dépôt GitHub pour le faire vivre.</p>
 
-<p><em>Plus sur les dépôts</em> : Git stocke tous vos fichiers projets dans un dépôt. Si vous pouvez voir les fichiers cachés sur votre système, vous verrez un sous-répertoire appelé &quot;.git&quot; dans le répertoire du projet où vous avez lancé <code>git init</code>. C&#39;est l&#39;endroit où Git stocke tous vos commits avec tout ce dont il a besoin. En plus de votre répertoire local, vous pouvez avoir aussi des dépôts distants (comme les dépôts sur GitHub). Les dépôts distants sont les mêmes que votre dépôt local, mais ils sont juste stockés sur un serveur ou un ordinateur distant pour faciliter la collaboration, les sauvegardes et d&#39;autres trucs géniaux.</p>
+<p><em>Plus sur les dépôts</em> : Git stocke tous vos fichiers projets dans un dépôt. Si vous pouvez voir les fichiers cachés sur votre système, vous verrez un sous-répertoire appelé “.git” dans le répertoire du projet où vous avez lancé <code>git init</code>. C’est l’endroit où Git stocke tous vos commits avec tout ce dont il a besoin. En plus de votre répertoire local, vous pouvez avoir aussi des dépôts distants (comme les dépôts sur GitHub). Les dépôts distants sont les mêmes que votre dépôt local, mais ils sont juste stockés sur un serveur ou un ordinateur distant pour faciliter la collaboration, les sauvegardes et d’autres trucs géniaux.</p>
 
 <p>Cliquez sur <a href="https://github.com/repositories/new">New Repository</a>.</p>
 
-<p><img src="https://github.s3.amazonaws.com/docs/bootcamp_2_newrepo.jpg" alt="image" title="cliquez sur New Repository"></p>
+<p><img src="https://github.s3.amazonaws.com/docs/bootcamp_2_newrepo.jpg" alt="image" title="cliquez sur New Repository" /></p>
 
-<p>Remplissez l&#39;information sur cette page : </p>
+<p>Remplissez l’information sur cette page : </p>
 
 <ul>
-<li>Nom de votre dépôt </li>
-<li>Description (en option)</li>
-<li>Public ou Privé (L&#39;option privé est payante)</li>
+  <li>Nom de votre dépôt </li>
+  <li>Description (en option)</li>
+  <li>Public ou Privé (L’option privé est payante)</li>
 </ul>
 
-<p>Et une fois terminé, cliquez sur &quot;Create Repository.&quot;</p>
+<p>Et une fois terminé, cliquez sur “Create Repository.”</p>
 
-<p><img src="https://github-images.s3.amazonaws.com/help/bootcamp_2_repoinfo.png" alt="image" title="cliquez sur New Repository"></p>
+<p><img src="https://github-images.s3.amazonaws.com/help/bootcamp_2_repoinfo.png" alt="image" title="cliquez sur New Repository" /></p>
 
-<p>Félicitations ! Vous avez créé avec brio votre premier &quot;repo&quot; (dépôt en français.) !</p>
+<p>Félicitations ! Vous avez créé avec brio votre premier “repo” (dépôt en français.) !</p>
 
-<h2>Créez un README pour votre dépôt</h2>
+<h2 id="crez-un-readme-pour-votre-dpt">Créez un README pour votre dépôt</h2>
 
-<p>Bien qu&#39;un fichier README ne soit pas un élément obligatoire d&#39;un repo GitHub, c&#39;est une très bonne habitude à prendre que d&#39;en placer un. Les READMEs sont un endroit génial pour décrire vore projet ou ajouter un peu de documentation comme savoir comment installer ou utiliser votre projet. Vous pourriez y ajouter une information de contact — si votre projet devient populaire, les personnes voudront vous aider.</p>
+<p>Bien qu’un fichier README ne soit pas un élément obligatoire d’un repo GitHub, c’est une très bonne habitude à prendre que d’en placer un. Les READMEs sont un endroit génial pour décrire vore projet ou ajouter un peu de documentation comme savoir comment installer ou utiliser votre projet. Vous pourriez y ajouter une information de contact — si votre projet devient populaire, les personnes voudront vous aider.</p>
 
-<h4>Plus sur les READMEs</h4>
+<h4 id="plus-sur-les-readmes">Plus sur les READMEs</h4>
 
-<p>Si vous ajoutez un fichier avec le nom de fichier &quot;README&quot; dans votre repo, il sera automatiquement affiché sur la page d&#39;accueil de votre repo. Cool non ? GitHub supporte différents formats de fichiers README. Celui dans ce tutoriel donnera un fichier texte basique mais les autres formats comme <code>.markdown</code> ou <code>.textile</code> peuvent être utilisés pour restituer du contenu HTML comme des liens et des titres. Pour plus d&#39;informations sur les formats de marquage supportés, regardez <a href="https://github.com/github/markup">https://github.com/github/markup</a>.</p>
+<p>Si vous ajoutez un fichier avec le nom de fichier “README” dans votre repo, il sera automatiquement affiché sur la page d’accueil de votre repo. Cool non ? GitHub supporte différents formats de fichiers README. Celui dans ce tutoriel donnera un fichier texte basique mais les autres formats comme <code>.markdown</code> ou <code>.textile</code> peuvent être utilisés pour restituer du contenu HTML comme des liens et des titres. Pour plus d’informations sur les formats de marquage supportés, regardez <a href="https://github.com/github/markup">https://github.com/github/markup</a>.</p>
 
-<h3>Étape 1 : Créez le fichier README</h3>
+<h3 id="tape-1--crez-le-fichier-readme">Étape 1 : Créez le fichier README</h3>
 
 <p>Dans votre fenêtre de terminal, tapez le code suivant : </p>
 
@@ -132,9 +132,9 @@ Christophe Ducamp</a> • <a class="u-url" href="/2013/12/16/creer-un-repo-GitHu
 <span class="nv">$ </span>touch README
 <span class="c"># Crée un fichier nommé &quot;README&quot; dans votre répertoire local Hello-World</span></code></pre></div>
 
-<p>Ouvrez le nouveau fichier README trouvé dans votre répertoire <code>Hello-World</code> dans un éditeur de texte et ajoutez le texte &quot;Hello World!&quot; Une fois terminé, sauvegardez et fermez le fichier.</p>
+<p>Ouvrez le nouveau fichier README trouvé dans votre répertoire <code>Hello-World</code> dans un éditeur de texte et ajoutez le texte “Hello World!” Une fois terminé, sauvegardez et fermez le fichier.</p>
 
-<h3>Étape 2 : Committez votre README</h3>
+<h3 id="tape-2--committez-votre-readme">Étape 2 : Committez votre README</h3>
 
 <p>Maintenant que vous avez installé votre README, il est temps de le committer. Un commit est en fait un instantané de tous les fichiers dans votre projet à un moment donné. Dans la fenêtre de Terminal, tapez le code suivant : </p>
 
@@ -144,19 +144,19 @@ Christophe Ducamp</a> • <a class="u-url" href="/2013/12/16/creer-un-repo-GitHu
 <span class="nv">$ </span>git commit -m <span class="s1">&#39;premier commit&#39;</span>
 <span class="c"># Committe vos fichiers, en ajoutant le message &quot;premier commit&quot;</span></code></pre></div>
 
-<h4>Plus sur les commits</h4>
+<h4 id="plus-sur-les-commits">Plus sur les commits</h4>
 
-<p>Pensez à un commit comme un instantané de votre projet - code, fichiers, tout - à un instant t. Après votre premier commit, git ne sauvegardera que les fichiers qui ont été modifiés, d&#39;où le gain d&#39;espace.</p>
+<p>Pensez à un commit comme un instantané de votre projet - code, fichiers, tout - à un instant t. Après votre premier commit, git ne sauvegardera que les fichiers qui ont été modifiés, d’où le gain d’espace.</p>
 
-<p>Attention : git fera de son mieux pour compresser vos fichiers, mais les gros fichiers et les binaires peuvent amener un dépôt à devenir obèse et peu maniable. Essayez d&#39;éviter de committer des choses comme des ficihers compressés (zips, rars, jars), du code compilé (fichiers object, bibliothèques, exécutables), sauvegardes de database et fichiers média (flv, psd, musique, films)</p>
+<p>Attention : git fera de son mieux pour compresser vos fichiers, mais les gros fichiers et les binaires peuvent amener un dépôt à devenir obèse et peu maniable. Essayez d’éviter de committer des choses comme des ficihers compressés (zips, rars, jars), du code compilé (fichiers object, bibliothèques, exécutables), sauvegardes de database et fichiers média (flv, psd, musique, films)</p>
 
-<h3>Étape 3 : Poussez votre commit</h3>
+<h3 id="tape-3--poussez-votre-commit">Étape 3 : Poussez votre commit</h3>
 
-<p>À ce stade, tout ce que vous avez produit réside dans votre dépôt local, ce qui veut dire que vous n&#39;avez encore rien fait sur GitHub. Pour connecter votre dépôt local à votre compte GitHub, vous devrez régler un <code>remote</code> pour votre dépôt et pousser vos commits dedans.</p>
+<p>À ce stade, tout ce que vous avez produit réside dans votre dépôt local, ce qui veut dire que vous n’avez encore rien fait sur GitHub. Pour connecter votre dépôt local à votre compte GitHub, vous devrez régler un <code>remote</code> pour votre dépôt et pousser vos commits dedans.</p>
 
-<h4>Plus sur les remotes</h4>
+<h4 id="plus-sur-les-remotes">Plus sur les remotes</h4>
 
-<p>Un <em>remote</em> est un dépôt stocké sur un autre ordinateur, dans ce cas sur le serveur de GitHub. C&#39;est une pratique standard (et aussi par défaut dans certains cas) que de donner le nom <code>origin</code> au <em>remote</em> qui pointe vers votre dépôt principal hors du site (par exemple, votre dépôt GitHub).</p>
+<p>Un <em>remote</em> est un dépôt stocké sur un autre ordinateur, dans ce cas sur le serveur de GitHub. C’est une pratique standard (et aussi par défaut dans certains cas) que de donner le nom <code>origin</code> au <em>remote</em> qui pointe vers votre dépôt principal hors du site (par exemple, votre dépôt GitHub).</p>
 
 <p>Git supporte de nombreux remotes. Ceci est communément utilisé au moment de <em>forker</em> un dépôt.</p>
 
@@ -166,32 +166,31 @@ Christophe Ducamp</a> • <a class="u-url" href="/2013/12/16/creer-un-repo-GitHu
 <span class="nv">$ </span>git push origin master
 <span class="c"># Envoie vos commits dans la branche &quot;master&quot; sur GitHub</span></code></pre></div>
 
-<p>(<strong>Truc</strong> : Remarquez que le chemin vers votre URL distante (remote) --Hello-World.git--correspond à celui que vous avez créé sur GitHub. Ceci est sensible à la casse, et il est important de conserver la même.)</p>
+<p>(<strong>Truc</strong> : Remarquez que le chemin vers votre URL distante (remote) –Hello-World.git–correspond à celui que vous avez créé sur GitHub. Ceci est sensible à la casse, et il est important de conserver la même.)</p>
 
 <p>Maintenant si vous regardez votre dépôt sur GitHub, vous verrez que votre README y a été ajouté.</p>
 
-<p><img src="https://github.s3.amazonaws.com/docs/bootcamp_2_updatedreadme.jpg" alt="image"> </p>
+<p><img src="https://github.s3.amazonaws.com/docs/bootcamp_2_updatedreadme.jpg" alt="image" /> </p>
 
 <p>Votre README a été créé.</p>
 
-<h2>Fêtez ça !</h2>
+<h2 id="ftez-a-">Fêtez ça !</h2>
 
-<p>Félicitations ! Vous avez maintenant créé un repo sur GitHub, créé un README, l&#39;avez committé et poussé vers GitHub. Que voulez-vous faire ensuite ?</p>
-
-<ul>
-<li><a href="/2013/12/10/installer-git/">Installer Git</a></li>
-<li><strong>Créer un Repo</strong></li>
-<li><a href="/2013/12/16/forker-un-repo-github/">Forker un Repo</a></li>
-<li><a href="/2013/12/16/github-etre-social/">Être Social</a></li>
-</ul>
-
-<h2>Ailleurs</h2>
+<p>Félicitations ! Vous avez maintenant créé un repo sur GitHub, créé un README, l’avez committé et poussé vers GitHub. Que voulez-vous faire ensuite ?</p>
 
 <ul>
-<li><a href="http://git-scm.com/book/fr/Les-bases-de-Git-D%C3%A9marrer-un-d%C3%A9p%C3%B4t-Git">Les bases de Git - Démarrer un dépôt Git</a> - pour réviser et apprendre à cloner un dépôt existant.</li>
+  <li><a href="/2013/12/10/installer-git/">Installer Git</a></li>
+  <li><strong>Créer un Repo</strong></li>
+  <li><a href="/2013/12/16/forker-un-repo-github/">Forker un Repo</a></li>
+  <li><a href="/2013/12/16/github-etre-social/">Être Social</a></li>
 </ul>
 
-<p><img src="http://imgs.xkcd.com/comics/git_commit.png" alt="image"></p>
+<h2 id="ailleurs">Ailleurs</h2>
+<ul>
+  <li><a href="http://git-scm.com/book/fr/Les-bases-de-Git-D%C3%A9marrer-un-d%C3%A9p%C3%B4t-Git">Les bases de Git - Démarrer un dépôt Git</a> - pour réviser et apprendre à cloner un dépôt existant.</li>
+</ul>
+
+<p><img src="http://imgs.xkcd.com/comics/git_commit.png" alt="image" /></p>
 
   </article>
 

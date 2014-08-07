@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Antisèche Ligne de Commande pour Démarrer sur GitHub !</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="/2013/12/09/anti-seche-ligne-de-commande/" />
+    <meta name="description" content="selfdogfood sur jekyll" />
+    <link rel="canonical" href="http://christopheducamp.com/2013/12/09/anti-seche-ligne-de-commande/" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -74,34 +74,34 @@
     <p class="meta"><time class="dt-published" datetime="2013-12-09T15:47:44+01:00">
   Lundi 9 décembre 2013
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="/2013/12/09/anti-seche-ligne-de-commande/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/2013/12/09/anti-seche-ligne-de-commande/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
   <p>Si vous démarrez dans la <a href="/2013-12-10-terminal-trucs">fenêtre de Terminal</a></p>
 
-<h2>Glossaire Git pour les Nuls</h2>
+<h2 id="glossaire-git-pour-les-nuls">Glossaire Git pour les Nuls</h2>
 
 <ul>
-<li><code>git init</code> : Initialise un dépôt git dans un répertoire vide.</li>
-<li><code>git status</code> : Affiche le statut des choses dans le répertoire suivi </li>
-<li><code>git add  &lt;NOM DU FICHIER A SUIVRE&gt;</code> : Ajoute un fichier à suivre dans la zone d&#39;attente</li>
-<li><code>git commit -m &quot;entrez votre message&quot;</code> : Consigner (déclarer) toute modification. </li>
-<li><code>git remote add origin [adresse URL GitHub ici]</code> : Connecte votre dépôt local avec GitHub.</li>
-<li><code>git push -u origin nom_branche</code> : Pousse les modifications vers GitHub</li>
-<li><code>git checkout</code> : Littéralement &quot;check out&quot; (retirer, rapatrier) une branche. </li>
-<li><code>git -b &lt;NomBranche&gt;</code> : Crée une nouvelle branche dans votre dépôt. </li>
-<li><code>git log</code>: affiche un journal des modifications au dépôt</li>
-<li><code>git clone &lt;URL PROVENANT DE GITHUB&gt;</code> : clone un projet de votre système à partir de github</li>
-<li><code>git branch &lt;nom_branche&gt;</code> : crée une copie de la branche master appelée  <nom_branche></li>
-<li><code>git checkout &lt;branch_name&gt;</code> : bascule vers nom_branche comme branche de travail</li>
-<li><code>git checkout master</code> : bascule la branche vers master</li>
-<li><code>git branch -a</code> : affiche les branches existantes pour le dépôt particulier</li>
+  <li><code>git init</code> : Initialise un dépôt git dans un répertoire vide.</li>
+  <li><code>git status</code> : Affiche le statut des choses dans le répertoire suivi </li>
+  <li><code>git add  &lt;NOM DU FICHIER A SUIVRE&gt;</code> : Ajoute un fichier à suivre dans la zone d’attente</li>
+  <li><code>git commit -m "entrez votre message"</code> : Consigner (déclarer) toute modification. </li>
+  <li><code>git remote add origin [adresse URL GitHub ici]</code> : Connecte votre dépôt local avec GitHub.</li>
+  <li><code>git push -u origin nom_branche</code> : Pousse les modifications vers GitHub</li>
+  <li><code>git checkout</code> : Littéralement “check out” (retirer, rapatrier) une branche. </li>
+  <li><code>git -b &lt;NomBranche&gt;</code> : Crée une nouvelle branche dans votre dépôt. </li>
+  <li><code>git log</code>: affiche un journal des modifications au dépôt</li>
+  <li><code>git clone &lt;URL PROVENANT DE GITHUB&gt;</code> : clone un projet de votre système à partir de github</li>
+  <li><code>git branch &lt;nom_branche&gt;</code> : crée une copie de la branche master appelée  <nom_branche></nom_branche></li>
+  <li><code>git checkout &lt;branch_name&gt;</code> : bascule vers nom_branche comme branche de travail</li>
+  <li><code>git checkout master</code> : bascule la branche vers master</li>
+  <li><code>git branch -a</code> : affiche les branches existantes pour le dépôt particulier</li>
 </ul>
 
-<p>Pour les traductions des commandes, se référer à l&#39;index de l&#39;ouvrage de référence sur Git traduit en français : <a href="http://git-scm.com/book/fr">git-scm/book</a></p>
+<p>Pour les traductions des commandes, se référer à l’index de l’ouvrage de référence sur Git traduit en français : <a href="http://git-scm.com/book/fr">git-scm/book</a></p>
 
-<h2>Glossaire ligne de commande (pour mémoire)</h2>
+<h2 id="glossaire-ligne-de-commande-pour-mmoire">Glossaire ligne de commande (pour mémoire)</h2>
 
 <p><a href="http://www.osxfacile.com/terminal.html">source OS X Facile</a></p>
 
@@ -109,31 +109,32 @@ Christophe Ducamp</a> • <a class="u-url" href="/2013/12/09/anti-seche-ligne-de
 
 <p><code>ls -a</code> : La liste de TOUS les éléments du dossier utilisateur, y compris les éléments invisibles, apparaît.</p>
 
-<p><code>ls -a Documents</code> : La liste de TOUS les éléments du dossier &quot;Documents&quot; apparaît (vous pouvez substituer &quot;Documents&quot; par un autre nom de dossier.</p>
+<p><code>ls -a Documents</code> : La liste de TOUS les éléments du dossier “Documents” apparaît (vous pouvez substituer “Documents” par un autre nom de dossier.</p>
 
-<p><code>ls -l</code> : Donne plus de détails que la commande ls : Apparaissent les permissions, le propriétaire, le groupe etc...</p>
+<p><code>ls -l</code> : Donne plus de détails que la commande ls : Apparaissent les permissions, le propriétaire, le groupe etc…</p>
 
-<p><code>man</code>   : Cette commande vous indique à quoi correspond telle ou telle commande du terminal. Par exemple, tapez man ls : Cela vous indiquera à quoi correspond la commande ls</p>
+<p><code>man</code>	: Cette commande vous indique à quoi correspond telle ou telle commande du terminal. Par exemple, tapez man ls : Cela vous indiquera à quoi correspond la commande ls</p>
 
-<p><code>pwd</code>   : (Print Working Directory) Cette commande affiche le chemin absolu vers le répertoire dans lequel vous vous trouvez. Ceci vous permettra de vous localiser à tout moment dans l&#39;arborescence OS X.</p>
+<p><code>pwd</code>	: (Print Working Directory) Cette commande affiche le chemin absolu vers le répertoire dans lequel vous vous trouvez. Ceci vous permettra de vous localiser à tout moment dans l’arborescence OS X.</p>
 
-<p><code>cd</code>    : (Change Directory) Pour changer de répertoire. Par exemple pour se rendre dans le répertoire de Marc, on tapera cd /Users/Marc</p>
+<p><code>cd</code>	: (Change Directory) Pour changer de répertoire. Par exemple pour se rendre dans le répertoire de Marc, on tapera cd /Users/Marc</p>
 
-<p><code>cp</code> : Sert à copier un fichier : Par exemple pour copier le fichier User/Marc/documents/texte.doc dans le répertoire &quot;important&quot;, il faudra taper la commande : cp /Users/Marc/Documents/texte.doc Users/Marc/Documents/Important/texte.doc</p>
+<p><code>cp</code> : Sert à copier un fichier : Par exemple pour copier le fichier User/Marc/documents/texte.doc dans le répertoire “important”, il faudra taper la commande : cp /Users/Marc/Documents/texte.doc Users/Marc/Documents/Important/texte.doc</p>
 
-<p><code>mv</code> : Sert à déplacer un fichier d&#39;un répertoire vers un autre. (Même procédure que pour copier un fichier)</p>
+<p><code>mv</code> : Sert à déplacer un fichier d’un répertoire vers un autre. (Même procédure que pour copier un fichier)</p>
 
-<p><code>rm</code>    : Sert à supprimer définitivement un fichier. Par exemple : rm texte.doc</p>
+<p><code>rm</code>	: Sert à supprimer définitivement un fichier. Par exemple : rm texte.doc</p>
 
-<p><code>rmdir</code> : Sert à supprimer définitivement un dossier vide. Par exemple : <code>rmdir tartampion</code></p>
+<p><code>rmdir</code>	: Sert à supprimer définitivement un dossier vide. Par exemple : <code>rmdir tartampion</code></p>
 
-<p><code>top</code> : Permet de voir les process en cours. Pour quitter taper &quot;q&quot;.</p>
+<p><code>top</code> : Permet de voir les process en cours. Pour quitter taper “q”.</p>
 
-<p><code>df -h</code> : Affiche la liste des volumes montés sur votre Mac et les caractéristiques de ceux-ci (très pratique).</p>
+<p><code>df -h</code>	: Affiche la liste des volumes montés sur votre Mac et les caractéristiques de ceux-ci (très pratique).</p>
 
-<p><code>chown</code> : Pour changer le propriétaire d&#39;un fichier.</p>
+<p><code>chown</code>	: Pour changer le propriétaire d’un fichier.</p>
 
-<p><code>mkdir</code> : Pour créer un répertoire.</p>
+<p><code>mkdir</code>	: Pour créer un répertoire.</p>
+
 
   </article>
 

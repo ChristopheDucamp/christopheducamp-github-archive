@@ -1,22 +1,25 @@
+#nom du site
 name: sur la route de l'indieweb...
-markdown: redcarpet
-highlighter : pygments
-permalink: /:year/:month/:day/:title/
+
+
 #repository: https://github.com/christopheducamp/christopheducamp.github.io
-description: une route indieweb
-#url: "http://christopheducamp.com"
+description: selfdogfood sur jekyll
+url: "http://christopheducamp.com"
 
-ftp_host: ftp.christopheducamp.com
-ftp_username: christoplj
-ftp_dir: /www
-ftp_passive: false
-
+#collections :essai en cours
 collections:
   mes_notes:
     output: true
 
+markdown: kramdown
+highlighter : pygments
+permalink: /:year/:month/:day/:title/
+
+# Exclure ces fichiers du _site de production
+exclude: [categories.html, Gemfile, Gemfile.lock, README.md, vendor, README.md, LICENSE]
 gems:
   - jekyll-redirect-from
+  - jemoji
 
 
     

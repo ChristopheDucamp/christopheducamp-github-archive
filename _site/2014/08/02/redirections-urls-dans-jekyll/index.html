@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Redirections URLs dans Jekyll</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="/2014/08/02/redirections-urls-dans-jekyll/" />
+    <meta name="description" content="selfdogfood sur jekyll" />
+    <link rel="canonical" href="http://christopheducamp.com/2014/08/02/redirections-urls-dans-jekyll/" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -74,60 +74,68 @@
     <p class="meta"><time class="dt-published" datetime="2014-08-02T00:00:00+02:00">
   Samedi 2 août 2014
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="/2014/08/02/redirections-urls-dans-jekyll/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/2014/08/02/redirections-urls-dans-jekyll/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
-  <p><em>Inspiré pour reprendre l&#39;étude de l&#39;<a href="http://indiewebcamp.com/IndieMark">IndieMark</a> sur cette instance Jekyll. Une inspiration particulièrement dopée par <a href="http://www.pierre-o.fr/blog/2014/07/30/indieweb/">l&#39;arrivée sur IndieWeb</a> de <a rel="colleague" title="Pierre Ozoux" href="http://www.pierre-o.fr/" class="h-card microcard">Pierre Ozoux</a>. Et par le dépannage webmention reçu de <span class="h-card microcard" rel="muse friend met"><img class="u-photo" src="https://michielbdejong.com/img/agonda.png" /><a href="https://michielbdejong.com/">Michiel</a></span>, notre ami sauveur du web passé à Paris <time datetime="2014-07-30">mercredi dernier</time> pour le premier <a href="http://www.meetup.com/Paris-Meetup-pour-la-decentralisation-dInternet/events/193618842/">meetup de décentralisation du net chez Mozilla</a>.</em></p>
+  <p><em>Inspiré pour reprendre l’étude de l’<a href="http://indiewebcamp.com/IndieMark">IndieMark</a> sur cette instance Jekyll. Une inspiration particulièrement dopée par <a href="http://www.pierre-o.fr/blog/2014/07/30/indieweb/">l’arrivée sur IndieWeb</a> de <a rel="colleague" title="Pierre Ozoux" href="http://www.pierre-o.fr/" class="h-card microcard">Pierre Ozoux</a>. Et par le dépannage webmention reçu de <span class="h-card microcard" rel="muse friend met"><img class="u-photo" src="https://michielbdejong.com/img/agonda.png" /><a href="https://michielbdejong.com/">Michiel</a></span>, notre ami sauveur du web passé à Paris <time datetime="2014-07-30">mercredi dernier</time> pour le premier <a href="http://www.meetup.com/Paris-Meetup-pour-la-decentralisation-dInternet/events/193618842/">meetup de décentralisation du net chez Mozilla</a>.</em></p>
 
-<p>Le <a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">moteur de génération de &quot;permashortlinks&quot;</a> bâti hier par Pierre pour son instance Octopress (un framework Jekyll) m&#39;a clairement éclairé pour parvenir à construire ici quelques premières  <a href="http://indiewebcamp.com/permashortcitation">citations de permaliens-raccourcis</a>.</p>
+<p>Le <a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">moteur de génération de “permashortlinks”</a> bâti hier par Pierre pour son instance Octopress (un framework Jekyll) m’a clairement éclairé pour parvenir à construire ici quelques premières  <a href="http://indiewebcamp.com/permashortcitation">citations de permaliens-raccourcis</a>.</p>
 
-<p>L&#39;installation de <strong>permaliens-raccourcis</strong> n&#39;est pas qu&#39;un <em>truc de maniaque</em> adopté par les membres de l&#39;IndieWebCamp... C&#39;est aussi un <a href="http://indiewebcamp.com/IndieMark#Level_2_syndication">pré-requis pour passer le niveau 2 de l&#39;IndieMark</a> ! </p>
+<p>L’installation de <strong>permaliens-raccourcis</strong> n’est pas qu’un <em>truc de maniaque</em> adopté par les membres de l’IndieWebCamp… C’est aussi un <a href="http://indiewebcamp.com/IndieMark#Level_2_syndication">pré-requis pour passer le niveau 2 de l’IndieMark</a> ! </p>
 
-<h2>Qu&#39;est-ce qu&#39;un Permalien-Raccourci ?</h2>
+<h2 id="quest-ce-quun-permalien-raccourci-">Qu’est-ce qu’un Permalien-Raccourci ?</h2>
 
 <blockquote>
-<p>Un <strong><dfn>permalien</dfn></strong> est une URL qui représente et retrouve un post unique. Un <strong><dfn>permalien-court</dfn></strong> (ou permalien-raccourci ?) est une URL utilisant un nom de domaine personnel raccourci qui se dilate vers un permalien.<footer><a class="p-name u-url" href="http://indiewebcamp.com/permalinks-fr">source wiki IndieWebCamp</a></footer></p>
+  <p>Un <strong><dfn>permalien</dfn></strong> est une URL qui représente et retrouve un post unique. Un <strong><dfn>permalien-court</dfn></strong> (ou permalien-raccourci ?) est une URL utilisant un nom de domaine personnel raccourci qui se dilate vers un permalien.&lt;footer&gt;<a class="p-name u-url" href="http://indiewebcamp.com/permalinks-fr">source wiki IndieWebCamp</a>&lt;/footer&gt;</p>
 </blockquote>
 
-<h2>Installation</h2>
+<h2 id="installation">Installation</h2>
 
 <p>Démarrage à la ligne de commande. Ouvrez votre fenêtre de terminal et installez la gem Jekyll de redirection :</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ gem install jekyll-redirect-from
-</code></pre></div>
-<p>Une fois la <em>gem</em> installée dans votre environnement, ajoutez ces deux lignes dans votre fichier local <code>_config.yml</code>:</p>
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">gems</span><span class="p-Indicator">:</span>
-  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">jekyll-redirect-from</span>
-</code></pre></div>
-<h2>Usages pressentis</h2>
 
-<p>L&#39;objet de cette gem de redirection peut ainsi permettre à un auteur de spécifier une (ou plusieurs !) URL(s) pour un même post ou une même page.</p>
+<pre><code>$ gem install jekyll-redirect-from
+</code></pre>
+
+<p>Une fois la <em>gem</em> installée dans votre environnement, ajoutez ces deux lignes dans votre fichier local <code>_config.yml</code>:</p>
+
+<p><code>yaml
+gems:
+  - jekyll-redirect-from
+</code></p>
+
+<h2 id="usages-pressentis">Usages pressentis</h2>
+
+<p>L’objet de cette gem de redirection peut ainsi permettre à un auteur de spécifier une (ou plusieurs !) URL(s) pour un même post ou une même page.</p>
 
 <p>Pour utiliser ces urls courtes qui pointeront toutes vers votre URL canonique, inspirez-vous de la série qui suit. 
 Ajoutez votre adaptation au Panneau YAML de votre post ou page : </p>
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Mon super post</span>
-<span class="l-Scalar-Plain">redirect_from</span><span class="p-Indicator">:</span>
-  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">/post/123456789/</span>
-  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">/post/123456789/mon-super-post/</span>
-  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">/2014-08-02/</span>
-</code></pre></div>
-<h2>Exemple pour ce post :</h2>
 
-<p>Pour le premier permalien-raccourci fonctionnel de ce post, j&#39;ai volontairement choisi un format solide, quelque peu inspiré de <span class="h-card"><a href="http://tantek.com/">Tantek</a></span>, à savoir l&#39;année suivie du quantième ce qui pourrait ressembler à :  </p>
+<p><code>yaml
+title: Mon super post
+redirect_from:
+  - /post/123456789/
+  - /post/123456789/mon-super-post/
+  - /2014-08-02/
+</code></p>
+
+<h2 id="exemple-pour-ce-post-">Exemple pour ce post :</h2>
+
+<p>Pour le premier permalien-raccourci fonctionnel de ce post, j’ai volontairement choisi un format solide, quelque peu inspiré de <span class="h-card"><a href="http://tantek.com/">Tantek</a></span>, à savoir l’année suivie du quantième ce qui pourrait ressembler à :  </p>
 
 <ul>
-<li><a href="http://xtof.me/2014-214/">xtof.me/2014-214/</a> </li>
-<li>citation du permalien-raccourci : (xtof.me 2014/214)</li>
-<li>Version un peu plus longue : <a href="http://xtof.me/indielog/2014-214">xtof.me indielog/2014-214</a> </li>
+  <li><a href="http://xtof.me/2014-214/">xtof.me/2014-214/</a> </li>
+  <li>citation du permalien-raccourci : (xtof.me 2014/214)</li>
+  <li>Version un peu plus longue : <a href="http://xtof.me/indielog/2014-214">xtof.me indielog/2014-214</a> </li>
 </ul>
 
-<h2>Prochaine étape : Parvenir à Modifier le Rakefile</h2>
+<h2 id="prochaine-tape--parvenir--modifier-le-rakefile">Prochaine étape : Parvenir à Modifier le Rakefile</h2>
 
-<p>Une recherche de patterns est en cours afin de trouver un modèle de raccourci d&#39;<a href="http://christopheducamp.com/b/2013-04-14/les-urls-sont-pour-les-humains/">URL parlante et ayant du sens</a>. </p>
+<p>Une recherche de patterns est en cours afin de trouver un modèle de raccourci d’<a href="http://christopheducamp.com/b/2013-04-14/les-urls-sont-pour-les-humains/">URL parlante et ayant du sens</a>. </p>
 
-<p>Quant à l&#39;automatisation de ce processus de redirection, je serais preneur de toute aide pour décrypter les <a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">conseils de Pierre</a> afin de parvenir à adapter <a href="https://github.com/ChristopheDucamp/christopheducamp.github.io/blob/master/rakefile">mon fichier <code>Rakefile</code></a>.  </p>
+<p>Quant à l’automatisation de ce processus de redirection, je serais preneur de toute aide pour décrypter les <a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">conseils de Pierre</a> afin de parvenir à adapter <a href="https://github.com/ChristopheDucamp/christopheducamp.github.io/blob/master/rakefile">mon fichier <code>Rakefile</code></a>.  </p>
 
-<p>Le message d&#39;erreur renvoyé à cette heure : </p>
+<p>Le message d’erreur renvoyé à cette heure : </p>
 
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">rake post <span class="nv">title</span><span class="o">=</span><span class="s2">&quot;Les Collections de Jekyll&quot;</span>
 rake aborted!
@@ -138,16 +146,14 @@ Tasks: <span class="nv">TOP</span> <span class="o">=</span>&gt; post
 
 <p><strong>Dernier truc à savoir :</strong> Les redirections avec un slash à la fin génèrent un sous-répertoire correspondant contenant un fichier <code>index.html</code>, alors que les redirections sans un slash à la fin générent un <code>nomfichier</code> correspondant sans extension et sans sous-répertoire.</p>
 
-<h2>Liens Ressources :</h2>
-
+<h2 id="liens-ressources-">Liens Ressources :</h2>
 <ul>
-<li>Lien de référence : <a href="https://github.com/jekyll/jekyll-redirect-from">Jekyll-redirect-from</a> - Github</li>
-<li>Lisez le post technique <cite class="h-cite"><strong><span class="url p-name"><a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">Permashortlinks</a></span></strong> de <abbr class="p-author h-card" title="Pierre Ozoux">Pierre</abbr> pour des indications sur la modification du fichier Rakefile (<time class="dt-published">2014-08-02</time>)</cite> </li>
-<li>Les <a href="http://jekyllrb.com/docs/permalinks/">permaliens de Jekyll</a> : la page de référence pour connaître toutes les variables à utiliser dans vos permaliens.</li>
+  <li>Lien de référence : <a href="https://github.com/jekyll/jekyll-redirect-from">Jekyll-redirect-from</a> - Github</li>
+  <li>Lisez le post technique <cite class="h-cite"><strong><span class="url p-name"><a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">Permashortlinks</a></span></strong> de <abbr class="p-author h-card" title="Pierre Ozoux">Pierre</abbr> pour des indications sur la modification du fichier Rakefile (<time class="dt-published">2014-08-02</time>)</cite> </li>
+  <li>Les <a href="http://jekyllrb.com/docs/permalinks/">permaliens de Jekyll</a> : la page de référence pour connaître toutes les variables à utiliser dans vos permaliens.</li>
 </ul>
 
-<h2>Ailleurs</h2>
-
+<h2 id="ailleurs">Ailleurs</h2>
 <p>Ce post est distribué sur <a href="https://twitter.com/xtof_fr/status/495695580291928064" rel="syndication" class="u-syndication">Twitter</a></p>
 
   </article>
@@ -155,17 +161,17 @@ Tasks: <span class="nv">TOP</span> <span class="o">=</span>&gt; post
 <div class="tags">  
 <ul class="tag-list">
 
-<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#jekyll" title="Pages taguées jekyll">jekyll</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#jekyll" title="Pages taguées jekyll">jekyll</a></li>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#indieweb" title="Pages taguées indieweb">indieweb</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#indieweb" title="Pages taguées indieweb">indieweb</a></li>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#permalink" title="Pages taguées permalink">permalink</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#permalink" title="Pages taguées permalink">permalink</a></li>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#permalien" title="Pages taguées permalien">permalien</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#permalien" title="Pages taguées permalien">permalien</a></li>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#permashortlink" title="Pages taguées permashortlink">permashortlink</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#permashortlink" title="Pages taguées permashortlink">permashortlink</a></li>
 
-<li><a class="p-category entry-tags tag" rel="tag" href="/tags.html#bricolage" title="Pages taguées bricolage">bricolage</a></li>
+<li><a class="p-category entry-tags tag" rel="tag" href="http://christopheducamp.com/tags.html#bricolage" title="Pages taguées bricolage">bricolage</a></li>
 
 </ul>
 </div>

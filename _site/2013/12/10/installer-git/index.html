@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Installer Git</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="/2013/12/10/installer-git/" />
+    <meta name="description" content="selfdogfood sur jekyll" />
+    <link rel="canonical" href="http://christopheducamp.com/2013/12/10/installer-git/" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -74,53 +74,50 @@
     <p class="meta"><time class="dt-published" datetime="2013-12-10T22:44:00+01:00">
   Mardi 10 décembre 2013
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="/2013/12/10/installer-git/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/2013/12/10/installer-git/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
   <p><a href="https://help.github.com/articles/set-up-git">lien de référence</a></p>
 
-<p><strong>N.B.</strong> Si vous êtes perdu sur cette page, ... oubliez le terminal ! Vous pouvez à la place utiliser l&#39;<a href="https://central.github.com/mac/latest">application native de GitHub pour Mac</a> </p>
+<p><strong>N.B.</strong> Si vous êtes perdu sur cette page, … oubliez le terminal ! Vous pouvez à la place utiliser l’<a href="https://central.github.com/mac/latest">application native de GitHub pour Mac</a> </p>
 
 <p>Si vous vous trouvez sur cette page, je peux supposer que vous <a href="/2013/12/15/Github-pour-nuls-partie-1/">débutez sur Git et GitHub</a>. Ce petit guide vous fera réviser quelques fondamentaux et vous aidera à faire vos premiers pas sur GitHub.</p>
 
-<h2>Télécharger et Installer Git</h2>
-
+<h2 id="tlcharger-et-installer-git">Télécharger et Installer Git</h2>
 <p>Au coeur de GitHub, il y a un système de contrôle de version (VCS) appelé Git*. Créé par la même équipe qui a créé Linux, Git est responsable de tout ce qui concerne GitHub et les sujets afférents à ce qui passe localement sur votre ordinateur.</p>
 
-<p>*Si vous ne savez pas déjà ce qu&#39;est Git, <a href="http://git-scm.com/book/fr/D%C3%A9marrage-rapide-Rudiments-de-Git">apprenez les rudiments de Git</a>.</p>
+<p>*Si vous ne savez pas déjà ce qu’est Git, <a href="http://git-scm.com/book/fr/D%C3%A9marrage-rapide-Rudiments-de-Git">apprenez les rudiments de Git</a>.</p>
 
 <p><strong>Téléchargez et installez</strong> la <a href="http://git-scm.com/downloads">dernière version de Git</a>.</p>
 
-<p>*<em>ProTruc *</em>: Git n&#39;ajoutera pas d&#39;icône à votre dock, ce n&#39;est pas ce type d&#39;application.</p>
+<p>**ProTruc **: Git n’ajoutera pas d’icône à votre dock, ce n’est pas ce type d’application.</p>
 
-<h2>Installer Git</h2>
+<h2 id="installer-git">Installer Git</h2>
 
 <p>Maintenant que vous avez installé Git, il est temps de configurer vos réglages. Pour faire ça, vous devez ouvrir le Terminal.</p>
 
-<p>Besoin d&#39;une petite leçon concernant le Terminal ? <a href="/2013-12-10-terminal-trucs">quelques trucs ici</a></p>
+<p>Besoin d’une petite leçon concernant le Terminal ? <a href="/2013-12-10-terminal-trucs">quelques trucs ici</a></p>
 
-<h2>Nom d&#39;utilisateur</h2>
+<h2 id="nom-dutilisateur">Nom d’utilisateur</h2>
 
-<p>Premièrement vous devez dire à git votre nom, de manière à ce qu&#39;il puisse proprement étiqueter les commits que vous produisez.</p>
+<p>Premièrement vous devez dire à git votre nom, de manière à ce qu’il puisse proprement étiqueter les commits que vous produisez.</p>
 
 <div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git config --global user.name <span class="s2">&quot;Votre Nom Ici&quot;</span>
 <span class="c"># Règle le nom par défaut pour git à utiliser quand vous committez</span></code></pre></div>
-  
 
-<h2>E-mail</h2>
+<h2 id="e-mail">E-mail</h2>
 
-<p>Git sauvegarde votre adresse e-mail à l&#39;intérieur des commits que vous produisez. Nous utilisons l&#39;adresse e-mail pour associer vos commits à votre compte GitHub. </p>
+<p>Git sauvegarde votre adresse e-mail à l’intérieur des commits que vous produisez. Nous utilisons l’adresse e-mail pour associer vos commits à votre compte GitHub. </p>
 
 <div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git config --global user.email <span class="s2">&quot;votre_email@exemple.com&quot;</span>
 <span class="c"># Règle l&#39;e-mail par défaut pour git à utiliser quand vous committez</span></code></pre></div>
-  
 
-<p>Votre adresse e-mail pour Git devrait être la même que celle associée à votre compte GitHub. Si ce n&#39;est pas le cas, regardez <a href="https://help.github.com/articles/how-do-i-change-my-primary-email-address">ce guide</a> pour aider à ajouter des e-mails à votre compte GitHub. Si vous voulez cacher votre adresse e-mail, <a href="https://help.github.com/articles/keeping-your-email-address-private">ce guide</a> peut vous être utile.</p>
+<p>Votre adresse e-mail pour Git devrait être la même que celle associée à votre compte GitHub. Si ce n’est pas le cas, regardez <a href="https://help.github.com/articles/how-do-i-change-my-primary-email-address">ce guide</a> pour aider à ajouter des e-mails à votre compte GitHub. Si vous voulez cacher votre adresse e-mail, <a href="https://help.github.com/articles/keeping-your-email-address-private">ce guide</a> peut vous être utile.</p>
 
-<h3>Écraser les réglages dans les dépôts individuels</h3>
+<h3 id="craser-les-rglages-dans-les-dpts-individuels">Écraser les réglages dans les dépôts individuels</h3>
 
-<p>Les étapes listées au-dessus vous montrent comment régler globalement votre info utilisateur. Ceci veut dire que quel que soit le dépôt sur lequel vous travaillez sur votre ordinateur, vous produirez des commits sous cet utilisateur. Si vous vous retrouvez confronté à devoir produire des commits avec une info-utilisateur différente pour un dépôt spécifique (peut-être pour le travail vs. projets personnels), vous devrez changer l&#39;info dans ce même dépôt. </p>
+<p>Les étapes listées au-dessus vous montrent comment régler globalement votre info utilisateur. Ceci veut dire que quel que soit le dépôt sur lequel vous travaillez sur votre ordinateur, vous produirez des commits sous cet utilisateur. Si vous vous retrouvez confronté à devoir produire des commits avec une info-utilisateur différente pour un dépôt spécifique (peut-être pour le travail vs. projets personnels), vous devrez changer l’info dans ce même dépôt. </p>
 
 <div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd </span>mon_autre_repo
 <span class="c"># Change le repo de travail vers le repo vers lequel vous souhaitez basculer l&#39;info pour </span>
@@ -131,13 +128,13 @@ Christophe Ducamp</a> • <a class="u-url" href="/2013/12/10/installer-git/">per
 
 <p>Désormais vos commits seront associés à ces nouveaux nom-d-utilisateur et e-mail dans le repo spécifié.</p>
 
-<h1>Cacher le Mot de Passe</h1>
+<h1 id="cacher-le-mot-de-passe">Cacher le Mot de Passe</h1>
 
-<p>La dernière option que nous devons régler dira à git que vous ne voulez pas taper votre nom d&#39;utilisateur et mot de passe à chaque fois que vous parlez à un serveur distant.</p>
+<p>La dernière option que nous devons régler dira à git que vous ne voulez pas taper votre nom d’utilisateur et mot de passe à chaque fois que vous parlez à un serveur distant.</p>
 
 <p><strong>Truc</strong> : Vous devez avoir installé git 1.7.10 ou une version plus récente pour utiliser le <code>credential helper</code>.</p>
 
-<p>Pour utiliser cette option, vous devez installer le <code>osxkeychain credential helper</code> et dire à git de l&#39;utiliser.</p>
+<p>Pour utiliser cette option, vous devez installer le <code>osxkeychain credential helper</code> et dire à git de l’utiliser.</p>
 
 <p>Il y a une chance que vous ayez déjà le osxkeychain helper, selon si vous avez installé git en utilisant homebrew ou si vous avez la dernière version de git.</p>
 
@@ -147,7 +144,7 @@ Christophe Ducamp</a> • <a class="u-url" href="/2013/12/10/installer-git/">per
 <span class="c"># Test du cred helper</span>
 Usage : git credential-osxkeychain &lt;get<span class="p">|</span>store<span class="p">|</span>erase&gt;</code></pre></div>
 
-<p>Si vous n&#39;avez pas le helper, vous pouvez le télécharger avec curl : </p>
+<p>Si vous n’avez pas le helper, vous pouvez le télécharger avec curl : </p>
 
 <div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git credential-osxkeychain
 <span class="c"># Test du cred helper</span>
@@ -160,31 +157,31 @@ Usage : git credential-osxkeychain &lt;get<span class="p">|</span>store<span cla
 <span class="nv">$ </span>chmod u+x git-credential-osxkeychain
 <span class="c"># Répare les permissions sur le fichier pour le faire tourner</span></code></pre></div>
 
-<p>Maintenant vous devez installer le helper à l&#39;intérieur du même répertoire où Git lui-même est installé.</p>
+<p>Maintenant vous devez installer le helper à l’intérieur du même répertoire où Git lui-même est installé.</p>
 
 <div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>sudo mv git-credential-osxkeychain <span class="se">\</span>
   <span class="s2">&quot;$(dirname $(which git))/git-credential-osxkeychain&quot;</span>
 <span class="c"># Migre le helper vers le chemin où git est installé</span>
 <span class="c"># Password: [entrez votre mot de passe]</span></code></pre></div>
 
-<p>Pour dire à git d&#39;utiliser osxkeychain, réglez simplement la config globale git :</p>
+<p>Pour dire à git d’utiliser osxkeychain, réglez simplement la config globale git :</p>
 
 <div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git config --global credential.helper osxkeychain
 <span class="c"># règle git pour utiliser le osxkeychain credential helper</span></code></pre></div>
 
-<p>La prochaine fois que vous clonerez une URL HTTPS qui requiert un mot de passe, vous serez averti de rentrer votre nom d&#39;utilisateur et mot de passe, et d&#39;autoriser l&#39;accès à la OSX keychain. Après ça, les <code>username</code> et <code>password</code> seront stockés dans votre keychain et vous ne serez plus obligés de les saisir à nouveau dans git.</p>
+<p>La prochaine fois que vous clonerez une URL HTTPS qui requiert un mot de passe, vous serez averti de rentrer votre nom d’utilisateur et mot de passe, et d’autoriser l’accès à la OSX keychain. Après ça, les <code>username</code> et <code>password</code> seront stockés dans votre keychain et vous ne serez plus obligés de les saisir à nouveau dans git.</p>
 
-<p><strong>Truc :</strong> Le <code>credential helper</code> ne fonctionne que si vous clonez un dépôt URL HTTPS. Si vous utilisez le dépôt URL SSH, les clés SSH son utilisées pour l&#39;authentification. <a href="https://help.github.com/articles/generating-ssh-keys">Ce guide</a> offre de l&#39;aide pour générer et utiliser une paire de clés SSH.</p>
+<p><strong>Truc :</strong> Le <code>credential helper</code> ne fonctionne que si vous clonez un dépôt URL HTTPS. Si vous utilisez le dépôt URL SSH, les clés SSH son utilisées pour l’authentification. <a href="https://help.github.com/articles/generating-ssh-keys">Ce guide</a> offre de l’aide pour générer et utiliser une paire de clés SSH.</p>
 
-<h1>Célébrer</h1>
+<h1 id="clbrer">Célébrer</h1>
 
 <p>Bravo, vous avez bien réglé Git et GitHub ! Que voulez-vous faire ensuite ?</p>
 
 <ul>
-<li><strong>Installer Git</strong></li>
-<li><a href="/2013/12/16/creer-un-repo-github/">Créer un Repo</a></li>
-<li><a href="/2013/12/16/forker-un-repo-github/">Forker un Repo</a></li>
-<li><a href="/2013/12/16/github-etre-social/">Etre Social</a></li>
+  <li><strong>Installer Git</strong></li>
+  <li><a href="/2013/12/16/creer-un-repo-github/">Créer un Repo</a></li>
+  <li><a href="/2013/12/16/forker-un-repo-github/">Forker un Repo</a></li>
+  <li><a href="/2013/12/16/github-etre-social/">Etre Social</a></li>
 </ul>
 
   </article>

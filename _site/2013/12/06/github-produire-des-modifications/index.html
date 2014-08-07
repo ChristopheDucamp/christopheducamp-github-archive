@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Github Pour Mac : Faire des Modifications</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="/2013/12/06/github-produire-des-modifications/" />
+    <meta name="description" content="selfdogfood sur jekyll" />
+    <link rel="canonical" href="http://christopheducamp.com/2013/12/06/github-produire-des-modifications/" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -74,54 +74,55 @@
     <p class="meta"><time class="dt-published" datetime="2013-12-06T00:00:00+01:00">
   Vendredi 6 décembre 2013
 </time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
-Christophe Ducamp</a> • <a class="u-url" href="/2013/12/06/github-produire-des-modifications/">permalien</a> </p>
+Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/2013/12/06/github-produire-des-modifications/">permalien</a> </p>
   </header>
 
   <article class="post-content e-content entry-content">
   <p><a href="https://help.github.com/articles/making-changes">Lien de référence</a></p>
 
-<p>Après avoir forké un dépôt et l&#39;<a href="2013/12/06/GitHub-pour-mac-travailler-avec-des-repos/">avoir cloné vers GitHub pour Mac</a>, vous pouvez visualiser le dépôt sur GitHub.com et ajouter <a href="https://help.github.com/articles/how-do-i-add-a-collaborator">quelques amis comme collaborateurs</a> de façon à ce qu&#39;ils puissent aussi travailler sur votre fork… mais tout d&#39;abord, faisons quelques modifications par nous-mêmes ! </p>
+<p>Après avoir forké un dépôt et l’<a href="2013/12/06/GitHub-pour-mac-travailler-avec-des-repos/">avoir cloné vers GitHub pour Mac</a>, vous pouvez visualiser le dépôt sur GitHub.com et ajouter <a href="https://help.github.com/articles/how-do-i-add-a-collaborator">quelques amis comme collaborateurs</a> de façon à ce qu’ils puissent aussi travailler sur votre fork… mais tout d’abord, faisons quelques modifications par nous-mêmes ! </p>
 
-<p>GitHub pour Mac dispose d&#39;un raccourci très pratique pour que vous puissiez rapidement voir vos dépôts dans le Finder – survolez et posez-vous sur le dépôt dans la vue des dépôts principaux et faites un control-clic, puis sélectionnez &quot;Show in Finder&quot; dans le menu contextuel qui apparaît.</p>
+<p>GitHub pour Mac dispose d’un raccourci très pratique pour que vous puissiez rapidement voir vos dépôts dans le Finder – survolez et posez-vous sur le dépôt dans la vue des dépôts principaux et faites un control-clic, puis sélectionnez “Show in Finder” dans le menu contextuel qui apparaît.</p>
 
-<p><img src="/assets/images/Github-Mac-ShowInFinder.png" alt="UI Github pour Mac"></p>
+<p><img src="http://christopheducamp.com/assets/images/Github-Mac-ShowInFinder.png" alt="UI Github pour Mac" /></p>
 
-<h2>Faire une modification</h2>
+<h2 id="faire-une-modification">Faire une modification</h2>
 
-<p>Si vous avez <a href="/2013/12/06/github-pour-mac-travailler-avec-des-repos/">cloné le dépôt Spoon-Knife</a> vous remarquerez qu&#39;il y a quelques fichiers projets très simples à l&#39;intérieur : 
+<p>Si vous avez <a href="/2013/12/06/github-pour-mac-travailler-avec-des-repos/">cloné le dépôt Spoon-Knife</a> vous remarquerez qu’il y a quelques fichiers projets très simples à l’intérieur : 
 - un fichier texte <code>README</code>, une page HTML et un GIF animé.  Ouvrez le fichier <code>README</code> dans votre éditeur de texte préféré, modifiez le texte pour comme vous aimez, puis sauvegardez.</p>
 
-<p>Maintenant que vous avez fait des modifications sur votre copie locale, utilisons GitHub for Mac pour &quot;Committer&quot; cette modification.</p>
+<p>Maintenant que vous avez fait des modifications sur votre copie locale, utilisons GitHub for Mac pour “Committer” cette modification.</p>
 
-<h3>C&#39;est quoi un commit ?</h3>
+<h3 id="cest-quoi-un-commit-">C’est quoi un commit ?</h3>
 
 <p>Pensez à un <em>commit</em> comme un instantané de votre projet -code, fichiers, tout ce que vous voulez- à un moment donné.</p>
 
-<h2>Visualiser votre modification</h2>
+<h2 id="visualiser-votre-modification">Visualiser votre modification</h2>
 
-<p>Revenez sur Github pour Mac et double-cliquez sur &quot;Spoon-Knife&quot; dans la vue des dépôts principaux. Ceci vous conduira à la vue Historique, où vous pourrez voir les précédents <em>commits</em> d&#39;autres personnes. Néanmoins si vous cliquez sur l&#39;onglet &quot;Changes&quot; sur la gauche, vous entrerez dans la vue Changes, où vous pouvez voir que le fichier README est maintenant mis en valeur comme étant modifié. Sur la droite, vous pouvez voir une &quot;diff&quot; affichant les lignes ayant été modifiées.</p>
+<p>Revenez sur Github pour Mac et double-cliquez sur “Spoon-Knife” dans la vue des dépôts principaux. Ceci vous conduira à la vue Historique, où vous pourrez voir les précédents <em>commits</em> d’autres personnes. Néanmoins si vous cliquez sur l’onglet “Changes” sur la gauche, vous entrerez dans la vue Changes, où vous pouvez voir que le fichier README est maintenant mis en valeur comme étant modifié. Sur la droite, vous pouvez voir une “diff” affichant les lignes ayant été modifiées.</p>
 
-<p><img src="/images/GitHub-Changes-view.png" alt="image" title="Visualisation des Modifications"></p>
+<p><img src="http://christopheducamp.com/images/GitHub-Changes-view.png" alt="image" title="Visualisation des Modifications" /></p>
 
-<h2>Committez vos modifications localement</h2>
+<h2 id="committez-vos-modifications-localement">Committez vos modifications localement</h2>
 
-<p>Pour committer ces modifications, tapez un résumé de commit (et en option, une description étendue, si vous voulez fournir plus de détails des modifications que vous avez produites) et cliquez sur &quot;Commit&quot;.</p>
+<p>Pour committer ces modifications, tapez un résumé de commit (et en option, une description étendue, si vous voulez fournir plus de détails des modifications que vous avez produites) et cliquez sur “Commit”.</p>
 
-<p>À ce stade, vous remarquerez qu&#39;il n&#39;y a aucun fichier sélectionné à committer - au lieu de cela, il existe maintenant des &quot;Unsynced Commits&quot; en bas. Ce qui veut dire que vos modifications ont été committées localement avec Git mais pas encore synchronisées vers votre copie distante sur GitHub.com. Précédemment, l&#39;icône dans l&#39;onglet modifications était verte et rouge pour signifier  les nouvelles modifications - maintenant l&#39;icône a viré au jaune pour signifier sauvegardé, mais commits <strong>non synchronisés</strong>.</p>
+<p>À ce stade, vous remarquerez qu’il n’y a aucun fichier sélectionné à committer - au lieu de cela, il existe maintenant des “Unsynced Commits” en bas. Ce qui veut dire que vos modifications ont été committées localement avec Git mais pas encore synchronisées vers votre copie distante sur GitHub.com. Précédemment, l’icône dans l’onglet modifications était verte et rouge pour signifier  les nouvelles modifications - maintenant l’icône a viré au jaune pour signifier sauvegardé, mais commits <strong>non synchronisés</strong>.</p>
 
-<p><img src="2013/12/06/github-pour-mac-travailler-avec-des-repos/" alt="image"></p>
+<p><img src="2013/12/06/github-pour-mac-travailler-avec-des-repos/" alt="image" /></p>
 
-<h2>Synchronisez vos modifications avec GitHub</h2>
+<h2 id="synchronisez-vos-modifications-avec-github">Synchronisez vos modifications avec GitHub</h2>
 
-<p>Pour envoyer vos modifications vers votre copie distante, tout ce que vous devez faire, c&#39;est cliquer sur le bouton &quot;Sync&quot; dans la vue &quot;Changes&quot;. Une fois synchronisé, vous remarquerez que l&#39;onglet de l&#39;icône Changes a changé pour redevenir comme les autres onglets. Ceci veut dire qu&#39;il n&#39;y a plus de modifications locales à committer ou à synchroniser.</p>
+<p>Pour envoyer vos modifications vers votre copie distante, tout ce que vous devez faire, c’est cliquer sur le bouton “Sync” dans la vue “Changes”. Une fois synchronisé, vous remarquerez que l’onglet de l’icône Changes a changé pour redevenir comme les autres onglets. Ceci veut dire qu’il n’y a plus de modifications locales à committer ou à synchroniser.</p>
 
-<p><strong>Attention</strong> : Si vous avez fait des modifications dans un dépôt local, il est très important que celles-ci soient committées avant de tenter de synchroniser. Autrement, l&#39;app renverra une erreur.</p>
+<p><strong>Attention</strong> : Si vous avez fait des modifications dans un dépôt local, il est très important que celles-ci soient committées avant de tenter de synchroniser. Autrement, l’app renverra une erreur.</p>
 
-<p><strong>Truc</strong> : Vous pouvez basculer le bouton &quot;Commit&quot; vers  &quot;Commit &amp; Sync&quot; en utilisant la bascule placée à côté de &quot;Uncommitted Changes&quot; dans la vue &quot;Changes&quot;. Ceci facilite la production d&#39;un commit suivi instantanément d&#39;un sync.</p>
+<p><strong>Truc</strong> : Vous pouvez basculer le bouton “Commit” vers  “Commit &amp; Sync” en utilisant la bascule placée à côté de “Uncommitted Changes” dans la vue “Changes”. Ceci facilite la production d’un commit suivi instantanément d’un sync.</p>
 
-<h2>C&#39;est la Fête</h2>
+<h2 id="cest-la-fte">C’est la Fête</h2>
 
-<p>Bravo ! Vous avez produit quelques modifications sur un dépôt et les avez committé avec Git. Maintenant <a href="https://help.github.com/articles/viewing-previous-commits">regardons l&#39;historique des commits</a> dans un projet.</p>
+<p>Bravo ! Vous avez produit quelques modifications sur un dépôt et les avez committé avec Git. Maintenant <a href="https://help.github.com/articles/viewing-previous-commits">regardons l’historique des commits</a> dans un projet.</p>
+
 
   </article>
 

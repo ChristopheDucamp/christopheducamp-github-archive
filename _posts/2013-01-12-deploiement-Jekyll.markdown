@@ -12,6 +12,8 @@ tags:
 
 [lien de référence (doc Jekyll)](http://jekyllrb.com/docs/deployment-methods/)
 
+_<ins datetime="2014-08-07">Seul le lien officiel fait référence. Difficultés rencontrées avec le script automatique Glynn. Étude en cours et recherches de scripts SSH et rsync simples à paramétrer pour simplification et automatisation.</ins>_
+
 Du fait de la nature statique de la production générée, tous les sites construits avec Jekyll peuvent être déployés de différentes façons. Quelques-unes des techniques les plus communes sont décrites ci-dessous.
 
 ## Fournisseurs d'hébergement web (FTP)

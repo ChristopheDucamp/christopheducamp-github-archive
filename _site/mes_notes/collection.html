@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Les Collections !</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="une route indieweb" />
-    <link rel="canonical" href="/mes_notes/collection.html" />
+    <meta name="description" content="selfdogfood sur jekyll" />
+    <link rel="canonical" href="http://christopheducamp.com/mes_notes/collection.html" />
 
     <!-- Personnalisation CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -67,60 +67,53 @@
 
     <div class="page-content">
       <div class="wrap">
-      <h1>Les collections dans Jekyll 2.0</h1>
+      <h1 id="les-collections-dans-jekyll-20">Les collections dans Jekyll 2.0</h1>
 
-<p>Tout dans votre site Jekyll n&#39;est pas un post ou une page. Vous voudrez peut-être documenter différentes méthodes dans votre projet OpenSource, l&#39;annuaire des membres d&#39;une équipe ou une liste d&#39;albums de musique. Les collections vous permettent de définir un nouveau type de document qui se comporte comme le font normalement les Pages ou les Posts, mais disposent aussi de leurs propres propriétés uniques et d&#39;un espace-nom.</p>
+<p>Tout dans votre site Jekyll n’est pas un post ou une page. Vous voudrez peut-être documenter différentes méthodes dans votre projet OpenSource, l’annuaire des membres d’une équipe ou une liste d’albums de musique. Les collections vous permettent de définir un nouveau type de document qui se comporte comme le font normalement les Pages ou les Posts, mais disposent aussi de leurs propres propriétés uniques et d’un espace-nom.</p>
 
-<h2>Utiliser les Collections</h2>
+<h2 id="utiliser-les-collections">Utiliser les Collections</h2>
 
-<h3>Étape 1 : Dire à Jekyll de lire dans votre collection</h3>
+<h3 id="tape-1--dire--jekyll-de-lire-dans-votre-collection">Étape 1 : Dire à Jekyll de lire dans votre collection</h3>
 
 <p>Ajoutez ce qui suit au fichier <code>_config.yml</code> de votre site, en remplaçant <code>ma_collection</code> avec le nom de votre collection :</p>
 
 <div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">collections</span><span class="p-Indicator">:</span>
 <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">ma_collection</span></code></pre></div>
 
-
-Vous pouvez facultativement spécifier les métadonnées de votre collection dans votre configuration : 
-
+<p>Vous pouvez facultativement spécifier les métadonnées de votre collection dans votre configuration : </p>
 
 <div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">collections</span><span class="p-Indicator">:</span>
   <span class="l-Scalar-Plain">ma_collection</span><span class="p-Indicator">:</span>
     <span class="l-Scalar-Plain">foo</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">bar</span></code></pre></div>
 
+<h3 id="tape-2--ajouter-votre-contenu">Étape 2 : Ajouter votre Contenu</h3>
 
-### Étape 2 : Ajouter votre Contenu 
+<p>Créez un dossier correspondant (par ex. <code>&lt;source&gt;/_ma_collection</code>) et ajoutez-y des documents.
+Le front-matter YAML est lu comme de la data s’il existe, si non, alors tout est simplement placé dans l’attribut <code>content</code> du Document.</p>
 
-Créez un dossier correspondant (par ex. `<source>/_ma_collection`) et ajoutez-y des documents.
-Le front-matter YAML est lu comme de la data s'il existe, si non, alors tout est simplement placé dans l'attribut `content` du Document.
+<p>Note : le répertoire doit être nommé de la même manière que la colleciton que vous avez définie dans votre fichier config.yml, en le faisant précéder du caractère<code>_</code>.</p>
 
-Note : le répertoire doit être nommé de la même manière que la colleciton que vous avez définie dans votre fichier config.yml, en le faisant précéder du caractère`_`.
+<h3 id="tape-3--en-option-restituez-vos-documents-de-votre-collection-en-fichiers-indpendants">Étape 3 : En option, restituez vos documents de votre collection en fichiers indépendants</h3>
 
-### Étape 3 : En option, restituez vos documents de votre collection en fichiers indépendants
-
-If you'd like Jekyll to create a public-facing, rendered version of each document in your collection, set the `output` key to `true` in your collection metadata in your `_config.yml`:
-
+<p>If you’d like Jekyll to create a public-facing, rendered version of each document in your collection, set the <code>output</code> key to <code>true</code> in your collection metadata in your <code>_config.yml</code>:</p>
 
 <div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">collections</span><span class="p-Indicator">:</span>
   <span class="l-Scalar-Plain">my_collection</span><span class="p-Indicator">:</span>
     <span class="l-Scalar-Plain">output</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">true</span></code></pre></div>
 
-
-This will produce a file for each document in the collection.
-For example, if you have `_my_collection/some_subdir/some_doc.md`,
+<p>This will produce a file for each document in the collection.
+For example, if you have <code>_my_collection/some_subdir/some_doc.md</code>,
 it will be rendered using Liquid and the Markdown converter of your
-choice and written out to `<dest>/my_collection/some_subdir/some_doc.html`.
+choice and written out to <code>&lt;dest&gt;/my_collection/some_subdir/some_doc.html</code>.</p>
 
-As for posts with [Permalinks](../Permalinks/), document URL can be customized by setting a `permalink` metadata to the collection:
-
+<p>As for posts with <a href="../Permalinks/">Permalinks</a>, document URL can be customized by setting a <code>permalink</code> metadata to the collection:</p>
 
 <div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">collections</span><span class="p-Indicator">:</span>
   <span class="l-Scalar-Plain">my_collection</span><span class="p-Indicator">:</span>
     <span class="l-Scalar-Plain">output</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">true</span>
     <span class="l-Scalar-Plain">permalink</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/awesome/:path/</span></code></pre></div>
 
-
-For example, if you have `_my_collection/some_subdir/some_doc.md`, it will be written out to `<dest>/awesome/some_subdir/some_doc/index.html`.
+<p>For example, if you have <code>_my_collection/some_subdir/some_doc.md</code>, it will be written out to <code>&lt;dest&gt;/awesome/some_subdir/some_doc/index.html</code>.</p>
 
 <div class="mobile-side-scroller">
 <table>
@@ -159,13 +152,13 @@ For example, if you have `_my_collection/some_subdir/some_doc.md`, it will be wr
 </table>
 </div>
 
-<h2>Liquid Attributes</h2>
+<h2 id="liquid-attributes">Liquid Attributes</h2>
 
-<h3>Collections</h3>
+<h3 id="collections">Collections</h3>
 
 <p>Chaque collection est accesible via la variable Liquid <code>site</code>. Par exemple, si vous voulez accéder à la collection <code>albums</code> trouvée dans <code>_albums</code>, vous utiliseriez <code>site.albums</code>. Chaque collection est en elle-même une série de documents (par ex. <code>site.albums</code> est une série de documents, tout comme <code>site.pages</code> et <code>site.posts</code>). Voir ci-dessous pour savoir comment accéder aux attributs de ces documents.</p>
 
-<p>Les collections sont aussi disponibles sous <code>site.collections</code>, avec la métadonnée que vous avez spécifiée dans votre <code>_config.yml</code> (si présent) et l&#39;information qui suit : </p>
+<p>Les collections sont aussi disponibles sous <code>site.collections</code>, avec la métadonnée que vous avez spécifiée dans votre <code>_config.yml</code> (si présent) et l’information qui suit : </p>
 
 <div class="mobile-side-scroller">
 <table>
@@ -230,9 +223,9 @@ For example, if you have `_my_collection/some_subdir/some_doc.md`, it will be wr
 </table>
 </div>
 
-<h3>Documents</h3>
+<h3 id="documents">Documents</h3>
 
-<p>In addition to any YAML front-matter provided in the document&#39;s corresponding file, each document has the following attributes:</p>
+<p>In addition to any YAML front-matter provided in the document’s corresponding file, each document has the following attributes:</p>
 
 <div class="mobile-side-scroller">
 <table>
@@ -302,14 +295,13 @@ For example, if you have `_my_collection/some_subdir/some_doc.md`, it will be wr
 </table>
 </div>
 
-<hr>
-
+<hr />
 <p>layout: docs
 title: Collections
-prev<em>section: variables
-next</em>section: datafiles</p>
-
-<h2>permalink: /docs/collections/</h2>
+prev_section: variables
+next_section: datafiles
+permalink: /docs/collections/
+—</p>
 
 <div class="note warning">
   <h5>Collections support is unstable and may change</h5>
@@ -319,6 +311,7 @@ next</em>section: datafiles</p>
 </div>
 
 <p>Not everything is a post or a page. Maybe you want to document the various methods in your open source project, members of a team, or talks at a conference. Collections allow you to define a new type of document that behave like Pages or Posts do normally, but also have their own unique properties and namespace.</p>
+
 
       </div>
     </div>
