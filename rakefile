@@ -59,6 +59,9 @@ task :post do
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
   puts "Creating new post: #{filename}"
+  redirect = Dir.glob("_site/s/*").sort_by{|s| s[/\d+/].to_i }.last
+  redirect_number = /_site\/s\/(\d+)\.htm/.match(redirect)[1].to_i + 1
+  redirect.gsub!(/\d+/, redirect_number.to_s).gsub!(/_site/, "")
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: post"
@@ -66,6 +69,7 @@ task :post do
     post.puts 'description: ""'
     post.puts "category: "
     post.puts "tags: []"
+    post.puts "redirect_from: #{redirect}"
     post.puts "---"
   end
 end # task :post
