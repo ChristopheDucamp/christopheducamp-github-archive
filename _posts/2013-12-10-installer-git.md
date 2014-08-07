@@ -8,7 +8,7 @@ categories: github git howto tutoriel
 
 **N.B.** Si vous êtes perdu sur cette page, ... oubliez le terminal ! Vous pouvez à la place utiliser l'[application native de GitHub pour Mac](https://central.github.com/mac/latest) 
 
-Si vous vous trouvez sur cette page, je peux supposer que vous [débutez sur Git et GitHub](/2013/12/15/Github-pour-nuls-partie-1/). Ce petit guide vous fera réviser quelques fondamentaux et vous aidera à faire vos premiers pas sur GitHub.
+Si vous atterrissez sur cette page, je suppose que comme moi, vous [débutez sur Git et GitHub](/2013/12/15/Github-pour-nuls-partie-1/). Ce petit guide vous fera réviser quelques fondamentaux et vous aidera à faire vos premiers pas sur GitHub.
 
 ## Télécharger et Installer Git
 Au coeur de GitHub, il y a un système de contrôle de version (VCS) appelé Git*. Créé par la même équipe qui a créé Linux, Git est responsable de tout ce qui concerne GitHub et les sujets afférents à ce qui passe localement sur votre ordinateur.
@@ -17,7 +17,7 @@ Au coeur de GitHub, il y a un système de contrôle de version (VCS) appelé Git
 
 **Téléchargez et installez** la [dernière version de Git](http://git-scm.com/downloads).
 
-**ProTruc **: Git n'ajoutera pas d'icône à votre dock, ce n'est pas ce type d'application.
+**ProTruc**: Git n'ajoutera pas d'icône à votre dock, ce n'est pas ce type d'application.
 
 ## Installer Git
 

@@ -20,8 +20,3 @@ exclude: [categories.html, Gemfile, Gemfile.lock, README.md, vendor, README.md, 
 gems:
   - jekyll-redirect-from
   - jemoji
-
-
-    
-
-
