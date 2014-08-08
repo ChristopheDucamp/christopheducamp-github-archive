@@ -180,27 +180,25 @@ redirect_from:
   &lt;li&gt;Version un peu plus longue : &lt;a href=&quot;http://xtof.me/indielog/2014-214&quot;&gt;xtof.me indielog/2014-214&lt;/a&gt; &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;prochaine-tape--parvenir--modifier-le-rakefile&quot;&gt;Prochaine étape : Parvenir à Modifier le Rakefile&lt;/h2&gt;
+&lt;h2 id=&quot;raccourci-automatique-avec-rakefile&quot;&gt;Raccourci Automatique avec Rakefile&lt;/h2&gt;
 
 &lt;p&gt;Une recherche de patterns est en cours afin de trouver un modèle de raccourci d’&lt;a href=&quot;http://christopheducamp.com/b/2013-04-14/les-urls-sont-pour-les-humains/&quot;&gt;URL parlante et ayant du sens&lt;/a&gt;. &lt;/p&gt;
 
-&lt;p&gt;Quant à l’automatisation de ce processus de redirection, je serais preneur de toute aide pour décrypter les &lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;conseils de Pierre&lt;/a&gt; afin de parvenir à adapter &lt;a href=&quot;https://github.com/ChristopheDucamp/christopheducamp.github.io/blob/master/rakefile&quot;&gt;mon fichier &lt;code&gt;Rakefile&lt;/code&gt;&lt;/a&gt;.  &lt;/p&gt;
+&lt;p&gt;Pierre Ozoux a automatisé le processus de redirection en &lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;modifiant le fichier Rakefile&lt;/a&gt; en apportant quelques modifications au fichier Rakefile. &lt;/p&gt;
 
-&lt;p&gt;Le message d’erreur renvoyé à cette heure : &lt;/p&gt;
+&lt;p&gt;Par magie, la ligne de commande suivante se charge de générer automatiquement un permalien-raccourci dans le front-matter.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;rake post &lt;span class=&quot;nv&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Les Collections de Jekyll&amp;quot;&lt;/span&gt;
-rake aborted!
-undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;#39;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; nil:NilClass
+&lt;pre&gt;&lt;code&gt;`rake post title=&quot;Un nouveau post&quot;` 
+&lt;/code&gt;&lt;/pre&gt;
 
-Tasks: &lt;span class=&quot;nv&quot;&gt;TOP&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&amp;gt; post
-&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;See full trace by running task with --trace&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Cette commande générant un nouveau permalien-raccourci automatique  fondé sur une numérotation incrémentale (ex à régler pour ce post &lt;a href=&quot;http://xtof.me/s/23.htm&quot;&gt;xtof.me/s/23.htm&lt;/a&gt;).  &lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Dernier truc à savoir :&lt;/strong&gt; Les redirections avec un slash à la fin génèrent un sous-répertoire correspondant contenant un fichier &lt;code&gt;index.html&lt;/code&gt;, alors que les redirections sans un slash à la fin générent un &lt;code&gt;nomfichier&lt;/code&gt; correspondant sans extension et sans sous-répertoire.&lt;/p&gt;
 
 &lt;h2 id=&quot;liens-ressources-&quot;&gt;Liens Ressources :&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Lien de référence : &lt;a href=&quot;https://github.com/jekyll/jekyll-redirect-from&quot;&gt;Jekyll-redirect-from&lt;/a&gt; - Github&lt;/li&gt;
-  &lt;li&gt;Lisez le post technique &lt;cite class=&quot;h-cite&quot;&gt;&lt;strong&gt;&lt;span class=&quot;url p-name&quot;&gt;&lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;Permashortlinks&lt;/a&gt;&lt;/span&gt;&lt;/strong&gt; de &lt;abbr class=&quot;p-author h-card&quot; title=&quot;Pierre Ozoux&quot;&gt;Pierre&lt;/abbr&gt; pour des indications sur la modification du fichier Rakefile (&lt;time class=&quot;dt-published&quot;&gt;2014-08-02&lt;/time&gt;)&lt;/cite&gt; &lt;/li&gt;
+  &lt;li&gt;Le post technique de référence &lt;cite class=&quot;h-cite&quot;&gt;&lt;strong&gt;&lt;span class=&quot;url p-name&quot;&gt;&lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;Permashortlinks&lt;/a&gt;&lt;/span&gt;&lt;/strong&gt; de &lt;abbr class=&quot;p-author h-card&quot; title=&quot;Pierre Ozoux&quot;&gt;Pierre&lt;/abbr&gt; pour des indications sur la modification du fichier Rakefile (&lt;time class=&quot;dt-published&quot;&gt;2014-08-02&lt;/time&gt;)&lt;/cite&gt; &lt;/li&gt;
   &lt;li&gt;Les &lt;a href=&quot;http://jekyllrb.com/docs/permalinks/&quot;&gt;permaliens de Jekyll&lt;/a&gt; : la page de référence pour connaître toutes les variables à utiliser dans vos permaliens.&lt;/li&gt;
 &lt;/ul&gt;
 

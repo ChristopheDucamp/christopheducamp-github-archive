@@ -129,27 +129,25 @@ redirect_from:
   <li>Version un peu plus longue : <a href="http://xtof.me/indielog/2014-214">xtof.me indielog/2014-214</a> </li>
 </ul>
 
-<h2 id="prochaine-tape--parvenir--modifier-le-rakefile">Prochaine étape : Parvenir à Modifier le Rakefile</h2>
+<h2 id="raccourci-automatique-avec-rakefile">Raccourci Automatique avec Rakefile</h2>
 
 <p>Une recherche de patterns est en cours afin de trouver un modèle de raccourci d’<a href="http://christopheducamp.com/b/2013-04-14/les-urls-sont-pour-les-humains/">URL parlante et ayant du sens</a>. </p>
 
-<p>Quant à l’automatisation de ce processus de redirection, je serais preneur de toute aide pour décrypter les <a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">conseils de Pierre</a> afin de parvenir à adapter <a href="https://github.com/ChristopheDucamp/christopheducamp.github.io/blob/master/rakefile">mon fichier <code>Rakefile</code></a>.  </p>
+<p>Pierre Ozoux a automatisé le processus de redirection en <a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">modifiant le fichier Rakefile</a> en apportant quelques modifications au fichier Rakefile. </p>
 
-<p>Le message d’erreur renvoyé à cette heure : </p>
+<p>Par magie, la ligne de commande suivante se charge de générer automatiquement un permalien-raccourci dans le front-matter.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">rake post <span class="nv">title</span><span class="o">=</span><span class="s2">&quot;Les Collections de Jekyll&quot;</span>
-rake aborted!
-undefined method <span class="sb">`</span><span class="o">[]</span><span class="err">&#39;</span> <span class="k">for</span> nil:NilClass
+<pre><code>`rake post title="Un nouveau post"` 
+</code></pre>
 
-Tasks: <span class="nv">TOP</span> <span class="o">=</span>&gt; post
-<span class="o">(</span>See full trace by running task with --trace<span class="o">)</span></code></pre></div>
+<p>Cette commande générant un nouveau permalien-raccourci automatique  fondé sur une numérotation incrémentale (ex à régler pour ce post <a href="http://xtof.me/s/23.htm">xtof.me/s/23.htm</a>).  </p>
 
 <p><strong>Dernier truc à savoir :</strong> Les redirections avec un slash à la fin génèrent un sous-répertoire correspondant contenant un fichier <code>index.html</code>, alors que les redirections sans un slash à la fin générent un <code>nomfichier</code> correspondant sans extension et sans sous-répertoire.</p>
 
 <h2 id="liens-ressources-">Liens Ressources :</h2>
 <ul>
   <li>Lien de référence : <a href="https://github.com/jekyll/jekyll-redirect-from">Jekyll-redirect-from</a> - Github</li>
-  <li>Lisez le post technique <cite class="h-cite"><strong><span class="url p-name"><a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">Permashortlinks</a></span></strong> de <abbr class="p-author h-card" title="Pierre Ozoux">Pierre</abbr> pour des indications sur la modification du fichier Rakefile (<time class="dt-published">2014-08-02</time>)</cite> </li>
+  <li>Le post technique de référence <cite class="h-cite"><strong><span class="url p-name"><a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">Permashortlinks</a></span></strong> de <abbr class="p-author h-card" title="Pierre Ozoux">Pierre</abbr> pour des indications sur la modification du fichier Rakefile (<time class="dt-published">2014-08-02</time>)</cite> </li>
   <li>Les <a href="http://jekyllrb.com/docs/permalinks/">permaliens de Jekyll</a> : la page de référence pour connaître toutes les variables à utiliser dans vos permaliens.</li>
 </ul>
 
