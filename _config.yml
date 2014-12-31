@@ -6,17 +6,19 @@ name: sur la route de l'indieweb...
 description: selfdogfood sur jekyll
 url: "http://christopheducamp.com"
 
-#collections :essai en cours
-collections:
-  mes_notes:
-    output: true
-
 markdown: kramdown
 highlighter : pygments
 permalink: /:year/:month/:day/:title/
 
 # Exclure ces fichiers du _site de production
 exclude: [categories.html, Gemfile, Gemfile.lock, README.md, vendor, README.md, LICENSE]
+
 gems:
   - jekyll-redirect-from
   - jemoji
+
+
+#collections :essai en cours
+collections:
+  notes:
+    output: true

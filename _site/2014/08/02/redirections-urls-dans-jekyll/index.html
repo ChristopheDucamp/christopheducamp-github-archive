@@ -58,6 +58,7 @@
       <div class="trigger">
         <a class="page-link" href="/about">À Propos</a>
         <a class="page-link" href="/projets">Projets</a>
+        <a class="page-link" href="/collection">Notes</a>
       </div>
     </nav>
 
@@ -78,17 +79,15 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
   </header>
 
   <article class="post-content e-content entry-content">
-  <p><em>Inspiré pour reprendre l’étude de l’<a href="http://indiewebcamp.com/IndieMark">IndieMark</a> sur cette instance Jekyll. Une inspiration particulièrement dopée par <a href="http://www.pierre-o.fr/blog/2014/07/30/indieweb/">l’arrivée sur IndieWeb</a> de <a rel="colleague" title="Pierre Ozoux" href="http://www.pierre-o.fr/" class="h-card microcard">Pierre Ozoux</a>. Et par le dépannage webmention reçu de <span class="h-card microcard" rel="muse friend met"><img class="u-photo" src="https://michielbdejong.com/img/agonda.png" /><a href="https://michielbdejong.com/">Michiel</a></span>, notre ami sauveur du web passé à Paris <time datetime="2014-07-30">mercredi dernier</time> pour le premier <a href="http://www.meetup.com/Paris-Meetup-pour-la-decentralisation-dInternet/events/193618842/">meetup de décentralisation du net chez Mozilla</a>.</em></p>
+  <p><em>Inspiré pour reprendre l’étude de l’<a href="http://indiewebcamp.com/IndieMark">IndieMark</a> sur cette instance Jekyll. Une inspiration particulièrement dopée par <a href="http://www.pierre-o.fr/blog/2014/07/30/indieweb/">l’arrivée sur IndieWeb</a> de <a rel="colleague" title="Pierre Ozoux" href="http://www.pierre-o.fr/" class="h-card microcard">Pierre Ozoux</a>. Et par le dépannage webmention reçu de <span class="h-card microcard" rel="muse friend met"><img class="u-photo" src="https://michielbdejong.com/file/f7e5f8d753328f3c322bb03457e04666/thumb.jpg" /><a href="https://michielbdejong.com/">Michiel</a></span>, notre ami sauveur du web passé à Paris <time datetime="2014-07-30">mercredi dernier</time> pour le premier <a href="http://www.meetup.com/Paris-Meetup-pour-la-decentralisation-dInternet/events/193618842/">meetup de décentralisation du net chez Mozilla</a>.</em></p>
 
-<p>Le <a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">moteur de génération de “permashortlinks”</a> bâti hier par Pierre pour son instance Octopress (un framework Jekyll) m’a clairement éclairé pour parvenir à construire ici quelques premières  <a href="http://indiewebcamp.com/permashortcitation">citations de permaliens-raccourcis</a>.</p>
+<p>Le <a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">moteur de génération de “permashortlinks”</a> bâti hier par Pierre pour son instance Octopress (un framework Jekyll) m’a clairement éclairé pour parvenir à construire ici quelques premières <a href="http://indiewebcamp.com/permashortcitation">citations de permaliens-raccourcis</a>.</p>
 
 <p>L’installation de <strong>permaliens-raccourcis</strong> n’est pas qu’un <em>truc de maniaque</em> adopté par les membres de l’IndieWebCamp… C’est aussi un <a href="http://indiewebcamp.com/IndieMark#Level_2_syndication">pré-requis pour passer le niveau 2 de l’IndieMark</a> ! </p>
 
 <h2 id="quest-ce-quun-permalien-raccourci-">Qu’est-ce qu’un Permalien-Raccourci ?</h2>
 
-<blockquote>
-  <p>Un <strong><dfn>permalien</dfn></strong> est une URL qui représente et retrouve un post unique. Un <strong><dfn>permalien-court</dfn></strong> (ou permalien-raccourci ?) est une URL utilisant un nom de domaine personnel raccourci qui se dilate vers un permalien.&lt;footer&gt;<a class="p-name u-url" href="http://indiewebcamp.com/permalinks-fr">source wiki IndieWebCamp</a>&lt;/footer&gt;</p>
-</blockquote>
+<blockquote>Un **<dfn>permalien</dfn>** est une URL qui représente et retrouve un post unique. Un **<dfn>permalien-court</dfn>** (ou permalien-raccourci ?) est une URL utilisant un nom de domaine personnel raccourci qui se dilate vers un permalien.<footer><a class="p-name u-url" href="http://indiewebcamp.com/permalinks-fr">source wiki IndieWebCamp</a></footer></blockquote>
 
 <h2 id="installation">Installation</h2>
 
@@ -99,10 +98,8 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Une fois la <em>gem</em> installée dans votre environnement, ajoutez ces deux lignes dans votre fichier local <code>_config.yml</code>:</p>
 
-<p><code>yaml
-gems:
-  - jekyll-redirect-from
-</code></p>
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">gems</span><span class="p-Indicator">:</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">jekyll-redirect-from</span></code></pre></div>
 
 <h2 id="usages-pressentis">Usages pressentis</h2>
 

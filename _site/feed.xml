@@ -7,6 +7,124 @@
     <atom:link href="http://christopheducamp.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Démarrer des Collections dans Jekyll 2.xx</title>
+        <description>&lt;p&gt;Inspiration &amp;amp; remerciements à &lt;span class=&quot;h-card microcard&quot;&gt;&lt;a href=&quot;http://www.sitepoint.com/author/tjones/&quot;&gt;Taylor Jones&lt;/a&gt;&lt;/span&gt; pour son &lt;a href=&quot;http://www.sitepoint.com/getting-started-jekyll-collections/&quot;&gt;post de référence&lt;/a&gt; m’ayant sérieusement aidé pour capter le fonctionnement des collections dans Jekyll. Le code de l’exemple d’une collection d’albums de musique est posé sur &lt;a href=&quot;https://github.com/ChristopheDucamp/testJekyll&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;comment-dmarrer-des-collections-dans-jekyll-2xx&quot;&gt;Comment Démarrer des Collections dans Jekyll 2.xx&lt;/h2&gt;
+
+&lt;h3 id=&quot;migration-wordpress-vers-jekyll--un-an-dj&quot;&gt;Migration WordPress vers Jekyll : un an déjà…&lt;/h3&gt;
+
+&lt;p&gt;Fin 2013, je prenais la décision de migrer de WordPress vers une &lt;a href=&quot;/2013/12/03/premier-pas-sur-jekyll/&quot;&gt;motorisation Jekyll&lt;/a&gt; pour m’essayer à la pose de quelques premières briques de construction indieweb. Revenant à la liberté du freelance, je compte sérieusement en 2015 consacrer plus de temps sur ce site personnel &lt;u&gt;pour du personal b…&lt;/u&gt; afin de donner un meilleur aperçu de qui je suis et la nature des missions sur lesquelles je serais heureux de bricoler pour gagner ma vie en 2015…  &lt;/p&gt;
+
+&lt;p&gt;Pas d’engagement à cette heure : l’effort d’apprentissage et d’assimilation de quelques briques de HTML et CSS pour parvenir à mettre à jour un portfolio propre n’est pas terminé… &lt;/p&gt;
+
+&lt;p&gt;La première tâche prioritaire début 2015 s’articulera probablement autour du façonnage technique du conteneur. Conforté –pour cette exploration à venir– de bosser sur Jekyll qui brille par sa simplicité et la force de sa communauté. 
+En outre, les versions récentes de Jekyll 2.x intègrent désormais une nouvelle fonctionnalité intéressante pour publier des &lt;strong&gt;Collections&lt;/strong&gt;. &lt;/p&gt;
+
+&lt;p&gt;Dans cet article je vous donnerai un aperçu des raisons pour lesquelles je compte poursuivre l’apprentissage indieweb sur Jekyll en 2015, comment vous pouvez aussi vous y mettre rapidement et conclurai par quelques astuces sur les collections Jekyll. Astuces intégralement inspirées de l’excellent post de &lt;a href=&quot;http://www.sitepoint.com/getting-started-jekyll-collections/&quot;&gt;Taylor Jones&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Pour une première initiation à Jekyll et si vous êtes un geek un peu averti, aidez-vous de la &lt;a href=&quot;http://jekyllrb.com/docs/home/&quot;&gt;documentation&lt;/a&gt;. Si vous êtes blogueur sur WordPress et souhaitez construire un premier site ce weekend, je ne peux que vous recommander de faire vos armes sur l’excellent tutoriel de &lt;a href=&quot;http://www.jekyllnow.com/&quot;&gt;jekyll-now&lt;/a&gt; construit cet été par &lt;a href=&quot;https://twitter.com/BazNYC/&quot;&gt;Barry Clarke&lt;/a&gt; :&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;fr&quot;&gt;&lt;p&gt;My side project Jekyll Now hit 2k forks today! 2,000 &lt;a href=&quot;https://twitter.com/jekyllrb&quot;&gt;@jekyllrb&lt;/a&gt; blogs created without touching the command line! 🎊 &lt;a href=&quot;https://t.co/6ruGxem3Ie&quot;&gt;https://t.co/6ruGxem3Ie&lt;/a&gt;&lt;/p&gt;&amp;mdash; Barry Clark (@BazNYC) &lt;a href=&quot;https://twitter.com/BazNYC/status/545741860803977216&quot;&gt;19 Décembre 2014&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;h3 id=&quot;pourquoi-jekyll-est-gnial&quot;&gt;Pourquoi Jekyll est Génial&lt;/h3&gt;
+
+&lt;p&gt;Pour l’année 2015, mes motivations sont purement égoïstes : j’ai réellement besoin de professionnaliser un premier portfolio de présentation et ramener quelques amis pour aider à construire un IndieWebCamp francophone. Telle est la raison pour laquelle, je reste focalisé sur une motorisation simple, flexible et facilement personnalisable pour publier quelques pages, articles et petites notes de statut. &lt;/p&gt;
+
+&lt;p&gt;Les points forts de Jekyll qui me confortent : une belle communauté de hackers, un plan de route qui &lt;a href=&quot;https://byparker.com/blog/2014/jekyll-3-the-road-ahead/&quot;&gt;évoluera vers la simplicité&lt;/a&gt;, un langage de templates assimilable et une architecture de templates accessible pour y greffer quelques premiers indieweb et escalader une ou deux marches sur l’&lt;a href=&quot;https://indiewebcamp.com/IndieMark&quot;&gt;IndieMark&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Rappelons que Jekyll est simple et livré en sortie de boîte avec des fonctionnalités de &lt;u&gt;blog&lt;/u&gt; carnet web. Il analyse le Markdown, intègre nativement une mise en forme du code, produit des fichiers statiques et la production peut être hébergée gratuitement sur les Pages GitHub.&lt;/p&gt;
+
+&lt;p&gt;À des fins de révision et en souvenir des premiers pas laborieux vécus au début de l’année, je vous propose dans la section à suivre de revoir le démarrage d’un site avec Jekyll. Si vous avez déjà un site Jekyll, ignorez cette section et allez directement sur l’implémentation des collections.&lt;/p&gt;
+
+&lt;h3 id=&quot;installer-rapidement-jekyll&quot;&gt;Installer Rapidement Jekyll&lt;/h3&gt;
+
+&lt;p&gt;Pour installer Jekyll, il y a deux exigences : 
+- installer Ruby et RubyGems sur votre machine, 
+- et ne pas être effrayé de mettre les mains dans le terminal.&lt;/p&gt;
+
+&lt;p&gt;Le dernier &lt;em&gt;problème connu&lt;/em&gt; que vous pourriez rencontrer si vous faites tourner Jekyll sur Mac OSX serait de ne pas avoir mis à jour vos outils de ligne de commande X-Code. Vous les trouverez &lt;a href=&quot;https://developer.apple.com/downloads/&quot;&gt;ici&lt;/a&gt;, dans la section téléchargements du portail des développeurs Apple. Vous aurez besoin d’un ID Apple pour accéder aux téléchargements.&lt;/p&gt;
+
+&lt;p&gt;Ces prérequis étant posés, vous n’êtes plus qu’à 4 lignes à saisir dans le terminal pour faire tourner votre premier site web Jekyll. &lt;/p&gt;
+
+&lt;p&gt;Ouvrez votre fenêtre de terminal et lancez ces 4 commandes : &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install jekyll
+~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new testJekyll
+~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;testJekyll
+~/testJekyll &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll serve&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Dans l’ordre, voici ce qui se passe ici : &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Installation de Jekyll sur votre système&lt;/li&gt;
+  &lt;li&gt;Création d’un nouveau répertoire plein de fichiers Jekyll passe-partout à personnaliser  &lt;/li&gt;
+  &lt;li&gt;Modification du répertoire de travail vers le &lt;code&gt;testJekyll&lt;/code&gt; fraîchement créé&lt;/li&gt;
+  &lt;li&gt;Lancement d’un serveur pour servir ces fichiers en local sur localhost:4000 &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/10/1412690726screen1-1024x646.png&quot; alt=&quot;screen1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Parmi l’ensemble des fichiers de structure placés dans le répertoire de travail, le premier fichier essentiel à paramétrer c’est &lt;strong&gt;&lt;code&gt;config.yml&lt;/code&gt;&lt;/strong&gt;.  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;config.yml&lt;/code&gt;&lt;/strong&gt; est le fichier de configuration global de Jekyll. Dans ce fichier, vous pouvez spécifier : 
+- les options de construction,
+- les options du serveur,
+- la déclaration des collections,
+- et régler des métadonnées valables sur tout le site en utilisant le front-matter YAML.&lt;/p&gt;
+
+&lt;p&gt;La capacité d’utiliser le front matter de YAML est une fonctionnalité très appréciable de Jekyll. Le terme “front-matter” provient en fait des pages liminaires dans le monde de l’édition. Dans les livres, les pages liminaires sont placées au début du livre pour contenir toutes les métadonnées associées à un livre : titre, auteur, éditeur, table des matières, et ainsi de suite. De même, nous utiliserons le &lt;em&gt;front-matter&lt;/em&gt; en &lt;a href=&quot;http://yaml.org/&quot;&gt;format YAML&lt;/a&gt; pour déclarer des métadonnées valables sur tout le site à l’intérieur du fichier &lt;code&gt;config.yml&lt;/code&gt; et des métadonnées spécifiques aux pages dans les fichiers &lt;strong&gt;&lt;code&gt;.markdown&lt;/code&gt;&lt;/strong&gt;. Ces métadonnées peuvent ensuite être référencées comme des variables utilisant le &lt;a href=&quot;https://github.com/Shopify/liquid/wiki&quot;&gt;moteur de gabarit Liquid&lt;/a&gt; utilisé par Jekyll.&lt;/p&gt;
+
+&lt;h3 id=&quot;cest-quoi-des-collections-&quot;&gt;C’est Quoi des Collections ?&lt;/h3&gt;
+
+&lt;p&gt;Les &lt;em&gt;Collections&lt;/em&gt; dans Jekyll sont des ensembles de documents qui ont les mêmes fonctionnalités que les posts. Les collections ont la puissance des posts, mais vous les tenez à portée de main. Une chose à noter à cette heure : à la différence des &lt;em&gt;posts&lt;/em&gt;, les collections &lt;em&gt;ne supportent pas la pagination&lt;/em&gt;, bien que les collections de documents puissent être publiées individuellement sous forme de pages. Elles peuvent être aussi restituées sous forme de listes en utilisant le moteur de gabarits Liquid intégré dans Jekyll. Les collections disposent de leur propre espace nom sur tout le site avec des métadonnées et des propriétés personnalisables.&lt;/p&gt;
+
+&lt;p&gt;Les Collections fonctionnent sur le principe du moteur Jekyll qui lira votre collection définie dans le fichier &lt;code&gt;config.yml&lt;/code&gt; lors de la construction du site. Jekyll ajoute le document de la collection frontmatter YAML aux variables de gabarits globales du site, et restitue –si vous le souhaitez— chaque document dans sa propre page. Les collections peuvent s’utiliser pour n’importe quel type d’ensemble de documents que vous souhaiteriez organiser sur votre site. &lt;/p&gt;
+
+&lt;p&gt;De bons exemples de collections peuvent être les projets sur lesquels vous avez travaillés, la publication de la liste des  organisateurs d’un événement, la constitution d’une bibliothèque d’albums « women in rock », la documentation d’une API, ou plus simplement une liste de petites notes sur vos données de santé ou toute autre thématique-clé, etc. &lt;/p&gt;
+
+&lt;p&gt;Pour démarrer sur un premier exemple, nous utiliserons une collection d’albums de musique.&lt;/p&gt;
+
+&lt;h3 id=&quot;configurer-les-collections&quot;&gt;Configurer les Collections&lt;/h3&gt;
+
+&lt;p&gt;La première étape pour configurer les collections est d’indiquer à Jekyll que vous avez une collection dans le fichier  &lt;strong&gt;_config.yml&lt;/strong&gt;.
+    collections:
+      - music&lt;/p&gt;
+
+&lt;p&gt;Maintenant, ajoutez un dossier à la racine du répertoire de votre projet avec le même nom que la collection. Assurez-vous de préfixer le dossier avec un souligné “_”. Ajoutez quelques documents en format markdown dans le dossier de la collection.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/10/1412690756screen2-1024x646.png&quot; alt=&quot;écran 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Si vous choisissez de faire ainsi, vous pouvez spécifier de restituer une page pour chaque document en modifiant le fichier &lt;strong&gt;_config.yml&lt;/strong&gt; comme suit.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;collections&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;l-Scalar-Plain&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;l-Scalar-Plain&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;les-collections-en-action&quot;&gt;Les Collections en Action&lt;/h3&gt;
+
+&lt;p&gt;Maintenant que la collection est définie et une fois le contenu  ajouté à la collection, ces collections peuvent être incluses sur n’importe quelle page dans le site Jekyll. Par exemple, les ajouts les plus récents de votre collection peuvent être affichés sur votre page d’accueil en utilisant la syntaxe Liquid. Tout front-matter YAML personnalisé déclaré dans chaque document peut aussi permettre de faire figurer le contenu.&lt;/p&gt;
+
+&lt;p&gt;Ceci fournit un moyen génial pour afficher des images, titres, etc. en rapport dans une liste de documents. Vous pouvez utiliser l’attribut intégré &lt;code&gt;url&lt;/code&gt; pour faire un lien vers une page restituée de document.&lt;/p&gt;
+
+&lt;h3 id=&quot;pour-conclure-avant-2015&quot;&gt;Pour conclure avant 2015&lt;/h3&gt;
+
+&lt;p&gt;Jekyll est une motorisation pratique pour construire de petits sites statiques. Cela vaut la peine de l’envisager pour tous les   sites web ayant besoin d’un backend robuste - pouvant aussi intégrer de la manipulation de data et de la recherche. Un point à garder en tête pour votre prochain projet. &lt;/p&gt;
+
+&lt;p&gt;Ceci étant dit, l’installation de Jekyll est rapide et dispose de quelques options configurables qui vous permettent de spécifier comment vous aimeriez faire fonctionner le site. Les pré-requis sont minimes et la fonctionnalité d’installation rapide vous donne un premier site tout à fait fonctionnel.&lt;/p&gt;
+
+&lt;p&gt;La fonctionnalité &lt;em&gt;collection&lt;/em&gt; de Jekyll a une déclaration de configuration directe tout comme quelques attributs personnalisables, vous permettant de restituer vos documents à l’intérieur de leurs  propres pages. &lt;/p&gt;
+
+&lt;p&gt;En utilisant les paramètres de configuration et le front-matter YAML, vous pourrez afficher vos documents en différents endroits du site. Jekyll excelle dans le domaine pour lequel il a été conçu, et la fonctionnalité des collections ouvre des portes pour tirer profit de sites avec plus de contenus.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 31 Dec 2014 00:00:00 +0100</pubDate>
+        <link>http://christopheducamp.com//2014/12/31/demarrer-des-collections-dans-jekyll/</link>
+        <guid isPermaLink="true">http://christopheducamp.com//2014/12/31/demarrer-des-collections-dans-jekyll/</guid>
+      </item>
+    
+      <item>
         <title>Algie Vasculaire de la Face, Anti-Douleur et Humeur</title>
         <description>&lt;h1 id=&quot;humeur--100-avec-algie-vasculaire-de-la-face&quot;&gt;Humeur à 100% avec Algie Vasculaire de la Face.&lt;/h1&gt;
 
@@ -129,17 +247,15 @@
     
       <item>
         <title>Redirections URLs dans Jekyll</title>
-        <description>&lt;p&gt;&lt;em&gt;Inspiré pour reprendre l’étude de l’&lt;a href=&quot;http://indiewebcamp.com/IndieMark&quot;&gt;IndieMark&lt;/a&gt; sur cette instance Jekyll. Une inspiration particulièrement dopée par &lt;a href=&quot;http://www.pierre-o.fr/blog/2014/07/30/indieweb/&quot;&gt;l’arrivée sur IndieWeb&lt;/a&gt; de &lt;a rel=&quot;colleague&quot; title=&quot;Pierre Ozoux&quot; href=&quot;http://www.pierre-o.fr/&quot; class=&quot;h-card microcard&quot;&gt;Pierre Ozoux&lt;/a&gt;. Et par le dépannage webmention reçu de &lt;span class=&quot;h-card microcard&quot; rel=&quot;muse friend met&quot;&gt;&lt;img class=&quot;u-photo&quot; src=&quot;https://michielbdejong.com/img/agonda.png&quot; /&gt;&lt;a href=&quot;https://michielbdejong.com/&quot;&gt;Michiel&lt;/a&gt;&lt;/span&gt;, notre ami sauveur du web passé à Paris &lt;time datetime=&quot;2014-07-30&quot;&gt;mercredi dernier&lt;/time&gt; pour le premier &lt;a href=&quot;http://www.meetup.com/Paris-Meetup-pour-la-decentralisation-dInternet/events/193618842/&quot;&gt;meetup de décentralisation du net chez Mozilla&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;em&gt;Inspiré pour reprendre l’étude de l’&lt;a href=&quot;http://indiewebcamp.com/IndieMark&quot;&gt;IndieMark&lt;/a&gt; sur cette instance Jekyll. Une inspiration particulièrement dopée par &lt;a href=&quot;http://www.pierre-o.fr/blog/2014/07/30/indieweb/&quot;&gt;l’arrivée sur IndieWeb&lt;/a&gt; de &lt;a rel=&quot;colleague&quot; title=&quot;Pierre Ozoux&quot; href=&quot;http://www.pierre-o.fr/&quot; class=&quot;h-card microcard&quot;&gt;Pierre Ozoux&lt;/a&gt;. Et par le dépannage webmention reçu de &lt;span class=&quot;h-card microcard&quot; rel=&quot;muse friend met&quot;&gt;&lt;img class=&quot;u-photo&quot; src=&quot;https://michielbdejong.com/file/f7e5f8d753328f3c322bb03457e04666/thumb.jpg&quot; /&gt;&lt;a href=&quot;https://michielbdejong.com/&quot;&gt;Michiel&lt;/a&gt;&lt;/span&gt;, notre ami sauveur du web passé à Paris &lt;time datetime=&quot;2014-07-30&quot;&gt;mercredi dernier&lt;/time&gt; pour le premier &lt;a href=&quot;http://www.meetup.com/Paris-Meetup-pour-la-decentralisation-dInternet/events/193618842/&quot;&gt;meetup de décentralisation du net chez Mozilla&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Le &lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;moteur de génération de “permashortlinks”&lt;/a&gt; bâti hier par Pierre pour son instance Octopress (un framework Jekyll) m’a clairement éclairé pour parvenir à construire ici quelques premières  &lt;a href=&quot;http://indiewebcamp.com/permashortcitation&quot;&gt;citations de permaliens-raccourcis&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Le &lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;moteur de génération de “permashortlinks”&lt;/a&gt; bâti hier par Pierre pour son instance Octopress (un framework Jekyll) m’a clairement éclairé pour parvenir à construire ici quelques premières &lt;a href=&quot;http://indiewebcamp.com/permashortcitation&quot;&gt;citations de permaliens-raccourcis&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;L’installation de &lt;strong&gt;permaliens-raccourcis&lt;/strong&gt; n’est pas qu’un &lt;em&gt;truc de maniaque&lt;/em&gt; adopté par les membres de l’IndieWebCamp… C’est aussi un &lt;a href=&quot;http://indiewebcamp.com/IndieMark#Level_2_syndication&quot;&gt;pré-requis pour passer le niveau 2 de l’IndieMark&lt;/a&gt; ! &lt;/p&gt;
 
 &lt;h2 id=&quot;quest-ce-quun-permalien-raccourci-&quot;&gt;Qu’est-ce qu’un Permalien-Raccourci ?&lt;/h2&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Un &lt;strong&gt;&lt;dfn&gt;permalien&lt;/dfn&gt;&lt;/strong&gt; est une URL qui représente et retrouve un post unique. Un &lt;strong&gt;&lt;dfn&gt;permalien-court&lt;/dfn&gt;&lt;/strong&gt; (ou permalien-raccourci ?) est une URL utilisant un nom de domaine personnel raccourci qui se dilate vers un permalien.&amp;lt;footer&amp;gt;&lt;a class=&quot;p-name u-url&quot; href=&quot;http://indiewebcamp.com/permalinks-fr&quot;&gt;source wiki IndieWebCamp&lt;/a&gt;&amp;lt;/footer&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote&gt;Un **&lt;dfn&gt;permalien&lt;/dfn&gt;** est une URL qui représente et retrouve un post unique. Un **&lt;dfn&gt;permalien-court&lt;/dfn&gt;** (ou permalien-raccourci ?) est une URL utilisant un nom de domaine personnel raccourci qui se dilate vers un permalien.&lt;footer&gt;&lt;a class=&quot;p-name u-url&quot; href=&quot;http://indiewebcamp.com/permalinks-fr&quot;&gt;source wiki IndieWebCamp&lt;/a&gt;&lt;/footer&gt;&lt;/blockquote&gt;
 
 &lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
 
@@ -150,10 +266,8 @@
 
 &lt;p&gt;Une fois la &lt;em&gt;gem&lt;/em&gt; installée dans votre environnement, ajoutez ces deux lignes dans votre fichier local &lt;code&gt;_config.yml&lt;/code&gt;:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;yaml
-gems:
-  - jekyll-redirect-from
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;gems&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;jekyll-redirect-from&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;usages-pressentis&quot;&gt;Usages pressentis&lt;/h2&gt;
 
@@ -306,7 +420,7 @@ Tasks: &lt;span class=&quot;nv&quot;&gt;TOP&lt;/span&gt; &lt;span class=&quot;o&
 &lt;ul&gt;
   &lt;li&gt;La tâche &lt;code&gt;rake&lt;/code&gt;n’écrase jamais les posts existants à moins que vous ne lui disiez de le faire&lt;/li&gt;
   &lt;li&gt;Passer des paramètres de date et des tags (instructions de ligne de commande à étudier)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/avillafiorita/jekyll-rakefile&quot;&gt;jekyll-rakefile&lt;/a&gt; : Un &lt;code&gt;rakefile&lt;/code&gt; pour simplifier la prévisualisation et le déploiement de sites web jekyll. &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/avillafiorita/jekyll-rakefile&quot;&gt;jekyll-rakefile&lt;/a&gt; : Un &lt;code&gt;rakefile&lt;/code&gt; pour simplifier la pré-visualisation et le déploiement de sites web jekyll. &lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 09 Feb 2014 00:00:00 +0100</pubDate>
@@ -605,377 +719,6 @@ La dernière moitié de la décennie a donné naissance à un tout un tas de nou
         <pubDate>Sun, 22 Dec 2013 13:00:00 +0100</pubDate>
         <link>http://christopheducamp.com//2013/12/22/markdow-avenir-ecriture/</link>
         <guid isPermaLink="true">http://christopheducamp.com//2013/12/22/markdow-avenir-ecriture/</guid>
-      </item>
-    
-      <item>
-        <title>Démarrer avec Pages GitHub (Plus Bonus Jekyll)</title>
-        <description>&lt;p&gt;Lien de référence : &lt;cite class=&quot;p-name u-url&quot;&gt;&lt;a href=&quot;http://24ways.org/2013/get-started-with-github-pages/&quot;&gt;Get Started With GitHup Pages (Plus Bonus Jekyll)&lt;/a&gt;&lt;/cite&gt;, &lt;br /&gt;
-(&lt;span class=&quot;p-publisher p-org h-card&quot;&gt;&lt;a href=&quot;http://24ways.org&quot;&gt;24ways&lt;/a&gt;&lt;/span&gt; - &lt;span class=&quot;h-card p-author&quot;&gt;&lt;a href=&quot;http://maban.co.uk&quot;&gt;Anna Debenham&lt;/a&gt;&lt;/span&gt;, &lt;time class=&quot;dt-published&quot; datetime=&quot;2013-12-18&quot;&gt;18 décembre 2013&lt;/time&gt;)&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Après plusieurs tentatives avortées pour démarrer avec les &lt;a href=&quot;http://pages.github.com/&quot;&gt;Pages GitHub&lt;/a&gt;, je me suis jurée que si jamais j’y parvenais, je l’écrirais. Heureusement, j’y suis enfin arrivée, aussi voici ma copie.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;pourquoi-je-trouve-que-pages-github-est-cool&quot;&gt;Pourquoi Je Trouve que Pages GitHub Est Cool&lt;/h2&gt;
-
-&lt;p&gt;Normalement, quand vous hébergez des trucs sur GitHub, vous ne faites que stocker vos fichiers là-bas. Si vous poussez des fichiers de site, ce que vous stockez c’est le code. Et quand visualisez un fichier, vous voyez le code au lieu de la production. Ce que vous permettent les Pages GitHub, c’est de stocker des fichiers. Et si ce sont des fichiers HTML, vous pourrez les voir comme tout autre site web, vous n’avez donc pas besoin de les auto-héberger ailleurs.&lt;/p&gt;
-
-&lt;p&gt;Le service des Pages GitHub accepte le HTML mais ne sait pas exécuter des langages comme PHP et ne sait pas utiliser une base de données comme vous en avez déjà probablement utilisée. Vous devrez donc produire des fichiers HTML statiques. Et c’est là où les outils de gabarits tels que &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; entrent dans la danse, ce dont je parlerai plus tard.&lt;/p&gt;
-
-&lt;p&gt;Le principal avantage de Pages GitHub, c’est sa facilité de collaboration. Les modifications que vous produisez dans le dépôt sont automatiquement synchronisées. Si votre site est hébergé sur GitHub, il est donc mis à jour simultanément avec votre dépôt GitHub. C’est ce qui me séduit, parce que quand je veux démarrer rapidement un truc, je ne tiens pas à m’encombrer avec l’hébergement ; et quand les gens&lt;br /&gt;
-proposent une &lt;em&gt;pull request&lt;/em&gt;, je veux simplement que cette modification soit visible dès que je la fusionne et ce, sans avoir à bidouiller des &lt;a href=&quot;http://www.clochix.net/post/2009/10/04/Bidouiller-avec-les-Web-Hooks&quot;&gt;web hooks&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;avant-de-dmarrer&quot;&gt;Avant de démarrer&lt;/h2&gt;
-
-&lt;p&gt;Si vous avez déjà utilisé GitHub, si vous disposez d’un compte et connaissez les fondamentaux comme savoir démarrer un nouveau dépôt et le cloner sur votre ordinateur, vous êtes prêts à partir. Si ce n’est pas le cas, je vous recommande de vous familiariser avec ça. Le site GitHub a une &lt;a href=&quot;https://help.github.com/articles/set-up-git&quot;&gt;documentation très complète pour savoir comment démarrer&lt;/a&gt;, et si vous n’êtes pas un féru de la ligne de commande, les apps officielles de GitHub pour &lt;a href=&quot;http://mac.github.com/&quot;&gt;Mac&lt;/a&gt; et &lt;a href=&quot;http://windows.github.com/&quot;&gt;Windows&lt;/a&gt; sont vraiment géniales.&lt;/p&gt;
-
-&lt;p&gt;J’ai aussi trouvé que ce &lt;a href=&quot;http://www.thinkful.com/learn/a-guide-to-using-github-pages/&quot;&gt;tutoriel réalisé par Thinkful sur les Pages GitHub&lt;/a&gt; était vraiment utile : il contient tous les détails pour transformer un dépôt existant en un site Pages GitHub.&lt;/p&gt;
-
-&lt;p&gt;Même si ce qui suit comprend un peu d’utilisation de la ligne de commande, je vous guiderai sur les fondamentaux.&lt;/p&gt;
-
-&lt;h2 id=&quot;installer-pages-github&quot;&gt;Installer Pages GitHub&lt;/h2&gt;
-
-&lt;p&gt;Pour les besoins de cette démo, nous allons construire un site de recettes de Noël - rien de complexe, juste un endroit pour stocker des recettes que nous pourrons partager avec des gens. Et ces personnes pourront les forker ou suggérer des modifications à celles qu’elles aiment. Mon nom d’utilisateur GitHub est &lt;a href=&quot;http://maban.co.uk&quot;&gt;maban&lt;/a&gt;, et le projet que j’ai installé s’appelle 
-&lt;a href=&quot;https://github.com/maban/christmas-recipes&quot;&gt;christmas-recipes&lt;/a&gt;. Ainsi, après avoir démarré GitHub Pages, le site peut être trouvé ici : &lt;a href=&quot;http://maban.github.io/christmas-recipes/&quot;&gt;http://maban.github.io/christmas-recipes/&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Vous pouvez paramétrer un nom de domaine personnalisé, mais par défaut l’URL de votre site sur GitHub Pages est &lt;em&gt;votre-nomutilisateur.github.io/votre-nom-de-projet&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;installer-le-dpt-repository&quot;&gt;Installer le Dépôt (repository)&lt;/h3&gt;
-
-&lt;p&gt;La première chose que nous allons faire sera de &lt;a href=&quot;/2013/12/16/creer_un_repo_GitHub/&quot;&gt;créer un nouveau dépôt GitHub&lt;/a&gt;, exactement de la même façon qu’un dépôt normal, puis nous le clonerons sur l’ordinateur. Donnons-lui le nom &lt;em&gt;recettes-noel&lt;/em&gt;. Rien à l’intérieur pour le moment, mais tout va bien.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://media.24ways.org/2013/debenham/new-repo.jpg&quot; alt=&quot;image&quot; title=&quot;Voici une impression écran d&#39;un nouveau dépôt utilisant le site web GitHub &quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Après avoir installé le dépôt sur le site web de GitHub, je l’ai cloné sur mon ordinateur à l’intérieur de mon répertoire &lt;em&gt;Sites&lt;/em&gt; en utilisant l’app GitHub (si vous voulez, vous pouvez le cloner ailleurs). Désormais, j’ai un dépôt local sur mon ordinateur synchronisé avec le dépôt distant sur GitHub.&lt;/p&gt;
-
-&lt;h3 id=&quot;naviguer-vers-le-dpt&quot;&gt;Naviguer vers le dépôt&lt;/h3&gt;
-
-&lt;p&gt;Ouvrons maintenant la ligne de commande et naviguons vers le dépôt local. Le moyen le plus facile de faire ça dans le Temrinal, c’est de taper &lt;code&gt;cd&lt;/code&gt;, puis de glisser/déposer le dossier à l’intérieur de la fenêtre de temrinal et presser la touche &lt;strong&gt;Entrée&lt;/strong&gt;. Vous pouvez vous référer à l’&lt;a href=&quot;http://media.24ways.org/2013/coyier/drag-folder.gif&quot;&gt;illustration GIF de Chris Coyier qui décrit la même chose&lt;/a&gt; dans son article de la semaine dernière sur 24 ways “&lt;a href=&quot;http://24ways.org/2013/grunt-is-not-weird-and-hard/&quot;&gt;Grunt for People Who Think Things Like Grunt are Weird and Hard&lt;/a&gt;” (article excellent).&lt;/p&gt;
-
-&lt;p&gt;Bon, pour moi, cela donne…&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /Users/Anna/Sites/christmas-recipes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;crer-une-branche-spciale-sur-pages-github&quot;&gt;Créer une branche spéciale sur Pages GitHub&lt;/h3&gt;
-
-&lt;p&gt;Parvenus à ce stade, nous n’avons rien fait d’autre que d’installer un dépôt normal. Mais c’est le moment où les choses changent.&lt;/p&gt;
-
-&lt;p&gt;Maintenant que nous sommes au bon endroit, créons une branche &lt;em&gt;&lt;code&gt;gh-pages&lt;/code&gt;&lt;/em&gt;. Ceci dit à GitHub que c’est une branche spéciale, et de traiter les contenus qui sont dedans différemment.&lt;/p&gt;
-
-&lt;p&gt;Assurez-vous que vous êtes toujours dans le répertoire &lt;code&gt;christmas-recipes&lt;/code&gt;, puis entrez cette commande pour créer la branche &lt;code&gt;gh-pages&lt;/code&gt; :&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git checkout --orphan gh-pages&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Cette option &lt;code&gt;--orphan&lt;/code&gt; pourrait être nouvelle pour vous. Une branche orpheline est une branche vide déconnectée de la branche à partir de laquelle elle a été créée, et elle démarre sans commits, 
-pour se transformer en branche spéciale autonome. &lt;code&gt;checkout&lt;/code&gt; nous fait basculer de la branche où nous étions vers cette branche.&lt;/p&gt;
-
-&lt;p&gt;Si tout se passe bien, nous recevrons un message indiquant &lt;code&gt;Switched to a new branch ‘gh-pages’&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Vous pourriez recevoir un message d’erreur vous disant que vous n’avez pas les privilèges d’admin, et si tel était le cas vous devrez taper &lt;code&gt;sudo&lt;/code&gt; au début de cette commande.&lt;/p&gt;
-
-&lt;h3 id=&quot;faire-de-gh-pages-votre-branche-par-dfaut-optionnel&quot;&gt;Faire de &lt;code&gt;gh-pages&lt;/code&gt; votre branche par défaut (optionnel)&lt;/h3&gt;
-
-&lt;p&gt;La branche &lt;code&gt;gh-pages&lt;/code&gt; est distincte de la branche &lt;code&gt;master&lt;/code&gt;, mais par défaut, la banche &lt;code&gt;master&lt;/code&gt; est celle 
-qui s’affichera si nous allons sur notre URL de dépôt sur GitHub. Pour modifier ça, allez aux “settings” du repository et sélectionnez &lt;code&gt;gh-pages&lt;/code&gt; comme branche par défaut.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://media.24ways.org/2013/debenham/default-branch.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Si comme moi, vous ne voulez qu’une branche unique, vous pouvez &lt;a href=&quot;http://oli.jp/2011/github-pages-workflow/#deleting-master&quot;&gt;effacer la branche &lt;code&gt;master&lt;/code&gt; en suivant le tutoriel de Oli Studholme&lt;/a&gt;. En pratique c’est vraiment très facile à faire, et cela signifie que vous n’aurez plus qu’à vous soucier de maintenir une seule branche à jour.&lt;/p&gt;
-
-&lt;p&gt;Si vous préférez travailler à partir de &lt;code&gt;master&lt;/code&gt; mais pousser les mises à jour vers la branche &lt;code&gt;gh-pages&lt;/code&gt;, &lt;a href=&quot;http://lea.verou.me/2011/10/easily-keep-gh-pages-in-sync-with-master/&quot;&gt;Lea Verou a écrit un tutoriel rapide qui indique comment faire ça&lt;/a&gt;, et son tutoriel comprend basiquement le fait de travailler à partir de la branche &lt;code&gt;master&lt;/code&gt;, et d’utiliser &lt;code&gt;git rebase&lt;/code&gt; pour mettre à jour une branche avec une autre.&lt;/p&gt;
-
-&lt;p&gt;À ce stade, nous n’avons fait que recevoir cette branche sur la machine locale, et elle est vide. Par conséquent, afin de voir quelque chose sur notre URL spéciale des Pages GitHub, nous devrons créer une page et la pousser vers le dépôt distant.&lt;/p&gt;
-
-&lt;h3 id=&quot;produire-une-page&quot;&gt;Produire une page&lt;/h3&gt;
-
-&lt;p&gt;Ouvrez votre éditeur de texte préféré, créez un fichier intitulé &lt;code&gt;index.html&lt;/code&gt; dans votre répetoire &lt;code&gt;christmas-recipes&lt;/code&gt;, et déposez-y un peu de texte savoureux. Pas d’inquiétude sur le marquage : tout ce dont nous avons besoin, c’est d’un peu de texte parce qu’à cette heure nous voulons simplement vérifier 
-que ça fonctionne.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://media.24ways.org/2013/debenham/index.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Maintenant, committons et poussons nos modifications. Vous pouvez faire ça à la ligne de commande si vous êtes à l’aise, ou passer par l’app GitHub. N’oubliez pas d’ajouter un message utile au présent de commit.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://media.24ways.org/2013/debenham/pages-commit.jpg&quot; alt=&quot;image&quot; title=&quot;Committer quelques modifications en utilisant l&#39;app Mac GitHub&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Maintenant nous sommes prêts pour voir notre magnifique site tout neuf ! 
-Allez sur &lt;code&gt;votre-nomutilisateur.github.io/votre-nom-projet&lt;/code&gt;, et je l’espère, vous devriez voir votre premier site GitHub Pages. 
-Si tel n’était pas le cas, pas de panique, cela peut prendre jusqu’à dix minutes pour la publication, aussi vous pourriez vous préparer un &lt;a href=&quot;http://www.lesfoodies.com/missty0910/recette/mug-brownies-fondant-au-micro-ondes-une-merveille&quot;&gt;mug de brownies fondant&lt;/a&gt; pendant l’attente.&lt;/p&gt;
-
-&lt;p&gt;Après cette petite pause, notre page devrait être en vie ! J’espère que ça n’a pas été traumatisant. 
-Maintenant, nous savons que ça fonctionne et pouvons ajouter un peu de marquage et CSS propres, voire quelques pages supplémentaires.&lt;/p&gt;
-
-&lt;p&gt;Si vous vous sentez courageux, que dire de passer au niveau suivant…&lt;/p&gt;
-
-&lt;h2 id=&quot;paramtrer-jekyll&quot;&gt;Paramétrer Jekyll&lt;/h2&gt;
-
-&lt;p&gt;Parce que GitHub Pages ne sait pas exécuter des langages comme PHP, nous devons lui donner des fichiers HTML statiques. C’est bien s’il n’y a que peu de pages, mais nous allons bientôt manquer de choses comme les includes PHP pour répéter le contenu sur chaque page, comme les en-têtes et pieds de pages.&lt;/p&gt;
-
-&lt;p&gt;Jekyll facilite l’installation de gabarits et les transforme en HTML statique. Il sépare le marquage du contenu et facilite énormément l’édition de pages collaboratives. Avec notre site de recettes, nous voulons faire en sorte que ce soit très facile pour ls personnes de corriger les erreurs de typo ou ajouter des notes, sans voir à comprendre le PHP. Le dernier avantage c’est que les pages statiques se chargent vraiment très vite.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Jekyll n’est pas supporté officiellement par Windows, mais &lt;a href=&quot;http://jekyllrb.com/docs/windows/#installation&quot;&gt;il est toujours possible de le faire tourner&lt;/a&gt; si vous êtes prêts à mettre les mains dans le cambouis.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;installer-jekyll&quot;&gt;Installer Jekyll&lt;/h3&gt;
-
-&lt;p&gt;De retour dans le Terminal, nous allons installer Jekyll…&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install jekyll&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;… et attendez que le programme se lance. Ceci peut prendre un certain temps. Cela pourrait même être si long que vous pourriez croire que c’est cassé, mais résistez à l’envie de balancer votre clavier comme j’ai pu le faire.&lt;/p&gt;
-
-&lt;h3 id=&quot;faire-tourner-jekyll-sur-votre-dpt&quot;&gt;Faire tourner Jekyll sur votre dépôt&lt;/h3&gt;
-
-&lt;p&gt;Croisons les doigts, rien ne cloche à ce stade. Si quelque chose n’allait pas, n’abandonnez pas ! Regardez &lt;a href=&quot;http://andytaylor.me/2012/11/03/installing-ruby-and-jekyll/&quot;&gt;ce post d’aide d’Andy Taylor&lt;/a&gt; – vous pourriez peut-être avoir tout simplement besoin d’installer un truc en plus.&lt;/p&gt;
-
-&lt;p&gt;Maintenant, nous allons dire à Jekyll d’installer un nouveau projet dans le dépôt, qui se niche dans le répertoire &lt;em&gt;Sites&lt;/em&gt; (le vôtre est peut-être à un endroit différent). Souvenez-vous, nous pouvons glisser-déposer le répertoire à l’intérieur de la fenêtre de terminal après la commande.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new /Users/Anna/Sites/christmas-recipes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Si tout se déroule comme prévu, nous devrions recevoir ce message d’erreur : &lt;code&gt;Conflict: /Users/Anna/Sites/christmas-recipes exists and is not empty&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Rassurez-vous, tout va bien. C’est tout simplement déroutant parce que nous avons reçu ce fichier &lt;code&gt;index.html&lt;/code&gt; probablement avec un fichier &lt;code&gt;README.md&lt;/code&gt; que nous avons créé précédemment. Aussi, migrez tout ça pour le moment sur votre bureau et lancez de nouveau la commande.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new /Users/Anna/Sites/christmas-recipes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Cela devrait vous dire que site est installé.&lt;/p&gt;
-
-&lt;p&gt;Vérifiez que vous êtes bien dans le dépôt, et sinon, naviguez jusqu’à lui en tapant &lt;code&gt;cd &lt;/code&gt;, glissez-déposez le répertoire &lt;code&gt;christmas-recipes&lt;/code&gt; à l’intérieur du terminal…&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /Users/Anna/Sites/christmas-recipes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;…et tapez cette commande pour dire à Jekyll de fonctionner :&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll serve --watch&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;En ajoutant &lt;code&gt;--watch&lt;/code&gt; à la fin, nous forçons Jekyll à reconstruire le site à chaque fois que nous sauvegardons. 
-Nous ne sommes donc plus obligés de lui indiquer de mettre à jour à chaque fois que nous visualisons les modifications. Nous devrons faire tourner ça à chaque fois que nous travaillons sur le projet, sinon les modifications ne seront pas prises en considération. 
-À cette heure, attendez pendant qu’il fait ses trucs.&lt;/p&gt;
-
-&lt;h3 id=&quot;mettre--jour-le-fichier-de-configuration&quot;&gt;Mettre à jour le fichier de configuration&lt;/h3&gt;
-
-&lt;p&gt;Une terminé, nous verrons le texte &lt;code&gt;press ctrl-c to stop&lt;/code&gt;. &lt;strong&gt;Ne faites pas ça !&lt;/strong&gt;. 
-Au lieu de ça, ouvrez le répertoire. Vous remarquerez que certains nouveaux fichiers et répertoires sont apparus à l’intérieur. 
-Il y a un répertoire appelé &lt;code&gt;_site&lt;/code&gt;, et c’est là où tous les fichiers du site sont sauvegardés quand ils sont tranformés en HTML statique. 
-&lt;strong&gt;Ne touchez pas les fichiers à l’intérieur&lt;/strong&gt; — ce sont des fichiers générés qui seront écrasés à chaque fois que nous produirons des modifications aux pages et layouts.&lt;/p&gt;
-
-&lt;p&gt;Il y a un fichier dans notre répertoire appelé &lt;code&gt;_config.yml&lt;/code&gt;. Ce fichier a quelques paramétrages que nous pouvons modifier, l’un d’entre eux étant notre URL de base. GitHub Pages supposera que l’URL de base est au-dessus du dépôt du projet, par conséquent modifier ici les réglagles nous aidera plus tard an bas de la ligne à paramétrer les liens de navigation.&lt;/p&gt;
-
-&lt;p&gt;Remplacez les contenus du fichier &lt;code&gt;_config.yml&lt;/code&gt; avec ça :&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;name: Recettes de Noël&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
-markdown: redcarpet
-pygments: &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;
-baseurl: /christmas-recipes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;paramtrer-vos-fichiers&quot;&gt;Paramétrer vos fichiers&lt;/h3&gt;
-
-&lt;p&gt;Écrasez le fichier &lt;code&gt;index.html&lt;/code&gt; dans la racine avec celui que nous avons créé précédemment (vous pourriez aussi glisser de nouveau le fichier README.md).&lt;/p&gt;
-
-&lt;p&gt;Effacez les fichiers dans le répertoire &lt;code&gt;css&lt;/code&gt; — nous ajouterons les nôtres plus tard.&lt;/p&gt;
-
-&lt;h3 id=&quot;visualiser-le-site-jekyll&quot;&gt;Visualiser le site Jekyll&lt;/h3&gt;
-
-&lt;p&gt;Ouvrez votre navigateur préféré et tapez &lt;code&gt;http://localhost:4000/christmas-recipes&lt;/code&gt; dans la barre d’adresse.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://media.24ways.org/2013/debenham/pages-site-initial.jpg&quot; alt=&quot;image&quot; title=&quot;Une impression-écran d&#39;un aperçu du site à cette heure&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Voilà, c’est votre site ! Mais on pourrait y mettre un peu plus d’amour !&lt;/p&gt;
-
-&lt;h3 id=&quot;rgler-les-fichiers-includes&quot;&gt;Régler les fichiers &lt;em&gt;_includes&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Il est toujours utile de pouvoir extraire des fragments de contenu sur les pages, comme des en-têtes et pieds de pages, ils n’auront donc besoin d’être mis à jour qu’à un seul endroit. Voilà à quoi sert un répertoire &lt;code&gt;_includes&lt;/code&gt; dans Jekyll. Créez un répertoire à la racine appelé &lt;code&gt;_includes&lt;/code&gt;, et ajoutez dedans deux fichiers : &lt;code&gt;head.html&lt;/code&gt; et &lt;code&gt;foot.html&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Dans &lt;code&gt;head.html&lt;/code&gt;, copiez ce qui suit : &lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Démarrer avec Pages GitHub (Plus Bonus Jekyll)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/css/main.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;et dans &lt;code&gt;foot.html&lt;/code&gt; :&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;À chaque fois que nous voudrons ramener quelque chose à partir du répertoire &lt;code&gt;_includes&lt;/code&gt;, 
-nous pourrons utiliser &lt;code&gt;{% include nomfichier.html %}&lt;/code&gt; dans le fichier layout — je vous présenterai comment régler ça à la prochaine étape.&lt;/p&gt;
-
-&lt;h3 id=&quot;produire-les-layouts&quot;&gt;Produire les layouts&lt;/h3&gt;
-
-&lt;p&gt;Dans notre répertoire, il y a un répertoire intitulé &lt;code&gt;_layouts&lt;/code&gt; et ceci nous permet de créer un template réutilisable pour les pages. 
-À l’intérieur de ce répertoire, il y a un fichier &lt;code&gt;default.html&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Effacez tout dans le fichier &lt;code&gt;default.html&lt;/code&gt; et placez-ce code dedans pour le remplacer :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{% include head.html %}
-
-&amp;lt;h1&amp;gt;{{ page.title }}&amp;lt;/h1&amp;gt;
-
-{{ content }}
-
-{% include foot.html %}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Ceci est une page vraiment basique avec un en-tête, un pied de page, un titre de page et un peu de contenu. Pour activer ce template sur une page, revenez à l’intérieur de la page &lt;code&gt;index.html&lt;/code&gt; et ajoutez ce morceau de code tout en haut du fichier :&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;default&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Accueil&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Maintenant, sauvegardez le fichier &lt;code&gt;index.html&lt;/code&gt; et pressez la touche de &lt;strong&gt;rafraîchissement&lt;/strong&gt; du navigateur. 
-Nous devrions voir un en-tête là où &lt;code&gt;{{ page.title }}&lt;/code&gt; était placé dans le layout, qui correspond à ce qui vient après &lt;code&gt;title:&lt;/code&gt; sur la page elle-même (dans notre cas, Accueil). 
-Par conséquent, si nous voulions qu’un sous-titre apparaisse sur chaque page, 
-nous pourrions ajouter &lt;code&gt;{{ page.sous-titre }}&lt;/code&gt; à l’endroit où nous voudrions que le sous-titre apparaisse dans notre fichier layout, et une ligne qui dise &lt;code&gt;sous-titre : Ceci est un sous-titre&lt;/code&gt; placée entre les tirets tout en haut de la page.&lt;/p&gt;
-
-&lt;h3 id=&quot;utiliser-markdown-pour-les-templates&quot;&gt;Utiliser Markdown pour les templates&lt;/h3&gt;
-
-&lt;p&gt;Tout ce qui est placé dans la page sous les derniers tirets de fermeture est le rendu où apparaîtra &lt;code&gt;{{ content }}&lt;/code&gt; dans le fichier template. 
-À cette heure, ceci est restitué en HTML, mais nous pouvons utiliser Markdown, et Jekyll convertira cela en HTML. 
-Pour ce site de recettes, nous voulons faire qu’il soit aussi facile que possible pour les personnes de le mettre à jour, mais aussi d’avoir un marquage dissocié du contenu, par conséquent utilisons Markdown au lieu du HTML pour les recettes.&lt;/p&gt;
-
-&lt;p&gt;Dire à une page d’utiliser Markdown au lieu du HTML est incroyablement simple. 
-Tout ce que nous devons faire, c’est modifier le nom de fichier pour le passer de &lt;code&gt;.html&lt;/code&gt; en &lt;code&gt;.md&lt;/code&gt;. 
-Aussi renommons le fichier &lt;code&gt;index.html&lt;/code&gt; en &lt;code&gt;index.md&lt;/code&gt;. Désormais nous pouvons utiliser le Markdown, et Jekyll produira ça en HTML.&lt;/p&gt;
-
-&lt;h3 id=&quot;crer-un-nouveau-layout&quot;&gt;Créer un nouveau layout&lt;/h3&gt;
-
-&lt;p&gt;Nous allons créer un nouveau layout appelé &lt;code&gt;recette&lt;/code&gt; qui va devenir le modèle pour toute page de recette que nous créerons. 
-Restons super simple. &lt;/p&gt;
-
-&lt;p&gt;Dans le répertoire &lt;code&gt;_layouts&lt;/code&gt;, créons un fichier appelé &lt;code&gt;recette.html&lt;/code&gt; et collons ce qui suit à l’intérieur:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{% include head.html %}
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;main&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;{{ page.title }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
-
-{{ content }}
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Recette de &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ page.lien-attribution-recette }}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;  
-{{ page.auteur-recette }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-    	
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/main&amp;gt;&lt;/span&gt;
-
-{% include nav.html %}
-
-{% include foot.html %}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Ceci est notre template. Le contenu qui va sur le layout &lt;code&gt;recette&lt;/code&gt; contient un titre de page, le contenu de la recette, une attribution de l’auteur de la recette et un lien d’attribution.&lt;/p&gt;
-
-&lt;h3 id=&quot;ajouter-quelques-pages-de-recettes&quot;&gt;Ajouter quelques pages de recettes&lt;/h3&gt;
-
-&lt;p&gt;Créez un nouveau fichier dans la racine du répertoire &lt;code&gt;recettes-noel&lt;/code&gt; et appelez-le &lt;code&gt;gingerbread.md&lt;/code&gt;. 
-Copiez ce qui suit à l’intérieur : &lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;recette&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Biscuit au Pain d&amp;#39;Epices&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;auteur-recette&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;HungryJenny&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;lien-attribution-recette&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;http://www.opensourcefood.com/people/HungryJenny/recipes/soft-christmas-gingerbread-cookies&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;Production d&amp;#39;environ 15 petits cookies.&lt;/span&gt;
-
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;## Ingrédients&lt;/span&gt;
-
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;* 175g plain flour&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;* 90g brown sugar&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;* 50g unsalted butter, diced, at room temperature&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;* 2 tbsp golden syrup&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;* 1 egg, beaten&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;* 1 tsp ground ginger&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;* 1 tsp cinnamon&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;* 1 tsp bicarbonate of soda&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;* Icing sugar to dust&lt;/span&gt;
-
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;## Méthode&lt;/span&gt;
-
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;1. Sift the flour, ginger, cinnamon and bicarbonate of soda into a large mixing bowl.&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;2. Use your fingers to rub in the diced butter. Mix in the sugar.&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;3. Mix the egg with the syrup then pour into the flour mixture. Fold in well to form a dough.&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;4. Tip some flour onto the work surface and knead the dough until smooth.&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;5. Preheat the oven to 180°C.&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;6. Roll the dough out flat and use a shaped cutter to make as many cookies as you like.&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;7. Transfer the cookies to a tray and bake in the oven for 15 minutes. Lightly dust the cookies with icing sugar.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;crer-un-nouveau-layout-1&quot;&gt;Créer un nouveau layout&lt;/h3&gt;
-
-&lt;p&gt;Nous allons créer un nouveau layout appelé &lt;code&gt;recette&lt;/code&gt; qui va devenir le modèle pour toute page de recette que nous créerons. 
-Restons super simple. &lt;/p&gt;
-
-&lt;p&gt;Dans le répertoire &lt;code&gt;_layouts&lt;/code&gt;, créons un fichier appelé &lt;code&gt;recette.html&lt;/code&gt; et collons dedans ce qui suit :&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{% include head.html %}
-
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;main&amp;gt;&lt;/span&gt;
-
-    	&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;{{ page.title }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
-
-    	{{ content }}
-
-    	&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;
-    	Recette de 
-    	&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ page.lien-attribution-recette }}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    	{{ page.auteur-recette }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;.
-    	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-    	
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/main&amp;gt;&lt;/span&gt;
-
-	{% include nav.html %}
-    {% include foot.html %}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Ceci est notre template. Le contenu qui va sur le layout &lt;code&gt;recette&lt;/code&gt; contient un titre de page, le contenu de la recette, une attribution de l’auteur de la recette et un lien d’attribution.&lt;/p&gt;
-
-&lt;p&gt;Le contenu est en Markdown, et quand nous pressons &lt;strong&gt;Sauvegarder&lt;/strong&gt;, il sera converti en HTML dans le répertoire &lt;code&gt;_site&lt;/code&gt;. Sauvegardez le fichier, et allez sur &lt;code&gt;http://localhost:4000/christmas-recipes/gingerbread.html&lt;/code&gt; dans votre navigateur favori.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://media.24ways.org/2013/debenham/page-recipe.jpg&quot; alt=&quot;image&quot; title=&quot;Une impression écran de la page recettes telle que vous pouvez la voir, le contenu Markdown a été converti en HTML, et les textes et lien d&#39;attribution ont été tous deux insérés au bon endroit.&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;ajouter-un-peu-de-navigation&quot;&gt;Ajouter un peu de navigation&lt;/h3&gt;
-
-&lt;p&gt;Dans votre répertoire &lt;code&gt;_includes&lt;/code&gt;, créez un nouveau fichier appelé &lt;code&gt;nav.html&lt;/code&gt;. Voici un peu de code qui générera vore navigation : &lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;nav-primary&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navigation&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
-        {% for p in site.pages %}
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
-        	&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;url =&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;%}&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;active&amp;quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{%&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;endif&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;%}&lt;/span&gt; 
-        	&lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ site.baseurl }}{{ p.url }}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{{ p.title }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-        {% endfor %}
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Ceci va chercher sur toutes les pages et générer une liste de toutes ces pages, et donner l’item de navigation qui est actuellement actif, une classe active afin que nous puissions la mettre en forme différemment.&lt;/p&gt;
-
-&lt;p&gt;Maintenant, nous avons besoin d’inclure ce fragment de navigation dans notre layout. Copiez &lt;code&gt;{% include nav.html %}&lt;/code&gt;{% raw %} dans le fichier &lt;code&gt;default.html&lt;/code&gt;, sous le &lt;br /&gt;
- &lt;code&gt;{{ content }}&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;### Pousser les Modifications vers les Pages GitHub&lt;/p&gt;
-
-&lt;p&gt;Maintenant que nous disposons de quelques pages, il est temps de pousser nos modifications vers GitHub. 
-Nous pouvons faire ça exactement de la même façon qu’avant. Vérifiez votre URL spéciale GitHub (votre-nomutilisateur.github.io/votre-nom-projet) et vous devriez voir votre site fonctionner.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Si vous quittez le Terminal, n’oubliez pas de lancer &lt;code&gt;jekyll serve --watch&lt;/code&gt; à partir du répertoire la prochaine fois que vous voudrez travailler sur les fichiers.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;prochaines-tapes&quot;&gt;Prochaines étapes&lt;/h3&gt;
-
-&lt;p&gt;Maintenant que nous connaissons les fondamentaux de la création de templates Jekyll et que nous savons les publier sous forme de Pages GitHub, nous pouvons nous amuser à ajouter plus de pages et améliorer le style.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://media.24ways.org/2013/debenham/christmas-recipes.jpg&quot; alt=&quot;image&quot; title=&quot;En voici une que j&#39;ai faite précédemment&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Je n’ai utilisé Jekyll que depuis quelques semaines, essentiellement pour du prototypage. C’est vraiment bien comme système de gestion de contenus pour les blogs, et beaucoup de personnes hébergent leurs blogs Jekyll sur GitHub, comme celui de &lt;a href=&quot;http://csswizardry.com/2012/12/a-new-css-wizardry/&quot;&gt;Harry Roberts&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;By hosting the code so openly it will make me take more pride in it and allow me to work on it much more easily; no excuses now!&lt;/blockquote&gt;
-
-&lt;p&gt;Pour finir, la documentation officielle de Jekyll est un peu éparse et plus ciblée sur les blogs que les autres sites, mais au fur et à mesure que les gens découvriront ses avantages, je suis certaine qu’elle s’améliorera au fil du temps.&lt;/p&gt;
-
-&lt;p&gt;Si ça vous intéresse de vous taper un peu de code, &lt;a href=&quot;https://github.com/maban/christmas-recipes&quot;&gt;tous les fichiers de ce tutoriel sont disponibles sur GitHub&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 21 Dec 2013 14:15:00 +0100</pubDate>
-        <link>http://christopheducamp.com//2013/12/21/demarrer-avec-pages-github/</link>
-        <guid isPermaLink="true">http://christopheducamp.com//2013/12/21/demarrer-avec-pages-github/</guid>
       </item>
     
   </channel>
