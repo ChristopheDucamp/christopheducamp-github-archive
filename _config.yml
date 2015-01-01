@@ -3,7 +3,7 @@ name: sur la route de l'indieweb...
 
 
 #repository: https://github.com/christopheducamp/christopheducamp.github.io
-description: selfdogfood sur jekyll
+description: Jekyll's selfdogfood 
 url: "http://christopheducamp.com"
 
 markdown: kramdown

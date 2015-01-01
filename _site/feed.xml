@@ -14,7 +14,7 @@
 
 &lt;h3 id=&quot;migration-wordpress-vers-jekyll--un-an-dj&quot;&gt;Migration WordPress vers Jekyll : un an déjà…&lt;/h3&gt;
 
-&lt;p&gt;Fin 2013, je prenais la décision de migrer de WordPress vers une &lt;a href=&quot;/2013/12/03/premier-pas-sur-jekyll/&quot;&gt;motorisation Jekyll&lt;/a&gt; pour m’essayer à la pose de quelques premières briques de construction indieweb. Revenant à la liberté du freelance, je compte sérieusement en 2015 consacrer plus de temps sur ce site personnel &lt;u&gt;pour du personal b…&lt;/u&gt; afin de donner un meilleur aperçu de qui je suis et la nature des missions sur lesquelles je serais heureux de bricoler pour gagner ma vie en 2015…  &lt;/p&gt;
+&lt;p&gt;Fin 2013, je prenais la décision de migrer de WordPress vers une &lt;a href=&quot;/2013/12/03/premier-pas-sur-jekyll/&quot;&gt;motorisation Jekyll&lt;/a&gt; pour m’essayer à la pose de quelques premières briques de construction indieweb. Revenant à la liberté du freelance, je compte sérieusement en 2015 consacrer plus de temps sur ce site personnel &lt;s&gt;pour du personal b…&lt;/s&gt; afin de donner un meilleur aperçu de qui je suis et la nature des missions sur lesquelles je serais heureux de bricoler pour gagner ma vie en 2015…  &lt;/p&gt;
 
 &lt;p&gt;Pas d’engagement à cette heure : l’effort d’apprentissage et d’assimilation de quelques briques de HTML et CSS pour parvenir à mettre à jour un portfolio propre n’est pas terminé… &lt;/p&gt;
 
@@ -34,7 +34,7 @@ En outre, les versions récentes de Jekyll 2.x intègrent désormais une nouvell
 
 &lt;p&gt;Les points forts de Jekyll qui me confortent : une belle communauté de hackers, un plan de route qui &lt;a href=&quot;https://byparker.com/blog/2014/jekyll-3-the-road-ahead/&quot;&gt;évoluera vers la simplicité&lt;/a&gt;, un langage de templates assimilable et une architecture de templates accessible pour y greffer quelques premiers indieweb et escalader une ou deux marches sur l’&lt;a href=&quot;https://indiewebcamp.com/IndieMark&quot;&gt;IndieMark&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Rappelons que Jekyll est simple et livré en sortie de boîte avec des fonctionnalités de &lt;u&gt;blog&lt;/u&gt; carnet web. Il analyse le Markdown, intègre nativement une mise en forme du code, produit des fichiers statiques et la production peut être hébergée gratuitement sur les Pages GitHub.&lt;/p&gt;
+&lt;p&gt;Rappelons que Jekyll est simple et livré en sortie de boîte avec des fonctionnalités de &lt;s&gt;blog&lt;/s&gt; carnet web. Il analyse le Markdown, intègre nativement une mise en forme du code, produit des fichiers statiques et la production peut être hébergée gratuitement sur les Pages GitHub.&lt;/p&gt;
 
 &lt;p&gt;À des fins de révision et en souvenir des premiers pas laborieux vécus au début de l’année, je vous propose dans la section à suivre de revoir le démarrage d’un site avec Jekyll. Si vous avez déjà un site Jekyll, ignorez cette section et allez directement sur l’implémentation des collections.&lt;/p&gt;
 
@@ -255,7 +255,9 @@ En outre, les versions récentes de Jekyll 2.x intègrent désormais une nouvell
 
 &lt;h2 id=&quot;quest-ce-quun-permalien-raccourci-&quot;&gt;Qu’est-ce qu’un Permalien-Raccourci ?&lt;/h2&gt;
 
-&lt;blockquote&gt;Un **&lt;dfn&gt;permalien&lt;/dfn&gt;** est une URL qui représente et retrouve un post unique. Un **&lt;dfn&gt;permalien-court&lt;/dfn&gt;** (ou permalien-raccourci ?) est une URL utilisant un nom de domaine personnel raccourci qui se dilate vers un permalien.&lt;footer&gt;&lt;a class=&quot;p-name u-url&quot; href=&quot;http://indiewebcamp.com/permalinks-fr&quot;&gt;source wiki IndieWebCamp&lt;/a&gt;&lt;/footer&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;&lt;p&gt;Un **&lt;dfn&gt;permalien&lt;/dfn&gt;** est une URL qui représente et retrouve un post unique. Un **&lt;dfn&gt;permalien-court&lt;/dfn&gt;** (ou permalien-raccourci ?) est une URL utilisant un nom de domaine personnel raccourci qui se dilate vers un permalien.&lt;/p&gt;
+&lt;footer class=&quot;p-name u-url&quot;&gt;[source wiki IndieWebCamp](http://indiewebcamp.com/permalinks-fr)&lt;/footer&gt;
+&lt;/blockquote&gt;
 
 &lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
 
@@ -264,54 +266,43 @@ En outre, les versions récentes de Jekyll 2.x intègrent désormais une nouvell
 &lt;pre&gt;&lt;code&gt;$ gem install jekyll-redirect-from
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Une fois la &lt;em&gt;gem&lt;/em&gt; installée dans votre environnement, ajoutez ces deux lignes dans votre fichier local &lt;code&gt;_config.yml&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Une fois la &lt;em&gt;gem&lt;/em&gt; installée dans votre environnement, ajoutez ces deux lignes dans votre fichier local &lt;code&gt;_config.yml&lt;/code&gt; :&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;gems&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;jekyll-redirect-from&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;usages-pressentis&quot;&gt;Usages pressentis&lt;/h2&gt;
 
-&lt;p&gt;L’objet de cette gem de redirection peut ainsi permettre à un auteur de spécifier une (ou plusieurs !) URL(s) pour un même post ou une même page.&lt;/p&gt;
+&lt;p&gt;L’objet de cette gem de redirection peut ainsi permettre à un auteur de spécifier une ou plusieurs URL(s) pour un même post ou une même page.&lt;/p&gt;
 
 &lt;p&gt;Pour utiliser ces urls courtes qui pointeront toutes vers votre URL canonique, inspirez-vous de la série qui suit. 
-Ajoutez votre adaptation au Panneau YAML de votre post ou page : &lt;/p&gt;
+Ajoutez votre adaptation au Front-Matter YAML de votre post ou page : &lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;yaml
-title: Mon super post
-redirect_from:
-  - /post/123456789/
-  - /post/123456789/mon-super-post/
-  - /2014-08-02/
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Mon super post&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;redirect_from&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/post/123456789/&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/post/123456789/mon-super-post/&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/2014-08-02/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;exemple-pour-ce-post-&quot;&gt;Exemple pour ce post :&lt;/h2&gt;
 
-&lt;p&gt;Pour le premier permalien-raccourci fonctionnel de ce post, j’ai volontairement choisi un format solide, quelque peu inspiré de &lt;span class=&quot;h-card&quot;&gt;&lt;a href=&quot;http://tantek.com/&quot;&gt;Tantek&lt;/a&gt;&lt;/span&gt;, à savoir l’année suivie du quantième ce qui pourrait ressembler à :  &lt;/p&gt;
+&lt;p&gt;Pour le premier permalien-raccourci fonctionnel de ce post, j’ai volontairement choisi un format solide, inspiré par &lt;span class=&quot;h-card&quot;&gt;&lt;a href=&quot;http://tantek.com/&quot;&gt;Tantek&lt;/a&gt;&lt;/span&gt;, à savoir l’année suivie du numéro du jour dans l’année, ce qui ressemble à :  &lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://xtof.me/2014-214/&quot;&gt;xtof.me/2014-214/&lt;/a&gt; &lt;/li&gt;
-  &lt;li&gt;citation du permalien-raccourci : (xtof.me 2014/214)&lt;/li&gt;
+  &lt;li&gt;citation du permalien-raccourci : (xtof.me 2014-214)&lt;/li&gt;
   &lt;li&gt;Version un peu plus longue : &lt;a href=&quot;http://xtof.me/indielog/2014-214&quot;&gt;xtof.me indielog/2014-214&lt;/a&gt; &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;prochaine-tape--parvenir--modifier-le-rakefile&quot;&gt;Prochaine étape : Parvenir à Modifier le Rakefile&lt;/h2&gt;
+&lt;h2 id=&quot;modifier-le-rakefile&quot;&gt;Modifier le Rakefile&lt;/h2&gt;
 
 &lt;p&gt;Une recherche de patterns est en cours afin de trouver un modèle de raccourci d’&lt;a href=&quot;http://christopheducamp.com/b/2013-04-14/les-urls-sont-pour-les-humains/&quot;&gt;URL parlante et ayant du sens&lt;/a&gt;. &lt;/p&gt;
 
-&lt;p&gt;Quant à l’automatisation de ce processus de redirection, je serais preneur de toute aide pour décrypter les &lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;conseils de Pierre&lt;/a&gt; afin de parvenir à adapter &lt;a href=&quot;https://github.com/ChristopheDucamp/christopheducamp.github.io/blob/master/rakefile&quot;&gt;mon fichier &lt;code&gt;Rakefile&lt;/code&gt;&lt;/a&gt;.  &lt;/p&gt;
-
-&lt;p&gt;Le message d’erreur renvoyé à cette heure : &lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;rake post &lt;span class=&quot;nv&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Les Collections de Jekyll&amp;quot;&lt;/span&gt;
-rake aborted!
-undefined method &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;#39;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; nil:NilClass
-
-Tasks: &lt;span class=&quot;nv&quot;&gt;TOP&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&amp;gt; post
-&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;See full trace by running task with --trace&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pour l’automatisation de ce processus de redirection, référez-vous directement aux &lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;conseils de Pierre&lt;/a&gt;. &lt;a href=&quot;https://github.com/ChristopheDucamp/christopheducamp.github.io/blob/master/rakefile&quot;&gt;Une copie du fichier &lt;code&gt;Rakefile&lt;/code&gt; de ce site reste déposée sur GitHub&lt;/a&gt;.  &lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Dernier truc à savoir :&lt;/strong&gt; Les redirections avec un slash à la fin génèrent un sous-répertoire correspondant contenant un fichier &lt;code&gt;index.html&lt;/code&gt;, alors que les redirections sans un slash à la fin générent un &lt;code&gt;nomfichier&lt;/code&gt; correspondant sans extension et sans sous-répertoire.&lt;/p&gt;
 
-&lt;h2 id=&quot;liens-ressources-&quot;&gt;Liens Ressources :&lt;/h2&gt;
+&lt;h2 id=&quot;liens-ressources&quot;&gt;Liens Ressources&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Lien de référence : &lt;a href=&quot;https://github.com/jekyll/jekyll-redirect-from&quot;&gt;Jekyll-redirect-from&lt;/a&gt; - Github&lt;/li&gt;
   &lt;li&gt;Lisez le post technique &lt;cite class=&quot;h-cite&quot;&gt;&lt;strong&gt;&lt;span class=&quot;url p-name&quot;&gt;&lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;Permashortlinks&lt;/a&gt;&lt;/span&gt;&lt;/strong&gt; de &lt;abbr class=&quot;p-author h-card&quot; title=&quot;Pierre Ozoux&quot;&gt;Pierre&lt;/abbr&gt; pour des indications sur la modification du fichier Rakefile (&lt;time class=&quot;dt-published&quot;&gt;2014-08-02&lt;/time&gt;)&lt;/cite&gt; &lt;/li&gt;
@@ -397,7 +388,7 @@ Tasks: &lt;span class=&quot;nv&quot;&gt;TOP&lt;/span&gt; &lt;span class=&quot;o&
         <title>Jekyll : Générer un Post avec Rakefile</title>
         <description>&lt;p&gt;&lt;em&gt;Les nom et permalien de ce post ont été générés automatiquement à l’aide de &lt;code&gt;rakefile&lt;/code&gt;…&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;J’envisage ce trimestre de raffiner sérieusement l’architecture et le design de ce site personnel destiné à quelques futurs tests d’&lt;em&gt;&lt;a href=&quot;http://indiewebify.me&quot;&gt;indiewebification&lt;/a&gt;&lt;/em&gt;. Bien d’accord avec vous, ce site bien que fonctionnel demeure vraiment très moche (et qui plus est, ennuyeux au possible !)  Ne souhaitant pas tomber dans la facilité d’installer un &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;magnifique thème pré-construit&lt;/a&gt; sans rien y comprendre, je me donne encore quelques mois pour étudier  quelques fondamentaux CSS avant de m’aventurer sur les pentes escarpées du “look and feel”.  Pour ceux qui seraient pressés de chevaucher Jekyll, je ne peux que recommander la lecture de l’excellent guide &lt;a href=&quot;https://github.com/bebraw/yeswejekyll&quot;&gt;Yes We Jekyll&lt;/a&gt; publié l’année dernière par @&lt;span class=&quot;h-card&quot;&gt;&lt;a href=&quot;https://twitter.com/bebraw&quot;&gt;bebraw&lt;/a&gt;&lt;/span&gt;.  &lt;/p&gt;
+&lt;p&gt;J’envisage ce trimestre de raffiner sérieusement l’architecture et le design de ce site personnel destiné à quelques futurs tests d’&lt;em&gt;&lt;a href=&quot;http://indiewebify.me&quot;&gt;indiewebification&lt;/a&gt;&lt;/em&gt;. Bien d’accord avec vous, ce site bien que fonctionnel demeure vraiment très moche (et qui plus est, ennuyeux au possible !)  Ne souhaitant pas tomber dans la facilité d’installer un &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;magnifique thème pré-construit&lt;/a&gt; sans rien y comprendre, je me donne encore quelques mois pour étudier quelques fondamentaux CSS avant de m’aventurer sur les pentes escarpées du “look and feel”.  Pour ceux qui seraient pressés de chevaucher Jekyll, je ne peux que recommander la lecture de l’excellent guide &lt;a href=&quot;https://github.com/bebraw/yeswejekyll&quot;&gt;Yes We Jekyll&lt;/a&gt; publié l’année dernière par @&lt;span class=&quot;h-card&quot;&gt;&lt;a href=&quot;https://twitter.com/bebraw&quot;&gt;bebraw&lt;/a&gt;&lt;/span&gt;.  &lt;/p&gt;
 
 &lt;p&gt;Outre quelques excellentes &lt;a href=&quot;http://yeswejekyll.com/#from_meek_to_neat&quot;&gt;sections de design&lt;/a&gt; pour débutants, ce guide regorge d’astuces. Parmi lesquelles, un truc bien utile et facile à mettre en place pour &lt;em&gt;éviter —aux paresseux comme moi— de créer manuellement les noms de fichiers des posts&lt;/em&gt;.&lt;/p&gt;
 

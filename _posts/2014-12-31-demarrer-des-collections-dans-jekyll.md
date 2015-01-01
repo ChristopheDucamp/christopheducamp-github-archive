@@ -15,7 +15,7 @@ Inspiration & remerciements à <span class='h-card microcard'>[Taylor Jones][2]<
 
 ### Migration WordPress vers Jekyll : un an déjà…
 
-Fin 2013, je prenais la décision de migrer de WordPress vers une [motorisation Jekyll](/2013/12/03/premier-pas-sur-jekyll/) pour m’essayer à la pose de quelques premières briques de construction indieweb. Revenant à la liberté du freelance, je compte sérieusement en 2015 consacrer plus de temps sur ce site personnel <u>pour du personal b…</u> afin de donner un meilleur aperçu de qui je suis et la nature des missions sur lesquelles je serais heureux de bricoler pour gagner ma vie en 2015…  
+Fin 2013, je prenais la décision de migrer de WordPress vers une [motorisation Jekyll](/2013/12/03/premier-pas-sur-jekyll/) pour m’essayer à la pose de quelques premières briques de construction indieweb. Revenant à la liberté du freelance, je compte sérieusement en 2015 consacrer plus de temps sur ce site personnel <s>pour du personal b…</s> afin de donner un meilleur aperçu de qui je suis et la nature des missions sur lesquelles je serais heureux de bricoler pour gagner ma vie en 2015…  
 
 Pas d’engagement à cette heure : l’effort d’apprentissage et d’assimilation de quelques briques de HTML et CSS pour parvenir à mettre à jour un portfolio propre n’est pas terminé… 
 
@@ -35,7 +35,7 @@ Pour l’année 2015, mes motivations sont purement égoïstes : j’ai réellem
 
 Les points forts de Jekyll qui me confortent : une belle communauté de hackers, un plan de route qui [évoluera vers la simplicité](https://byparker.com/blog/2014/jekyll-3-the-road-ahead/), un langage de templates assimilable et une architecture de templates accessible pour y greffer quelques premiers indieweb et escalader une ou deux marches sur l’[IndieMark](https://indiewebcamp.com/IndieMark).
 
-Rappelons que Jekyll est simple et livré en sortie de boîte avec des fonctionnalités de <u>blog</u> carnet web. Il analyse le Markdown, intègre nativement une mise en forme du code, produit des fichiers statiques et la production peut être hébergée gratuitement sur les Pages GitHub.
+Rappelons que Jekyll est simple et livré en sortie de boîte avec des fonctionnalités de <s>blog</s> carnet web. Il analyse le Markdown, intègre nativement une mise en forme du code, produit des fichiers statiques et la production peut être hébergée gratuitement sur les Pages GitHub.
 
 À des fins de révision et en souvenir des premiers pas laborieux vécus au début de l'année, je vous propose dans la section à suivre de revoir le démarrage d'un site avec Jekyll. Si vous avez déjà un site Jekyll, ignorez cette section et allez directement sur l'implémentation des collections.
 
