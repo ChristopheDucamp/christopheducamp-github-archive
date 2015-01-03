@@ -2,6 +2,7 @@
 layout: note
 title:  "Les collections dans Jekyll (doc)"
 date: "2014-12-30"
+description: "Étude personnelle de la documentation officielle jekyll"
 categories: jekyll collections
 tags: jekyll, collection
 ---

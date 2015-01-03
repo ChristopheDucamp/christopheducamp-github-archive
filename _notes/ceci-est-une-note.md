@@ -2,6 +2,7 @@
 layout: note
 title:  "Collections et usage des petites notes"
 date: "2014-12-30"
+description: "Ajouté un lien Notes dans le Menu... bricolages à venir"
 categories: jekyll collections indieweb
 ---
 Ajouté rapidement un onglet "Notes" dans la barre de menu pour étudier l'usage des collections et data dans Jekyll.

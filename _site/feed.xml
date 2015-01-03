@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sur la route de l&#39;indieweb...</title>
-    <description>selfdogfood sur jekyll</description>
+    <description>Jekyll&#39;s selfdogfood</description>
     <link>http://christopheducamp.com</link>
     <atom:link href="http://christopheducamp.com/feed.xml" rel="self" type="application/rss+xml" />
     
