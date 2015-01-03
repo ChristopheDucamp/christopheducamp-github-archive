@@ -24,7 +24,7 @@ Inspiré par la check-list pour [lire plus](http://austinkleon.com/2014/12/29/ho
 6. Allez au lit une heure plus tôt et lisez de la fiction (ça aide à dormir.)
 7. Écrivez sur les livres que vous lisez et [partagez vos livres préférés avec les autres](http://books.austinkleon.com) car ils vous renverront encore plus de livres à lire.
 
-J'ai initalement posté une ébauche de traduction de cette liste <span rel="syndication" class="u-syndication">[sur Instagram](http://instagram.com/p/xXPtfHp77c/)</span>, installé le fond d'écran "Read a Book Instead" sur mon télépone et mon iPod. Tout prêt remanier cette note en fonction de vos réactions et de mes avancées sur l'objectif au cours. 
+J'ai initalement posté une ébauche de traduction de cette liste <span rel="syndication" class="u-syndication">[sur Instagram](http://instagram.com/p/xXPtfHp77c/)</span>, installé le fond d'écran "Read a Book Instead" sur mon téléphone et mon iPod. Tout prêt remanier cette note en fonction de vos réactions et de mes avancées sur l'objectif au cours. 
 
 Pour aller plus loin, la liste d'Austin a été inspirée par [How to Read More, A Lot More](http://ryanholiday.net/how-to-read-more-a-lot-more/) de Ryan Holiday. 
 
