@@ -22,9 +22,9 @@ Inspiré par la check-list pour [lire plus](http://austinkleon.com/2014/12/29/ho
 4. Si vous n'appréciez pas un livre ou n'y apprenez rien, [arrêtez immédiatement de le lire](http://austinkleon.com/2014/10/17/33-thoughts-on-reading/). (Le jeter à travers la pièce contribue à le fermer.)
 5. Programmez-vous 1 heure de lecture de non-fiction durant la journée (transports, pauses déjeuner et toute période d'inactivité font l'affaire.)
 6. Allez au lit une heure plus tôt et lisez de la fiction (ça aide à dormir.)
-7. Écrivez sur les livres que vous lisez et [partagez vos avec les autres](http://books.austinkleon.com) car ils vous renverront encore plus de livres à lire.
+7. Écrivez sur les livres que vous lisez et [partagez vos livres préférés avec les autres](http://books.austinkleon.com) car ils vous renverront encore plus de livres à lire.
 
-J'ai initalement posté une ébauche de traduction de cette liste <span rel="syndication" class="u-syndication">[sur Instagram](http://instagram.com/p/xXPtfHp77c/)</span>, installé le fond d'écran "Read a Book Instead" sur mes terminaux téléphoniques. Tout prêt à la remanier l'année prochaine en fonction des réponses et avancées sur l'objectif au cours de l'année. 
+J'ai initalement posté une ébauche de traduction de cette liste <span rel="syndication" class="u-syndication">[sur Instagram](http://instagram.com/p/xXPtfHp77c/)</span>, installé le fond d'écran "Read a Book Instead" sur mon télépone et mon iPod. Tout prêt remanier cette note en fonction de vos réactions et de mes avancées sur l'objectif au cours. 
 
 Pour aller plus loin, la liste d'Austin a été inspirée par [How to Read More, A Lot More](http://ryanholiday.net/how-to-read-more-a-lot-more/) de Ryan Holiday. 
 
