@@ -33,9 +33,11 @@ Lisez le [post de Jeff](http://wordius.com/productivity-tool-of-the-year-freeage
 
 ## Check-list Janvier 2015
 - Créer une première facture 
-- Parvenir à trouver une banque pour relier mon compte en banque sans passer par le téléchargement d'extraits de compte
 - Ajouter les dépenses professionnelles
 - Démarrer un projet 
+
+## NUNI - Changer de Banque 
+Si adoption, étudier une migration bancaire vers Barclays, Crédit Mutuel ou toute  [banque supportant les flux FreeAgent](http://www.freeagent.com/support/kb/banking/which-bank-feeds-do-freeagent-support) 
 
 ## Recherche Alternatives Francophones 
 Quelles solutions en ligne élégantes recommander aux freelances et TPE ? (statuts AE, EURL, SARL...)
