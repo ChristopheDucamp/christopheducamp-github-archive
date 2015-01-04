@@ -3,13 +3,14 @@ layout: note
 title:  "Collections et usage des petites notes"
 date: "2014-12-30"
 description: "Ajouté un lien Notes dans le Menu... bricolages à venir"
-categories: jekyll collections indieweb
+tags: ownmynotes, indieweb
+categories: jekyll, collections, indieweb
 ---
-Ajouté rapidement un onglet "Notes" dans la barre de menu pour étudier l'usage des collections et data dans Jekyll.
+Ajouté rapidement un onglet "Notes" dans le menu pour étudier l'usage des *collections* et *data* dans Jekyll.
 
-Ceci est ma première [note de collection chronodatée](/collection/) dans Jekyll.
+Ceci est donc ma première [note de collection chronodatée](/collection/) dans Jekyll.
 
-### Bricolage 2015 : créer un layout de _note_ 
+### Planning 2015 : créer un layout de _note_ 
 
 Source de référence : [note sur indiewebcamp](http://indiewebcamp.com/note)
 
@@ -20,11 +21,13 @@ Une belle partie de Lego à venir sur la base d'inspirations et de recommandatio
 -  ... 
 
 
-### Usages 
-- Conversations sur le web social
+### Usages à étudier
+- Messages cours : conversations sur le web social libre
 - Cabinet de curiosité
+- Signets
+- Brouillons et ébauches
 - Photo-journal
-- Notes avec extractions de données structurées (JSON, CSV, ...)
+- Notes d'_auto-mesure _ avec extractions de données structurées (JSON, CSV, ...)
 
 
 
