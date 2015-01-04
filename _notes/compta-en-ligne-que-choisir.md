@@ -30,6 +30,7 @@ Lisez le [post de Jeff](http://wordius.com/productivity-tool-of-the-year-freeage
 	+ Crédit Agricole : ok sur première récupération data. Pas de connexion possible. 
 	+ Monabanq : non compatible relevés toujours sous un format pdf ! 
 - Ouverture du paiement par Paypal pour les micro-transactions aux particuliers
+
 ## Check-list Janvier 2015
 - Créer une première facture 
 - Parvenir à trouver une banque pour relier mon compte en banque sans passer par le téléchargement d'extraits de compte
