@@ -13,6 +13,10 @@ L'internet est une construction décentralisée et vous pourrez me retrouver en 
 * <a rel="me" href="http://linkedin.com/in/christopheducamp">christopheducamp sur LinkedIn</a>
 * <a rel="me" href="http://fr.slideshare.net/ChristopheDucamp">ChristopheDucamp sur SlideShare</a>
 
+## Interconnexions et Objets communicants
+
+* <a rel="me" href="https://ifttt.com/p/xtof/favorites">xtof sur IFTTT</a>
+
 ## Code et Projets
 
 * <a rel="me" href="https://github.com/christopheducamp">ChristopheDucamp sur GitHub</a>

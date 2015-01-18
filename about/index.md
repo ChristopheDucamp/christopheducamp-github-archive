@@ -25,9 +25,10 @@ Mes motivations de design sont simples et alignées avec les valeurs _indieweb_ 
 ### Essais Moteurs 2015
 
 Pour 2015, je prévois de poursuivre quelques essais de motorisation logicielle :
-* [MediaWiki](http://christopheducamp.com/w/) : étude en cours pour évoluer vers le Semantic MediaWiki 
-* [WordPress](http://christopheducamp.com/b/2013-05-15/chronoreve-indieweb-je-veux-bosser-dans-scrivener-et-publier-ou-je-veux-sur-le-web/) : solution de blog incontournable pour les travailleurs indépendants blog et se pliant bien aux exigences indieweb.
-* [Known](http://withknown.com) : [premiers essais en cours](http://xtof.withknown.com) en attente d'une installation locale. 
+
+- [MediaWiki](http://christopheducamp.com/w/) : étude en cours pour évoluer vers le Semantic
+- MediaWiki[WordPress](http://christopheducamp.com/b/2013-05-15/chronoreve-indieweb-je-veux-bosser-dans-scrivener-et-publier-ou-je-veux-sur-le-web/) : solution de blog incontournable pour les travailleurs indépendants blog et se pliant bien aux exigences indieweb.
+- [Known](http://withknown.com) : [premiers essais en cours](http://xtof.withknown.com) en attente d'une installation locale. 
 
 Pour des raisons essentielles d'évolution, de retour à la simplicité et pratiquer quelques blocs de construction du web social libre –et faute de savoir construire ma propre motorisation web–, Jekyll est la solution que je retiens à cette heure pour évoluer sur l'indieweb en 2015. Pour les curieux, vous trouverez beaucoup plus d'informations sur la personnalisation de votre thème Jekyll, tout comme une documentation basique sur l'usage de Jekyll en visitant [jekyllrb.com](http://jekyllrb.com/).
 
@@ -44,4 +45,4 @@ Essayant depuis quelques années de [réduire ma dépendance au courrier électr
 
 ## "Ailleurs" sur les silos sociaux
 
-Le web restant décentralisé, je suis de temps en temps  [[ailleurs]] ! 
+Le web restant décentralisé, je suis aussi un métayer [ailleurs](/ailleurs/) sur quelques silos et services. 
