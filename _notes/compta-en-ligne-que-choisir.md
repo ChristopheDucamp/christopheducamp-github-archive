@@ -42,11 +42,11 @@ Si adoption, étudier une migration bancaire vers Barclays, Crédit Mutuel ou to
 ## Recherche Alternatives Francophones 
 Quelles solutions en ligne élégantes recommander aux freelances et TPE ? (statuts AE, EURL, SARL...)
 - @[myaefr](https://twitter.com/myaefr) propose une [solution en ligne gratuite](https://www.myae.fr/subscribe/abonnement-premium-auto-entrepreneur.php) pour auto-entrepreneurs - Non essayée. Option de 89 euros par an pour une interface sans publicité
-- à compléter avec recherche en ligne, réactions web et recommandations s d'experts-comptables.
+- à compléter avec recherches en ligne, réactions web et recommandations  d'experts-comptables modernes...
 
 ## Réactions
 
-Cette note pourre être mise à jour au fil de l'année. Toutes les alternatives #frenchtouch sont bienvenues. 
+Cette note pourra être mise à jour au fil de l'année. Toutes les alternatives #frenchtouch sont bienvenues. 
 Preneur de vos liens, critiques et témoignages de clients. 
 
 
