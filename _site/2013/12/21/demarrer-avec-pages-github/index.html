@@ -3,10 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Démarrer avec Pages GitHub (Plus Bonus Jekyll)</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Jekyll's selfdogfood" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="sur la route de l'indieweb" />
     <link rel="canonical" href="http://christopheducamp.com/2013/12/21/demarrer-avec-pages-github/" />
 
     <!-- Personnalisation CSS -->
@@ -30,6 +29,15 @@
 
        <!-- webmention.herokuapp.com -->
        <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+       
+       
+       <!--OAuth endpoint-->
+       <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+       <!--Token endpoint-->
+       <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+       <!-- micropub endpoint 
+       <link rel="micropub" href="https://ugitpub.herokuapp.com/micropub" />
+       -->
 
 
 </head>
@@ -41,7 +49,7 @@
 
   <div class="wrap">
 
-    <a class="site-title" href="/">sur la route de l'indieweb...</a>
+    <a class="site-title" href="/">Christophe Ducamp</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -60,6 +68,7 @@
         <a class="page-link" href="/projets">Projets</a>
         <a class="page-link" href="/collection">Notes</a>
       </div>
+              <iframe src="http://duckduckgo.com/search.html?width=200&site=christopheducamp.com&prefill=Cherche dans DuckDuckGo" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe>
     </nav>
 
   </div>
@@ -122,7 +131,7 @@ proposent une <em>pull request</em>, je veux simplement que cette modification s
 
 <p>Bon, pour moi, cela donne…</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /Users/Anna/Sites/christmas-recipes</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /Users/Anna/Sites/christmas-recipes </code></pre></figure>
 
 <h3 id="crer-une-branche-spciale-sur-pages-github">Créer une branche spéciale sur Pages GitHub</h3>
 
@@ -132,7 +141,7 @@ proposent une <em>pull request</em>, je veux simplement que cette modification s
 
 <p>Assurez-vous que vous êtes toujours dans le répertoire <code>christmas-recipes</code>, puis entrez cette commande pour créer la branche <code>gh-pages</code> :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git checkout --orphan gh-pages</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git checkout --orphan gh-pages</code></pre></figure>
 
 <p>Cette option <code>--orphan</code> pourrait être nouvelle pour vous. Une branche orpheline est une branche vide déconnectée de la branche à partir de laquelle elle a été créée, et elle démarre sans commits, 
 pour se transformer en branche spéciale autonome. <code>checkout</code> nous fait basculer de la branche où nous étions vers cette branche.</p>
@@ -186,7 +195,7 @@ Maintenant, nous savons que ça fonctionne et pouvons ajouter un peu de marquage
 
 <p>De retour dans le Terminal, nous allons installer Jekyll…</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>gem install jekyll</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>gem install jekyll</code></pre></figure>
 
 <p>… et attendez que le programme se lance. Ceci peut prendre un certain temps. Cela pourrait même être si long que vous pourriez croire que c’est cassé, mais résistez à l’envie de balancer votre clavier comme j’ai pu le faire.</p>
 
@@ -196,23 +205,23 @@ Maintenant, nous savons que ça fonctionne et pouvons ajouter un peu de marquage
 
 <p>Maintenant, nous allons dire à Jekyll d’installer un nouveau projet dans le dépôt, qui se niche dans le répertoire <em>Sites</em> (le vôtre est peut-être à un endroit différent). Souvenez-vous, nous pouvons glisser-déposer le répertoire à l’intérieur de la fenêtre de terminal après la commande.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>jekyll new /Users/Anna/Sites/christmas-recipes</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>jekyll new /Users/Anna/Sites/christmas-recipes</code></pre></figure>
 
 <p>Si tout se déroule comme prévu, nous devrions recevoir ce message d’erreur : <code>Conflict: /Users/Anna/Sites/christmas-recipes exists and is not empty</code>.</p>
 
 <p>Rassurez-vous, tout va bien. C’est tout simplement déroutant parce que nous avons reçu ce fichier <code>index.html</code> probablement avec un fichier <code>README.md</code> que nous avons créé précédemment. Aussi, migrez tout ça pour le moment sur votre bureau et lancez de nouveau la commande.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>jekyll new /Users/Anna/Sites/christmas-recipes</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>jekyll new /Users/Anna/Sites/christmas-recipes</code></pre></figure>
 
 <p>Cela devrait vous dire que site est installé.</p>
 
 <p>Vérifiez que vous êtes bien dans le dépôt, et sinon, naviguez jusqu’à lui en tapant <code>cd </code>, glissez-déposez le répertoire <code>christmas-recipes</code> à l’intérieur du terminal…</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>jekyll <span class="nb">cd</span> /Users/Anna/Sites/christmas-recipes</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>jekyll <span class="nb">cd</span> /Users/Anna/Sites/christmas-recipes</code></pre></figure>
 
 <p>…et tapez cette commande pour dire à Jekyll de fonctionner :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>jekyll serve --watch</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>jekyll serve --watch</code></pre></figure>
 
 <p>En ajoutant <code>--watch</code> à la fin, nous forçons Jekyll à reconstruire le site à chaque fois que nous sauvegardons. 
 Nous ne sommes donc plus obligés de lui indiquer de mettre à jour à chaque fois que nous visualisons les modifications. Nous devrons faire tourner ça à chaque fois que nous travaillons sur le projet, sinon les modifications ne seront pas prises en considération. 
@@ -229,10 +238,10 @@ Il y a un répertoire appelé <code>_site</code>, et c’est là où tous les fi
 
 <p>Remplacez les contenus du fichier <code>_config.yml</code> avec ça :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="sb">`</span>name: Recettes de Noël<span class="sb">`</span>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="sb">`</span>name: Recettes de Noël<span class="sb">`</span>
 markdown: redcarpet
 pygments: <span class="nb">true</span>
-baseurl: /christmas-recipes</code></pre></div>
+baseurl: /christmas-recipes</code></pre></figure>
 
 <h3 id="paramtrer-vos-fichiers">Paramétrer vos fichiers</h3>
 
@@ -252,21 +261,21 @@ baseurl: /christmas-recipes</code></pre></div>
 
 <p>Il est toujours utile de pouvoir extraire des fragments de contenu sur les pages, comme des en-têtes et pieds de pages, ils n’auront donc besoin d’être mis à jour qu’à un seul endroit. Voilà à quoi sert un répertoire <code>_includes</code> dans Jekyll. Créez un répertoire à la racine appelé <code>_includes</code>, et ajoutez dedans deux fichiers : <code>head.html</code> et <code>foot.html</code>.</p>
 
-<p>Dans <code>head.html</code>, copiez ce qui suit : </p>
+<p>Dans <code>head.html</code>, copiez ce qui suit :</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
     <span class="nt">&lt;head&gt;</span>
         <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
         <span class="nt">&lt;title&gt;</span>Démarrer avec Pages GitHub (Plus Bonus Jekyll)<span class="nt">&lt;/title&gt;</span>
         <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;/css/main.css&quot;</span> <span class="nt">&gt;</span>
     <span class="nt">&lt;/head&gt;</span>
-    <span class="nt">&lt;body&gt;</span></code></pre></div>
+    <span class="nt">&lt;body&gt;</span></code></pre></figure>
 
 <p>et dans <code>foot.html</code> :</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
 
 <p>À chaque fois que nous voudrons ramener quelque chose à partir du répertoire <code>_includes</code>, 
 nous pourrons utiliser <code>{% include nomfichier.html %}</code> dans le fichier layout — je vous présenterai comment régler ça à la prochaine étape.</p>
@@ -289,10 +298,10 @@ nous pourrons utiliser <code>{% include nomfichier.html %}</code> dans le fichie
 
 <p>Ceci est une page vraiment basique avec un en-tête, un pied de page, un titre de page et un peu de contenu. Pour activer ce template sur une page, revenez à l’intérieur de la page <code>index.html</code> et ajoutez ce morceau de code tout en haut du fichier :</p>
 
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
 <span class="l-Scalar-Plain">layout</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">default</span>
 <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Accueil</span>
-<span class="nn">---</span></code></pre></div>
+<span class="nn">---</span></code></pre></figure>
 
 <p>Maintenant, sauvegardez le fichier <code>index.html</code> et pressez la touche de <strong>rafraîchissement</strong> du navigateur. 
 Nous devrions voir un en-tête là où <code>{{ page.title }}</code> était placé dans le layout, qui correspond à ce qui vient après <code>title:</code> sur la page elle-même (dans notre cas, Accueil). 
@@ -312,11 +321,11 @@ Aussi renommons le fichier <code>index.html</code> en <code>index.md</code>. Dé
 <h3 id="crer-un-nouveau-layout">Créer un nouveau layout</h3>
 
 <p>Nous allons créer un nouveau layout appelé <code>recette</code> qui va devenir le modèle pour toute page de recette que nous créerons. 
-Restons super simple. </p>
+Restons super simple.</p>
 
 <p>Dans le répertoire <code>_layouts</code>, créons un fichier appelé <code>recette.html</code> et collons ce qui suit à l’intérieur:</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html">{% include head.html %}
+<figure class="highlight"><pre><code class="language-html" data-lang="html">{% include head.html %}
 
 <span class="nt">&lt;main&gt;</span>
 
@@ -331,16 +340,16 @@ Restons super simple. </p>
 
 {% include nav.html %}
 
-{% include foot.html %}</code></pre></div>
+{% include foot.html %}</code></pre></figure>
 
 <p>Ceci est notre template. Le contenu qui va sur le layout <code>recette</code> contient un titre de page, le contenu de la recette, une attribution de l’auteur de la recette et un lien d’attribution.</p>
 
 <h3 id="ajouter-quelques-pages-de-recettes">Ajouter quelques pages de recettes</h3>
 
 <p>Créez un nouveau fichier dans la racine du répertoire <code>recettes-noel</code> et appelez-le <code>gingerbread.md</code>. 
-Copiez ce qui suit à l’intérieur : </p>
+Copiez ce qui suit à l’intérieur :</p>
 
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
 <span class="l-Scalar-Plain">layout</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">recette</span>
 <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Biscuit au Pain d&#39;Epices</span>
 <span class="l-Scalar-Plain">auteur-recette</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">HungryJenny</span>
@@ -368,16 +377,16 @@ Copiez ce qui suit à l’intérieur : </p>
 <span class="l-Scalar-Plain">4. Tip some flour onto the work surface and knead the dough until smooth.</span>
 <span class="l-Scalar-Plain">5. Preheat the oven to 180°C.</span>
 <span class="l-Scalar-Plain">6. Roll the dough out flat and use a shaped cutter to make as many cookies as you like.</span>
-<span class="l-Scalar-Plain">7. Transfer the cookies to a tray and bake in the oven for 15 minutes. Lightly dust the cookies with icing sugar.</span></code></pre></div>
+<span class="l-Scalar-Plain">7. Transfer the cookies to a tray and bake in the oven for 15 minutes. Lightly dust the cookies with icing sugar.</span></code></pre></figure>
 
 <h3 id="crer-un-nouveau-layout-1">Créer un nouveau layout</h3>
 
 <p>Nous allons créer un nouveau layout appelé <code>recette</code> qui va devenir le modèle pour toute page de recette que nous créerons. 
-Restons super simple. </p>
+Restons super simple.</p>
 
 <p>Dans le répertoire <code>_layouts</code>, créons un fichier appelé <code>recette.html</code> et collons dedans ce qui suit :</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html">{% include head.html %}
+<figure class="highlight"><pre><code class="language-html" data-lang="html">	{% include head.html %}
 
 	<span class="nt">&lt;main&gt;</span>
 
@@ -394,7 +403,7 @@ Restons super simple. </p>
 	<span class="nt">&lt;/main&gt;</span>
 
 	{% include nav.html %}
-    {% include foot.html %}</code></pre></div>
+    {% include foot.html %}</code></pre></figure>
 
 <p>Ceci est notre template. Le contenu qui va sur le layout <code>recette</code> contient un titre de page, le contenu de la recette, une attribution de l’auteur de la recette et un lien d’attribution.</p>
 
@@ -404,9 +413,9 @@ Restons super simple. </p>
 
 <h3 id="ajouter-un-peu-de-navigation">Ajouter un peu de navigation</h3>
 
-<p>Dans votre répertoire <code>_includes</code>, créez un nouveau fichier appelé <code>nav.html</code>. Voici un peu de code qui générera vore navigation : </p>
+<p>Dans votre répertoire <code>_includes</code>, créez un nouveau fichier appelé <code>nav.html</code>. Voici un peu de code qui générera vore navigation :</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;nav-primary&quot;</span> <span class="na">role=</span><span class="s">&quot;navigation&quot;</span> <span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">&quot;nav-primary&quot;</span> <span class="na">role=</span><span class="s">&quot;navigation&quot;</span> <span class="nt">&gt;</span>
     <span class="nt">&lt;ul&gt;</span>
         {% for p in site.pages %}
         <span class="nt">&lt;li&gt;</span>
@@ -415,7 +424,7 @@ Restons super simple. </p>
         <span class="nt">&lt;/li&gt;</span>
         {% endfor %}
     <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
 
 <p>Ceci va chercher sur toutes les pages et générer une liste de toutes ces pages, et donner l’item de navigation qui est actuellement actif, une classe active afin que nous puissions la mettre en forme différemment.</p>
 

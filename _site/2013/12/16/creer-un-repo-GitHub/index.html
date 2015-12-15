@@ -3,10 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Créer un Dépôt sur GitHub</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Jekyll's selfdogfood" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="sur la route de l'indieweb" />
     <link rel="canonical" href="http://christopheducamp.com/2013/12/16/creer-un-repo-GitHub/" />
 
     <!-- Personnalisation CSS -->
@@ -30,6 +29,15 @@
 
        <!-- webmention.herokuapp.com -->
        <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+       
+       
+       <!--OAuth endpoint-->
+       <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+       <!--Token endpoint-->
+       <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+       <!-- micropub endpoint 
+       <link rel="micropub" href="https://ugitpub.herokuapp.com/micropub" />
+       -->
 
 
 </head>
@@ -41,7 +49,7 @@
 
   <div class="wrap">
 
-    <a class="site-title" href="/">sur la route de l'indieweb...</a>
+    <a class="site-title" href="/">Christophe Ducamp</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -60,6 +68,7 @@
         <a class="page-link" href="/projets">Projets</a>
         <a class="page-link" href="/collection">Notes</a>
       </div>
+              <iframe src="http://duckduckgo.com/search.html?width=200&site=christopheducamp.com&prefill=Cherche dans DuckDuckGo" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe>
     </nav>
 
   </div>
@@ -93,10 +102,10 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p><img src="https://github.s3.amazonaws.com/docs/bootcamp_2_newrepo.jpg" alt="image" title="cliquez sur New Repository" /></p>
 
-<p>Remplissez l’information sur cette page : </p>
+<p>Remplissez l’information sur cette page :</p>
 
 <ul>
-  <li>Nom de votre dépôt </li>
+  <li>Nom de votre dépôt</li>
   <li>Description (en option)</li>
   <li>Public ou Privé (L’option privé est payante)</li>
 </ul>
@@ -117,9 +126,9 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <h3 id="tape-1--crez-le-fichier-readme">Étape 1 : Créez le fichier README</h3>
 
-<p>Dans votre fenêtre de terminal, tapez le code suivant : </p>
+<p>Dans votre fenêtre de terminal, tapez le code suivant :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>mkdir ~/Hello-World
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>mkdir ~/Hello-World
 
 <span class="c"># Crée un répertoire pour votre projet nommé &quot;Hello-World&quot; dans votre répertoire utilisateur local</span>
 
@@ -131,19 +140,19 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 <span class="c"># Initialise le répertoire vite Git dans /Users/you/Hello-World/.git/</span>
 
 <span class="nv">$ </span>touch README
-<span class="c"># Crée un fichier nommé &quot;README&quot; dans votre répertoire local Hello-World</span></code></pre></div>
+<span class="c"># Crée un fichier nommé &quot;README&quot; dans votre répertoire local Hello-World</span></code></pre></figure>
 
 <p>Ouvrez le nouveau fichier README trouvé dans votre répertoire <code>Hello-World</code> dans un éditeur de texte et ajoutez le texte “Hello World!” Une fois terminé, sauvegardez et fermez le fichier.</p>
 
 <h3 id="tape-2--committez-votre-readme">Étape 2 : Committez votre README</h3>
 
-<p>Maintenant que vous avez installé votre README, il est temps de le committer. Un commit est en fait un instantané de tous les fichiers dans votre projet à un moment donné. Dans la fenêtre de Terminal, tapez le code suivant : </p>
+<p>Maintenant que vous avez installé votre README, il est temps de le committer. Un commit est en fait un instantané de tous les fichiers dans votre projet à un moment donné. Dans la fenêtre de Terminal, tapez le code suivant :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git add README
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git add README
 <span class="c"># fait entrer en scène le fichier README, et l&#39;ajoute à la liste des fichiers à committer</span>
 
 <span class="nv">$ </span>git commit -m <span class="s1">&#39;premier commit&#39;</span>
-<span class="c"># Committe vos fichiers, en ajoutant le message &quot;premier commit&quot;</span></code></pre></div>
+<span class="c"># Committe vos fichiers, en ajoutant le message &quot;premier commit&quot;</span></code></pre></figure>
 
 <h4 id="plus-sur-les-commits">Plus sur les commits</h4>
 
@@ -161,17 +170,17 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Git supporte de nombreux remotes. Ceci est communément utilisé au moment de <em>forker</em> un dépôt.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote add origin https://github.com/username/Hello-World.git
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote add origin https://github.com/username/Hello-World.git
 <span class="c"># Crée un remote nommé &quot;origin&quot; pointant votre dépôt GitHub</span>
 
 <span class="nv">$ </span>git push origin master
-<span class="c"># Envoie vos commits dans la branche &quot;master&quot; sur GitHub</span></code></pre></div>
+<span class="c"># Envoie vos commits dans la branche &quot;master&quot; sur GitHub</span></code></pre></figure>
 
 <p>(<strong>Truc</strong> : Remarquez que le chemin vers votre URL distante (remote) –Hello-World.git–correspond à celui que vous avez créé sur GitHub. Ceci est sensible à la casse, et il est important de conserver la même.)</p>
 
 <p>Maintenant si vous regardez votre dépôt sur GitHub, vous verrez que votre README y a été ajouté.</p>
 
-<p><img src="https://github.s3.amazonaws.com/docs/bootcamp_2_updatedreadme.jpg" alt="image" /> </p>
+<p><img src="https://github.s3.amazonaws.com/docs/bootcamp_2_updatedreadme.jpg" alt="image" /></p>
 
 <p>Votre README a été créé.</p>
 

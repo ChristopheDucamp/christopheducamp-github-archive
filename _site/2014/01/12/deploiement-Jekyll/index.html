@@ -3,10 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Comment Déployer Jekyll</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Jekyll's selfdogfood" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="sur la route de l'indieweb" />
     <link rel="canonical" href="http://christopheducamp.com/2014/01/12/deploiement-Jekyll/" />
 
     <!-- Personnalisation CSS -->
@@ -30,6 +29,15 @@
 
        <!-- webmention.herokuapp.com -->
        <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+       
+       
+       <!--OAuth endpoint-->
+       <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+       <!--Token endpoint-->
+       <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+       <!-- micropub endpoint 
+       <link rel="micropub" href="https://ugitpub.herokuapp.com/micropub" />
+       -->
 
 
 </head>
@@ -41,7 +49,7 @@
 
   <div class="wrap">
 
-    <a class="site-title" href="/">sur la route de l'indieweb...</a>
+    <a class="site-title" href="/">Christophe Ducamp</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -60,6 +68,7 @@
         <a class="page-link" href="/projets">Projets</a>
         <a class="page-link" href="/collection">Notes</a>
       </div>
+              <iframe src="http://duckduckgo.com/search.html?width=200&site=christopheducamp.com&prefill=Cherche dans DuckDuckGo" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe>
     </nav>
 
   </div>
@@ -93,16 +102,16 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Il existe un projet appelé <a href="https://github.com/dmathieu/glynn">Glynn</a>, qui vous permet de générer facilement vos fichiers statiques du site web motorisé par Jekyll et de les envoyer à votre hébergeur par FTP.</p>
 
-<p>Par exemple, le fichier <code>_config.yml</code> de cette instance hébergée chez OVH se présente comme suit : </p>
+<p>Par exemple, le fichier <code>_config.yml</code> de cette instance hébergée chez OVH se présente comme suit :</p>
 
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">ftp_host</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">ftp.christopheducamp.com</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">ftp_host</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">ftp.christopheducamp.com</span>
 <span class="l-Scalar-Plain">ftp_username</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">monnomutilisateur</span>
 <span class="l-Scalar-Plain">ftp_dir</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/www</span>
-<span class="l-Scalar-Plain">ftp_passive</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">false</span></code></pre></div>
+<span class="l-Scalar-Plain">ftp_passive</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">false</span></code></pre></figure>
 
 <p>Pour générer le site et le déployer, il me suffit alors de reprendre la ligne de commande, de me placer à la racine du projet puis de taper la commande :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>glynn</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>glynn</code></pre></figure>
 
 <p>(C’est la solution que j’ai retenue pour le moment : une ligne de commande puis un mot de passe, et tout le site est régénéré et mis en ligne !)</p>
 
@@ -121,34 +130,34 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <h3 id="git-post-receive-hook">Git post-receive hook</h3>
 
-<p>Pour faire qu’un serveur distant gère le déploiement pour vous à chaque fois que vous poussez des modifications en utilisant Git, vous pouvez créer un compte utilisateur qui dispose de toutes les clés publiques qui sont autorisées pour déployer dans son fichier <code>authorized_keys</code>.  Une fois cela mis en place, régler le hook post-receive se fait comme suit : </p>
+<p>Pour faire qu’un serveur distant gère le déploiement pour vous à chaque fois que vous poussez des modifications en utilisant Git, vous pouvez créer un compte utilisateur qui dispose de toutes les clés publiques qui sont autorisées pour déployer dans son fichier <code>authorized_keys</code>.  Une fois cela mis en place, régler le hook post-receive se fait comme suit :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">laptop<span class="nv">$ </span>ssh deployer@example.com
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">laptop<span class="nv">$ </span>ssh deployer@example.com
 server<span class="nv">$ </span>mkdir monrepo.git
 server<span class="nv">$ </span><span class="nb">cd </span>monrepo.git
 server<span class="nv">$ </span>git --bare init
 server<span class="nv">$ </span>cp hooks/post-receive.sample hooks/post-receive
-server<span class="nv">$ </span>mkdir /var/www/monrepo</code></pre></div>
+server<span class="nv">$ </span>mkdir /var/www/monrepo</code></pre></figure>
 
 <p>Ensuite ajoutez les lignes suivantes aux hooks/post-receive et assurez-vous que Jekyll soit installé sur le serveur :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">GIT_REPO</span><span class="o">=</span><span class="nv">$HOME</span>/monrepo.git
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">GIT_REPO</span><span class="o">=</span><span class="nv">$HOME</span>/monrepo.git
 <span class="nv">TMP_GIT_CLONE</span><span class="o">=</span><span class="nv">$HOME</span>/tmp/monrepo
 <span class="nv">PUBLIC_WWW</span><span class="o">=</span>/var/www/monrepo
 
 git clone <span class="nv">$GIT_REPO</span> <span class="nv">$TMP_GIT_CLONE</span>
 jekyll build -s <span class="nv">$TMP_GIT_CLONE</span> -d <span class="nv">$PUBLIC_WWW</span>
 rm -Rf <span class="nv">$TMP_GIT_CLONE</span>
-<span class="nb">exit</span></code></pre></div>
+<span class="nb">exit</span></code></pre></figure>
 
-<p>Pour finir, faites tourner la commande suivante sur n’importe quel ordinateur d’utilisateur ayant de déployer en utilisant ce hook : </p>
+<p>Pour finir, faites tourner la commande suivante sur n’importe quel ordinateur d’utilisateur ayant de déployer en utilisant ce hook :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">laptops<span class="nv">$ </span>git remote add deploy deployer@exemple.com:~/monrepo.git</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">laptops<span class="nv">$ </span>git remote add deploy deployer@exemple.com:~/monrepo.git</code></pre></figure>
 
 <p>Déployer est maintenant aussi facile que de dire à nginx ou Apache de regarder 
-<code>/var/www/monrepo</code> et de faire tourner ce qui suit : </p>
+<code>/var/www/monrepo</code> et de faire tourner ce qui suit :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">laptops<span class="nv">$ </span>git push deploy master</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">laptops<span class="nv">$ </span>git push deploy master</code></pre></figure>
 
 <h3 id="rake">Rake</h3>
 

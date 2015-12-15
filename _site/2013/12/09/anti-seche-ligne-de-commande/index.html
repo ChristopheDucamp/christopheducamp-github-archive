@@ -3,10 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Antisèche Ligne de Commande pour Démarrer sur GitHub !</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Jekyll's selfdogfood" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="sur la route de l'indieweb" />
     <link rel="canonical" href="http://christopheducamp.com/2013/12/09/anti-seche-ligne-de-commande/" />
 
     <!-- Personnalisation CSS -->
@@ -30,6 +29,15 @@
 
        <!-- webmention.herokuapp.com -->
        <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+       
+       
+       <!--OAuth endpoint-->
+       <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+       <!--Token endpoint-->
+       <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+       <!-- micropub endpoint 
+       <link rel="micropub" href="https://ugitpub.herokuapp.com/micropub" />
+       -->
 
 
 </head>
@@ -41,7 +49,7 @@
 
   <div class="wrap">
 
-    <a class="site-title" href="/">sur la route de l'indieweb...</a>
+    <a class="site-title" href="/">Christophe Ducamp</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -60,6 +68,7 @@
         <a class="page-link" href="/projets">Projets</a>
         <a class="page-link" href="/collection">Notes</a>
       </div>
+              <iframe src="http://duckduckgo.com/search.html?width=200&site=christopheducamp.com&prefill=Cherche dans DuckDuckGo" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe>
     </nav>
 
   </div>
@@ -85,13 +94,13 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <ul>
   <li><code>git init</code> : Initialise un dépôt git dans un répertoire vide.</li>
-  <li><code>git status</code> : Affiche le statut des choses dans le répertoire suivi </li>
+  <li><code>git status</code> : Affiche le statut des choses dans le répertoire suivi</li>
   <li><code>git add  &lt;NOM DU FICHIER A SUIVRE&gt;</code> : Ajoute un fichier à suivre dans la zone d’attente</li>
-  <li><code>git commit -m "entrez votre message"</code> : Consigner (déclarer) toute modification. </li>
+  <li><code>git commit -m "entrez votre message"</code> : Consigner (déclarer) toute modification.</li>
   <li><code>git remote add origin [adresse URL GitHub ici]</code> : Connecte votre dépôt local avec GitHub.</li>
   <li><code>git push -u origin nom_branche</code> : Pousse les modifications vers GitHub</li>
-  <li><code>git checkout</code> : Littéralement “check out” (retirer, rapatrier) une branche. </li>
-  <li><code>git -b &lt;NomBranche&gt;</code> : Crée une nouvelle branche dans votre dépôt. </li>
+  <li><code>git checkout</code> : Littéralement “check out” (retirer, rapatrier) une branche.</li>
+  <li><code>git -b &lt;NomBranche&gt;</code> : Crée une nouvelle branche dans votre dépôt.</li>
   <li><code>git log</code>: affiche un journal des modifications au dépôt</li>
   <li><code>git clone &lt;URL PROVENANT DE GITHUB&gt;</code> : clone un projet de votre système à partir de github</li>
   <li><code>git branch &lt;nom_branche&gt;</code> : crée une copie de la branche master appelée  <nom_branche></nom_branche></li>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>sur la route de l&#39;indieweb...</title>
-    <description>Jekyll&#39;s selfdogfood</description>
+    <title>Christophe Ducamp</title>
+    <description>sur la route de l&#39;indieweb</description>
     <link>http://christopheducamp.com</link>
     <atom:link href="http://christopheducamp.com/feed.xml" rel="self" type="application/rss+xml" />
     
@@ -14,14 +14,14 @@
 
 &lt;h3 id=&quot;migration-wordpress-vers-jekyll--un-an-dj&quot;&gt;Migration WordPress vers Jekyll : un an déjà…&lt;/h3&gt;
 
-&lt;p&gt;Fin 2013, je prenais la décision de migrer de WordPress vers une &lt;a href=&quot;/2013/12/03/premier-pas-sur-jekyll/&quot;&gt;motorisation Jekyll&lt;/a&gt; pour m’essayer à la pose de quelques premières briques de construction indieweb. Revenant à la liberté du freelance, je compte sérieusement en 2015 consacrer plus de temps sur ce site personnel &lt;s&gt;pour du personal b…&lt;/s&gt; afin de donner un meilleur aperçu de qui je suis et la nature des missions sur lesquelles je serais heureux de bricoler pour gagner ma vie en 2015…  &lt;/p&gt;
+&lt;p&gt;Fin 2013, je prenais la décision de migrer de WordPress vers une &lt;a href=&quot;/2013/12/03/premier-pas-sur-jekyll/&quot;&gt;motorisation Jekyll&lt;/a&gt; pour m’essayer à la pose de quelques premières briques de construction indieweb. Revenant à la liberté du freelance, je compte sérieusement en 2015 consacrer plus de temps sur ce site personnel &lt;s&gt;pour du personal b…&lt;/s&gt; afin de donner un meilleur aperçu de qui je suis et la nature des missions sur lesquelles je serais heureux de bricoler pour gagner ma vie en 2015…&lt;/p&gt;
 
-&lt;p&gt;Pas d’engagement à cette heure : l’effort d’apprentissage et d’assimilation de quelques briques de HTML et CSS pour parvenir à mettre à jour un portfolio propre n’est pas terminé… &lt;/p&gt;
+&lt;p&gt;Pas d’engagement à cette heure : l’effort d’apprentissage et d’assimilation de quelques briques de HTML et CSS pour parvenir à mettre à jour un portfolio propre n’est pas terminé…&lt;/p&gt;
 
 &lt;p&gt;La première tâche prioritaire début 2015 s’articulera probablement autour du façonnage technique du conteneur. Conforté –pour cette exploration à venir– de bosser sur Jekyll qui brille par sa simplicité et la force de sa communauté. 
-En outre, les versions récentes de Jekyll 2.x intègrent désormais une nouvelle fonctionnalité intéressante pour publier des &lt;strong&gt;Collections&lt;/strong&gt;. &lt;/p&gt;
+En outre, les versions récentes de Jekyll 2.x intègrent désormais une nouvelle fonctionnalité intéressante pour publier des &lt;strong&gt;Collections&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Dans cet article je vous donnerai un aperçu des raisons pour lesquelles je compte poursuivre l’apprentissage indieweb sur Jekyll en 2015, comment vous pouvez aussi vous y mettre rapidement et conclurai par quelques astuces sur les collections Jekyll. Astuces intégralement inspirées de l’excellent post de &lt;a href=&quot;http://www.sitepoint.com/getting-started-jekyll-collections/&quot;&gt;Taylor Jones&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Dans cet article je vous donnerai un aperçu des raisons pour lesquelles je compte poursuivre l’apprentissage indieweb sur Jekyll en 2015, comment vous pouvez aussi vous y mettre rapidement et conclurai par quelques astuces sur les collections Jekyll. Astuces intégralement inspirées de l’excellent post de &lt;a href=&quot;http://www.sitepoint.com/getting-started-jekyll-collections/&quot;&gt;Taylor Jones&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Pour une première initiation à Jekyll et si vous êtes un geek un peu averti, aidez-vous de la &lt;a href=&quot;http://jekyllrb.com/docs/home/&quot;&gt;documentation&lt;/a&gt;. Si vous êtes blogueur sur WordPress et souhaitez construire un premier site ce weekend, je ne peux que vous recommander de faire vos armes sur l’excellent tutoriel de &lt;a href=&quot;http://www.jekyllnow.com/&quot;&gt;jekyll-now&lt;/a&gt; construit cet été par &lt;a href=&quot;https://twitter.com/BazNYC/&quot;&gt;Barry Clarke&lt;/a&gt; :&lt;/p&gt;
 
@@ -30,7 +30,7 @@ En outre, les versions récentes de Jekyll 2.x intègrent désormais une nouvell
 
 &lt;h3 id=&quot;pourquoi-jekyll-est-gnial&quot;&gt;Pourquoi Jekyll est Génial&lt;/h3&gt;
 
-&lt;p&gt;Pour l’année 2015, mes motivations sont purement égoïstes : j’ai réellement besoin de professionnaliser un premier portfolio de présentation et ramener quelques amis pour aider à construire un IndieWebCamp francophone. Telle est la raison pour laquelle, je reste focalisé sur une motorisation simple, flexible et facilement personnalisable pour publier quelques pages, articles et petites notes de statut. &lt;/p&gt;
+&lt;p&gt;Pour l’année 2015, mes motivations sont purement égoïstes : j’ai réellement besoin de professionnaliser un premier portfolio de présentation et ramener quelques amis pour aider à construire un IndieWebCamp francophone. Telle est la raison pour laquelle, je reste focalisé sur une motorisation simple, flexible et facilement personnalisable pour publier quelques pages, articles et petites notes de statut.&lt;/p&gt;
 
 &lt;p&gt;Les points forts de Jekyll qui me confortent : une belle communauté de hackers, un plan de route qui &lt;a href=&quot;https://byparker.com/blog/2014/jekyll-3-the-road-ahead/&quot;&gt;évoluera vers la simplicité&lt;/a&gt;, un langage de templates assimilable et une architecture de templates accessible pour y greffer quelques premiers indieweb et escalader une ou deux marches sur l’&lt;a href=&quot;https://indiewebcamp.com/IndieMark&quot;&gt;IndieMark&lt;/a&gt;.&lt;/p&gt;
 
@@ -46,27 +46,27 @@ En outre, les versions récentes de Jekyll 2.x intègrent désormais une nouvell
 
 &lt;p&gt;Le dernier &lt;em&gt;problème connu&lt;/em&gt; que vous pourriez rencontrer si vous faites tourner Jekyll sur Mac OSX serait de ne pas avoir mis à jour vos outils de ligne de commande X-Code. Vous les trouverez &lt;a href=&quot;https://developer.apple.com/downloads/&quot;&gt;ici&lt;/a&gt;, dans la section téléchargements du portail des développeurs Apple. Vous aurez besoin d’un ID Apple pour accéder aux téléchargements.&lt;/p&gt;
 
-&lt;p&gt;Ces prérequis étant posés, vous n’êtes plus qu’à 4 lignes à saisir dans le terminal pour faire tourner votre premier site web Jekyll. &lt;/p&gt;
+&lt;p&gt;Ces prérequis étant posés, vous n’êtes plus qu’à 4 lignes à saisir dans le terminal pour faire tourner votre premier site web Jekyll.&lt;/p&gt;
 
-&lt;p&gt;Ouvrez votre fenêtre de terminal et lancez ces 4 commandes : &lt;/p&gt;
+&lt;p&gt;Ouvrez votre fenêtre de terminal et lancez ces 4 commandes :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install jekyll
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install jekyll
 ~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new testJekyll
 ~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;testJekyll
-~/testJekyll &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll serve&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+~/testJekyll &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll serve&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Dans l’ordre, voici ce qui se passe ici : &lt;/p&gt;
+&lt;p&gt;Dans l’ordre, voici ce qui se passe ici :&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Installation de Jekyll sur votre système&lt;/li&gt;
-  &lt;li&gt;Création d’un nouveau répertoire plein de fichiers Jekyll passe-partout à personnaliser  &lt;/li&gt;
+  &lt;li&gt;Création d’un nouveau répertoire plein de fichiers Jekyll passe-partout à personnaliser&lt;/li&gt;
   &lt;li&gt;Modification du répertoire de travail vers le &lt;code&gt;testJekyll&lt;/code&gt; fraîchement créé&lt;/li&gt;
-  &lt;li&gt;Lancement d’un serveur pour servir ces fichiers en local sur localhost:4000 &lt;/li&gt;
+  &lt;li&gt;Lancement d’un serveur pour servir ces fichiers en local sur localhost:4000&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/10/1412690726screen1-1024x646.png&quot; alt=&quot;screen1&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Parmi l’ensemble des fichiers de structure placés dans le répertoire de travail, le premier fichier essentiel à paramétrer c’est &lt;strong&gt;&lt;code&gt;config.yml&lt;/code&gt;&lt;/strong&gt;.  &lt;/p&gt;
+&lt;p&gt;Parmi l’ensemble des fichiers de structure placés dans le répertoire de travail, le premier fichier essentiel à paramétrer c’est &lt;strong&gt;&lt;code&gt;config.yml&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;code&gt;config.yml&lt;/code&gt;&lt;/strong&gt; est le fichier de configuration global de Jekyll. Dans ce fichier, vous pouvez spécifier : 
 - les options de construction,
@@ -80,9 +80,9 @@ En outre, les versions récentes de Jekyll 2.x intègrent désormais une nouvell
 
 &lt;p&gt;Les &lt;em&gt;Collections&lt;/em&gt; dans Jekyll sont des ensembles de documents qui ont les mêmes fonctionnalités que les posts. Les collections ont la puissance des posts, mais vous les tenez à portée de main. Une chose à noter à cette heure : à la différence des &lt;em&gt;posts&lt;/em&gt;, les collections &lt;em&gt;ne supportent pas la pagination&lt;/em&gt;, bien que les collections de documents puissent être publiées individuellement sous forme de pages. Elles peuvent être aussi restituées sous forme de listes en utilisant le moteur de gabarits Liquid intégré dans Jekyll. Les collections disposent de leur propre espace nom sur tout le site avec des métadonnées et des propriétés personnalisables.&lt;/p&gt;
 
-&lt;p&gt;Les Collections fonctionnent sur le principe du moteur Jekyll qui lira votre collection définie dans le fichier &lt;code&gt;config.yml&lt;/code&gt; lors de la construction du site. Jekyll ajoute le document de la collection frontmatter YAML aux variables de gabarits globales du site, et restitue –si vous le souhaitez— chaque document dans sa propre page. Les collections peuvent s’utiliser pour n’importe quel type d’ensemble de documents que vous souhaiteriez organiser sur votre site. &lt;/p&gt;
+&lt;p&gt;Les Collections fonctionnent sur le principe du moteur Jekyll qui lira votre collection définie dans le fichier &lt;code&gt;config.yml&lt;/code&gt; lors de la construction du site. Jekyll ajoute le document de la collection frontmatter YAML aux variables de gabarits globales du site, et restitue –si vous le souhaitez— chaque document dans sa propre page. Les collections peuvent s’utiliser pour n’importe quel type d’ensemble de documents que vous souhaiteriez organiser sur votre site.&lt;/p&gt;
 
-&lt;p&gt;De bons exemples de collections peuvent être les projets sur lesquels vous avez travaillés, la publication de la liste des  organisateurs d’un événement, la constitution d’une bibliothèque d’albums « women in rock », la documentation d’une API, ou plus simplement une liste de petites notes sur vos données de santé ou toute autre thématique-clé, etc. &lt;/p&gt;
+&lt;p&gt;De bons exemples de collections peuvent être les projets sur lesquels vous avez travaillés, la publication de la liste des  organisateurs d’un événement, la constitution d’une bibliothèque d’albums « women in rock », la documentation d’une API, ou plus simplement une liste de petites notes sur vos données de santé ou toute autre thématique-clé, etc.&lt;/p&gt;
 
 &lt;p&gt;Pour démarrer sur un premier exemple, nous utiliserons une collection d’albums de musique.&lt;/p&gt;
 
@@ -98,23 +98,25 @@ En outre, les versions récentes de Jekyll 2.x intègrent désormais une nouvell
 
 &lt;p&gt;Si vous choisissez de faire ainsi, vous pouvez spécifier de restituer une page pour chaque document en modifiant le fichier &lt;strong&gt;_config.yml&lt;/strong&gt; comme suit.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;collections&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;collections&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
       &lt;span class=&quot;l-Scalar-Plain&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;l-Scalar-Plain&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+        &lt;span class=&quot;l-Scalar-Plain&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h3 id=&quot;les-collections-en-action&quot;&gt;Les Collections en Action&lt;/h3&gt;
 
 &lt;p&gt;Maintenant que la collection est définie et une fois le contenu  ajouté à la collection, ces collections peuvent être incluses sur n’importe quelle page dans le site Jekyll. Par exemple, les ajouts les plus récents de votre collection peuvent être affichés sur votre page d’accueil en utilisant la syntaxe Liquid. Tout front-matter YAML personnalisé déclaré dans chaque document peut aussi permettre de faire figurer le contenu.&lt;/p&gt;
 
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 &lt;p&gt;Ceci fournit un moyen génial pour afficher des images, titres, etc. en rapport dans une liste de documents. Vous pouvez utiliser l’attribut intégré &lt;code&gt;url&lt;/code&gt; pour faire un lien vers une page restituée de document.&lt;/p&gt;
 
 &lt;h3 id=&quot;pour-conclure-avant-2015&quot;&gt;Pour conclure avant 2015&lt;/h3&gt;
 
-&lt;p&gt;Jekyll est une motorisation pratique pour construire de petits sites statiques. Cela vaut la peine de l’envisager pour tous les   sites web ayant besoin d’un backend robuste - pouvant aussi intégrer de la manipulation de data et de la recherche. Un point à garder en tête pour votre prochain projet. &lt;/p&gt;
+&lt;p&gt;Jekyll est une motorisation pratique pour construire de petits sites statiques. Cela vaut la peine de l’envisager pour tous les   sites web ayant besoin d’un backend robuste - pouvant aussi intégrer de la manipulation de data et de la recherche. Un point à garder en tête pour votre prochain projet.&lt;/p&gt;
 
 &lt;p&gt;Ceci étant dit, l’installation de Jekyll est rapide et dispose de quelques options configurables qui vous permettent de spécifier comment vous aimeriez faire fonctionner le site. Les pré-requis sont minimes et la fonctionnalité d’installation rapide vous donne un premier site tout à fait fonctionnel.&lt;/p&gt;
 
-&lt;p&gt;La fonctionnalité &lt;em&gt;collection&lt;/em&gt; de Jekyll a une déclaration de configuration directe tout comme quelques attributs personnalisables, vous permettant de restituer vos documents à l’intérieur de leurs  propres pages. &lt;/p&gt;
+&lt;p&gt;La fonctionnalité &lt;em&gt;collection&lt;/em&gt; de Jekyll a une déclaration de configuration directe tout comme quelques attributs personnalisables, vous permettant de restituer vos documents à l’intérieur de leurs  propres pages.&lt;/p&gt;
 
 &lt;p&gt;En utilisant les paramètres de configuration et le front-matter YAML, vous pourrez afficher vos documents en différents endroits du site. Jekyll excelle dans le domaine pour lequel il a été conçu, et la fonctionnalité des collections ouvre des portes pour tirer profit de sites avec plus de contenus.&lt;/p&gt;
 
@@ -130,13 +132,13 @@ En outre, les versions récentes de Jekyll 2.x intègrent désormais une nouvell
 
 &lt;p&gt;Même si ça pique toujours aussi fort… (#douleur)&lt;/p&gt;
 
-&lt;p&gt;Wikipedia raconte que les Américains la surnomment cyniquement &lt;em&gt;the Boss Headache&lt;/em&gt; (&lt;q&gt;le mal de tête du patron&lt;/q&gt;) … Des références sont demandées ! &lt;/p&gt;
+&lt;p&gt;Wikipedia raconte que les Américains la surnomment cyniquement &lt;em&gt;the Boss Headache&lt;/em&gt; (&lt;q&gt;le mal de tête du patron&lt;/q&gt;) … Des références sont demandées !&lt;/p&gt;
 
-&lt;p&gt;L’&lt;dfn&gt;algie vasculaire de la face&lt;/dfn&gt; (AVF) est une forme aigüe de &lt;a href=&quot;http://fr.wikipedia.org/wiki/Céphalée&quot;&gt;céphalée&lt;/a&gt; essentielle. Il s’agit d’une &lt;em&gt;maladie neurologique&lt;/em&gt; rare qui touche à la fois les nerfs et les vaisseaux. &lt;/p&gt;
+&lt;p&gt;L’&lt;dfn&gt;algie vasculaire de la face&lt;/dfn&gt; (AVF) est une forme aigüe de &lt;a href=&quot;http://fr.wikipedia.org/wiki/Céphalée&quot;&gt;céphalée&lt;/a&gt; essentielle. Il s’agit d’une &lt;em&gt;maladie neurologique&lt;/em&gt; rare qui touche à la fois les nerfs et les vaisseaux.&lt;/p&gt;
 
 &lt;h2 id=&quot;historique&quot;&gt;Historique&lt;/h2&gt;
 
-&lt;p&gt;Les premières descriptions de cette maladie &lt;a href=&quot;http://www.medlink.com/medlinkcontent.asp&quot;&gt;remonteraient au XVIIe siècle&lt;/a&gt;. Ses appellations sont plus que diverses : &lt;em&gt;migraine rouge, névralgie sphénopalatine de Sulder, érythroprosopalgie, névralgie ciliaire, syndrome du nerf nasal de Charlin, névralgie vidienne, jusqu’à la céphalée histaminique décrite en 1940 par le Dr Horton&lt;/em&gt;,… Au cours des années 50, le Docteur Kunkel mit en évidence la caractéristique des crises à êtres groupées dans le temps, d’où l’expression anglo-saxonne &lt;q&gt;cluster headache&lt;/q&gt;.[1]  &lt;/p&gt;
+&lt;p&gt;Les premières descriptions de cette maladie &lt;a href=&quot;http://www.medlink.com/medlinkcontent.asp&quot;&gt;remonteraient au XVIIe siècle&lt;/a&gt;. Ses appellations sont plus que diverses : &lt;em&gt;migraine rouge, névralgie sphénopalatine de Sulder, érythroprosopalgie, névralgie ciliaire, syndrome du nerf nasal de Charlin, névralgie vidienne, jusqu’à la céphalée histaminique décrite en 1940 par le Dr Horton&lt;/em&gt;,… Au cours des années 50, le Docteur Kunkel mit en évidence la caractéristique des crises à êtres groupées dans le temps, d’où l’expression anglo-saxonne &lt;q&gt;cluster headache&lt;/q&gt;.[1]&lt;/p&gt;
 
 &lt;h2 id=&quot;un-bug-personnel-connu&quot;&gt;Un Bug Personnel Connu&lt;/h2&gt;
 
@@ -144,24 +146,24 @@ En outre, les versions récentes de Jekyll 2.x intègrent désormais une nouvell
 
 &lt;p&gt;Difficile de se livrer à une autodescription de douleur. Aucune volonté de faire pitié. Sachez que je me sens vraiment chanceux d’être bien diagnostiqué et suivi. Et que la douleur et tous les inconvénients de cette céphalée &lt;em&gt;se vivent&lt;/em&gt; et ne sont pas si extraordinaires. Ce mal de tête est sans danger et s’endure  facilement avec quelques trucs désormais connus. Je tiens juste ici à relater une expérience vécue pour aider ceux qui pourraient vivre des symptômes similaires et les inviter au diagnostic.&lt;/p&gt;
 
-&lt;p&gt;Passage dur, mais le moral est bon. Période déjà vécue et je me sens tout à coup bien moins seul avec un paquet de ressources sur le réseau : cette maladie &lt;strong&gt;sévèrement sous-diagnostiquée&lt;/strong&gt; toucherait une personne sur 500, 3/4 hommes plutôt jeunes (âge moyen de début : 20-40 ans). &lt;/p&gt;
+&lt;p&gt;Passage dur, mais le moral est bon. Période déjà vécue et je me sens tout à coup bien moins seul avec un paquet de ressources sur le réseau : cette maladie &lt;strong&gt;sévèrement sous-diagnostiquée&lt;/strong&gt; toucherait une personne sur 500, 3/4 hommes plutôt jeunes (âge moyen de début : 20-40 ans).&lt;/p&gt;
 
-&lt;p&gt;La méchante bête est revenue me chahuter la tête la semaine dernière. Les premières sensations de douleurs sont apparues après consommation d’&lt;em&gt;un seul&lt;/em&gt; petit verre de Bandol. Dans des circonstances dénuées de tout stress : dîner avec &lt;span rel=&quot;friend colleague muse&quot; class=&quot;microcard h-card&quot;&gt;&lt;img class=&quot;u-photo&quot; src=&quot;http://m.c.lnkd.licdn.com/mpr/pub/image-JIk73WAdoSFn7gJTLDxhYqII9VrQYghny7xCwTsd96ZcY_4NJIkCw34d9eN-FqN9DX7R/vincent-pinte-deregnaucourt.jpg&quot; /&gt;&lt;a href=&quot;http://fr.linkedin.com/in/vinpindere&quot;&gt;Vincent&lt;/a&gt;&lt;/span&gt; sur la merveilleuse terrasse du Funiculaire de Saint Hilaire du Touvet après une journée délicieuse de vol libre…  &lt;/p&gt;
+&lt;p&gt;La méchante bête est revenue me chahuter la tête la semaine dernière. Les premières sensations de douleurs sont apparues après consommation d’&lt;em&gt;un seul&lt;/em&gt; petit verre de Bandol. Dans des circonstances dénuées de tout stress : dîner avec &lt;span rel=&quot;friend colleague muse&quot; class=&quot;microcard h-card&quot;&gt;&lt;img class=&quot;u-photo&quot; src=&quot;http://m.c.lnkd.licdn.com/mpr/pub/image-JIk73WAdoSFn7gJTLDxhYqII9VrQYghny7xCwTsd96ZcY_4NJIkCw34d9eN-FqN9DX7R/vincent-pinte-deregnaucourt.jpg&quot; /&gt;&lt;a href=&quot;http://fr.linkedin.com/in/vinpindere&quot;&gt;Vincent&lt;/a&gt;&lt;/span&gt; sur la merveilleuse terrasse du Funiculaire de Saint Hilaire du Touvet après une journée délicieuse de vol libre…&lt;/p&gt;
 
 &lt;p&gt;Depuis mercredi, les crises se font de plus en plus fréquentes et s’enchaînent au quotidien. Actuellement en période de surrégime, j’en suis à une moyenne de 4 crises par jour assorties de phases de douleurs insupportables.&lt;/p&gt;
 
 &lt;h2 id=&quot;les-causes-&quot;&gt;Les Causes ?&lt;/h2&gt;
 
-&lt;p&gt;Les causes demeurent toujours inexpliquées. Dans 7 à 10% des cas, la maladie serait génétique. Il semble plus qu’avéré qu’une &lt;em&gt;certaine consommation&lt;/em&gt; d’alcool et de tabac puisse me transformer en sujet à risques… &lt;/p&gt;
+&lt;p&gt;Les causes demeurent toujours inexpliquées. Dans 7 à 10% des cas, la maladie serait génétique. Il semble plus qu’avéré qu’une &lt;em&gt;certaine consommation&lt;/em&gt; d’alcool et de tabac puisse me transformer en sujet à risques…&lt;/p&gt;
 
 &lt;h2 id=&quot;le-ressenti--infernal-&quot;&gt;Le Ressenti : Infernal !&lt;/h2&gt;
 
-&lt;p&gt;Chaque mal de tête semble avoir son “pattern”. Le scénario de la montée de la douleur est le même. La &lt;em&gt;bête&lt;/em&gt; neuronale n’hésite pas harceler à tout moment : de jour comme en plein sommeil (réveil pas cool et les nuits sont courtes…). Ça ressemble à un orage. Sant traitement antidouleur, cela donne un premier “courant ascendant” entre cinq et quinze minutes avec une douleur de faible intensité. Suivi d’une phase intense : montée de douleur très rapide que je &lt;em&gt;rêverais de dessiner&lt;/em&gt;. Durée : entre une et deux heures. Puis phase de descente pouvant se  diminuer ou s’éliminer avec le sommeil. &lt;/p&gt;
+&lt;p&gt;Chaque mal de tête semble avoir son “pattern”. Le scénario de la montée de la douleur est le même. La &lt;em&gt;bête&lt;/em&gt; neuronale n’hésite pas harceler à tout moment : de jour comme en plein sommeil (réveil pas cool et les nuits sont courtes…). Ça ressemble à un orage. Sant traitement antidouleur, cela donne un premier “courant ascendant” entre cinq et quinze minutes avec une douleur de faible intensité. Suivi d’une phase intense : montée de douleur très rapide que je &lt;em&gt;rêverais de dessiner&lt;/em&gt;. Durée : entre une et deux heures. Puis phase de descente pouvant se  diminuer ou s’éliminer avec le sommeil.&lt;/p&gt;
 
 &lt;figure&gt;&lt;img style=&quot;width:300px;float:right;padding:1em;&quot; src=&quot;https://irs2.4sqi.net/img/general/width960/37263_-jtJktR4_Q00NMdV0cwteuNbQ1nxVO56A4eSHaugc70.jpg&quot; /&gt;&lt;figcaption&gt;&lt;small&gt;(Crédit Photo : La Riboisière - Bureau du Docteur &lt;span class=&quot;h-card&quot;&gt;Diana Concescu&lt;/span&gt;)&lt;/small&gt;&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;p&gt;.  &lt;/p&gt;
+&lt;p&gt;.&lt;/p&gt;
 
-&lt;p&gt;Si je savais dessiner, ça ressemblerait durant les premières minutes à une averse de gros clous se plantant tous délicatement un par un dans le palais à droite. Puis une montée de l’&lt;em&gt;orage&lt;/em&gt; s’ensuivant de sensations d’éclairs. Mitraillette de petites flèches électriques venant se planter sur la joue. L’oeil droit devenant tout rouge après de bons coups de &lt;em&gt;pic à glace&lt;/em&gt;. Et pour le bouquet final, l’enclume sur toute la face droite jusqu’en haut de la tête…  &lt;/p&gt;
+&lt;p&gt;Si je savais dessiner, ça ressemblerait durant les premières minutes à une averse de gros clous se plantant tous délicatement un par un dans le palais à droite. Puis une montée de l’&lt;em&gt;orage&lt;/em&gt; s’ensuivant de sensations d’éclairs. Mitraillette de petites flèches électriques venant se planter sur la joue. L’oeil droit devenant tout rouge après de bons coups de &lt;em&gt;pic à glace&lt;/em&gt;. Et pour le bouquet final, l’enclume sur toute la face droite jusqu’en haut de la tête…&lt;/p&gt;
 
 &lt;p&gt;En fin de parcours, le mal de tête est suivi par un sentiment d’exaltation et d’énergie.&lt;/p&gt;
 
@@ -173,17 +175,17 @@ En outre, les versions récentes de Jekyll 2.x intègrent désormais une nouvell
 
 &lt;h2 id=&quot;comment-mesurer-la-douleur-&quot;&gt;Comment mesurer la douleur ?&lt;/h2&gt;
 
-&lt;p&gt;Même si la lutte contre la douleur fait partie des priorités actuelles de la médecine, les techniques de mesure (quantifiedself de douleur ?) semblent encore plutôt  archaïques. Lors d’une précédente opération en 2004 (pose d’un lambeau pour changement de palais) –étant dans l’incapacité de parler– les médecins me demandaient d’évaluer la douleur avec deux doigts pour leur restituer une note de 1 à 10. Souvenir en passant d’en avoir profité : maximisé la note pour profiter des bons effets de la pompe à morphine !  &lt;/p&gt;
+&lt;p&gt;Même si la lutte contre la douleur fait partie des priorités actuelles de la médecine, les techniques de mesure (quantifiedself de douleur ?) semblent encore plutôt  archaïques. Lors d’une précédente opération en 2004 (pose d’un lambeau pour changement de palais) –étant dans l’incapacité de parler– les médecins me demandaient d’évaluer la douleur avec deux doigts pour leur restituer une note de 1 à 10. Souvenir en passant d’en avoir profité : maximisé la note pour profiter des bons effets de la pompe à morphine !&lt;/p&gt;
 
-&lt;p&gt;Malheureusement, et ce n’est pas faute d’avoir essayé, la &lt;strong&gt;morphine ne peut rien contre l’algie faciale&lt;/strong&gt;. Une douleur qui surpasse de loin tout ce que j’ai pu connaître à ce jour ! &lt;figure&gt;&lt;img style=&quot;width:300px; float:right; padding:0 0.5em&quot; src=&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Imiject.jpg/220px-Imiject.jpg&quot; /&gt;&lt;/figure&gt;Mais heureusement &lt;a href=&quot;https://www.flickr.com/photos/christopheducamp/420924904/in/photolist-5njrmk-5ncDtL-5n8oBx-DcyRt-DcmiW/&quot;&gt;il y a… l’Imiject&lt;/a&gt;, la solution antidouleur radicale ! &lt;/p&gt;
+&lt;p&gt;Malheureusement, et ce n’est pas faute d’avoir essayé, la &lt;strong&gt;morphine ne peut rien contre l’algie faciale&lt;/strong&gt;. Une douleur qui surpasse de loin tout ce que j’ai pu connaître à ce jour ! &lt;figure&gt;&lt;img style=&quot;width:300px; float:right; padding:0 0.5em&quot; src=&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Imiject.jpg/220px-Imiject.jpg&quot; /&gt;&lt;/figure&gt;Mais heureusement &lt;a href=&quot;https://www.flickr.com/photos/christopheducamp/420924904/in/photolist-5njrmk-5ncDtL-5n8oBx-DcyRt-DcmiW/&quot;&gt;il y a… l’Imiject&lt;/a&gt;, la solution antidouleur radicale !&lt;/p&gt;
 
 &lt;h2 id=&quot;monte-ordinaire-de-laprs-midi&quot;&gt;Montée ordinaire de l’après-midi&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;17:27&lt;/strong&gt;  après avoir supporté quelques douleurs très dures, je prends la décision d’une troisième injection d’Imiject. (sumatriptan). Théoriquement, la limite maximale est de 2 injections par jour… La douleur prend le dessus sur la décision. Attention, à ne pas faire ! &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;17:27&lt;/strong&gt;  après avoir supporté quelques douleurs très dures, je prends la décision d’une troisième injection d’Imiject. (sumatriptan). Théoriquement, la limite maximale est de 2 injections par jour… La douleur prend le dessus sur la décision. Attention, à ne pas faire !&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;17:37&lt;/strong&gt; atténuation et extinction de la douleur. (Durée moyenne 10 minutes.) &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;17:37&lt;/strong&gt; atténuation et extinction de la douleur. (Durée moyenne 10 minutes.)&lt;/p&gt;
 
-&lt;p&gt;En attendant la suivante… &lt;/p&gt;
+&lt;p&gt;En attendant la suivante…&lt;/p&gt;
 
 &lt;h2 id=&quot;quels-traitements-&quot;&gt;Quels traitements ?&lt;/h2&gt;
 
@@ -197,32 +199,32 @@ En outre, les versions récentes de Jekyll 2.x intègrent désormais une nouvell
 
 &lt;h3 id=&quot;la-piste-fentanyl--80-fois-plus-fort-que-la-morphine-&quot;&gt;La Piste Fentanyl : 80 fois plus fort que la morphine !&lt;/h3&gt;
 
-&lt;p&gt;Lu dans Wikipedia que la recherche antidouleur s’oriente sur des pistes de prescription du Fentanyl (40 fois plus fort que l’héroïne) ayant un potentiel analgésique équivalent à 80 fois celui de la morphine… Qui aurait essayé d’autres opiacés ?  &lt;/p&gt;
+&lt;p&gt;Lu dans Wikipedia que la recherche antidouleur s’oriente sur des pistes de prescription du Fentanyl (40 fois plus fort que l’héroïne) ayant un potentiel analgésique équivalent à 80 fois celui de la morphine… Qui aurait essayé d’autres opiacés ?&lt;/p&gt;
 
 &lt;h2 id=&quot;lalgie-faciale--une-maladie-qui-ne-semble-pas-voluer-&quot;&gt;L’Algie Faciale : une maladie qui ne semble pas évoluer ?&lt;/h2&gt;
 
-&lt;p&gt;Après un rapide entretien avec la charmante Diane Concescu, permanente dans le service Céphalées de la Riboisière et parcouru  rapidement quelques rapports et autres &lt;a href=&quot;http://sante-medecine.commentcamarche.net/forum/affich-123116-algie-vasculaire-de-la-face?page=2&quot;&gt;forums santé médecine&lt;/a&gt;, les recherches sur la maladie n’ont pas semblé évoluer depuis 2010. Aucun traitement préventif ni curatif n’a été mis au point à ce jour. &lt;/p&gt;
+&lt;p&gt;Après un rapide entretien avec la charmante Diane Concescu, permanente dans le service Céphalées de la Riboisière et parcouru  rapidement quelques rapports et autres &lt;a href=&quot;http://sante-medecine.commentcamarche.net/forum/affich-123116-algie-vasculaire-de-la-face?page=2&quot;&gt;forums santé médecine&lt;/a&gt;, les recherches sur la maladie n’ont pas semblé évoluer depuis 2010. Aucun traitement préventif ni curatif n’a été mis au point à ce jour.&lt;/p&gt;
 
 &lt;h2 id=&quot;si-vous-ressentez-les-mmes-symptmes&quot;&gt;Si vous ressentez les mêmes symptômes…&lt;/h2&gt;
 
-&lt;p&gt;Pour ceux qui vivraient ces symptômes, le site de l’&lt;a href=&quot;http://www.afcavf.org/&quot;&gt;AFCAVF&lt;/a&gt;, l’Association Contre l’Algie Vasculaire de la Face peut être recommandé avec quelques bonnes ressources générales. &lt;/p&gt;
+&lt;p&gt;Pour ceux qui vivraient ces symptômes, le site de l’&lt;a href=&quot;http://www.afcavf.org/&quot;&gt;AFCAVF&lt;/a&gt;, l’Association Contre l’Algie Vasculaire de la Face peut être recommandé avec quelques bonnes ressources générales.&lt;/p&gt;
 
-&lt;p&gt;Si vous ressentiez de telles migraines, &lt;strong&gt;évitez les médecins généralistes&lt;/strong&gt; qui par expérience ont une totale méconnaissance de cette maladie et des prescriptions. En cas de crise, foncez directement aux urgences d’un hôpital spécialisé sur les céphalées pour un premier diagnostic et l’administration d’antidouleurs comme l’Imiject. Un médicament encore très cher, remboursé par S.S. avec une ordonnance “bleue” réservée pour les “produits d’exception”. (Coût août 2014 : injecteur + 2 seringues prédosées à 53.34€ / Recharges de 2 seringues prédosées : 50.89€) &lt;/p&gt;
+&lt;p&gt;Si vous ressentiez de telles migraines, &lt;strong&gt;évitez les médecins généralistes&lt;/strong&gt; qui par expérience ont une totale méconnaissance de cette maladie et des prescriptions. En cas de crise, foncez directement aux urgences d’un hôpital spécialisé sur les céphalées pour un premier diagnostic et l’administration d’antidouleurs comme l’Imiject. Un médicament encore très cher, remboursé par S.S. avec une ordonnance “bleue” réservée pour les “produits d’exception”. (Coût août 2014 : injecteur + 2 seringues prédosées à 53.34€ / Recharges de 2 seringues prédosées : 50.89€)&lt;/p&gt;
 
 &lt;h2 id=&quot;coup-de-chapeau--la-riboisire-urgences-cphales&quot;&gt;Coup de Chapeau à la Riboisière (Urgences Céphalées)&lt;/h2&gt;
 
-&lt;p&gt;Ce post s’adresse tout particulièrement au &lt;strong&gt;personnel permanent&lt;/strong&gt; de La Riboisière pour l’accueil de jour vécu &lt;time datetime=&quot;2014-08-04&quot;&gt;hier&lt;/time&gt; : rapide, efficace et connaisseur. (Évitez –autant que faire se peut– d’y passer la nuit faute de personnel compétent.)  &lt;/p&gt;
+&lt;p&gt;Ce post s’adresse tout particulièrement au &lt;strong&gt;personnel permanent&lt;/strong&gt; de La Riboisière pour l’accueil de jour vécu &lt;time datetime=&quot;2014-08-04&quot;&gt;hier&lt;/time&gt; : rapide, efficace et connaisseur. (Évitez –autant que faire se peut– d’y passer la nuit faute de personnel compétent.)&lt;/p&gt;
 
 &lt;p&gt;La prestation de jour y est remarquable : 
 - Accueil &lt;em&gt;paperasse&lt;/em&gt; avec prise en charge rapide aux urgences sous &lt;em&gt;lampes noires&lt;/em&gt;. 
 - Diagnostic et vérification de routine : pression, température, ECG
 - Passage chez le toubib : diagnostic et shoot. 
 - Prescription immédiate, assortie d’une première infiltration dans le cou d’Altim (corticoïde) à renouveler 2 fois cette semaine. 
-- Traitement de fond à l’Isoptine (le vérapamil qui n’avait rien donné en 2010) a pour vocation d’espacer les crises. &lt;/p&gt;
+- Traitement de fond à l’Isoptine (le vérapamil qui n’avait rien donné en 2010) a pour vocation d’espacer les crises.&lt;/p&gt;
 
 &lt;h2 id=&quot;hors-service-jusquau-lundi-18-aot&quot;&gt;Hors Service jusqu’au lundi 18 août&lt;/h2&gt;
 
-&lt;p&gt;Toujours dans l’espoir de pouvoir partir en vacances avec une valise bourrée de &lt;em&gt;recharges d’Imiject&lt;/em&gt;… En attendant, je bosse entre deux crises. Apprentissage en cours du JavaScript chez CodeCademy, tâches de ménage et vie monacale.  &lt;em&gt;0 gramme d’alcool&lt;/em&gt; , 0 sortie et régime alimentaire sans gras. Pas trop d’ordinateur, plein de petites siestes pour contrer les nuits sans sommeil, alternance de petites tâches manuelles et mentales en mode pomodoro pour passer le temps entre les crises. &lt;/p&gt;
+&lt;p&gt;Toujours dans l’espoir de pouvoir partir en vacances avec une valise bourrée de &lt;em&gt;recharges d’Imiject&lt;/em&gt;… En attendant, je bosse entre deux crises. Apprentissage en cours du JavaScript chez CodeCademy, tâches de ménage et vie monacale.  &lt;em&gt;0 gramme d’alcool&lt;/em&gt; , 0 sortie et régime alimentaire sans gras. Pas trop d’ordinateur, plein de petites siestes pour contrer les nuits sans sommeil, alternance de petites tâches manuelles et mentales en mode pomodoro pour passer le temps entre les crises.&lt;/p&gt;
 
 &lt;p&gt;Toutes mes excuses pour les annulations de rendez-vous et les non-réponses aux messages. Sonnerie du téléphone coupée, protocoles de communication sur &lt;em&gt;off&lt;/em&gt;, je serai définitivement H.S. pour tout motif professionnel &lt;strong&gt;jusqu’au 18 août&lt;/strong&gt;. (En cas d’urgence, merci de me laisser un SMS).&lt;/p&gt;
 
@@ -250,7 +252,7 @@ En outre, les versions récentes de Jekyll 2.x intègrent désormais une nouvell
 
 &lt;p&gt;Le &lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;moteur de génération de “permashortlinks”&lt;/a&gt; bâti hier par Pierre pour son instance Octopress (un framework Jekyll) m’a clairement éclairé pour parvenir à construire ici quelques premières &lt;a href=&quot;http://indiewebcamp.com/permashortcitation&quot;&gt;citations de permaliens-raccourcis&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;L’installation de &lt;strong&gt;permaliens-raccourcis&lt;/strong&gt; n’est pas qu’un &lt;em&gt;truc de maniaque&lt;/em&gt; adopté par les membres de l’IndieWebCamp… C’est aussi un &lt;a href=&quot;http://indiewebcamp.com/IndieMark#Level_2_syndication&quot;&gt;pré-requis pour passer le niveau 2 de l’IndieMark&lt;/a&gt; ! &lt;/p&gt;
+&lt;p&gt;L’installation de &lt;strong&gt;permaliens-raccourcis&lt;/strong&gt; n’est pas qu’un &lt;em&gt;truc de maniaque&lt;/em&gt; adopté par les membres de l’IndieWebCamp… C’est aussi un &lt;a href=&quot;http://indiewebcamp.com/IndieMark#Level_2_syndication&quot;&gt;pré-requis pour passer le niveau 2 de l’IndieMark&lt;/a&gt; !&lt;/p&gt;
 
 &lt;h2 id=&quot;quest-ce-quun-permalien-raccourci-&quot;&gt;Qu’est-ce qu’un Permalien-Raccourci ?&lt;/h2&gt;
 
@@ -267,44 +269,44 @@ En outre, les versions récentes de Jekyll 2.x intègrent désormais une nouvell
 
 &lt;p&gt;Une fois la &lt;em&gt;gem&lt;/em&gt; installée dans votre environnement, ajoutez ces deux lignes dans votre fichier local &lt;code&gt;_config.yml&lt;/code&gt; :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;gems&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;jekyll-redirect-from&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;gems&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;jekyll-redirect-from&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;usages-pressentis&quot;&gt;Usages pressentis&lt;/h2&gt;
 
 &lt;p&gt;L’objet de cette gem de redirection peut ainsi permettre à un auteur de spécifier une ou plusieurs URL(s) pour un même post ou une même page.&lt;/p&gt;
 
 &lt;p&gt;Pour utiliser ces urls courtes qui pointeront toutes vers votre URL canonique, inspirez-vous de la série qui suit. 
-Ajoutez votre adaptation au Front-Matter YAML de votre post ou page : &lt;/p&gt;
+Ajoutez votre adaptation au Front-Matter YAML de votre post ou page :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Mon super post&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Mon super post&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;redirect_from&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/post/123456789/&lt;/span&gt;
   &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/post/123456789/mon-super-post/&lt;/span&gt;
-  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/2014-08-02/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/2014-08-02/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;exemple-pour-ce-post-&quot;&gt;Exemple pour ce post :&lt;/h2&gt;
 
-&lt;p&gt;Pour le premier permalien-raccourci fonctionnel de ce post, j’ai volontairement choisi un format solide, inspiré par &lt;span class=&quot;h-card&quot;&gt;&lt;a href=&quot;http://tantek.com/&quot;&gt;Tantek&lt;/a&gt;&lt;/span&gt;, à savoir l’année suivie du numéro du jour dans l’année, ce qui ressemble à :  &lt;/p&gt;
+&lt;p&gt;Pour le premier permalien-raccourci fonctionnel de ce post, j’ai volontairement choisi un format solide, inspiré par &lt;span class=&quot;h-card&quot;&gt;&lt;a href=&quot;http://tantek.com/&quot;&gt;Tantek&lt;/a&gt;&lt;/span&gt;, à savoir l’année suivie du numéro du jour dans l’année, ce qui ressemble à :&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://xtof.me/2014-214/&quot;&gt;xtof.me/2014-214/&lt;/a&gt; &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://xtof.me/2014-214/&quot;&gt;xtof.me/2014-214/&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;citation du permalien-raccourci : (xtof.me 2014-214)&lt;/li&gt;
-  &lt;li&gt;Version un peu plus longue : &lt;a href=&quot;http://xtof.me/indielog/2014-214&quot;&gt;xtof.me indielog/2014-214&lt;/a&gt; &lt;/li&gt;
+  &lt;li&gt;Version un peu plus longue : &lt;a href=&quot;http://xtof.me/indielog/2014-214&quot;&gt;xtof.me indielog/2014-214&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;modifier-le-rakefile&quot;&gt;Modifier le Rakefile&lt;/h2&gt;
 
-&lt;p&gt;Une recherche de patterns est en cours afin de trouver un modèle de raccourci d’&lt;a href=&quot;http://christopheducamp.com/b/2013-04-14/les-urls-sont-pour-les-humains/&quot;&gt;URL parlante et ayant du sens&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Une recherche de patterns est en cours afin de trouver un modèle de raccourci d’&lt;a href=&quot;http://christopheducamp.com/b/2013-04-14/les-urls-sont-pour-les-humains/&quot;&gt;URL parlante et ayant du sens&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Pour l’automatisation de ce processus de redirection, référez-vous directement aux &lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;conseils de Pierre&lt;/a&gt;. &lt;a href=&quot;https://github.com/ChristopheDucamp/christopheducamp.github.io/blob/master/rakefile&quot;&gt;Une copie du fichier &lt;code&gt;Rakefile&lt;/code&gt; de ce site reste déposée sur GitHub&lt;/a&gt;.  &lt;/p&gt;
+&lt;p&gt;Pour l’automatisation de ce processus de redirection, référez-vous directement aux &lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;conseils de Pierre&lt;/a&gt;. &lt;a href=&quot;https://github.com/ChristopheDucamp/christopheducamp.github.io/blob/master/rakefile&quot;&gt;Une copie du fichier &lt;code&gt;Rakefile&lt;/code&gt; de ce site reste déposée sur GitHub&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Dernier truc à savoir :&lt;/strong&gt; Les redirections avec un slash à la fin génèrent un sous-répertoire correspondant contenant un fichier &lt;code&gt;index.html&lt;/code&gt;, alors que les redirections sans un slash à la fin générent un &lt;code&gt;nomfichier&lt;/code&gt; correspondant sans extension et sans sous-répertoire.&lt;/p&gt;
 
 &lt;h2 id=&quot;liens-ressources&quot;&gt;Liens Ressources&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Lien de référence : &lt;a href=&quot;https://github.com/jekyll/jekyll-redirect-from&quot;&gt;Jekyll-redirect-from&lt;/a&gt; - Github&lt;/li&gt;
-  &lt;li&gt;Lisez le post technique &lt;cite class=&quot;h-cite&quot;&gt;&lt;strong&gt;&lt;span class=&quot;url p-name&quot;&gt;&lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;Permashortlinks&lt;/a&gt;&lt;/span&gt;&lt;/strong&gt; de &lt;abbr class=&quot;p-author h-card&quot; title=&quot;Pierre Ozoux&quot;&gt;Pierre&lt;/abbr&gt; pour des indications sur la modification du fichier Rakefile (&lt;time class=&quot;dt-published&quot;&gt;2014-08-02&lt;/time&gt;)&lt;/cite&gt; &lt;/li&gt;
+  &lt;li&gt;Lisez le post technique &lt;cite class=&quot;h-cite&quot;&gt;&lt;strong&gt;&lt;span class=&quot;url p-name&quot;&gt;&lt;a href=&quot;http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/&quot;&gt;Permashortlinks&lt;/a&gt;&lt;/span&gt;&lt;/strong&gt; de &lt;abbr class=&quot;p-author h-card&quot; title=&quot;Pierre Ozoux&quot;&gt;Pierre&lt;/abbr&gt; pour des indications sur la modification du fichier Rakefile (&lt;time class=&quot;dt-published&quot;&gt;2014-08-02&lt;/time&gt;)&lt;/cite&gt;&lt;/li&gt;
   &lt;li&gt;Les &lt;a href=&quot;http://jekyllrb.com/docs/permalinks/&quot;&gt;permaliens de Jekyll&lt;/a&gt; : la page de référence pour connaître toutes les variables à utiliser dans vos permaliens.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -322,7 +324,7 @@ Ajoutez votre adaptation au Front-Matter YAML de votre post ou page : &lt;/p&gt;
 
 &lt;p&gt;&lt;q&gt;Pourquoi le mouvement du Quantified Self peine à décoller ?&lt;/q&gt;   titre Télérama dans un &lt;a href=&quot;http://www.telerama.fr/techno/corpsmachine/quantified-self/&quot;&gt;excellent article critique paru&lt;/a&gt; au sein du webdocumentaire &lt;q&gt;&lt;a href=&quot;http://www.telerama.fr/techno/corpsmachine/&quot;&gt;Quand le Corps Humain devient Machine&lt;/a&gt;&lt;/q&gt;.&lt;/p&gt;
 
-&lt;p&gt;En super-bonus, découvrez notamment les points de vue éclairés de Nicolas Geraud et Remy Bourganel, co-producteurs de &lt;a href=&quot;http://www.meetup.com/QSParis/events/157838832/&quot;&gt;notre dernière rencontre consacrée au design&lt;/a&gt; : &lt;/p&gt;
+&lt;p&gt;En super-bonus, découvrez notamment les points de vue éclairés de Nicolas Geraud et Remy Bourganel, co-producteurs de &lt;a href=&quot;http://www.meetup.com/QSParis/events/157838832/&quot;&gt;notre dernière rencontre consacrée au design&lt;/a&gt; :&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;(…) Pourquoi ce mouvement peine-t-il à décoller alors qu’il a apparemment tout pour réussir ? Est-ce trop tôt ? « Où sont les nouveaux usages ?, questionne Nicolas Géraud, ancien du Commissariat à l’énergie atomique et aux énergies alternatives (CEA) et sociologue des usages. Le Quantified Self repose sur une fascination d’ingénieur : un jour, on s’est aperçu qu’on pouvait mettre des capteurs dans des chaussures pour quantifier une course. » Qu’est-ce que cette mesure a changé dans la performance ? Les données recueillies sont difficiles à analyser – ce qui est assez paraxodal. Le « bon sens » juge quel est le chiffre plus véridique et objectif, mais c’est oublier que les données dépendent du contexte. Les passionnés comptent sans arrêt leur pas, les sportifs uniquement quand ils courent, d’autres délaissent le capteur quand ses données les dépriment. Il est difficile d’analyser des données qui n’ont pas un cadre commun, comme lors de compétitions sportives. « Qu’est-ce que la quantification dit de notre rapport à nous-même ? Beaucoup de choses. Mais alors, le propos devient qualitatif, et non pas quantitatif », estime Nicolas Géraud. (…)&lt;/p&gt;
@@ -346,14 +348,14 @@ Ajoutez votre adaptation au Front-Matter YAML de votre post ou page : &lt;/p&gt;
   &lt;p&gt;Les chercheurs de l’IDN le reconnaissent : le manque de contexte limite les conseils à donner. « La plupart du temps, quand on détecte un problème, on peut juste conseiller d’aller consulter un médecin », constate Rémy Bourganel. Ils réfléchissent alors à « une façon de garder de la distance, de ne pas être soumis à l’outil ». Sur Folo, l’utilisateur peut paramétrer son ou ses coachs : ils seront cassants, encourageants, maternants, selon ses envies. « Ces coachs auront alors des approches différentes et pourront s’affronter à travers des conseils contradictoires », imagine Remy Bourganel.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;À titre personnel, tous mes objets sont effectivement remisés au placard faute d’expérience stimulante. Très impatient d’utiliser Folo ! Durant l’été, je poursuis avec joie l’expérimentation des fonctionnalités “sommeil” et “podomètre” de mon nouveau coach jawbone UP qui résiste enfin à l’eau et aux lavages machine… &lt;/p&gt;
+&lt;p&gt;À titre personnel, tous mes objets sont effectivement remisés au placard faute d’expérience stimulante. Très impatient d’utiliser Folo ! Durant l’été, je poursuis avec joie l’expérimentation des fonctionnalités “sommeil” et “podomètre” de mon nouveau coach jawbone UP qui résiste enfin à l’eau et aux lavages machine…&lt;/p&gt;
 
-&lt;p&gt;Pour info, les prochaines rencontres du QSParis/MyDataLabs restent à programmer et co-produire pour la rentrée. Au programme : redesigner l’accueil web de mydatalabs et focus sur deux rencontres orientées sur la santé et l’habitat. Vos suggestions, propositions et contributions sont les bienvenues même durant les vacances ! &lt;/p&gt;
+&lt;p&gt;Pour info, les prochaines rencontres du QSParis/MyDataLabs restent à programmer et co-produire pour la rentrée. Au programme : redesigner l’accueil web de mydatalabs et focus sur deux rencontres orientées sur la santé et l’habitat. Vos suggestions, propositions et contributions sont les bienvenues même durant les vacances !&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 31 Jul 2014 00:00:00 +0200</pubDate>
-        <link>http://christopheducamp.com//2014/07/31/la-quantification-de-soi--la-recherche-de-sens/</link>
-        <guid isPermaLink="true">http://christopheducamp.com//2014/07/31/la-quantification-de-soi--la-recherche-de-sens/</guid>
+        <link>http://christopheducamp.com//2014/07/31/la-quantification-de-soi-la-recherche-de-sens/</link>
+        <guid isPermaLink="true">http://christopheducamp.com//2014/07/31/la-quantification-de-soi-la-recherche-de-sens/</guid>
       </item>
     
       <item>
@@ -361,9 +363,9 @@ Ajoutez votre adaptation au Front-Matter YAML de votre post ou page : &lt;/p&gt;
         <description>&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;fr&quot;&gt;&lt;p&gt;Just finished an upgrade of the default &lt;a href=&quot;https://twitter.com/jekyllrb&quot;&gt;@jekyllrb&lt;/a&gt; blog theme. &lt;a href=&quot;https://t.co/hpLZs2RS4R&quot;&gt;https://t.co/hpLZs2RS4R&lt;/a&gt; (or preview it: &lt;a href=&quot;http://t.co/QAJmm9wS8Q&quot;&gt;http://t.co/QAJmm9wS8Q&lt;/a&gt;)&lt;/p&gt;&amp;mdash; Joel Glovier (@jglovier) &lt;a href=&quot;https://twitter.com/jglovier/statuses/438062229108563968&quot;&gt;24 Février 2014&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;Cela fait quelques jours que je savoure avec grand intérêt les évolutions de &lt;a class=&quot;h-card&quot; href=&quot;http://joelglovier.com/&quot;&gt;Joel&lt;/a&gt; sur son repo &lt;a href=&quot;https://github.com/jglovier/jekyll-new&quot;&gt;jekyll-new&lt;/a&gt;, le nouveau template qui sera implémenté par défaut dans la version 2.0. à venir de Jekyll (motorisation puissante de génération de sites web). &lt;/p&gt;
+&lt;p&gt;Cela fait quelques jours que je savoure avec grand intérêt les évolutions de &lt;a class=&quot;h-card&quot; href=&quot;http://joelglovier.com/&quot;&gt;Joel&lt;/a&gt; sur son repo &lt;a href=&quot;https://github.com/jglovier/jekyll-new&quot;&gt;jekyll-new&lt;/a&gt;, le nouveau template qui sera implémenté par défaut dans la version 2.0. à venir de Jekyll (motorisation puissante de génération de sites web).&lt;/p&gt;
 
-&lt;p&gt;Très simple et épuré, ce template se montre au premier coup d’oeil carrément plus élégant et pro que la version “out-of-the-box” existante qui décorait ce site…  &lt;/p&gt;
+&lt;p&gt;Très simple et épuré, ce template se montre au premier coup d’oeil carrément plus élégant et pro que la version “out-of-the-box” existante qui décorait ce site…&lt;/p&gt;
 
 &lt;p&gt;Premiers pas rapides ce soir sur un premier test d’implémentation. Joué au &lt;em&gt;Chief Copy Officer&lt;/em&gt; en ajoutant rapidement quelques classes indieweb restant à vérifier calmement.&lt;/p&gt;
 
@@ -387,15 +389,15 @@ Ajoutez votre adaptation au Front-Matter YAML de votre post ou page : &lt;/p&gt;
         <title>Jekyll : Générer un Post avec Rakefile</title>
         <description>&lt;p&gt;&lt;em&gt;Les nom et permalien de ce post ont été générés automatiquement à l’aide de &lt;code&gt;rakefile&lt;/code&gt;…&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;J’envisage ce trimestre de raffiner sérieusement l’architecture et le design de ce site personnel destiné à quelques futurs tests d’&lt;em&gt;&lt;a href=&quot;http://indiewebify.me&quot;&gt;indiewebification&lt;/a&gt;&lt;/em&gt;. Bien d’accord avec vous, ce site bien que fonctionnel demeure vraiment très moche (et qui plus est, ennuyeux au possible !)  Ne souhaitant pas tomber dans la facilité d’installer un &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;magnifique thème pré-construit&lt;/a&gt; sans rien y comprendre, je me donne encore quelques mois pour étudier quelques fondamentaux CSS avant de m’aventurer sur les pentes escarpées du “look and feel”.  Pour ceux qui seraient pressés de chevaucher Jekyll, je ne peux que recommander la lecture de l’excellent guide &lt;a href=&quot;https://github.com/bebraw/yeswejekyll&quot;&gt;Yes We Jekyll&lt;/a&gt; publié l’année dernière par @&lt;span class=&quot;h-card&quot;&gt;&lt;a href=&quot;https://twitter.com/bebraw&quot;&gt;bebraw&lt;/a&gt;&lt;/span&gt;.  &lt;/p&gt;
+&lt;p&gt;J’envisage ce trimestre de raffiner sérieusement l’architecture et le design de ce site personnel destiné à quelques futurs tests d’&lt;em&gt;&lt;a href=&quot;http://indiewebify.me&quot;&gt;indiewebification&lt;/a&gt;&lt;/em&gt;. Bien d’accord avec vous, ce site bien que fonctionnel demeure vraiment très moche (et qui plus est, ennuyeux au possible !)  Ne souhaitant pas tomber dans la facilité d’installer un &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;magnifique thème pré-construit&lt;/a&gt; sans rien y comprendre, je me donne encore quelques mois pour étudier quelques fondamentaux CSS avant de m’aventurer sur les pentes escarpées du “look and feel”.  Pour ceux qui seraient pressés de chevaucher Jekyll, je ne peux que recommander la lecture de l’excellent guide &lt;a href=&quot;https://github.com/bebraw/yeswejekyll&quot;&gt;Yes We Jekyll&lt;/a&gt; publié l’année dernière par @&lt;span class=&quot;h-card&quot;&gt;&lt;a href=&quot;https://twitter.com/bebraw&quot;&gt;bebraw&lt;/a&gt;&lt;/span&gt;.&lt;/p&gt;
 
 &lt;p&gt;Outre quelques excellentes &lt;a href=&quot;http://yeswejekyll.com/#from_meek_to_neat&quot;&gt;sections de design&lt;/a&gt; pour débutants, ce guide regorge d’astuces. Parmi lesquelles, un truc bien utile et facile à mettre en place pour &lt;em&gt;éviter —aux paresseux comme moi— de créer manuellement les noms de fichiers des posts&lt;/em&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;comment-viter-de-crer-un-fichier-de-post--la-main-&quot;&gt;Comment éviter de créer un fichier de post à la main ?&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://yeswejekyll.com/#_posts&quot;&gt;Seule la section originale fait rérérence&lt;/a&gt; : &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://yeswejekyll.com/#_posts&quot;&gt;Seule la section originale fait rérérence&lt;/a&gt; :&lt;/p&gt;
 
-&lt;p&gt;Jekyll fournit quelques utilitaires qui facilitent la maintenance d’un blog. Le répertoire  &lt;code&gt;_posts&lt;/code&gt;, comme vous avez pu peut-être &lt;a href=&quot;http://jekyllrb.com/docs/posts/&quot;&gt;l’étudier dans la documentation&lt;/a&gt;, contient tous vos posts de blog. Il utilise une forme spécifique de schéma de nommage. Mais plutôt que de produire ces fichiers à la main, je recommande d’utiliser &lt;a href=&quot;https://github.com/plusjade/jekyll-bootstrap/blob/master/Rakefile&quot;&gt;jekyll-bootstrap Rakefile&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Jekyll fournit quelques utilitaires qui facilitent la maintenance d’un blog. Le répertoire  &lt;code&gt;_posts&lt;/code&gt;, comme vous avez pu peut-être &lt;a href=&quot;http://jekyllrb.com/docs/posts/&quot;&gt;l’étudier dans la documentation&lt;/a&gt;, contient tous vos posts de blog. Il utilise une forme spécifique de schéma de nommage. Mais plutôt que de produire ces fichiers à la main, je recommande d’utiliser &lt;a href=&quot;https://github.com/plusjade/jekyll-bootstrap/blob/master/Rakefile&quot;&gt;jekyll-bootstrap Rakefile&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Copiez simplement le fichier &lt;code&gt;rakefile&lt;/code&gt; à la racine de votre projet et examinez-le si le cœur vous en dit.&lt;/p&gt;
 
@@ -403,14 +405,14 @@ Ajoutez votre adaptation au Front-Matter YAML de votre post ou page : &lt;/p&gt;
 
 &lt;p&gt;Examinez le fichier généré et remplissez les détails et le contenu. Par défaut, il pointera sur un layout &lt;code&gt;post&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Afin de générer un post de blog (et si ce n’est pas encore fait ?), créez d’abord un répertoire &lt;code&gt;_posts&lt;/code&gt; et après ça, lancez simplement &lt;code&gt;rake post title=&quot;Nom de Votre Post&quot;&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Afin de générer un post de blog (et si ce n’est pas encore fait ?), créez d’abord un répertoire &lt;code&gt;_posts&lt;/code&gt; et après ça, lancez simplement &lt;code&gt;rake post title=&quot;Nom de Votre Post&quot;&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;quelques-trucs-en-rapport--tudier-cette-anne&quot;&gt;Quelques trucs en rapport à étudier cette année&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;La tâche &lt;code&gt;rake&lt;/code&gt;n’écrase jamais les posts existants à moins que vous ne lui disiez de le faire&lt;/li&gt;
   &lt;li&gt;Passer des paramètres de date et des tags (instructions de ligne de commande à étudier)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/avillafiorita/jekyll-rakefile&quot;&gt;jekyll-rakefile&lt;/a&gt; : Un &lt;code&gt;rakefile&lt;/code&gt; pour simplifier la pré-visualisation et le déploiement de sites web jekyll. &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/avillafiorita/jekyll-rakefile&quot;&gt;jekyll-rakefile&lt;/a&gt; : Un &lt;code&gt;rakefile&lt;/code&gt; pour simplifier la pré-visualisation et le déploiement de sites web jekyll.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 09 Feb 2014 00:00:00 +0100</pubDate>
@@ -434,16 +436,16 @@ Ajoutez votre adaptation au Front-Matter YAML de votre post ou page : &lt;/p&gt;
 
 &lt;p&gt;Il existe un projet appelé &lt;a href=&quot;https://github.com/dmathieu/glynn&quot;&gt;Glynn&lt;/a&gt;, qui vous permet de générer facilement vos fichiers statiques du site web motorisé par Jekyll et de les envoyer à votre hébergeur par FTP.&lt;/p&gt;
 
-&lt;p&gt;Par exemple, le fichier &lt;code&gt;_config.yml&lt;/code&gt; de cette instance hébergée chez OVH se présente comme suit : &lt;/p&gt;
+&lt;p&gt;Par exemple, le fichier &lt;code&gt;_config.yml&lt;/code&gt; de cette instance hébergée chez OVH se présente comme suit :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;ftp_host&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;ftp.christopheducamp.com&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;ftp_host&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;ftp.christopheducamp.com&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;ftp_username&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;monnomutilisateur&lt;/span&gt;
 &lt;span class=&quot;l-Scalar-Plain&quot;&gt;ftp_dir&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;/www&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;ftp_passive&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;false&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;ftp_passive&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;false&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Pour générer le site et le déployer, il me suffit alors de reprendre la ligne de commande, de me placer à la racine du projet puis de taper la commande :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;glynn&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;glynn&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;(C’est la solution que j’ai retenue pour le moment : une ligne de commande puis un mot de passe, et tout le site est régénéré et mis en ligne !)&lt;/p&gt;
 
@@ -462,34 +464,34 @@ Ajoutez votre adaptation au Front-Matter YAML de votre post ou page : &lt;/p&gt;
 
 &lt;h3 id=&quot;git-post-receive-hook&quot;&gt;Git post-receive hook&lt;/h3&gt;
 
-&lt;p&gt;Pour faire qu’un serveur distant gère le déploiement pour vous à chaque fois que vous poussez des modifications en utilisant Git, vous pouvez créer un compte utilisateur qui dispose de toutes les clés publiques qui sont autorisées pour déployer dans son fichier &lt;code&gt;authorized_keys&lt;/code&gt;.  Une fois cela mis en place, régler le hook post-receive se fait comme suit : &lt;/p&gt;
+&lt;p&gt;Pour faire qu’un serveur distant gère le déploiement pour vous à chaque fois que vous poussez des modifications en utilisant Git, vous pouvez créer un compte utilisateur qui dispose de toutes les clés publiques qui sont autorisées pour déployer dans son fichier &lt;code&gt;authorized_keys&lt;/code&gt;.  Une fois cela mis en place, régler le hook post-receive se fait comme suit :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;laptop&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh deployer@example.com
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;laptop&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh deployer@example.com
 server&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir monrepo.git
 server&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;monrepo.git
 server&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git --bare init
 server&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;cp hooks/post-receive.sample hooks/post-receive
-server&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir /var/www/monrepo&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+server&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir /var/www/monrepo&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Ensuite ajoutez les lignes suivantes aux hooks/post-receive et assurez-vous que Jekyll soit installé sur le serveur :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;GIT_REPO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/monrepo.git
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;GIT_REPO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/monrepo.git
 &lt;span class=&quot;nv&quot;&gt;TMP_GIT_CLONE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/tmp/monrepo
 &lt;span class=&quot;nv&quot;&gt;PUBLIC_WWW&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/var/www/monrepo
 
 git clone &lt;span class=&quot;nv&quot;&gt;$GIT_REPO&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$TMP_GIT_CLONE&lt;/span&gt;
 jekyll build -s &lt;span class=&quot;nv&quot;&gt;$TMP_GIT_CLONE&lt;/span&gt; -d &lt;span class=&quot;nv&quot;&gt;$PUBLIC_WWW&lt;/span&gt;
 rm -Rf &lt;span class=&quot;nv&quot;&gt;$TMP_GIT_CLONE&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Pour finir, faites tourner la commande suivante sur n’importe quel ordinateur d’utilisateur ayant de déployer en utilisant ce hook : &lt;/p&gt;
+&lt;p&gt;Pour finir, faites tourner la commande suivante sur n’importe quel ordinateur d’utilisateur ayant de déployer en utilisant ce hook :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;laptops&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add deploy deployer@exemple.com:~/monrepo.git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;laptops&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add deploy deployer@exemple.com:~/monrepo.git&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Déployer est maintenant aussi facile que de dire à nginx ou Apache de regarder 
-&lt;code&gt;/var/www/monrepo&lt;/code&gt; et de faire tourner ce qui suit : &lt;/p&gt;
+&lt;code&gt;/var/www/monrepo&lt;/code&gt; et de faire tourner ce qui suit :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;laptops&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push deploy master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;laptops&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push deploy master&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h3 id=&quot;rake&quot;&gt;Rake&lt;/h3&gt;
 
@@ -535,9 +537,9 @@ Regardez la page &lt;a href=&quot;http://github.com/zkarpinski/Jekyll-Admin/blob
     
       <item>
         <title>Webmentions et Jekyll</title>
-        <description>&lt;p&gt;Après la première expérimentation de &lt;a href=&quot;https://eschnou.com/entry/testing-indieweb-federation-with-waterpigscouk-aaronpareckicom-and--62-24908.html&quot;&gt;fédération de commentaires #indieweb chez Laurent&lt;/a&gt; aidé de quelques &lt;a href=&quot;http://indiewebcamp.com/WordPress#Essential_IndieWeb_plugins&quot;&gt;plugins WordPress&lt;/a&gt;, je (chrono)rêve depuis &lt;time class=&quot;dt-published&quot; datetime=&quot;2013-09-15&quot;&gt;[septembre dernier ](http://christopheducamp.com/w/Parser_les_webmentions)&lt;/time&gt; de parvenir à faire tourner simplement la brique de construction &lt;a href=&quot;http://indiewebcamp.com/webmention-fr&quot;&gt;webmention&lt;/a&gt; sur quelques &lt;strong&gt;simples pages HTML statiques&lt;/strong&gt;. &lt;/p&gt;
+        <description>&lt;p&gt;Après la première expérimentation de &lt;a href=&quot;https://eschnou.com/entry/testing-indieweb-federation-with-waterpigscouk-aaronpareckicom-and--62-24908.html&quot;&gt;fédération de commentaires #indieweb chez Laurent&lt;/a&gt; aidé de quelques &lt;a href=&quot;http://indiewebcamp.com/WordPress#Essential_IndieWeb_plugins&quot;&gt;plugins WordPress&lt;/a&gt;, je (chrono)rêve depuis &lt;time class=&quot;dt-published&quot; datetime=&quot;2013-09-15&quot;&gt;[septembre dernier ](http://christopheducamp.com/w/Parser_les_webmentions)&lt;/time&gt; de parvenir à faire tourner simplement la brique de construction &lt;a href=&quot;http://indiewebcamp.com/webmention-fr&quot;&gt;webmention&lt;/a&gt; sur quelques &lt;strong&gt;simples pages HTML statiques&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;span class=&quot;h-card&quot; rel=&quot;colleague met&quot;&gt;&lt;a href=&quot;http://voxpelli.com/&quot;&gt;Pelle Wessman&lt;/a&gt;&lt;/span&gt; a lancé en &lt;time class=&quot;dt-published&quot; datetime=&quot;2013-12-13&quot;&gt;décembre dernier&lt;/time&gt; un &lt;a href=&quot;http://voxpelli.com/2013/12/webmentions-for-static-pages/&quot;&gt;service qui peut recevoir et embarquer les Webmentions&lt;/a&gt; pour les sites statiques. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;h-card&quot; rel=&quot;colleague met&quot;&gt;&lt;a href=&quot;http://voxpelli.com/&quot;&gt;Pelle Wessman&lt;/a&gt;&lt;/span&gt; a lancé en &lt;time class=&quot;dt-published&quot; datetime=&quot;2013-12-13&quot;&gt;décembre dernier&lt;/time&gt; un &lt;a href=&quot;http://voxpelli.com/2013/12/webmentions-for-static-pages/&quot;&gt;service qui peut recevoir et embarquer les Webmentions&lt;/a&gt; pour les sites statiques.&lt;/p&gt;
 
 &lt;p&gt;Ce post n’est à cette heure qu’un premier test en cours à valider et sujet à réglages divers. 
 L’option pourra s’avérer bien pratique pour toutes  &lt;a href=&quot;http://indiewebcamp.com/Jekyll-fr&quot;&gt;les instances indieweb motorisées par Jekyll&lt;/a&gt;.&lt;/p&gt;
@@ -561,53 +563,53 @@ L’option pourra s’avérer bien pratique pour toutes  &lt;a href=&quot;http:/
         <title>Comment localiser la date en français dans Jekyll ?</title>
         <description>&lt;p&gt;Vous venez d’&lt;a href=&quot;http://jekyllrb.com/docs/quickstart/&quot;&gt;installer Jekyll en 3 lignes de commande&lt;/a&gt; et souhaiteriez afficher toutes les dates en français ? Non programmeur comme moi, vous vous sentez déroutés par la &lt;a href=&quot;http://jekyllrb.com/docs/templates/&quot;&gt;doc officielle&lt;/a&gt; sur les templates et le langage de programmation &lt;a href=&quot;http://docs.shopify.com/themes/liquid-basics&quot;&gt;Liquid de Shopify&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Pas de panique… &lt;/p&gt;
+&lt;p&gt;Pas de panique…&lt;/p&gt;
 
-&lt;p&gt;Sans avoir étudié le truc en profondeur, l’affichage des dates se fait en utilisant les tags &lt;code&gt;page.date&lt;/code&gt; (ou &lt;code&gt;post.date&lt;/code&gt;) fournis par Liquid. &lt;/p&gt;
+&lt;p&gt;Sans avoir étudié le truc en profondeur, l’affichage des dates se fait en utilisant les tags &lt;code&gt;page.date&lt;/code&gt; (ou &lt;code&gt;post.date&lt;/code&gt;) fournis par Liquid.&lt;/p&gt;
 
-&lt;p&gt;Rappelons qu’en &lt;em&gt;sortie de boîte&lt;/em&gt;, Jekyll dispose de deux pages html de structure intégrant des dates variables :  &lt;/p&gt;
+&lt;p&gt;Rappelons qu’en &lt;em&gt;sortie de boîte&lt;/em&gt;, Jekyll dispose de deux pages html de structure intégrant des dates variables :&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;index.html&lt;/code&gt; à la racine &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;index.html&lt;/code&gt; à la racine&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;post.html&lt;/code&gt; dans le répertoire ‘_layouts’&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Les filtres de dates &lt;code&gt;date_to_string&lt;/code&gt; proposés à cette heure dans la documentation Jekyll affichent &lt;/p&gt;
+&lt;p&gt;Les filtres de dates &lt;code&gt;date_to_string&lt;/code&gt; proposés à cette heure dans la documentation Jekyll affichent&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;26 Dec 2013
 26 December 2013
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Si beaucoup de sites utilisent ce format, vous pourriez trouver utile de reprendre la main sur la date ? 
-Afficher par exemple le mois en français et sans lettre capitale comme &lt;a href=&quot;http://fr.wikipedia.org/wiki/Date#Dans_des_lettres&quot;&gt;dans les en-têtes de lettres&lt;/a&gt;. &lt;/p&gt;
+Afficher par exemple le mois en français et sans lettre capitale comme &lt;a href=&quot;http://fr.wikipedia.org/wiki/Date#Dans_des_lettres&quot;&gt;dans les en-têtes de lettres&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Faute de pouvoir faire tourner le &lt;a href=&quot;https://github.com/gacha/gacha.id.lv/blob/master/_plugins/i18n_filter.rb&quot;&gt;plugin de localisation i18n_filter&lt;/a&gt; recommandé par &lt;a href=&quot;http://www.toam.fr/20-05-2013-guide-demarrage-jekyll/&quot;&gt;Toam, dans son excellent tutoriel de démarrage Jekyll&lt;/a&gt;, je me suis inspiré des &lt;a href=&quot;http://alanwsmith.com/jekyll-liquid-date-formatting-examples&quot;&gt;très nombreux exemples&lt;/a&gt; fournis par &lt;span class=&quot;h-card&quot;&gt;&lt;a href=&quot;http://alanwsmith.com&quot;&gt;Alan W. Smith&lt;/a&gt;&lt;/span&gt; pour utiliser le filtre “&lt;code&gt;date:&lt;/code&gt;” de Liquid. 
-Bookmarkez cette page ! c’est une mine d’or pour devenir un mage de la manipulation des &lt;a href=&quot;http://fr.wiktionary.org/wiki/quanti%C3%A8me#Nom_commun&quot;&gt;quantièmes&lt;/a&gt; dans Jekyll. &lt;/p&gt;
+Bookmarkez cette page ! c’est une mine d’or pour devenir un mage de la manipulation des &lt;a href=&quot;http://fr.wiktionary.org/wiki/quanti%C3%A8me#Nom_commun&quot;&gt;quantièmes&lt;/a&gt; dans Jekyll.&lt;/p&gt;
 
-&lt;p&gt;Et par curiosité, jetez aussi un oeil au &lt;a href=&quot;http://docs.shopify.com/themes/liquid-basics/output#date&quot;&gt;Filtre Date Liquid&lt;/a&gt; qui offre quelques éléments basiques pour la mise en page des dates. &lt;/p&gt;
+&lt;p&gt;Et par curiosité, jetez aussi un oeil au &lt;a href=&quot;http://docs.shopify.com/themes/liquid-basics/output#date&quot;&gt;Filtre Date Liquid&lt;/a&gt; qui offre quelques éléments basiques pour la mise en page des dates.&lt;/p&gt;
 
-&lt;p&gt;Commencez doucement et simplement à vous entraîner en permutant quelques lettres de tag/filtre comme  &lt;code&gt;%B, %d %Y&lt;/code&gt; pour maîtriser les formats de dates simples &lt;strong&gt;en anglais&lt;/strong&gt; (&lt;code&gt;B&lt;/code&gt; étant substitué par le nom du mois écrit en toutes lettres, &lt;code&gt;d&lt;/code&gt; le jour du mois de 01 à 31 et &lt;code&gt;Y&lt;/code&gt; l’année). &lt;/p&gt;
+&lt;p&gt;Commencez doucement et simplement à vous entraîner en permutant quelques lettres de tag/filtre comme  &lt;code&gt;%B, %d %Y&lt;/code&gt; pour maîtriser les formats de dates simples &lt;strong&gt;en anglais&lt;/strong&gt; (&lt;code&gt;B&lt;/code&gt; étant substitué par le nom du mois écrit en toutes lettres, &lt;code&gt;d&lt;/code&gt; le jour du mois de 01 à 31 et &lt;code&gt;Y&lt;/code&gt; l’année).&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;December, 26 2013
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;br /&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;une-date-en-franais-lisible-pour-les-humains&quot;&gt;Une date en français lisible-pour-les-humains&lt;/h2&gt;
 
-&lt;p&gt;Si vous êtes n00b comme moi sur Jekyll, la localisation des dates en français vous demandera plus d’efforts. &lt;a href=&quot;http://christopheducamp.com/w/Jekyll-localiser-la-date#localisation_du_mois&quot;&gt;Cliquez ici&lt;/a&gt; pour visualiser les premiers échantillons de code utilisés pour afficher la date en langage clair comme suit : &lt;/p&gt;
+&lt;p&gt;Si vous êtes n00b comme moi sur Jekyll, la localisation des dates en français vous demandera plus d’efforts. &lt;a href=&quot;http://christopheducamp.com/w/Jekyll-localiser-la-date#localisation_du_mois&quot;&gt;Cliquez ici&lt;/a&gt; pour visualiser les premiers échantillons de code utilisés pour afficher la date en langage clair comme suit :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Jeudi 26 décembre 2013
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;… et pour le plaisir, une variante tout en bas de casses et le nom du mois abrégé que j’adapterai pour lister les posts triés par dates en page d’accueil : &lt;/p&gt;
+&lt;p&gt;… et pour le plaisir, une variante tout en bas de casses et le nom du mois abrégé que j’adapterai pour lister les posts triés par dates en page d’accueil :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;jeudi 26 déc. 2013
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&quot;date-machine-iso-8601&quot;&gt;Date-machine ISO-8601&lt;/h2&gt;
 
-&lt;p&gt;Vous aurez aussi besoin d’une représentation &lt;a href=&quot;http://christopheducamp.com/w/ISO_8601#ISO_8601&quot;&gt;iso 8601&lt;/a&gt; pour intégration dans l’élément &lt;a href=&quot;http://html5doctor.com/the-time-element/&quot;&gt;time&lt;/a&gt;. Utilisez &lt;code&gt;%Y-%m-%d&lt;/code&gt; ou plus simplement le filtre &lt;code&gt;[date_to_xmlschema](http://jekyllrb.com/docs/templates/#filters)&lt;/code&gt; pour une version longue intégrant horaire et fuseau : &lt;/p&gt;
+&lt;p&gt;Vous aurez aussi besoin d’une représentation &lt;a href=&quot;http://christopheducamp.com/w/ISO_8601#ISO_8601&quot;&gt;iso 8601&lt;/a&gt; pour intégration dans l’élément &lt;a href=&quot;http://html5doctor.com/the-time-element/&quot;&gt;time&lt;/a&gt;. Utilisez &lt;code&gt;%Y-%m-%d&lt;/code&gt; ou plus simplement le filtre &lt;code&gt;[date_to_xmlschema](http://jekyllrb.com/docs/templates/#filters)&lt;/code&gt; pour une version longue intégrant horaire et fuseau :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;2013-12-26 
 2013-12-26T04:47:00+01:00 
@@ -616,7 +618,7 @@ Bookmarkez cette page ! c’est une mine d’or pour devenir un mage de la manip
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Non programmeur, je serais vraiment intéressé pour trouver des solutions plus concises, propres et recommandables à ceux qui souhaitent essayer Jekyll en français ? 
-Très preneur de vos frameworks, plugins et/ou tous vos points d’optimisation en langage clair pour compléter ce &lt;a href=&quot;http://christopheducamp.com/w/Jekyll-localiser-la-date#localisation_du_mois&quot;&gt;bout de code &lt;em&gt;rapide et crade&lt;/em&gt;&lt;/a&gt; fonctionnel à cette heure en local sur la &lt;a href=&quot;http://jekyllrb.com/news/2013/12/17/jekyll-1-4-2-released/&quot;&gt;version 1.4.2&lt;/a&gt;. &lt;/p&gt;
+Très preneur de vos frameworks, plugins et/ou tous vos points d’optimisation en langage clair pour compléter ce &lt;a href=&quot;http://christopheducamp.com/w/Jekyll-localiser-la-date#localisation_du_mois&quot;&gt;bout de code &lt;em&gt;rapide et crade&lt;/em&gt;&lt;/a&gt; fonctionnel à cette heure en local sur la &lt;a href=&quot;http://jekyllrb.com/news/2013/12/17/jekyll-1-4-2-released/&quot;&gt;version 1.4.2&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;ressources-externes&quot;&gt;Ressources externes&lt;/h2&gt;
 
@@ -637,11 +639,11 @@ Très preneur de vos frameworks, plugins et/ou tous vos points d’optimisation 
     
       <item>
         <title>Markdown : Le Futur de l&#39;Écriture</title>
-        <description>&lt;p&gt;En cours d’étude pour &lt;a href=&quot;/2013/12/21/demarrer-avec-pages-github/&quot;&gt;migrer sérieusement vers Jekyll&lt;/a&gt;, parti en séance d’essais de quelques éditeurs de texte pour écrire en Markdown. Cet article original de &lt;span class=&quot;p-author h-card&quot;&gt;&lt;a href=&quot;http://nerdplusart.com/about/&quot;&gt;Robby Ingebretsen&lt;/a&gt;&lt;/span&gt; publié le &lt;time class=&quot;dt-published&quot; value=&quot;2013-06-28&quot;&gt;28 juin 2013&lt;/time&gt; m’a bien éclairé sur ce langage. Comme à l’habitude, seul le &lt;a href=&quot;http://nerdplusart.com/markdown-is-the-future/&quot;&gt;lien original fait référence&lt;/a&gt;. &lt;/p&gt;
+        <description>&lt;p&gt;En cours d’étude pour &lt;a href=&quot;/2013/12/21/demarrer-avec-pages-github/&quot;&gt;migrer sérieusement vers Jekyll&lt;/a&gt;, parti en séance d’essais de quelques éditeurs de texte pour écrire en Markdown. Cet article original de &lt;span class=&quot;p-author h-card&quot;&gt;&lt;a href=&quot;http://nerdplusart.com/about/&quot;&gt;Robby Ingebretsen&lt;/a&gt;&lt;/span&gt; publié le &lt;time class=&quot;dt-published&quot; value=&quot;2013-06-28&quot;&gt;28 juin 2013&lt;/time&gt; m’a bien éclairé sur ce langage. Comme à l’habitude, seul le &lt;a href=&quot;http://nerdplusart.com/markdown-is-the-future/&quot;&gt;lien original fait référence&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;si-vous-dsirez-crire-srieusement-alors-il-est-temps-denvisager-srieusement-markdown-sinon-continuez--utiliser-wordperfect&quot;&gt;&lt;em&gt;Si vous désirez écrire sérieusement, alors il est temps d’envisager sérieusement Markdown. Sinon, continuez à utiliser WordPerfect.&lt;/em&gt;&lt;/h3&gt;
 
-&lt;p&gt;Allons droit au but : par &lt;em&gt;écriture&lt;/em&gt;, j’entends une écriture réfléchie, pensée et structurée. Le type d’écriture qui vous fait fonctionner le cerveau : courriel argumenté, business plan, lettre d’amour, article, etc. Je ne pense pas avoir oublié comment faire. Les formats de communication longs semblent revenir en force et nous pouvons remercier la technologie. Le mouvement a démarré avec les &lt;a href=&quot;http://upload.wikimedia.org/wikipedia/commons/1/1f/Apple_LaserWriter_Pro_630.jpg&quot; title=&quot;LaserWriter Pro&quot;&gt;imprimantes laser&lt;/a&gt;, puis &lt;a href=&quot;http://upload.wikimedia.org/wikipedia/commons/f/f3/Wordperfect-5.1-dos.png&quot; title=&quot;WordPerfect 5.1&quot;&gt;WordPerfect&lt;/a&gt; devenu &lt;a href=&quot;http://upload.wikimedia.org/wikipedia/commons/f/f3/Wordperfect-5.1-dos.png&quot; title=&quot;Word 2.0&quot;&gt;Word&lt;/a&gt; qui est devenu &lt;a href=&quot;http://codex.wordpress.org/Version_1.0&quot;&gt;WordPress&lt;/a&gt;. Mais poursuivons : ces évolutions nous ont peut-être aidés à devenir de meilleurs éditeurs mais pas forcément de meilleurs auteurs. Vous voulez un crénage précis ? Vous l’avez ! Vous vous souciez de savoir combien de personnes lisent vos notes sur votre dernier voyage en Syrie. Aucun problème ! L’écriture revient peut-être dans les cahiers de tendance, mais la publication a explosé ! &lt;/p&gt;
+&lt;p&gt;Allons droit au but : par &lt;em&gt;écriture&lt;/em&gt;, j’entends une écriture réfléchie, pensée et structurée. Le type d’écriture qui vous fait fonctionner le cerveau : courriel argumenté, business plan, lettre d’amour, article, etc. Je ne pense pas avoir oublié comment faire. Les formats de communication longs semblent revenir en force et nous pouvons remercier la technologie. Le mouvement a démarré avec les &lt;a href=&quot;http://upload.wikimedia.org/wikipedia/commons/1/1f/Apple_LaserWriter_Pro_630.jpg&quot; title=&quot;LaserWriter Pro&quot;&gt;imprimantes laser&lt;/a&gt;, puis &lt;a href=&quot;http://upload.wikimedia.org/wikipedia/commons/f/f3/Wordperfect-5.1-dos.png&quot; title=&quot;WordPerfect 5.1&quot;&gt;WordPerfect&lt;/a&gt; devenu &lt;a href=&quot;http://upload.wikimedia.org/wikipedia/commons/f/f3/Wordperfect-5.1-dos.png&quot; title=&quot;Word 2.0&quot;&gt;Word&lt;/a&gt; qui est devenu &lt;a href=&quot;http://codex.wordpress.org/Version_1.0&quot;&gt;WordPress&lt;/a&gt;. Mais poursuivons : ces évolutions nous ont peut-être aidés à devenir de meilleurs éditeurs mais pas forcément de meilleurs auteurs. Vous voulez un crénage précis ? Vous l’avez ! Vous vous souciez de savoir combien de personnes lisent vos notes sur votre dernier voyage en Syrie. Aucun problème ! L’écriture revient peut-être dans les cahiers de tendance, mais la publication a explosé !&lt;/p&gt;
 
 &lt;p&gt;Cette priorité donnée à la forme qui l’emporte sur le contenu pourrait &lt;a href=&quot;http://www.nytimes.com/2013/06/23/opinion/sunday/the-decline-and-fall-of-the-english-major.html?_r=0&quot;&gt;être malheureusement notre voie&lt;/a&gt; et elle a délaissé les auteurs sérieux en quête de simplicité. 
 La dernière moitié de la décennie a donné naissance à un tout un tas de nouveaux outils focalisés sur le truc qui manquait (l’&lt;em&gt;écriture&lt;/em&gt; dans l’écriture). Et l’une de ces innovations est Markdown. Si la plus grande avancée dans les véritables technologies d’écriture a été la machine à écrire, je pense que Markdown pourrait être la suivante.
@@ -653,15 +655,15 @@ La dernière moitié de la décennie a donné naissance à un tout un tas de nou
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/Ulysses-Markdown-editeur.png&quot; alt=&quot;image&quot; title=&quot;Aperçu de fenêtre d&#39;édition Markdown dans Ulysses&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Maintenant que vous avez ça en tête, être amoureux de Markdown ne peut pas se réduire à  : &lt;em&gt;Markdown vous permet de penser à ce que vous écrivez au lieu de penser à quoi ça ressemble.&lt;/em&gt; &lt;/p&gt;
+&lt;p&gt;Maintenant que vous avez ça en tête, être amoureux de Markdown ne peut pas se réduire à  : &lt;em&gt;Markdown vous permet de penser à ce que vous écrivez au lieu de penser à quoi ça ressemble.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Ne me faites pas dire ce que je n’ai pas dit. Vous devriez vous soucier de la forme de vos documents, mais faire ça &lt;strong&gt;après&lt;/strong&gt; l’écriture, et non pas pendant. En fait, tout le temps que vous passez à penser à l’indentation des listes ou d’espaces entre les paragraphes pendant que vous êtes supposés &lt;em&gt;écrire&lt;/em&gt;, est tout bonnement du temps que vous ne passez pas à écrire. Et cela tue probablement votre &lt;a href=&quot;http://zenhabits.net/creative-flow/&quot;&gt;flow&lt;/a&gt; tout en vous dupant sur le fait de vous sentir productif. &lt;/p&gt;
+&lt;p&gt;Ne me faites pas dire ce que je n’ai pas dit. Vous devriez vous soucier de la forme de vos documents, mais faire ça &lt;strong&gt;après&lt;/strong&gt; l’écriture, et non pas pendant. En fait, tout le temps que vous passez à penser à l’indentation des listes ou d’espaces entre les paragraphes pendant que vous êtes supposés &lt;em&gt;écrire&lt;/em&gt;, est tout bonnement du temps que vous ne passez pas à écrire. Et cela tue probablement votre &lt;a href=&quot;http://zenhabits.net/creative-flow/&quot;&gt;flow&lt;/a&gt; tout en vous dupant sur le fait de vous sentir productif.&lt;/p&gt;
 
-&lt;p&gt;D’un autre côté, Markdown vous permet de saisir les aspects qui ont le plus de sens sur la mise en forme (par ex. mettre ça en gras parce que c’est important) sans vous soucier de la présentation. Vous restez concentré sur les idées, et pas sur la mise en forme. &lt;/p&gt;
+&lt;p&gt;D’un autre côté, Markdown vous permet de saisir les aspects qui ont le plus de sens sur la mise en forme (par ex. mettre ça en gras parce que c’est important) sans vous soucier de la présentation. Vous restez concentré sur les idées, et pas sur la mise en forme.&lt;/p&gt;
 
-&lt;p&gt;Markdown est volontairement très simple, ainsi les petites astuces de mise en forme qui sont à votre disposition sont limitées : gras, italique, listes, liens images, notes de base de page et citations. C’est tout. Ceci pourrait vous sembler barbant si vous êtes habitué à des dizaines de styles de textes, aux choix infinis de fontes, aux marges de page sans oublier le “smart art,” mais ces trucs pourront venir plus tard. À ce stade, vous êtes en train d’écrire. &lt;/p&gt;
+&lt;p&gt;Markdown est volontairement très simple, ainsi les petites astuces de mise en forme qui sont à votre disposition sont limitées : gras, italique, listes, liens images, notes de base de page et citations. C’est tout. Ceci pourrait vous sembler barbant si vous êtes habitué à des dizaines de styles de textes, aux choix infinis de fontes, aux marges de page sans oublier le “smart art,” mais ces trucs pourront venir plus tard. À ce stade, vous êtes en train d’écrire.&lt;/p&gt;
 
-&lt;p&gt;Plus important encore, vous accrocher aux fondamentaux veut dire que vous produisez un document bien plus universel, un document qui pourra être restitué n’importe où, dans n’importe quel format. Paul Soder &lt;a href=&quot;https://medium.com/i-m-h-o/a721d44b97be&quot; title=&quot;Content-first design ain’t herding cats&quot;&gt;pense que c’est important&lt;/a&gt;. Le troisième point dans sa liste de suggestions pour créer du contenu web en-phase-avec-l’avenir : &lt;/p&gt;
+&lt;p&gt;Plus important encore, vous accrocher aux fondamentaux veut dire que vous produisez un document bien plus universel, un document qui pourra être restitué n’importe où, dans n’importe quel format. Paul Soder &lt;a href=&quot;https://medium.com/i-m-h-o/a721d44b97be&quot; title=&quot;Content-first design ain’t herding cats&quot;&gt;pense que c’est important&lt;/a&gt;. Le troisième point dans sa liste de suggestions pour créer du contenu web en-phase-avec-l’avenir :&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Designez en priorité pour les &lt;a href=&quot;http://fr.wikipedia.org/wiki/Scraper_site&quot; title=&quot;wikipedia sites scrapers&quot;&gt;sites scrapers&lt;/a&gt;. Pas de fontes, pas d’en-têtes, pas de slideshows, pas de boutons. À quoi ressemble le contenu dans Instapaper ? Designez avec cette vision. Prenez conscience que vous n’aurez plus le contrôle de cette vue.&lt;/p&gt;
@@ -671,35 +673,35 @@ La dernière moitié de la décennie a donné naissance à un tout un tas de nou
 
 &lt;p&gt;Oui. &lt;a href=&quot;http://cl.ly/1y111w3s3i3i&quot; title=&quot;Ev Williams, Entrepreneur&quot;&gt;Ev Williams&lt;/a&gt; (le co-fondateur de Blogger puis de Twitter-un type qui rêve de notre futur de l’écriture) est d’accord sur ce point. Il &lt;a href=&quot;http://medium.com/about/df8eac9f4a5e&quot;&gt;ne pense pas que les gens soient prêts&lt;/a&gt; pour Markdown (au moins à cette heure). Et il a opté pour une solide approche intermédiaire avec &lt;a href=&quot;http://medium.com&quot;&gt;medium.com&lt;/a&gt; en limitant la mise en forme à un ensemble presque équivalent d’options supportées par Markdown. Mais avec une approche bien plus visuelle. Voici votre barre d’outils &lt;strong&gt;medium.com&lt;/strong&gt; :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/medium-ui-mise-en-forme.png&quot; alt=&quot;image&quot; title=&quot;La barre d&#39;outils de medium.com&quot; /&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/medium-ui-mise-en-forme.png&quot; alt=&quot;image&quot; title=&quot;La barre d&#39;outils de medium.com&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Je la donnerai à ces types. Ceci pourrait être bien plus acceptable pour beaucoup de gens. Mais pour les auteurs sérieux, ce n’est pas nécessaire. Markdown est facile et les auteurs sont intelligents. Je pense que nous pouvons laisser tomber la barre d’outils… peut-être pas aujourd’hui, mais bientôt. &lt;/p&gt;
+  &lt;p&gt;Je la donnerai à ces types. Ceci pourrait être bien plus acceptable pour beaucoup de gens. Mais pour les auteurs sérieux, ce n’est pas nécessaire. Markdown est facile et les auteurs sont intelligents. Je pense que nous pouvons laisser tomber la barre d’outils… peut-être pas aujourd’hui, mais bientôt.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Premièrement, nous sommes de moins en moins effrayés par les mini-langages embarqués. Nous utilisons sans hésitation les mots-dièse (“#”) et les émoticônes. Markdown ne constitue pas un si grand écart. C’est encore plus vrai pour mes gosses que ma mère, mais nous parlons ici de l’avenir. &lt;/p&gt;
+&lt;p&gt;Premièrement, nous sommes de moins en moins effrayés par les mini-langages embarqués. Nous utilisons sans hésitation les mots-dièse (“#”) et les émoticônes. Markdown ne constitue pas un si grand écart. C’est encore plus vrai pour mes gosses que ma mère, mais nous parlons ici de l’avenir.&lt;/p&gt;
 
-&lt;p&gt;Deuxièmement, Markdown est facile à apprendre. Super-facile. En fait, si vous utilisez n’importe quel type d’écriture en texte (même des messages texto), vous pourriez être alors déjà familier avec l’une des conventions de markdown : des numéros ou tirets au début d’une phrase créent une liste, les astérisques autour d’un mot pour l’emphase, etc. Vous pouvez apprendre les basiques en cinq minutes, et cela deviendra naturel au bout de trente minutes. &lt;/p&gt;
+&lt;p&gt;Deuxièmement, Markdown est facile à apprendre. Super-facile. En fait, si vous utilisez n’importe quel type d’écriture en texte (même des messages texto), vous pourriez être alors déjà familier avec l’une des conventions de markdown : des numéros ou tirets au début d’une phrase créent une liste, les astérisques autour d’un mot pour l’emphase, etc. Vous pouvez apprendre les basiques en cinq minutes, et cela deviendra naturel au bout de trente minutes.&lt;/p&gt;
 
 &lt;p&gt;Troisièmement, la mise en forme de texte fait appel aux terminaux. Il est vraiment difficile de sélectionner du texte avec votre doigt et puis de taper quelque chose pour le mettre en gras. Il est évident d’insérer un caractère ou deux. Si vous ne pensez pas que les claviers-écrans puissent faire de bons outils d’écritures, &lt;a href=&quot;https://www.youtube.com/watch?v=NNcTE5WJGdw&quot;&gt;regardez ce type&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;faire-que-markdown-devienne-mainstream&quot;&gt;Faire que Markdown Devienne Mainstream&lt;/h2&gt;
 
-&lt;p&gt;Tout au long de ces lignes, &lt;a href=&quot;http://fiftythree.com&quot;&gt;FiftyThree&lt;/a&gt; (le producteur de Paper et de ma &lt;a href=&quot;http://nerdplusart.com/paper-manifestos-and-why-you-need-one-to-be-great-at-anything/&quot;&gt;startup crush&lt;/a&gt; a levé un peu d’argent afin de créer &lt;a href=&quot;http://www.theverge.com/2013/6/18/4439076/paper-maker-fiftythree-raises-15-million-to-build&quot;&gt;la suite office du futur&lt;/a&gt; (une croisade opportune)-on peut supposer pour les terminaux. J’espère qu’il la réussira et j’espère sincèrement qu’elle contiendra &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; ou quelque chose de similaire. Est-ce fou ? Je vous le ferai savoir dans une semaine. Première expérience : je vais ôter les rollerblades de mes deux enfants non-nerds de 7 et 9 ans pour leur enseigner Markdown. Puis nous verrons. Après tout, ils utiliseront ce outil d’écriture supposé pour l’avenir pour leurs dissertations au lycée. Cela ne peut nuire à commencer dès maintenant. Ils ont déjà commencé à bloguer. &lt;/p&gt;
+&lt;p&gt;Tout au long de ces lignes, &lt;a href=&quot;http://fiftythree.com&quot;&gt;FiftyThree&lt;/a&gt; (le producteur de Paper et de ma &lt;a href=&quot;http://nerdplusart.com/paper-manifestos-and-why-you-need-one-to-be-great-at-anything/&quot;&gt;startup crush&lt;/a&gt; a levé un peu d’argent afin de créer &lt;a href=&quot;http://www.theverge.com/2013/6/18/4439076/paper-maker-fiftythree-raises-15-million-to-build&quot;&gt;la suite office du futur&lt;/a&gt; (une croisade opportune)-on peut supposer pour les terminaux. J’espère qu’il la réussira et j’espère sincèrement qu’elle contiendra &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; ou quelque chose de similaire. Est-ce fou ? Je vous le ferai savoir dans une semaine. Première expérience : je vais ôter les rollerblades de mes deux enfants non-nerds de 7 et 9 ans pour leur enseigner Markdown. Puis nous verrons. Après tout, ils utiliseront ce outil d’écriture supposé pour l’avenir pour leurs dissertations au lycée. Cela ne peut nuire à commencer dès maintenant. Ils ont déjà commencé à bloguer.&lt;/p&gt;
 
 &lt;h2 id=&quot;apart--markdown-pour-les-dbutants&quot;&gt;Aparté : Markdown pour les Débutants&lt;/h2&gt;
 
-&lt;p&gt;Vous ne connaissez pas Markdown ? Voici votre intro en 30 secondes. Si vous voulez en savoir plus, commencez à la &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;source&lt;/a&gt; ou essayez &lt;a href=&quot;http://whatismarkdown.com/&quot;&gt;what is markdown&lt;/a&gt; ou &lt;a href=&quot;http://fr.wikipedia.org/wiki/Markdown&quot;&gt;wikipedia&lt;/a&gt;. Vous savez comment la plupart des traitements de texte ont un paquet de boutons pour mettre en forme (gras, titres, souligné, etc.) ? Et si vous pouviez ajouter tous ces détails de mise en forme directement dans le texte sous forme de petits codes simples, vous permettant de réfléchir &lt;em&gt;à ce que vous écrivez&lt;/em&gt; au lieu de ce &lt;em&gt;à quoi cela ressemble&lt;/em&gt;. C’est ça markdown. C’est un ensemble simple de conventions de textes pratiques qui peuvent être facilement traduites plus tard en mise en forme riche. &lt;/p&gt;
+&lt;p&gt;Vous ne connaissez pas Markdown ? Voici votre intro en 30 secondes. Si vous voulez en savoir plus, commencez à la &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;source&lt;/a&gt; ou essayez &lt;a href=&quot;http://whatismarkdown.com/&quot;&gt;what is markdown&lt;/a&gt; ou &lt;a href=&quot;http://fr.wikipedia.org/wiki/Markdown&quot;&gt;wikipedia&lt;/a&gt;. Vous savez comment la plupart des traitements de texte ont un paquet de boutons pour mettre en forme (gras, titres, souligné, etc.) ? Et si vous pouviez ajouter tous ces détails de mise en forme directement dans le texte sous forme de petits codes simples, vous permettant de réfléchir &lt;em&gt;à ce que vous écrivez&lt;/em&gt; au lieu de ce &lt;em&gt;à quoi cela ressemble&lt;/em&gt;. C’est ça markdown. C’est un ensemble simple de conventions de textes pratiques qui peuvent être facilement traduites plus tard en mise en forme riche.&lt;/p&gt;
 
-&lt;p&gt;Ce sera plus facile à comprendre si vous regardez ça &lt;/p&gt;
+&lt;p&gt;Ce sera plus facile à comprendre si vous regardez ça&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/Scapple.png&quot; alt=&quot;image&quot; title=&quot;Markdown Convertisseur side-by-side&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Et même mieux si vous essayez. Voici quelques-uns de mes outils préférés : &lt;/p&gt;
+&lt;p&gt;Et même mieux si vous essayez. Voici quelques-uns de mes outils préférés :&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://markable.in/editor/&quot;&gt;Markable&lt;/a&gt; (en ligne) Vous voulez démarrer dès maintenant ? Voici un bel éditeur dans le navigateur. Pas génial pour écrire à l’écart de toute distraction, mais un bon moyen pour voir Markdown en action.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.bywordapp.com/&quot;&gt;Byword&lt;/a&gt; (pour Mac) Bon marché, magnifique, concentré et efficace. Ensemble réduit de fonctionnalités, mais parfait pour les écrivains occasionnels. &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bywordapp.com/&quot;&gt;Byword&lt;/a&gt; (pour Mac) Bon marché, magnifique, concentré et efficace. Ensemble réduit de fonctionnalités, mais parfait pour les écrivains occasionnels.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.ulyssesapp.com/&quot;&gt;Ulysses III&lt;/a&gt; (pour Mac) Des aspirations bien plus élevées et quasiment tout y est. Parfait si vous écrivez beaucoup et si vous voulez un endroit centralisé pour tout. Plus cher.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://mouapp.com/&quot;&gt;Mou&lt;/a&gt; (pour Mac)  Une option plus geek que les trois autres. Des tonnes de fonctionnalités et gratuit ! Il lui manque un paquet de fonctionnalités qui en feraient un outil extraordinaire pour écrire (Je souhaite vraiment par exemple qu’il y ait un moyen de limiter la longueur de ligne. Ceci le rend difficile à utiliser en plein-écran).&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.ommwriter.com/en/download.html&quot;&gt;OmmWriter&lt;/a&gt; (pour Windows/Mac) Pas de support direct de  Markdown, mais rien ne vous empêche de l’utiliser. Il est vraiment bon pour créer un environnement d’écriture zen et libre de toute distraction. (avec un mix d’effets sonores et un catalogue d’images en arrière-plan) et c’est mon outil préféré pour Windows.&lt;/li&gt;

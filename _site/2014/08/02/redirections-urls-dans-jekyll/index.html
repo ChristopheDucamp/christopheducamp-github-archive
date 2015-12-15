@@ -3,10 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Redirections URLs dans Jekyll</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Jekyll's selfdogfood" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="sur la route de l'indieweb" />
     <link rel="canonical" href="http://christopheducamp.com/2014/08/02/redirections-urls-dans-jekyll/" />
 
     <!-- Personnalisation CSS -->
@@ -30,6 +29,15 @@
 
        <!-- webmention.herokuapp.com -->
        <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+       
+       
+       <!--OAuth endpoint-->
+       <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+       <!--Token endpoint-->
+       <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+       <!-- micropub endpoint 
+       <link rel="micropub" href="https://ugitpub.herokuapp.com/micropub" />
+       -->
 
 
 </head>
@@ -41,7 +49,7 @@
 
   <div class="wrap">
 
-    <a class="site-title" href="/">sur la route de l'indieweb...</a>
+    <a class="site-title" href="/">Christophe Ducamp</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -60,6 +68,7 @@
         <a class="page-link" href="/projets">Projets</a>
         <a class="page-link" href="/collection">Notes</a>
       </div>
+              <iframe src="http://duckduckgo.com/search.html?width=200&site=christopheducamp.com&prefill=Cherche dans DuckDuckGo" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe>
     </nav>
 
   </div>
@@ -83,7 +92,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Le <a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">moteur de génération de “permashortlinks”</a> bâti hier par Pierre pour son instance Octopress (un framework Jekyll) m’a clairement éclairé pour parvenir à construire ici quelques premières <a href="http://indiewebcamp.com/permashortcitation">citations de permaliens-raccourcis</a>.</p>
 
-<p>L’installation de <strong>permaliens-raccourcis</strong> n’est pas qu’un <em>truc de maniaque</em> adopté par les membres de l’IndieWebCamp… C’est aussi un <a href="http://indiewebcamp.com/IndieMark#Level_2_syndication">pré-requis pour passer le niveau 2 de l’IndieMark</a> ! </p>
+<p>L’installation de <strong>permaliens-raccourcis</strong> n’est pas qu’un <em>truc de maniaque</em> adopté par les membres de l’IndieWebCamp… C’est aussi un <a href="http://indiewebcamp.com/IndieMark#Level_2_syndication">pré-requis pour passer le niveau 2 de l’IndieMark</a> !</p>
 
 <h2 id="quest-ce-quun-permalien-raccourci-">Qu’est-ce qu’un Permalien-Raccourci ?</h2>
 
@@ -100,44 +109,44 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Une fois la <em>gem</em> installée dans votre environnement, ajoutez ces deux lignes dans votre fichier local <code>_config.yml</code> :</p>
 
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">gems</span><span class="p-Indicator">:</span>
-  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">jekyll-redirect-from</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">gems</span><span class="p-Indicator">:</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">jekyll-redirect-from</span></code></pre></figure>
 
 <h2 id="usages-pressentis">Usages pressentis</h2>
 
 <p>L’objet de cette gem de redirection peut ainsi permettre à un auteur de spécifier une ou plusieurs URL(s) pour un même post ou une même page.</p>
 
 <p>Pour utiliser ces urls courtes qui pointeront toutes vers votre URL canonique, inspirez-vous de la série qui suit. 
-Ajoutez votre adaptation au Front-Matter YAML de votre post ou page : </p>
+Ajoutez votre adaptation au Front-Matter YAML de votre post ou page :</p>
 
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Mon super post</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Mon super post</span>
 <span class="l-Scalar-Plain">redirect_from</span><span class="p-Indicator">:</span>
   <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">/post/123456789/</span>
   <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">/post/123456789/mon-super-post/</span>
-  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">/2014-08-02/</span></code></pre></div>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">/2014-08-02/</span></code></pre></figure>
 
 <h2 id="exemple-pour-ce-post-">Exemple pour ce post :</h2>
 
-<p>Pour le premier permalien-raccourci fonctionnel de ce post, j’ai volontairement choisi un format solide, inspiré par <span class="h-card"><a href="http://tantek.com/">Tantek</a></span>, à savoir l’année suivie du numéro du jour dans l’année, ce qui ressemble à :  </p>
+<p>Pour le premier permalien-raccourci fonctionnel de ce post, j’ai volontairement choisi un format solide, inspiré par <span class="h-card"><a href="http://tantek.com/">Tantek</a></span>, à savoir l’année suivie du numéro du jour dans l’année, ce qui ressemble à :</p>
 
 <ul>
-  <li><a href="http://xtof.me/2014-214/">xtof.me/2014-214/</a> </li>
+  <li><a href="http://xtof.me/2014-214/">xtof.me/2014-214/</a></li>
   <li>citation du permalien-raccourci : (xtof.me 2014-214)</li>
-  <li>Version un peu plus longue : <a href="http://xtof.me/indielog/2014-214">xtof.me indielog/2014-214</a> </li>
+  <li>Version un peu plus longue : <a href="http://xtof.me/indielog/2014-214">xtof.me indielog/2014-214</a></li>
 </ul>
 
 <h2 id="modifier-le-rakefile">Modifier le Rakefile</h2>
 
-<p>Une recherche de patterns est en cours afin de trouver un modèle de raccourci d’<a href="http://christopheducamp.com/b/2013-04-14/les-urls-sont-pour-les-humains/">URL parlante et ayant du sens</a>. </p>
+<p>Une recherche de patterns est en cours afin de trouver un modèle de raccourci d’<a href="http://christopheducamp.com/b/2013-04-14/les-urls-sont-pour-les-humains/">URL parlante et ayant du sens</a>.</p>
 
-<p>Pour l’automatisation de ce processus de redirection, référez-vous directement aux <a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">conseils de Pierre</a>. <a href="https://github.com/ChristopheDucamp/christopheducamp.github.io/blob/master/rakefile">Une copie du fichier <code>Rakefile</code> de ce site reste déposée sur GitHub</a>.  </p>
+<p>Pour l’automatisation de ce processus de redirection, référez-vous directement aux <a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">conseils de Pierre</a>. <a href="https://github.com/ChristopheDucamp/christopheducamp.github.io/blob/master/rakefile">Une copie du fichier <code>Rakefile</code> de ce site reste déposée sur GitHub</a>.</p>
 
 <p><strong>Dernier truc à savoir :</strong> Les redirections avec un slash à la fin génèrent un sous-répertoire correspondant contenant un fichier <code>index.html</code>, alors que les redirections sans un slash à la fin générent un <code>nomfichier</code> correspondant sans extension et sans sous-répertoire.</p>
 
 <h2 id="liens-ressources">Liens Ressources</h2>
 <ul>
   <li>Lien de référence : <a href="https://github.com/jekyll/jekyll-redirect-from">Jekyll-redirect-from</a> - Github</li>
-  <li>Lisez le post technique <cite class="h-cite"><strong><span class="url p-name"><a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">Permashortlinks</a></span></strong> de <abbr class="p-author h-card" title="Pierre Ozoux">Pierre</abbr> pour des indications sur la modification du fichier Rakefile (<time class="dt-published">2014-08-02</time>)</cite> </li>
+  <li>Lisez le post technique <cite class="h-cite"><strong><span class="url p-name"><a href="http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/">Permashortlinks</a></span></strong> de <abbr class="p-author h-card" title="Pierre Ozoux">Pierre</abbr> pour des indications sur la modification du fichier Rakefile (<time class="dt-published">2014-08-02</time>)</cite></li>
   <li>Les <a href="http://jekyllrb.com/docs/permalinks/">permaliens de Jekyll</a> : la page de référence pour connaître toutes les variables à utiliser dans vos permaliens.</li>
 </ul>
 

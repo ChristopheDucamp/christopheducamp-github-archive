@@ -1,9 +1,9 @@
 #nom du site
-name: sur la route de l'indieweb...
+name: Christophe Ducamp
 
 
 #repository: https://github.com/christopheducamp/christopheducamp.github.io
-description: Jekyll's selfdogfood 
+description: sur la route de l'indieweb 
 url: "http://christopheducamp.com"
 
 markdown: kramdown
@@ -13,8 +13,9 @@ permalink: /:year/:month/:day/:title/
 # Exclure ces fichiers du _site de production
 exclude: [categories.html, Gemfile, Gemfile.lock, README.md, vendor, README.md, LICENSE]
 
-gems:
+gems: 
   - jekyll-redirect-from
+  - jekyll-gist
   - jemoji
 
 

@@ -3,10 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Quelques Astuces sur le Terminal</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Jekyll's selfdogfood" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="sur la route de l'indieweb" />
     <link rel="canonical" href="http://christopheducamp.com/2013/12/10/terminal-trucs/" />
 
     <!-- Personnalisation CSS -->
@@ -30,6 +29,15 @@
 
        <!-- webmention.herokuapp.com -->
        <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+       
+       
+       <!--OAuth endpoint-->
+       <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+       <!--Token endpoint-->
+       <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+       <!-- micropub endpoint 
+       <link rel="micropub" href="https://ugitpub.herokuapp.com/micropub" />
+       -->
 
 
 </head>
@@ -41,7 +49,7 @@
 
   <div class="wrap">
 
-    <a class="site-title" href="/">sur la route de l'indieweb...</a>
+    <a class="site-title" href="/">Christophe Ducamp</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -60,6 +68,7 @@
         <a class="page-link" href="/projets">Projets</a>
         <a class="page-link" href="/collection">Notes</a>
       </div>
+              <iframe src="http://duckduckgo.com/search.html?width=200&site=christopheducamp.com&prefill=Cherche dans DuckDuckGo" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe>
     </nav>
 
   </div>
@@ -79,27 +88,27 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
   </header>
 
   <article class="post-content e-content entry-content">
-  <p>Les <a href="/2013/12/09/anti-seche-ligne-de-commande/">blocs de code comme ceux-ci</a> sur cette page font partie d’un langage de programmation appelé <code>Bash</code>. Pour utiliser des programmes <code>Bash</code>, nous devons utiliser Terminal, une application livrée avec votre Mac, généralement trouvée dans /Applications/Utilitaires. </p>
+  <p>Les <a href="/2013/12/09/anti-seche-ligne-de-commande/">blocs de code comme ceux-ci</a> sur cette page font partie d’un langage de programmation appelé <code>Bash</code>. Pour utiliser des programmes <code>Bash</code>, nous devons utiliser Terminal, une application livrée avec votre Mac, généralement trouvée dans /Applications/Utilitaires.</p>
 
 <p><img src="https://github.s3.amazonaws.com/docs/bootcamp_1_mac_terminal.jpg" alt="image" title="Ouvrez le Terminal" /></p>
 
 <h1 id="saisie">Saisie</h1>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s1">&#39;Ceci est du texte saisi&#39;</span>
-<span class="c"># Ce truc d&#39;aide vous dit ce qui se passe.</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s1">&#39;Ceci est du texte saisi&#39;</span>
+<span class="c"># Ce truc d&#39;aide vous dit ce qui se passe.</span></code></pre></figure>
 
 <p>Une ligne qui commence par un signe dollar ($) indique une ligne de programme Bash que vous devez taper. Pour y entrer, tapez le texte qui suit le $, et pressez la touche entrée à la fin de chaque ligne. Vous pouvez survoler votre souris sur chaque ligne pour une explication de ce que fait le programme.</p>
 
 <h1 id="output">Output</h1>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Ceci est un texte output.</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Ceci est un texte output.</span></code></pre></figure>
 
 <p>Une ligne qui ne commence pas par un $ est un texte <em>output</em> destiné à vous donner de l’information ou vous dire que faire ensuite. Nous avons coloré le texte output en vert dans ces tutoriels d’amorçage.</p>
 
 <h1 id="input-spcifique--lutilisateur">Input Spécifique à l’Utilisateur</h1>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s1">&#39;username&#39;</span>
-<span class="c"># Affiche le texte dans les marques de citations.</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s1">&#39;username&#39;</span>
+<span class="c"># Affiche le texte dans les marques de citations.</span></code></pre></figure>
 
 <p>Les aires de texte en jaune représentent votre info personnelle, les repos, etc. Si ça fait partie d’une ligne ($) input, vous devriez le remplacer avec vos propres infos quand vous le saisissez. Si cela fait partie de texte output, c’est juste pour votre références. Cela affichera automatiquement votre propre info dans le Terminal.</p>
 

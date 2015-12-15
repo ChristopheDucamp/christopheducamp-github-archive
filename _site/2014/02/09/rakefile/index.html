@@ -3,10 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Jekyll : Générer un Post avec Rakefile</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Jekyll's selfdogfood" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="sur la route de l'indieweb" />
     <link rel="canonical" href="http://christopheducamp.com/2014/02/09/rakefile/" />
 
     <!-- Personnalisation CSS -->
@@ -30,6 +29,15 @@
 
        <!-- webmention.herokuapp.com -->
        <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+       
+       
+       <!--OAuth endpoint-->
+       <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+       <!--Token endpoint-->
+       <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+       <!-- micropub endpoint 
+       <link rel="micropub" href="https://ugitpub.herokuapp.com/micropub" />
+       -->
 
 
 </head>
@@ -41,7 +49,7 @@
 
   <div class="wrap">
 
-    <a class="site-title" href="/">sur la route de l'indieweb...</a>
+    <a class="site-title" href="/">Christophe Ducamp</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -60,6 +68,7 @@
         <a class="page-link" href="/projets">Projets</a>
         <a class="page-link" href="/collection">Notes</a>
       </div>
+              <iframe src="http://duckduckgo.com/search.html?width=200&site=christopheducamp.com&prefill=Cherche dans DuckDuckGo" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe>
     </nav>
 
   </div>
@@ -81,15 +90,15 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
   <article class="post-content e-content entry-content">
   <p><em>Les nom et permalien de ce post ont été générés automatiquement à l’aide de <code>rakefile</code>…</em></p>
 
-<p>J’envisage ce trimestre de raffiner sérieusement l’architecture et le design de ce site personnel destiné à quelques futurs tests d’<em><a href="http://indiewebify.me">indiewebification</a></em>. Bien d’accord avec vous, ce site bien que fonctionnel demeure vraiment très moche (et qui plus est, ennuyeux au possible !)  Ne souhaitant pas tomber dans la facilité d’installer un <a href="http://jekyllthemes.org/">magnifique thème pré-construit</a> sans rien y comprendre, je me donne encore quelques mois pour étudier quelques fondamentaux CSS avant de m’aventurer sur les pentes escarpées du “look and feel”.  Pour ceux qui seraient pressés de chevaucher Jekyll, je ne peux que recommander la lecture de l’excellent guide <a href="https://github.com/bebraw/yeswejekyll">Yes We Jekyll</a> publié l’année dernière par @<span class="h-card"><a href="https://twitter.com/bebraw">bebraw</a></span>.  </p>
+<p>J’envisage ce trimestre de raffiner sérieusement l’architecture et le design de ce site personnel destiné à quelques futurs tests d’<em><a href="http://indiewebify.me">indiewebification</a></em>. Bien d’accord avec vous, ce site bien que fonctionnel demeure vraiment très moche (et qui plus est, ennuyeux au possible !)  Ne souhaitant pas tomber dans la facilité d’installer un <a href="http://jekyllthemes.org/">magnifique thème pré-construit</a> sans rien y comprendre, je me donne encore quelques mois pour étudier quelques fondamentaux CSS avant de m’aventurer sur les pentes escarpées du “look and feel”.  Pour ceux qui seraient pressés de chevaucher Jekyll, je ne peux que recommander la lecture de l’excellent guide <a href="https://github.com/bebraw/yeswejekyll">Yes We Jekyll</a> publié l’année dernière par @<span class="h-card"><a href="https://twitter.com/bebraw">bebraw</a></span>.</p>
 
 <p>Outre quelques excellentes <a href="http://yeswejekyll.com/#from_meek_to_neat">sections de design</a> pour débutants, ce guide regorge d’astuces. Parmi lesquelles, un truc bien utile et facile à mettre en place pour <em>éviter —aux paresseux comme moi— de créer manuellement les noms de fichiers des posts</em>.</p>
 
 <h3 id="comment-viter-de-crer-un-fichier-de-post--la-main-">Comment éviter de créer un fichier de post à la main ?</h3>
 
-<p><a href="http://yeswejekyll.com/#_posts">Seule la section originale fait rérérence</a> : </p>
+<p><a href="http://yeswejekyll.com/#_posts">Seule la section originale fait rérérence</a> :</p>
 
-<p>Jekyll fournit quelques utilitaires qui facilitent la maintenance d’un blog. Le répertoire  <code>_posts</code>, comme vous avez pu peut-être <a href="http://jekyllrb.com/docs/posts/">l’étudier dans la documentation</a>, contient tous vos posts de blog. Il utilise une forme spécifique de schéma de nommage. Mais plutôt que de produire ces fichiers à la main, je recommande d’utiliser <a href="https://github.com/plusjade/jekyll-bootstrap/blob/master/Rakefile">jekyll-bootstrap Rakefile</a>. </p>
+<p>Jekyll fournit quelques utilitaires qui facilitent la maintenance d’un blog. Le répertoire  <code>_posts</code>, comme vous avez pu peut-être <a href="http://jekyllrb.com/docs/posts/">l’étudier dans la documentation</a>, contient tous vos posts de blog. Il utilise une forme spécifique de schéma de nommage. Mais plutôt que de produire ces fichiers à la main, je recommande d’utiliser <a href="https://github.com/plusjade/jekyll-bootstrap/blob/master/Rakefile">jekyll-bootstrap Rakefile</a>.</p>
 
 <p>Copiez simplement le fichier <code>rakefile</code> à la racine de votre projet et examinez-le si le cœur vous en dit.</p>
 
@@ -97,14 +106,14 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Examinez le fichier généré et remplissez les détails et le contenu. Par défaut, il pointera sur un layout <code>post</code>.</p>
 
-<p>Afin de générer un post de blog (et si ce n’est pas encore fait ?), créez d’abord un répertoire <code>_posts</code> et après ça, lancez simplement <code>rake post title="Nom de Votre Post"</code>. </p>
+<p>Afin de générer un post de blog (et si ce n’est pas encore fait ?), créez d’abord un répertoire <code>_posts</code> et après ça, lancez simplement <code>rake post title="Nom de Votre Post"</code>.</p>
 
 <h3 id="quelques-trucs-en-rapport--tudier-cette-anne">Quelques trucs en rapport à étudier cette année</h3>
 
 <ul>
   <li>La tâche <code>rake</code>n’écrase jamais les posts existants à moins que vous ne lui disiez de le faire</li>
   <li>Passer des paramètres de date et des tags (instructions de ligne de commande à étudier)</li>
-  <li><a href="https://github.com/avillafiorita/jekyll-rakefile">jekyll-rakefile</a> : Un <code>rakefile</code> pour simplifier la pré-visualisation et le déploiement de sites web jekyll. </li>
+  <li><a href="https://github.com/avillafiorita/jekyll-rakefile">jekyll-rakefile</a> : Un <code>rakefile</code> pour simplifier la pré-visualisation et le déploiement de sites web jekyll.</li>
 </ul>
 
   </article>

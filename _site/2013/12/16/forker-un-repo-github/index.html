@@ -3,10 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Forker un Repo sur GitHub</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Jekyll's selfdogfood" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="sur la route de l'indieweb" />
     <link rel="canonical" href="http://christopheducamp.com/2013/12/16/forker-un-repo-github/" />
 
     <!-- Personnalisation CSS -->
@@ -30,6 +29,15 @@
 
        <!-- webmention.herokuapp.com -->
        <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+       
+       
+       <!--OAuth endpoint-->
+       <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+       <!--Token endpoint-->
+       <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+       <!-- micropub endpoint 
+       <link rel="micropub" href="https://ugitpub.herokuapp.com/micropub" />
+       -->
 
 
 </head>
@@ -41,7 +49,7 @@
 
   <div class="wrap">
 
-    <a class="site-title" href="/">sur la route de l'indieweb...</a>
+    <a class="site-title" href="/">Christophe Ducamp</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -60,6 +68,7 @@
         <a class="page-link" href="/projets">Projets</a>
         <a class="page-link" href="/collection">Notes</a>
       </div>
+              <iframe src="http://duckduckgo.com/search.html?width=200&site=christopheducamp.com&prefill=Cherche dans DuckDuckGo" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe>
     </nav>
 
   </div>
@@ -91,7 +100,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Pour forker ce projet, cliquez sur le bouton “Fork” dans le dépôt GitHub.com.</p>
 
-<p><img src="https://github-images.s3.amazonaws.com/help/Bootcamp-Fork.png" alt="Image" /> </p>
+<p><img src="https://github-images.s3.amazonaws.com/help/Bootcamp-Fork.png" alt="Image" /></p>
 
 <h3 id="tape-2-cloner-votre-fork">Étape 2: Cloner votre fork</h3>
 
@@ -100,8 +109,8 @@ Pour pouvoir travailler sur le projet, vous devrez le <em>cloner</em>, à savoir
 
 <p>Faites tourner le code qui suit :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/username/Spoon-Knife.git
-<span class="c"># Clone votre fork du dépôt à l&#39;intérieur du répertoire en cours dans le terminal</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/username/Spoon-Knife.git
+<span class="c"># Clone votre fork du dépôt à l&#39;intérieur du répertoire en cours dans le terminal</span></code></pre></figure>
 
 <h3 id="tape-3--configurer-les-remotes">Étape 3 : Configurer les remotes</h3>
 
@@ -113,23 +122,23 @@ Pour pouvoir travailler sur le projet, vous devrez le <em>cloner</em>, à savoir
 
 <p>Git supporte plusieurs remotes. Ceci s’utilise communément au moment de forker un dépôt.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>Spoon-Knife
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>Spoon-Knife
 <span class="c"># Change le répertoire actif dans le terminal vers le nouveau répertoire fraîchement cloné &quot;Spoon-Knife&quot;</span>
 git remote add upstream https://github.com/octocat/Spoon-Knife.git
 <span class="c"># Assigne le dépôt original à un remote nommé &quot;upstream&quot;</span>
 git fetch upstream
-<span class="c"># Rapatrie les modifications non présentes dans votre dépôt local, sans modifier vos fichiers</span></code></pre></div>
+<span class="c"># Rapatrie les modifications non présentes dans votre dépôt local, sans modifier vos fichiers</span></code></pre></figure>
 
 <h2 id="plein-de-trucs-restent--faire-">Plein de Trucs Restent À Faire !</h2>
 
-<p>Vous avez forké avec succès un dépôt, mais vous avez maintenant plein d’autres choses cools à faire : </p>
+<p>Vous avez forké avec succès un dépôt, mais vous avez maintenant plein d’autres choses cools à faire :</p>
 
 <h3 id="pousser-des-commits">Pousser des commits</h3>
 
-<p>Une fois que vous avez produit quelques commits vers un dépôt forké et que vous voulez les pousser vers votre dépôt forké, vous faites ça de la même façon que vous le feriez avec un dépôt normal : </p>
+<p>Une fois que vous avez produit quelques commits vers un dépôt forké et que vous voulez les pousser vers votre dépôt forké, vous faites ça de la même façon que vous le feriez avec un dépôt normal :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">git push origin master
-<span class="c"># Pousse les commits vers votre dépôt remote (distant) stocké sur GitHub</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git push origin master
+<span class="c"># Pousse les commits vers votre dépôt remote (distant) stocké sur GitHub</span></code></pre></figure>
 
 <h4 id="plus-sur-les-commits">Plus sur les commits</h4>
 
@@ -139,12 +148,12 @@ git fetch upstream
 
 <h3 id="rentrer-des-modifications-upstream">Rentrer des modifications upstream</h3>
 
-<p>Si le dépôt original que vous avez forké pour votre projet est mis à jour, vous pouvez ajouter ces mises à jour à votre fork en faisant tourner la commande suivante : </p>
+<p>Si le dépôt original que vous avez forké pour votre projet est mis à jour, vous pouvez ajouter ces mises à jour à votre fork en faisant tourner la commande suivante :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">git fetch upstream
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git fetch upstream
 <span class="c"># Rapatrie toutes les nouvelles modifications provenant du dépôt original</span>
 git merge upstream/master
-<span class="c"># Fusionne toutes les modifications rapatriées à l&#39;intérieur de vos fichiers de travail</span></code></pre></div>
+<span class="c"># Fusionne toutes les modifications rapatriées à l&#39;intérieur de vos fichiers de travail</span></code></pre></figure>
 
 <h4 id="quelle-est-la-diffrence-entre-fetch-et--pull-">Quelle est la différence entre fetch et  pull ?</h4>
 
@@ -152,17 +161,17 @@ git merge upstream/master
 
 <h5 id="pull">Pull</h5>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">git pull upstream master
-<span class="c"># Tire les commits provenant de &#39;upstream&#39; et les stocke dans le dépôt local</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git pull upstream master
+<span class="c"># Tire les commits provenant de &#39;upstream&#39; et les stocke dans le dépôt local</span></code></pre></figure>
 
 <p>Quand vous utilisez <code>git pull</code>, git essaye automatiquement de faire le travail à votre place. C’est sensible au contexte, ainsi git fusionnera tous les les commits tirés (pull) à l’intérieur de la branche dans laquelle vous êtes en train de travailler. Une chose à garder à l’esprit, est que <code>git pull</code> fusionne automatiquement les commits sans vous laisser d’abord les réviser. Si vous ne gérez pas vos branches de très près, vous pourriez rencontrer des conflits fréquents.</p>
 
 <h5 id="fetch--merge">Fetch &amp; Merge</h5>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">git fetch upstream
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git fetch upstream
 <span class="c"># Rapatrie tous les nouveaux commits provenant du dépôt original</span>
 git merge upstream/master
-<span class="c"># Fusionne tous les commits rapatriés à l&#39;intérieur de vos fichiers de travail</span></code></pre></div>
+<span class="c"># Fusionne tous les commits rapatriés à l&#39;intérieur de vos fichiers de travail</span></code></pre></figure>
 
 <p>Quand vous lancez <code>git fetch</code>, git retrouve tous les nouveaux commits provenant du <code>remote</code> cible que vous n’avez pas et les stocke dans votre dépôt local. Néanmoins, il ne les fusionne pas dans votre branche actuelle. Ceci est tout particulièrement utile si vous avez besoin de conserver votre dépôt à jour mais travaillez sur quelque chose qui pourrait se casser si vous mettiez vos fichiers à jour. Pour intégrer les commits à l’intérieur de votre branche locale, vous utilisez <code>git merge</code>. Ceci combine les branches spécifiées et vous alerte en cas de conflits.</p>
 
@@ -172,33 +181,33 @@ git merge upstream/master
 
 <h5 id="comment-jutilise-les-branches-">Comment j’utilise les branches ?</h5>
 
-<p>Les branches sont vraiment faciles à travailler et vous épargneront beaucoup de maux de têtes, tout spécialement quand vous travaillez avec beaucoup de gens. Pour créer une branche et commencer à travailler dedans, lancez ces commandes : </p>
+<p>Les branches sont vraiment faciles à travailler et vous épargneront beaucoup de maux de têtes, tout spécialement quand vous travaillez avec beaucoup de gens. Pour créer une branche et commencer à travailler dedans, lancez ces commandes :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">git branch *mabranche*
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git branch *mabranche*
 <span class="c"># Crée une nouvelle branche nommée &quot;mabranche&quot;</span>
 git checkout *mabranche*
-<span class="c"># Transforme &quot;mabranche&quot; en branche active</span></code></pre></div>
+<span class="c"># Transforme &quot;mabranche&quot; en branche active</span></code></pre></figure>
 
 <p>Alternativement, vous pouvez utiliser le raccourci :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">git checkout -b *mabranche*
-<span class="c"># Crée une nouvelle branche nommée &quot;mabranche&quot; et la transforme en granche active</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git checkout -b *mabranche*
+<span class="c"># Crée une nouvelle branche nommée &quot;mabranche&quot; et la transforme en granche active</span></code></pre></figure>
 
 <p>Pour basculer entre les branches, utilisez <code>git checkout</code>.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">git checkout master
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git checkout master
 <span class="c"># Transforme &quot;master&quot; en branche active</span>
 git checkout *mabranche*
-<span class="c"># Transforme &quot;mabranche&quot; en branche active</span></code></pre></div>
+<span class="c"># Transforme &quot;mabranche&quot; en branche active</span></code></pre></figure>
 
 <p>Une fois que vous avez fini de travailler sur votre branche et quand vous êtes prêt à la combiner en retour à l’intérieur de la branche <code>master</code>, utilisez <code>merge</code>.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">git checkout master
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git checkout master
 <span class="c"># Fait de &quot;master&quot; la branche active</span>
 git merge *mabranche*
 <span class="c"># Fusionne les commits provenant de &quot;mabranche&quot; à l&#39;intérieur de &quot;master&quot;</span>
 git branch -d *mabranche*
-<span class="c"># Efface la branche &quot;mabranche&quot;</span></code></pre></div>
+<span class="c"># Efface la branche &quot;mabranche&quot;</span></code></pre></figure>
 
 <p><strong>Truc</strong> : Quand vous switchez entre les branches, les fichiers sur lesquels vous travaillez (la “copie de travail”) sont mis à jour pour renvoyer les modifications dans la nouvelles branche. Si vous avez des modifications que vous n’avez pas committées, git s’assurera que vous ne les perdez pas. Git fait aussi très attention durant les fusions et les pulls pour vous assurer que vous ne perdez pas de modifications. <strong>En cas de doute, committez tôt et committez souvent</strong>.</p>
 

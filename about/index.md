@@ -6,9 +6,9 @@ date: 2015-01-04
 
 ## Mini-bio : explorations et chaos  
 
-Bonjour, je m'appelle Christophe Ducamp et j'ai 53 ans. Père de famille heureux de 3 enfants, je vis à Paris et mes champs d'intérêts personnels et professionnels évoluent autour de la _communication, la culture libre et l'innovation ouverte_.
+Bonjour, je m'appelle Christophe Ducamp et j'ai 54 ans. Père de famille de 3 enfants, je vis à Paris et mes champs d'intérêts personnels et professionnels évoluent autour de la _communication, la culture libre et l'innovation ouverte_.
  
-Entrepreneur, parcours de plus de 20 ans dans la "com", le marketing direct et la banque, de tempérament créatif, curieux et enthousiaste, j'évolue depuis quelques années sur le _conseil en stratégie numérique_.
+Entrepreneur, parcours de plus de 20 ans dans la communication, le marketing direct et la banque, de tempérament créatif, curieux et enthousiaste, j'évolue depuis quelques années sur le _conseil en stratégie numérique_.
 
 * À titre bénévole, j'ai initié en mars 2013 l'association [MyData labs](http://mydatalabs.com), une organisation à but non lucratif ayant pour ambition de développer une communauté de recherche et un écosystème entrepreneurial sur le marché des _données personnelles_. Le plan de route 2015 sera écrit le mois prochain.
 
@@ -46,3 +46,17 @@ Essayant depuis quelques années de [réduire ma dépendance au courrier électr
 ## "Ailleurs" sur les silos sociaux
 
 Le web restant décentralisé, je suis aussi un _métayer_ [ailleurs](/ailleurs/) sur quelques silos et services toujours bien pratiques au quotidien. 
+
+## Notes 
+
+<ul>
+{% assign sorted_notes = (site.notes | sort: 'date') %}
+{% for collection in sorted_notes %}
+<li class="h-entry hentry h-as-note"><a class="p-name entry-title e-content entry-content article post-link" href="{{ collection.url }}">{{ collection.title }}</a> - 
+<time class="post-date dt-published" datetime="{{collection.date | date_to_xmlschema }}">
+{% assign d = collection.date | date: "%-d"  %}{% case d %}{% when '1' %}{{ d }}er{% else %}{{ d }}{% endcase %} {% assign m = collection.date | date: "%-m" %}{% case m %}{% when '1' %}janv.{% when '2' %}févr.{% when '3' %}mars{% when '4' %}avr.{% when '5' %}mai{% when '6' %}juin{% when '7' %}juil.{% when '8' %}août{% when '9' %}sept.{% when '10' %}oct.{% when '11' %}nov.{% when '12' %}déc.{% endcase %} {{ collection.date | date: '%Y' }}
+</time>
+<p><i>{{ collection.description }}</i></p>
+</li>
+{% endfor %}
+</ul>

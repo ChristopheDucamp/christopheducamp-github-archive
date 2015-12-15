@@ -3,10 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>MacOSX : Comment Utiliser les Pages GitHub pour votre page Projet</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Jekyll's selfdogfood" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="sur la route de l'indieweb" />
     <link rel="canonical" href="http://christopheducamp.com/2013/12/12/mac-osx-guide-page-projet-github/" />
 
     <!-- Personnalisation CSS -->
@@ -30,6 +29,15 @@
 
        <!-- webmention.herokuapp.com -->
        <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+       
+       
+       <!--OAuth endpoint-->
+       <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+       <!--Token endpoint-->
+       <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+       <!-- micropub endpoint 
+       <link rel="micropub" href="https://ugitpub.herokuapp.com/micropub" />
+       -->
 
 
 </head>
@@ -41,7 +49,7 @@
 
   <div class="wrap">
 
-    <a class="site-title" href="/">sur la route de l'indieweb...</a>
+    <a class="site-title" href="/">Christophe Ducamp</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -60,6 +68,7 @@
         <a class="page-link" href="/projets">Projets</a>
         <a class="page-link" href="/collection">Notes</a>
       </div>
+              <iframe src="http://duckduckgo.com/search.html?width=200&site=christopheducamp.com&prefill=Cherche dans DuckDuckGo" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe>
     </nav>
 
   </div>
@@ -81,14 +90,14 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
   <article class="post-content e-content entry-content">
   <p><a href="http://www.thinkful.com/learn/a-guide-to-using-github-pages/start/new-project/project-page/">Lien de référence chez Thinkful</a></p>
 
-<p>Si comme moi vous êtes débutant dans la ligne de commande et sur Git, et si vous cherchez un moyen gratuit d’héberger quelques documents et projets, les <a href="http://christopheducamp.com/w/Page_GitHub">Pages GitHub</a> peuvent être une réponse. </p>
+<p>Si comme moi vous êtes débutant dans la ligne de commande et sur Git, et si vous cherchez un moyen gratuit d’héberger quelques documents et projets, les <a href="http://christopheducamp.com/w/Page_GitHub">Pages GitHub</a> peuvent être une réponse.</p>
 
 <p>Non seulement, GitHub vous permet d’héberger des sites web avec HTML, CSS et javascript, mais ce service vous permet en outre de vous familiariser avec Git, un outil important de gestion de versions mais plutôt difficile à appréhender pour les non-programmeurs.</p>
 
 <h2 id="vous-dmarrez-de-zro-">Vous démarrez de zéro ?</h2>
 
 <p>Si vous démarrez de zéro, tout va bien. Avançons pas à pas. 
-Et rappelons pour mémoire, que GitHub dispose de deux types de pages : </p>
+Et rappelons pour mémoire, que GitHub dispose de deux types de pages :</p>
 
 <ol>
   <li>la <strong>page utilisateur</strong> ou <strong>organisation</strong> au format <code>http://votrenomutilisateur.github.io</code></li>
@@ -114,51 +123,51 @@ Et rappelons pour mémoire, que GitHub dispose de deux types de pages : </p>
 
 <p>Ouvrez votre fenêtre de Terminal (accessible dans votre répertoire <code>Utilitaires</code>), créons un répertoire (<code>mkdir</code>) et naviguons jusqu’à lui.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>mkdir ~/chemin/vers/code-source
-<span class="nv">$ </span><span class="nb">cd</span> ~/chemin/vers/code-source</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>mkdir ~/chemin/vers/code-source
+<span class="nv">$ </span><span class="nb">cd</span> ~/chemin/vers/code-source</code></pre></figure>
 
 <p><strong>Téléchargez (<code>clone</code>) votre nouveau dépôt GitHub et allez dedans.</strong></p>
 
-<p>Si vous visitez votre page projet sur <code>github.com</code>, vous devriez voir le lien que vous devez copier afin de le cloner (dans la colonne en bas à droite). <strong>Assurez-vous de sélectionner l’option clonage HTTPS</strong>, et copiez l’url qui devrait ressembler à un truc de type <code>https://github.com/votrenomutilisateur/NomDuProjet.git</code>  </p>
+<p>Si vous visitez votre page projet sur <code>github.com</code>, vous devriez voir le lien que vous devez copier afin de le cloner (dans la colonne en bas à droite). <strong>Assurez-vous de sélectionner l’option clonage HTTPS</strong>, et copiez l’url qui devrait ressembler à un truc de type <code>https://github.com/votrenomutilisateur/NomDuProjet.git</code></p>
 
 <p><em>Note</em> : pour mon nom d’utilisateur et un  projet qui s’appellerais<code>Projet-Furax</code>, cela me donne le schéma suivant : <code>https://github.com/ChristopheDucamp/Projet-Furax.git</code>. Entrez les lignes de commande qui suivent en <strong>prenant soin de changer Projet-Furax par le nom de votre projet créé au-dessus</strong></p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git clone https://github.com/ChristopheDucamp/Projet-Furax.git
-	<span class="nv">$ </span><span class="nb">cd </span>Projet-Furax</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">	<span class="nv">$ </span>git clone https://github.com/ChristopheDucamp/Projet-Furax.git
+	<span class="nv">$ </span><span class="nb">cd </span>Projet-Furax </code></pre></figure>
 
 <p><strong>Votre tout nouveau dépôt est désormais rapatrié sur votre Mac et devrait contenir désormais le fichier <code>README.md</code>.</strong></p>
 
-<p>Vérifions : </p>
+<p>Vérifions :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>ls
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>ls
 <span class="c"># README.md</span>
 	
 <span class="nv">$ </span>ls -a
-<span class="c"># .		..		.git		README.md</span></code></pre></div>
+<span class="c"># .		..		.git		README.md </span></code></pre></figure>
 
 <p>**Ajoutons une branche <code>&lt;gh-pages&gt;</code> à notre nouveau dépôt **</p>
 
 <p>à la ligne de commande, assurez-vous bien d’être dans votre dépôt local</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /chemin/vers/repo</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /chemin/vers/repo</code></pre></figure>
 
 <p>**créons une nouvelle branche appelée <code>&lt;gh-pages&gt;</code> et vérifions. **</p>
 
 <p>Le nom de la branche <code>&lt;gh-pages&gt;</code>est une branche spéciale utilisée par GitHub pour recevoir les fichiers à construire et à publier.</p>
 
-<p>Lancez la commande </p>
+<p>Lancez la commande</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git checkout -b gh-pages
-<span class="c"># Switched to a new branch &#39;gh-pages&#39;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git checkout -b gh-pages
+<span class="c"># Switched to a new branch &#39;gh-pages&#39; </span></code></pre></figure>
 
 <p><strong>Puis Committons et Poussons vers Github</strong></p>
 
-<p>Créez une page html qui dit juste “Hello World” : </p>
+<p>Créez une page html qui dit juste “Hello World” :</p>
 
 <p>Ce sera votre page d’accueil pour le moment. 
 Assurez-vous qu’elle soit bien située à la base du répertoire de votre dépôt et soit nommée <code>index.html</code> de manière à ce que GitHub sache comment l’afficher.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">echo</span> <span class="s2">&quot;Hello, world&quot;</span> &gt; index.html
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">echo</span> <span class="s2">&quot;Hello, world&quot;</span> &gt; index.html
     
 <span class="nv">$ </span>git add index.html
 <span class="nv">$ </span>git commit index.html -m <span class="s2">&quot;Mon premier commit hello world&quot;</span>
@@ -166,7 +175,7 @@ Assurez-vous qu’elle soit bien située à la base du répertoire de votre dép
 <span class="m">1</span> file changed, <span class="m">1</span> insertion<span class="o">(</span>+<span class="o">)</span>
 create mode <span class="m">100644</span> index.html
 
-<span class="nv">$ </span>git push origin gh-pages</code></pre></div>
+<span class="nv">$ </span>git push origin gh-pages</code></pre></figure>
 
 <h2 id="termin-">Terminé !</h2>
 

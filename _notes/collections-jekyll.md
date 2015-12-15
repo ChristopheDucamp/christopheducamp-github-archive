@@ -161,7 +161,7 @@ Les collections sont aussi disponibles sous `site.collections`, avec la métadon
       </td>
       <td>
         <p>
-          Si les documents de la collection seront sortis sous fomre de fichiers individuels.
+          Si les documents de la collection seront sortis sous forme de fichiers individuels.
         </p>
       </td>
     </tr>

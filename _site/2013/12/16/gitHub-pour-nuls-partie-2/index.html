@@ -3,10 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>GitHub pour les Débutants : Consignez, Poussez et Foncez !</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Jekyll's selfdogfood" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="sur la route de l'indieweb" />
     <link rel="canonical" href="http://christopheducamp.com/2013/12/16/gitHub-pour-nuls-partie-2/" />
 
     <!-- Personnalisation CSS -->
@@ -30,6 +29,15 @@
 
        <!-- webmention.herokuapp.com -->
        <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+       
+       
+       <!--OAuth endpoint-->
+       <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+       <!--Token endpoint-->
+       <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+       <!-- micropub endpoint 
+       <link rel="micropub" href="https://ugitpub.herokuapp.com/micropub" />
+       -->
 
 
 </head>
@@ -41,7 +49,7 @@
 
   <div class="wrap">
 
-    <a class="site-title" href="/">sur la route de l'indieweb...</a>
+    <a class="site-title" href="/">Christophe Ducamp</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -60,6 +68,7 @@
         <a class="page-link" href="/projets">Projets</a>
         <a class="page-link" href="/collection">Notes</a>
       </div>
+              <iframe src="http://duckduckgo.com/search.html?width=200&site=christopheducamp.com&prefill=Cherche dans DuckDuckGo" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe>
     </nav>
 
   </div>
@@ -85,41 +94,41 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Dans la [1<up>ère&lt;/sup&gt; partie de ce tutoriel GitHub en deux parties](/2013/12/15/github-pour-nuls-partie-1/), nous avons examiné les principales utilisations de GitHub, commencé le processus d'enregistrement d'un compte GitHub et pour finir, nous avons créé notre propre dépôt local pour le code.</up></p>
 
-<p>Ces premières étapes étant accomplies, ajoutons désormais la première partie de notre projet en <strong>produisant notre premier “commit” sur GitHub.</strong> À la fin de la première partie, nous avions créé un dépôt local appelé <code>MonProjet</code>, qui, visualisé à la ligne de commande, ressemble à cette impression-écran : </p>
+<p>Ces premières étapes étant accomplies, ajoutons désormais la première partie de notre projet en <strong>produisant notre premier “commit” sur GitHub.</strong> À la fin de la première partie, nous avions créé un dépôt local appelé <code>MonProjet</code>, qui, visualisé à la ligne de commande, ressemble à cette impression-écran :</p>
 
-<p><img src="http://xtof.me/images/2013/Terminal-Git-Creer-Repo.png" alt="Image" title="Créer un dépôt local Git en trois étapes." /> </p>
+<p><img src="http://xtof.me/images/2013/Terminal-Git-Creer-Repo.png" alt="Image" title="Créer un dépôt local Git en trois étapes." /></p>
 
-<p>Toujours en fenêtre Terminal, à la prochaine ligne, entrez : </p>
+<p>Toujours en fenêtre Terminal, à la prochaine ligne, entrez :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>touch Lisez-moi.txt</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>touch Lisez-moi.txt</code></pre></figure>
 
 <p>Une fois de plus, <em>ceci n’est pas</em> une commande Git. C’est simplement un autre standard de navigation (une “invite de commande”). <code>touch</code> signifie en fait “créer”. Tout ce que vous écrivez après, c’est le nom de la chose créée. Si vous allez sur votre répertoire local en utilisant le Finder ou le menu Démarrer, vous verrez qu’un fichier vide intitulé <code>Lisez-moi.txt</code> se niche désormais à l’intérieur. Vous auriez pu varier le plaisir avec quelque chose comme “Lisez-moi.doc” ou “Wiki.gif,” .</p>
 
 <p>Désormais, vous pouvez voir clairement votre nouveau fichier <code>Lisez-moi</code>. Mais Git le peut-il aussi ? Regardons ça. Tapez :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git status</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git status</code></pre></figure>
 
-<p>La ligne de commande, généralement passive jusqu’à ce stade, vous renvoie quelques lignes de texte similaires à ce qui suit : </p>
+<p>La ligne de commande, généralement passive jusqu’à ce stade, vous renvoie quelques lignes de texte similaires à ce qui suit :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># On branch master</span>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># On branch master</span>
 <span class="c">#</span>
 <span class="c"># Untracked files:</span>
 <span class="c">#</span>
 <span class="c">#   (use &quot;git add ...&quot; to include in what will be committed)</span>
 <span class="c">#</span>
-<span class="c">#         Lisez-moi.txt</span></code></pre></div>
+<span class="c">#         Lisez-moi.txt</span></code></pre></figure>
 
-<p>Que se passe-t-il ? </p>
+<p>Que se passe-t-il ?</p>
 
-<p>Tout d’abord, vous êtes sur la branche <code>master</code> de votre projet, ce qui a du sens puisque nous ne l’avons pas “débranchée” du projet. Il n’y a aucune raison à cela, puisque nous travaillons seul. Deuxièmement, <code>Lisez-moi.txt</code> est listé comme un fichier “untracked”, ce qui signifie que Git l’ignore à cette heure. Pour faire en sorte que Git remarque que le fichier est là, saisissez : </p>
+<p>Tout d’abord, vous êtes sur la branche <code>master</code> de votre projet, ce qui a du sens puisque nous ne l’avons pas “débranchée” du projet. Il n’y a aucune raison à cela, puisque nous travaillons seul. Deuxièmement, <code>Lisez-moi.txt</code> est listé comme un fichier “untracked”, ce qui signifie que Git l’ignore à cette heure. Pour faire en sorte que Git remarque que le fichier est là, saisissez :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git add Lisez-moi.txt</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git add Lisez-moi.txt</code></pre></figure>
 
 <p><img src="http://xtof.me/images/2013/Terminal-Git-add-lisezmoi.txt.png" alt="image" /></p>
 
-<p>Remarquez comment la ligne de commande vous glisse un truc ici ? Très bien, nous avons ajouté notre premier fichier, aussi est-il temps à ce stade de prendre un “instantané” du projet, ou de le “consigner” : </p>
+<p>Remarquez comment la ligne de commande vous glisse un truc ici ? Très bien, nous avons ajouté notre premier fichier, aussi est-il temps à ce stade de prendre un “instantané” du projet, ou de le “consigner” :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git commit -m <span class="s2">&quot;Ajout Lisez-moi.txt&quot;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git commit -m <span class="s2">&quot;Ajout Lisez-moi.txt&quot;</span></code></pre></figure>
 
 <p><img src="http://xtof.me/images/2013/Terminal-git-commit-Lisez-moi.txt.png" alt="image" title="notre premier commit." /></p>
 
@@ -139,13 +148,13 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Supposons que nous ayons un dépôt GitHub appelé “MonProjet” situé sur <code>https://github.com/nomutilisateur/MonProjet.git</code>. Bien sûr, <code>nomutilisateur</code> devrait être remplacé par votre véritable nom d’utilisateur Github, et <code>MonProjet</code> devrait être remplacé par le véritable titre que vous avez donné à votre premier dépôt GitHub.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote add origin https://github.com/nomutilisateur/MonProjet.git</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote add origin https://github.com/nomutilisateur/MonProjet.git</code></pre></figure>
 
 <p>La première partie est connue ; nous avons déjà utilisé <code>git add</code> avec les fichiers. Nous avons ajouté après le mot <code>origin</code> pour indiquer un nouvel endroit à partir duquel viendront les fichiers. <code>remote</code> est un descripteur de <code>origin</code>, pour indiquer que l’original n’est <em>pas</em> sur l’ordinateur, mais quelque part en ligne.</p>
 
 <p>Git sait désormais qu’il existe un dépôt distant et que c’est là où vous voulez envoyer vos modifications du dépôt local. Pour confirmer, saisissez cela pour déposer :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote -v</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote -v</code></pre></figure>
 
 <p><img src="http://xtof.me/images/2013/Terminal-git-remove-v.png" alt="image" title="ajout repo  distant et git remote-v" /></p>
 
@@ -153,7 +162,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Maintenant, nous voulons téléverser, ou “<code>push</code>“er, nos modifications vers le dépôt distant Github. C’est facile. Tapez simplement :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git push</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git push</code></pre></figure>
 
 <p>La ligne de commande vous soufflera plusieurs lignes, et le mot final qu’elle recrachera ressemblera à quelque chose comme “everything up-to-date.”</p>
 
@@ -181,45 +190,45 @@ C’est là où s’arrête ce tutoriel de débutant.</p>
 
 <p>Ouvrez la Ligne de Commande et changez de répertoire jusqu’à ce vous soyez dans le répertoire <code>icecream</code>, là où sont stockés vos designs.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> ~/icecream</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> ~/icecream</code></pre></figure>
 
 <p>Puis, réinitialisez Git de manière à pouvoir démarrer en utilisant des commandes Git à l’intérieur du répertoire. Le dossier est désormais un dépôt Git.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git init</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git init</code></pre></figure>
 
-<p>Attendez, est-ce le bon fichier ? Voici comment vérifier et vous assurer que c’est bien l’endroit où vous avez stocké votre design : </p>
+<p>Attendez, est-ce le bon fichier ? Voici comment vérifier et vous assurer que c’est bien l’endroit où vous avez stocké votre design :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git status</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git status</code></pre></figure>
 
 <p>Et c’est ce que Git vous dira en retour :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Untracked files:</span>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Untracked files:</span>
 <span class="c">#   (use &quot;git add ...&quot; to include in what will be committed)</span>
 <span class="c">#</span>
 
-<span class="c">#       chocolat.jpeg</span></code></pre></div>
+<span class="c">#       chocolat.jpeg</span></code></pre></figure>
 
 <p>Ayé ils sont ici ! Ajoutez-les dans votre dépôt local Git pour qu’ils soient suivis par Git.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git add chocolat.jpeg</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git add chocolat.jpeg</code></pre></figure>
 
-<p>Maintenant, faites un “instantané” du dépôt tel qu’il est maintenant avec la commande commit : </p>
+<p>Maintenant, faites un “instantané” du dépôt tel qu’il est maintenant avec la commande commit :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git commit -m <span class="s2">&quot;Ajoute chocolat.jpeg.&quot;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git commit -m <span class="s2">&quot;Ajoute chocolat.jpeg.&quot;</span></code></pre></figure>
 
 <p>Bravo ! Mais vos collègues, acharnés au boulot dans leurs propres dépôts locaux, ne peuvent pas voir votre tout nouveau design ! Ceci parce que le projet principal est stocké dans le compte Github de la société (username: 123WebDesign) dans le dépôt intitulé “icecream.”</p>
 
-<p>Parce que vous ne vous êtes pas encore connecté au dépôt GitHub, votre ordinateur ne sait même pas qu’il existe. Aussi, déclarez votre dépôt local : </p>
+<p>Parce que vous ne vous êtes pas encore connecté au dépôt GitHub, votre ordinateur ne sait même pas qu’il existe. Aussi, déclarez votre dépôt local :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote add origin https://github.com/123WebDesign/icecream.git</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote add origin https://github.com/123WebDesign/icecream.git</code></pre></figure>
 
 <p>Et double-checkez pour vous assurer qu’il le connaît :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote -v</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git remote -v</code></pre></figure>
 
-<p>Pour finir, c’est le moment que vous attendiez. Téléversez ce délicieux sundae sur le projet : </p>
+<p>Pour finir, c’est le moment que vous attendiez. Téléversez ce délicieux sundae sur le projet :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">git push</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git push</code></pre></figure>
 
 <p>Tut tut ! Avec tous ces outils à portée de mains, il est clair que Git et le service GitHub ne sont pas que pour les programmeurs.</p>
 
@@ -227,9 +236,9 @@ C’est là où s’arrête ce tutoriel de débutant.</p>
 
 <p><img src="http://xtof.me/images/2013/TryGit-CodeSchool.png" alt="image" title="Try Git de Code School." /></p>
 
-<p>Git est dense, je sais. J’ai fait de mon mieux pour produire un tutoriel qui pourrait même m’aider à savoir comment l’utiliser, mais nous n’apprenons pas tous de la même manière. </p>
+<p>Git est dense, je sais. J’ai fait de mon mieux pour produire un tutoriel qui pourrait même m’aider à savoir comment l’utiliser, mais nous n’apprenons pas tous de la même manière.</p>
 
-<p>En plus de mon <a href="/2013/12/09/anti-seche-ligne-de-commande/">anti-sèche pour la ligne de commande</a>, voici quelques ressources que j’ai trouvées utiles tout en apprenant personnellement à utiliser Git et Github durant l’été : </p>
+<p>En plus de mon <a href="/2013/12/09/anti-seche-ligne-de-commande/">anti-sèche pour la ligne de commande</a>, voici quelques ressources que j’ai trouvées utiles tout en apprenant personnellement à utiliser Git et Github durant l’été :</p>
 
 <ul>
   <li><a href="http://git-scm.com/book/fr">Pro Git</a>. Voici un livre complet open source sur l’apprentissage et l’utilisation de Git. Il peut paraître long, mais je n’ai pas eu besoin de lire quoi que ce soit après le chapitre trois pour apprendre les fondamentaux.</li>

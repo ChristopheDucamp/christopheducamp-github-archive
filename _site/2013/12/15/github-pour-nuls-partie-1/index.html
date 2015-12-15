@@ -3,10 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>GitHub Pour les Nuls : Pas de Panique, Lancez-Vous ! (Première Partie)</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Jekyll's selfdogfood" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="sur la route de l'indieweb" />
     <link rel="canonical" href="http://christopheducamp.com/2013/12/15/github-pour-nuls-partie-1/" />
 
     <!-- Personnalisation CSS -->
@@ -30,6 +29,15 @@
 
        <!-- webmention.herokuapp.com -->
        <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
+       
+       
+       <!--OAuth endpoint-->
+       <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+       <!--Token endpoint-->
+       <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+       <!-- micropub endpoint 
+       <link rel="micropub" href="https://ugitpub.herokuapp.com/micropub" />
+       -->
 
 
 </head>
@@ -41,7 +49,7 @@
 
   <div class="wrap">
 
-    <a class="site-title" href="/">sur la route de l'indieweb...</a>
+    <a class="site-title" href="/">Christophe Ducamp</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -60,6 +68,7 @@
         <a class="page-link" href="/projets">Projets</a>
         <a class="page-link" href="/collection">Notes</a>
       </div>
+              <iframe src="http://duckduckgo.com/search.html?width=200&site=christopheducamp.com&prefill=Cherche dans DuckDuckGo" style="overflow:hidden;margin:0;padding:0;width:258px;height:40px;" frameborder="0"></iframe>
     </nav>
 
   </div>
@@ -79,7 +88,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
   </header>
 
   <article class="post-content e-content entry-content">
-  <p>Traduction d’un article original de <span class="p-author h-card"><a href="http://otakujournalist.com/about-the-author/">Lauren Orsini</a></span> publié le <time class="dt-published" value="2013-11-30">30 septembre 2013</time> pour ReadWriteWeb. Seul le <a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#feed=/author/lauren-orsini&amp;awesm=~omyHpouFOs03MN">lien original fait référence</a>. </p>
+  <p>Traduction d’un article original de <span class="p-author h-card"><a href="http://otakujournalist.com/about-the-author/">Lauren Orsini</a></span> publié le <time class="dt-published" value="2013-11-30">30 septembre 2013</time> pour ReadWriteWeb. Seul le <a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#feed=/author/lauren-orsini&amp;awesm=~omyHpouFOs03MN">lien original fait référence</a>.</p>
 
 <p>La traduction reste à raffiner avec la pratique de cet outil. <a href="/2013/12/16/gitHub-pour-nuls-partie-2/">Seconde partie en cours d’étude</a> pour me lancer sous peu dans les premiers <em>commits</em> à la ligne de commande. Mise en forme prévue pour le plan de route <a href="http://indiewebamp.com">indieweb</a> 2014. Merci. - <span class="u-syndication"><a href="https://twitter.com/xtof_fr/status/412238889739247616">xtof_fr</a></span></p>
 
@@ -105,7 +114,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p><img src="http://xtof.me/images/2013/ma-page-github.png" alt="image" title="ma première page github" /></p>
 
-<p>Vous pouvez déjà avoir plus d’une dizaine de comptes sociaux… voici pourquoi vous devriez être sur Github : il dispose des meilleures Conditions Générales d’Utilisation. Si vous regardez la section F des <a href="https://help.github.com/articles/github-terms-of-service">conditions générales</a>, vous verrez que Github fait tout pour vous assurer que vous conservez la propriété complète de tous les projets que vous déposez sur le site : </p>
+<p>Vous pouvez déjà avoir plus d’une dizaine de comptes sociaux… voici pourquoi vous devriez être sur Github : il dispose des meilleures Conditions Générales d’Utilisation. Si vous regardez la section F des <a href="https://help.github.com/articles/github-terms-of-service">conditions générales</a>, vous verrez que Github fait tout pour vous assurer que vous conservez la propriété complète de tous les projets que vous déposez sur le site :</p>
 
 <blockquote>We claim no intellectual property rights over the material you provide to the Service. Your profile and materials uploaded remain yours.<footer><a href="https://help.github.com/articles/github-terms-of-service">conditions générales GitHub</a>
 </footer></blockquote>
@@ -132,7 +141,7 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <h1 id="les-mots-que-les-personnes-utilisent-quand-elles-parlent-de-git">Les Mots que les Personnes Utilisent quand Elles Parlent de Git</h1>
 
-<p>Dans ce tutoriel, il y a quelques mots que j’utiliserai sans arrêt, aucun d’eux dont je n’avais entendu parler avant d’avoir démarré l’apprentissage. Voici les plus connus : </p>
+<p>Dans ce tutoriel, il y a quelques mots que j’utiliserai sans arrêt, aucun d’eux dont je n’avais entendu parler avant d’avoir démarré l’apprentissage. Voici les plus connus :</p>
 
 <p><strong>Ligne de Commande</strong> : Le programme de l’ordinateur que nous utilisons pour entrer des commandes Git. Sur un Mac, ça s’appelle Terminal. Sur un PC, c’est un programme non-natif que vous téléchargez lorsque vous téléchargez Git pour la première fois (nous ferons ça dans la section suivante). Dans les deux cas, au lieu d’utiliser une souris, vous saisissez des commandes basées sur le texte, connues comme des invites de commande.</p>
 
@@ -178,17 +187,17 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Vous pourriez vous arrêter là et github fonctionnerait bien. Mais si vous voulez travailler sur votre projet sur votre ordinateur local, vous devez avoir installé Git. En fait, Github ne fonctionnera pas sur votre ordinateur local si vous n’installez pas Git. <a href="http://git-scm.com/downloads">Téléchargez et installez la dernière version de Git pour Windows, Mac ou Linux selon votre machine</a>.</p>
 
-<p><img src="http://xtof.me/images/2013/git-scm.com-pour-telecharger-Git.png" alt="image" title="http://git-scm.com/, l'endroit où vous téléchargez Git." />” </p>
+<p><img src="http://xtof.me/images/2013/git-scm.com-pour-telecharger-Git.png" alt="image" title="http://git-scm.com/, l'endroit où vous téléchargez Git." />”</p>
 
-<p>Désormais, il est temps de passer à la ligne de commande. Sur Windows, ça veut dire démarrer l’app Git Bash que vous venez d’installer, et sur MacOSX, c’est le bon vieux Terminal. Il est temps de vous présenter à Git. Saisissez le code qui suit : </p>
+<p>Désormais, il est temps de passer à la ligne de commande. Sur Windows, ça veut dire démarrer l’app Git Bash que vous venez d’installer, et sur MacOSX, c’est le bon vieux Terminal. Il est temps de vous présenter à Git. Saisissez le code qui suit :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">git config --global user.name <span class="s2">&quot;Votre Nom Ici&quot;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git config --global user.name <span class="s2">&quot;Votre Nom Ici&quot;</span></code></pre></figure>
 
 <p>Naturellement, vous devrez remplacer “Votre Nom Ici” avec votre propre nom entre guillemets. Ce peut être votre nom légal, votre pseudo en ligne ou tout ce que vous voudrez. Git s’en moque, il a juste besoin de savoir à qui créditer les commits et les projets futurs.</p>
 
-<p>Puis, dites-lui votre e-mail et assurez-vous que c’est le même email que vous avez utilisé quand vous vous êtes enregistré pour votre compte Github. Faites comme suit : </p>
+<p>Puis, dites-lui votre e-mail et assurez-vous que c’est le même email que vous avez utilisé quand vous vous êtes enregistré pour votre compte Github. Faites comme suit :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">git config --global user.email <span class="s2">&quot;votre_email@votre_email.com&quot;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git config --global user.email <span class="s2">&quot;votre_email@votre_email.com&quot;</span></code></pre></figure>
 
 <p>C’est tout ce que vous devez faire pour démarrer Git sur votre ordinateur. Cependant, du fait que vous venez de créer un compte Github.com, il est probable que vous ne souhaitiez pas gérer simplement votre projet localement, mais aussi en ligne. Si vous voulez, vous pouvez aussi paramétrer Git de façon à ce qu’il ne vous demande pas de vous connecter à votre compte Github à chaque fois que vous voulez lui parler. Pour les besoins de ce tutoriel, ce n’est pas un grand problème parce que nous ne lui parlerons qu’une fois. Le tutoriel complet pour faire ça est <a href="https://help.github.com/articles/set-up-git">situé sur Github</a>.</p>
 
@@ -196,11 +205,11 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <h2 id="crez-votre-dpt-en-ligne">Créez Votre Dépôt En Ligne</h2>
 
-<p>Maintenant que vous avez tout réglé, il est temps de créer un endroit pour placer votre projet à faire vivre. Tant Git que Github font référence à cela en tant que repository, ou “repo” pour le raccourci, un répertoire digital ou un espace de stockage où vous pouvez accéder à votre projet, ses fichiers, et toutes les versions de ses fichiers que Git a sauvegardés. </p>
+<p>Maintenant que vous avez tout réglé, il est temps de créer un endroit pour placer votre projet à faire vivre. Tant Git que Github font référence à cela en tant que repository, ou “repo” pour le raccourci, un répertoire digital ou un espace de stockage où vous pouvez accéder à votre projet, ses fichiers, et toutes les versions de ses fichiers que Git a sauvegardés.</p>
 
-<p>Revenons sur GitHub.com et cliquez sur la petite icône de texte à côté de votre nom d’utilisateur. Ou allez vers la nouvelle page repository si toutes les icônes sont les mêmes. Donnez à votre dépôt un nom court et mémorisable. Allez-y et rendez-le public, n’ayez pas peur de montrer votre tentative d’apprendre Github ! </p>
+<p>Revenons sur GitHub.com et cliquez sur la petite icône de texte à côté de votre nom d’utilisateur. Ou allez vers la nouvelle page repository si toutes les icônes sont les mêmes. Donnez à votre dépôt un nom court et mémorisable. Allez-y et rendez-le public, n’ayez pas peur de montrer votre tentative d’apprendre Github !</p>
 
-<p><img src="http://xtof.me/images/2013/github-creer-nouveau-repo.png" alt="image" title="Créer un nouveau repository sur GitHub" />. </p>
+<p><img src="http://xtof.me/images/2013/github-creer-nouveau-repo.png" alt="image" title="Créer un nouveau repository sur GitHub" />.</p>
 
 <p>Ne vous inquiétez pas de cliquer sur le bouton radio à côté intitulé “Initialize this repository with a README.” Un fichier Readme est généralement un fichier texte qui explique sommairement le projet. Mais nous pouvons produire localement notre propre fichier <code>Readme</code>.</p>
 
@@ -212,9 +221,9 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>C’est l’endroit où nous produisons quelques saisies de ligne de commande faisant partie de chaque tutoriel Git qui me chahute le plus, aussi j’irai vraiment lentement.</p>
 
-<p>Saisissez d’abord : </p>
+<p>Saisissez d’abord :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">mkdir ~/MonProjet</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">mkdir ~/MonProjet</code></pre></figure>
 
 <p><code>mkdir</code> est le raccourci de “make directory”. Ce n’est en réalité pas une ligne de commande Git, mais une commande générale de navigation provenant du temps avant les interfaces ordinateurs visuelles. Le <code>~/</code> vous assure que nous construisons le dépôt tout en haut de la structure du fichier de notre ordinateur, au lieu d’un répertoire coincé dans quelque autre répertoire qui serait plus difficile à retrouver. En fait, si vous saisissez <code>~/</code> dans la fenêtre de votre navigateur, cela vous ramènera vers le répertoire local le plus haut de votre ordinateur. Pour moi, en utilisant Chrome sur un Mac, cela affiche mon répertoire Users.</p>
 
@@ -222,19 +231,19 @@ Christophe Ducamp</a> • <a class="u-url" href="http://christopheducamp.com/201
 
 <p>Puis, saisissez :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~/MonProjet</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~/MonProjet</code></pre></figure>
 
 <p><code>cd</code> signifie change directory, et c’est aussi une commande de navigation. Nous venons de produire un répertoire, et nous voulons maintenant migrer vers ce répertoire et aller dedans. Une fois que nous avons tapé cettte commande, nous sommes transportés à l’intérieur de MonProjet.</p>
 
 <p>Maintenant, nous allons pour finir utiliser une commande Git. 
-Pour votre prochaine ligne, saisissez : </p>
+Pour votre prochaine ligne, saisissez :</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">git init</code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git init</code></pre></figure>
 
 <p>Vous savez que vous utilisez une commande Git car elle démarre toujours par <code>git</code>. Init signifie “initialiser”. Souvenez-vous comment les deux précédentes commandes que nous avons saisies étaient des termes généraux de ligne de commande ? Quand nous tapons ce code à l’intérieur, cela dit à l’ordinateur de reconnaître ce répertoire comme un dépôt local Git. 
 Si vous ouvrez le répertoire, il ne s’affichera pas différemment, parce que ce nouveau répertoire Git est un fichier caché à l’intérieur du dépôt dédié.</p>
 
-<p><img src="http://xtof.me/images/2013/Terminal-Git-Creer-Repo.png" alt="Image" title="Créer un dépôt local Git en trois étapes." /> </p>
+<p><img src="http://xtof.me/images/2013/Terminal-Git-Creer-Repo.png" alt="Image" title="Créer un dépôt local Git en trois étapes." /></p>
 
 <p>Néanmoins, votre ordinateur réalise maintenant que ce répertoire est <em>git-ready</em>, et vous pouvez commencer à entrer des commandes Git. Maintenant, vous disposez à la fois d’un dépôt local et en ligne pour votre projet. 
 Dans la <a href="/2013/12/16/gitHub-pour-nuls-partie-2/">seconde partie</a>, vous apprendrez comment faire votre premier commit vers des dépôts locaux et sur Github. Et vous en saurez plus sur quelques ressources géniales de Github.</p>

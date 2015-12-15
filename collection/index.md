@@ -1,16 +1,17 @@
----
 layout: note
-title: "Aménagement d'un cabinet de curiosités"
+title: "Premier cabinet de curiosités"
 date: "2015-01-03"
-description: "architecture de liste : étude de clés de tri"
+description: "architecture de liste & étude de clés de tri"
 tags: 
 - CMS
 - collection
 ---
 
-Statut à date : Travaux d'ouverture d'un chantier pour [démarrer des collections Jekyll](/2014/12/31/demarrer-des-collections-dans-jekyll/). Je m'essaye ici à lister un premier échantillon de collection de notes de toutes sortes.
+Statut : Travaux d'ouverture d'un chantier pour [démarrer des collections Jekyll](/2014/12/31/demarrer-des-collections-dans-jekyll/). L'intention est de lister un premier échantillon de collection de notes de toutes sortes.
 
-**Note technique jekyll** : à l'inverse des posts de blog accessibles sur la page principale, ces notes de collection sont classées par ordre chronologique. D'[autres clés de tri](https://github.com/jekyll/jekyll/issues/2515#issuecomment-46107601) seront étudiées selon la nature des notes à classer. (livres, albums, humeurs du jour, etc.) 
+**Note technique jekyll** : à l'inverse des posts de blog accessibles sur la page principale, ces notes de collection sont classées par ordre chronologique. 
+
+D'[autres clés de tri](https://github.com/jekyll/jekyll/issues/2515#issuecomment-46107601) seront étudiées selon la nature des notes à classer. (livres, albums, humeurs du jour, etc.) 
 
 <ul>
 {% assign sorted_notes = (site.notes | sort: 'date') %}
