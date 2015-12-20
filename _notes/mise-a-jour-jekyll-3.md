@@ -22,7 +22,7 @@ $ gem update jekyll
 
 ### site.collections a été modifié 
 
-Dans la version 2.x, vos itérations sur `site.collections` donnait une série avec l'étiquette de la collection et l'objet de la collection comme les premier et second éléments, respectivement. Dans 3.x, cette complication a été enlevée et les itérations donnent maintenant tout simplement l'objet de collection. Une simple conversion doit être faite dans vos modèles :
+Dans la version 2.x, vos itérations sur `site.collections` donnaient une série avec l'étiquette de la collection et l'objet de la collection comme les premier et second éléments, respectivement. Dans 3.x, cette complication a été enlevée et les itérations donnent maintenant tout simplement l'objet de collection. Une simple conversion doit être faite dans vos modèles :
 
 - `collection[0]` devient `collection.label`
 - `collection[1]` devient  `collection`
