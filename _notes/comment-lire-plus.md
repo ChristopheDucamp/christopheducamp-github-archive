@@ -10,7 +10,7 @@ tags:
 <img style="padding-left:20px; float:right; width:100px; height:100px;" src="http://photos-h.ak.instagram.com/hphotos-ak-xfa1/t51.2885-15/10914113_1520893888178943_1854795171_n.jpg" />
 
 
-En train de lire l'excellent ouvrage d'<span class="h-card microcard" rel="muse">[Austin Kleon](http://austinkleon.com)</span>, <q>[Partagez comme un Artiste](http://austinkleon.com/2011/03/30/how-to-steal-like-an-artist-and-9-other-things-nobody-told-me/)</q> désormais traduit en français et en occasion chez Gibert à 7.80 €  
+Achevé l'excellent ouvrage d'<span class="h-card microcard" rel="muse">[Austin Kleon](http://austinkleon.com)</span>, <q>[Partagez comme un Artiste](http://austinkleon.com/2011/03/30/how-to-steal-like-an-artist-and-9-other-things-nobody-told-me/)</q> désormais traduit en français et en occasion chez Gibert à 7.80 €  
 
 Inspiré par la check-list pour [lire plus](http://austinkleon.com/2014/12/29/how-to-read-more/) en 2015 et parvenir à un [objectif de 50 livres](https://www.goodreads.com/user/show/3564667-christophe), soit plus de 4 par mois... 
 
