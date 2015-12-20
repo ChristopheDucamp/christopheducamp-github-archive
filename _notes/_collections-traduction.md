@@ -1,6 +1,7 @@
 ---
 layout: note
-title: Collections
+title: Encore des collections
+subtitle: Etude en cours - Traduction à venir.
 permalink: /docs/collections/
 ---
 
@@ -331,7 +332,7 @@ file, each document has the following attributes:
 </table>
 </div>
 
-## Accessing Collection Attributes
+## Accéder aux attributs de collections
 
 Attributes from the YAML front matter can be accessed as data anywhere in the
 site. Using the above example for configuring a collection as `site.albums`,
