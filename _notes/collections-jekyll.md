@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: note
 title:  "Les collections dans Jekyll (doc)"
 date: "2014-12-30"
 subtitle: "Étude en cours de la documentation officielle jekyll"
