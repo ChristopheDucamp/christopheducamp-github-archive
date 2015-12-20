@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: note
 title: "Comptabilité en Ligne pour Freelance et TPE : Que Choisir ?"
 date: "2015-01-03"
 subtitle: "Jeff Porter recommande @FreeAgent. Essai en cours"
