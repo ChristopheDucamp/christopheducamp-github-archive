@@ -2,12 +2,11 @@
 layout: page
 title: Projets
 ---
-
 Cette page n'est qu'un premier échantillon d'une autre page incluse dans la navigation primaire.
 
 À considérer ici comme un emplacement réservé  pour lister quelques futurs projets. 
 
-Outre l'intention de construire un premier rassemblement indiewebcamp en France, mon premier projet pour 2015 serait de pouvoir **parvenir à dompter la motorisation Jekyll** avec quelques blocs de construction basiques de l'indieweb. 
+Premier projet pour 2016 : **parvenir à dompter la motorisation Jekyll** avec quelques blocs de construction basiques de l'indieweb. 
 
 - [Liste des sites web motorisés par Jekyll](https://github.com/jekyll/jekyll/wiki/Sites)
 - La [documentation officielle de Jekyll ](http://jekyllrb.com/)

@@ -21,9 +21,10 @@ gems:
 
 #collections :essai en cours
 collections:
+  music:
+    output: true
   notes:
-    name: Notes de collections
-    permalink: "/:notes/:title"
-    output : true
+    output: true
+
     
 

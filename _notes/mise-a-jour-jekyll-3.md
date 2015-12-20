@@ -22,52 +22,42 @@ $ gem update jekyll
 
 ### site.collections a été modifié 
 
-Dans la version 2.x, vos itérations sur `site.collections` yielded an array with the collection
-label and the collection object as the first and second items, respectively. In 3.x,
-this complication has been removed and iterations now yield simply the collection object.
-A simple conversion must be made in your templates:
+Dans la version 2.x, vos itérations sur `site.collections` donnait une série avec l'étiquette de la collection et l'objet de la collection comme les premier et second éléments, respectivement. Dans 3.x, cette complication a été enlevée et les itérations donnent maintenant tout simplement l'objet de collection. Une simple conversion doit être faite dans vos modèles :
 
-- `collection[0]` becomes `collection.label`
-- `collection[1]` becomes `collection`
+- `collection[0]` devient `collection.label`
+- `collection[1]` devient  `collection`
 
-When iterating over `site.collections`, ensure the above conversions are made.
+Au moment d'itérer sur `site.collections`, assurez-vous que les conversions ci-dessus ont été faites.
 
 ### Dépendances abandonnées
 
-We dropped a number of dependencies the Core Team felt were optional. As such, in 3.0, they must be explicitly installed and included if you use any of the features. They are:
+Nous avons laissé tomber un certain nombre de dépendances que la Core Team trouvaient optionnelles. Ainsi, dans 3.0, elles doivent être explicitement installées et incluses si vous utilisez l'une de ces fonctionnalités. Ce sont : 
 
-- jekyll-paginate – Jekyll's pagination solution from days past
-- jekyll-coffeescript – processing of CoffeeScript
-- jekyll-gist – the `gist` Liquid tag
-- pygments.rb – the Pygments highlighter
-- redcarpet – the Markdown processor
-- toml – an alternative to YAML for configuration files
-- classifier-reborn – for `site.related_posts`
+- jekyll-paginate – la solution de pagination de Jekyll
+- jekyll-coffeescript – le traitement de CoffeeScript
+- jekyll-gist – le tag Liquid  `gist`
+- pygments.rb – la coloration syntaxique Pygments 
+- redcarpet – le processeur Markdown
+- toml – une alternative à YAML pour les fichiers de configuration
+- classifier-reborn – pour `site.related_posts`
 
-### Future posts
+### Posts futurs
 
-A seeming feature regression in 2.x, the `--future` flag was automatically _enabled_.
-The future flag allows post authors to give the post a date in the future and to have
-it excluded from the build until the system time is equal or after the post time.
-In Jekyll 3, this has been corrected. **Now, `--future` is disabled by default.**
-This means you will need to include `--future` if you want your future-dated posts to
-generate when running `jekyll build` or `jekyll serve`.
+Une fonctionnalité en régressions dans 2.x, le marqueur `--future` était automatiquement _activé_.
+Le marqueur future permet aux auteurs d'articles de donner une data dans le futur au post et de l'exclure du build jusqu'à ce que le système soit égal ou après l'heure de pots.
+Dans Jekyll 3, ceci a été corrigé. **Maintenant, `--future` est désactivé par défaut.**
+Ceci signifie que vous devrez inclure  `--future` si vous voulez que vos posts post-datés dans le futur soient générés au moment de lancer `jekyll build` ou `jekyll serve`.
 
-### Layout metadata
+### métadonnées de layout
 
-Introducing: `layout`. In Jekyll 2 and below, any metadata in the layout was munged onto
-the `page` variable in Liquid. This caused a lot of confusion in the way the data was
-merged and some unexpected behaviour. In Jekyll 3, all layout data is accessible via `layout`
-in Liquid. For example, if your layout has `class: my-layout` in its YAML front matter,
-then the layout can access that via `{% raw %}{{ layout.class }}{% endraw %}`.
+Introduction de `layout`. Dans Jekyll 2 et avant, toute métadonnée dans le layout était converti sur la variable `page` dans Liquid. Ceci provoquait beaucoup de confusion dans le sens où la data était fusionnée et provoquait quelque comportement inattendu. Dans Jekyll 3, toute donnée de layout est accessible via `layout`
+dans Liquid. Par exemple, si votre layout contient `class: my-layout` dans son front matter YAML, alors le layout peut y accéder via `{% raw %}{{ layout.class }}{% endraw %}`.
 
 ### Syntax highlighter a été modifié
-For the first time, the default syntax highlighter has changed for the
-`highlight` tag and for backtick code blocks. Instead of [Pygments.rb](https://github.com/tmm1/pygments.rb),
-it's now [Rouge](http://rouge.jneen.net/). If you were using the `highlight` tag with certain
-options, such as `hl_lines`, they may not be available when using Rouge. To
-go back to using Pygments, set `highlighter: pygments` in your
-`_config.yml` file and run `gem install pygments.rb` or add
-`gem 'pygments.rb'` to your project's `Gemfile`.
+Pour la première fois, le colorateur de syntaxe par défaut a été modifié par la balise 
+`highlight` et pour des blocks de code guillemet arrière. Au lieu de [Pygments.rb](https://github.com/tmm1/pygments.rb),
+il est désormais [Rouge](http://rouge.jneen.net/). Si vous utilisiez la balise `highlight` avec certaines options, telles que `hl_lines`, elles peuvent ne plus être disponibles pour utiliser Rouge. Pour revenir sur l'utilisation de Pygments, réglez `highlighter: pygments` dans votre fichier 
+`_config.yml` et lancez `gem install pygments.rb` ou ajoutez 
+`gem 'pygments.rb'` au `Gemfile`de votre projet.
 
-_Did we miss something? Please click "Improve this page" above and add a section. Thanks!_
+_Oublié quelque chose ? Cliquez SVP sur "Improve this page" sur la [page de référence](https://jekyllrb.com/news/2015/10/26/jekyll-3-0-released/) et ajoutez une section.

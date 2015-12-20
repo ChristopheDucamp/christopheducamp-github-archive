@@ -43,17 +43,3 @@ Essayant depuis quelques années de [réduire ma dépendance au courrier électr
 ## "Ailleurs" sur les silos sociaux
 
 Le web restant décentralisé, je suis aussi un _métayer_ [ailleurs](/ailleurs/) sur quelques silos et services toujours bien pratiques au quotidien. 
-
-## Notes 
-
-<ul>
-{% assign sorted_notes = (site.notes | sort: 'date') %}
-{% for collection in sorted_notes %}
-<li class="h-entry hentry h-as-note"><a class="p-name entry-title e-content entry-content article post-link" href="{{ collection.url }}">{{ collection.title }}</a> - 
-<time class="post-date dt-published" datetime="{{collection.date | date_to_xmlschema }}">
-{% assign d = collection.date | date: "%-d"  %}{% case d %}{% when '1' %}{{ d }}er{% else %}{{ d }}{% endcase %} {% assign m = collection.date | date: "%-m" %}{% case m %}{% when '1' %}janv.{% when '2' %}févr.{% when '3' %}mars{% when '4' %}avr.{% when '5' %}mai{% when '6' %}juin{% when '7' %}juil.{% when '8' %}août{% when '9' %}sept.{% when '10' %}oct.{% when '11' %}nov.{% when '12' %}déc.{% endcase %} {{ collection.date | date: '%Y' }}
-</time>
-<p><i>{{ collection.description }}</i></p>
-</li>
-{% endfor %}
-</ul>
