@@ -2,7 +2,7 @@
 layout: post
 title:  "Partager des posts Jekyll sur les médias sociaux en utilisant front matter et IFTTT"
 description: "Tutoriel pour publier une copie du lien de vos articles Jekyll sur Facebook, Twitter et LinkedIn"
-date:   2015-12-21 
+date:   2015-12-21 20:02
 categories: blog
 tags: indieweb jekyll socialmedia ifttt 
 share: facebook twitter linkedin
@@ -14,11 +14,11 @@ share: facebook twitter linkedin
 **tl;dr** : Une piste intéressante à explorer pour [POSSE](http://indiewebcamp.com/POSSE)r à partir de Jekyll proposée par Eduardo Boucas. À savoir, publier vos billets Jekyll sur les plates-formes sociales Twitter, LinkedIn et Facebook. La traduction est proposée pour étude et **seul le lien officiel fait référence** : 
 <cite class="h-cite"><span class="u-url p-name">[Sharing Jekyll posts on social media using front matter and IFTTT
 ](https://eduardoboucas.com/blog/2015/04/28/sharing-jekyll-posts-on-social-media-using-front-matter-and-ifttt.html)</span>
-(<abbr class="p-author h-card" title="Eduardo Boucas">Ed. Boucas</abbr>, <time class="dt-published" datetime="2015-04-28">avril 2015</time>)</cite>
+(<abbr class="p-author h-card" title="Eduardo Boucas">Eduardo</abbr>, <time class="dt-published" datetime="2015-04-28">avril 2015</time>)</cite>
 
 Chaque fois que j’écris un post sur mon blog, j’aime le partager sur différentes plates-formes de médias sociaux sur lesquelles j’ai déjà une présence. J’ai commencé à faire ça manuellement, en créant moi-même les mises à jour avec des liens vers mes posts, mais j’ai réalisé assez vite que quelque chose comme  [IFTTT](https://ifttt.com/) serait parfait pour automatiser le processus. Jekyll est livré avec un flux RSS en sortie de boîte, aussi c’est juste une question de créer une nouvelle recette où vous dites _“chaque fois qu’il y a un nouveau post sur ce flux, publie une mise à jour vers A, B et C”_.
 
-Mais je voulais un peu plus de flexibilité. Peut-être que quand j’écris un post qui peut être trop technique à partager sur Facebook, ou un post que je ne veux délibérément pas partager sur LinkedIn, ou même un post qui ajouter quelques précisions à un post précédent que je ne souhaite pas partager du tout. Ce que je voulais, c’était un moyen de sélectionner les plates-formes sur lesquelles je veux partager directement sur le front matter du post.
+Mais je voulais un peu plus de flexibilité. Peut-être que quand j’écris un post qui peut être trop technique à partager sur Facebook, ou un post que je ne veux délibérément pas partager sur LinkedIn, ou même un post qui ajoute quelques précisions à un post précédent que je ne souhaite pas partager du tout. Ce que je voulais, c’était un moyen de sélectionner les plates-formes sur lesquelles je veux partager directement sur le front matter du post.
 
 C’est quelque chose sur lequel j’ai réfléchi un moment et j’ai même imaginé créé mon propre service que les personnes pourraient utiliser pour faire ça, mais en fait ce peut être fait avec IFTTT et un peu de créativité du côté Jekyll.
 
@@ -138,8 +138,8 @@ Ma solution a été de créer un fichier de flux séparé pour Twitter en utilis
   3. Balaye la liste des tags, par ordre d’apparence, et l’ajoute au titre du post jusqu’à ce qu’il n’y ait plus d’espace ;
   4. Génère un tweet suivant un format prédéfini en utilisant le titre du post, le lien et les tags.
 
-Je vous fais grâce des specs sur la façon d’implémenter cela parce que ce post deviendrait énorme, aussi j’ai créé [un repository GitHub](https://github.com/eduardoboucas/jekyll-social) où vous trouverez plus d’information sur l’implémentation complète et où vous pourrez récupérer le code à utiliser dans votre projet.
+Je vous fais grâce des spécificités sur la façon d’implémenter ça parce que ce post deviendrait énorme, aussi j’ai créé [un repository GitHub](https://github.com/eduardoboucas/jekyll-social) où vous trouverez plus d’information sur l’implémentation complète et où vous pourrez récupérer le code à utiliser dans votre projet.
 
 ## Emballé 
 
-Et c’est tout ! Maintenant, asseyez-vous, trouvez l’inspiration et écrivez vos articles.  — vous n’avez même plus besoin d’être social parce que Jekyll et IFTTT se chargeront de ça pour vous. De rien. ∎
+C’est tout pour l'instant ! Maintenant, asseyez-vous, trouvez l’inspiration et écrivez vos articles.  — vous n’avez même plus besoin d’être social parce que Jekyll et IFTTT se chargeront pour vous de faire le boulot... ∎
