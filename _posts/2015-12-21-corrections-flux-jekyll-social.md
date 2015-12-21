@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Merci @eduardoboucas<br>Just tried Jekyll-Social with tags and it rocks ! 
+title: Merci @eduardoboucas<br>Just tried Jekyll-Social with tags and it rocks !
 description: "currently searching how to optimize the twitter feed"
 date: 2015-12-22 00:11
 tags: [jekyllsocial twitter feed optimization]
@@ -103,6 +103,11 @@ layout: null
 </rss>
 {% endhighlight %}
 
+## Ailleurs
 
+- sur twitter
+
+<blockquote class="twitter-tweet" lang="fr"><p lang="en" dir="ltr">Merci eduardoboucas&#10;Just tried Jekyll-Social with tags and it rocks !: /2015/12/22/corrections-flux-jekyll-social … <a href="https://t.co/re3R7S905W">https://t.co/re3R7S905W</a></p>&mdash; Christophe Ducamp (@xtof_fr) <a class="u-syndication" rel="syndication"  href="https://twitter.com/xtof_fr/status/679080293333114880">21 Décembre 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 [1]:	https://github.com/ChristopheDucamp/christopheducamp.github.io/blob/master/social-feeds/twitter.xml
