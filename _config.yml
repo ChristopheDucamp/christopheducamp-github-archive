@@ -4,11 +4,11 @@ name: Christophe Ducamp
 
 #repository: https://github.com/christopheducamp/christopheducamp.github.io
 description: sur la route de l'indieweb 
-url: "http://christopheducamp.com"
+url: http://christopheducamp.com
 
 markdown: kramdown
 highlighter : pygments
-permalink: /:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title
 
 # Exclure ces fichiers du _site de production
 exclude: [categories.html, Gemfile, Gemfile.lock, README.md, vendor, README.md, LICENSE]
@@ -26,5 +26,17 @@ collections:
   notes:
     output: true
 
-    
+#jekyll social
+twitter_format: "@title: @url@tags"
+twitter_url_length: 22
+twitter_max_length: 140  
+
+#########################
+#						#
+#    réglages blog		#
+#	pour le social...   #
+#########################
+blog_title: sur la route indieweb...
+blog_description: "mes premiers pas dans le code et ailleurs."
+blog_url: "http://christopheducamp.com"
 
