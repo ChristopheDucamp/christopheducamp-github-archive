@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Merci @eduardoboucas<br>Just tried Jekyll-Social with tags and it rocks !   
+title: Merci @eduardoboucas<br>Just tried Jekyll-Social with tags and it rocks ! 
 description: "currently searching how to optimize the twitter feed"
 date: 2015-12-22 00:11
 tags: [jekyllsocial twitter feed optimization]
