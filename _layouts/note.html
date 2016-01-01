@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<div class="post h-entry hentry">
+
+  <header class="post-header">
+    <h1 class="p-name entry-title">{{ page.title }}</h1>
+    <p class="meta"><time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
+  {% assign dy = page.date | date: "%a" %}{% case dy %}{% when "Mon" %}Lundi{% when "Tue" %}Mardi{% when "Wed" %}Mercredi{% when "Thu" %}Jeudi{% when "Fri" %}Vendredi{% when "Sat" %}Samedi{% when "Sun" %}Dimanche{% else %}{{ dy }}{% endcase %} {% assign d = page.date | date: "%-d"  %}{% case d %}{% when '1' %}{{ d }}er{% else %}{{ d }}{% endcase %} {% assign m = page.date | date: "%-m" %}{% case m %}{% when '1' %}janvier{% when '2' %}février{% when '3' %}mars{% when '4' %}avril{% when '5' %}mai{% when '6' %}juin{% when '7' %}juillet{% when '8' %}août{% when '9' %}septembre{% when '10' %}octobre{% when '11' %}novembre{% when '12' %}décembre{% endcase %} {{ page.date | date: '%Y' }}
+</time> • <a rel="author" class="p-author h-card microcard" href="http://christopheducamp.com" title="Christophe Ducamp"><img class="u-photo" src='/logo.jpg' alt="Christophe Ducamp" />
+Christophe Ducamp</a> • <a class="u-url" href="{{ site.url }}{{ page.url }}">permalien</a>{% if page.meta %} • {{ page.meta }}{% endif %} </p>
+  </header>
+
+  <article class="post-content e-content entry-content">
+  {{ content }}
+  </article>
+
+<div class="tags">  
+<ul class="tag-list">
+{% for tag in page.tags %}
+<li><a class="p-category entry-tags tag" rel="tag" href="{{ site.url }}/tags.html#{{ tag | cgi_encode }}" title="Pages taguées {{ tag }}">{{ tag }}</a></li>
+{% unless forloop.last %}{% endunless %}{% endfor %}
+</ul>
+</div>
+
+<div class="note-footer">
+<p>Vous avez publié une réponse à cette note ? Faites-moi connaître l'URL :
+  <form action="https://webmention.herokuapp.com/api/webmention" method="post">
+    <input name="source" type="url" placeholder="http://exemple.com/ma-note-cool" />
+    <input name="target" value="http://christopheducamp.com{{ page.url }}" type="hidden">
+    <input value="Envoyer la Webmention" type="submit">
+  </form>
+
+
+<section class="webmention">
+<p>Réactions (webmentions)</p>
+<script id="webmention-hosted">
+  (function () {
+    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+    url = url && url[0] ? url[0].href : false;
+    sn.type = "text/javascript"; sn.async = true;
+    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+    s.parentNode.insertBefore(sn, s);
+  }());
+</script>
+</section>
+</div>
+
+</div>
+
+
+
+

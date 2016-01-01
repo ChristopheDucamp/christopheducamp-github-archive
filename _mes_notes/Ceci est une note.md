@@ -1,1 +1,0 @@
-ceci est une [note de collection](http://jekyllrb.com/docs/collections/) dans Jekyll

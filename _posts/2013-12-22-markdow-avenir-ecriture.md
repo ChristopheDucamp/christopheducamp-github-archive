@@ -67,3 +67,11 @@ Et même mieux si vous essayez. Voici quelques-uns de mes outils préférés :
 - [Mou](http://mouapp.com/) (pour Mac)  Une option plus geek que les trois autres. Des tonnes de fonctionnalités et gratuit ! Il lui manque un paquet de fonctionnalités qui en feraient un outil extraordinaire pour écrire (Je souhaite vraiment par exemple qu'il y ait un moyen de limiter la longueur de ligne. Ceci le rend difficile à utiliser en plein-écran).
 - [OmmWriter](http://www.ommwriter.com/en/download.html) (pour Windows/Mac) Pas de support direct de  Markdown, mais rien ne vous empêche de l'utiliser. Il est vraiment bon pour créer un environnement d'écriture zen et libre de toute distraction. (avec un mix d'effets sonores et un catalogue d'images en arrière-plan) et c'est mon outil préféré pour Windows.
 - [MarkdownPad](http://markdownpad.com/) (pour Windows) Aussi geeky et Mou-esque dans ses fonctionnalités que dans son apparence.
+
+## Point de vue personnel (Mise à jour janvier 2015)
+
+Après plus d'un an d'essais d'éditeurs en ligne, la question du choix de l'éditeur est toujours délicate et s'apparente au choix d'un stylo-plume... À cette heure, je suis ravi de l'expérience d'organisation de documents offerte par Ulysses III sur Mac. Pour la mise à jour de ce post et de petites notes, j'apprécie la pureté et la simplicité de [Folding Text](http://www.foldingtext.com/).
+
+Pour d'autres alternatives sur les meilleurs éditeurs MacOs et IOS, <span class="h-card microcard">[Jeff Porter](http://wordius.com)</span> a publié une note en anglais sur ses préférences : [The best Mac and iOS writing apps of 2012](http://wordius.com/best-apps-writing/).
+
+(Ce post pourra être remis à jour en 2015 en fonction de l'actualité.)

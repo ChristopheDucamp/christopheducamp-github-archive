@@ -2,14 +2,15 @@
 layout: page
 title: Projets
 ---
+Cette page n'est qu'un premier échantillon d'une autre page incluse dans la navigation primaire.
 
-Un premier échantillon d'une autre page que vous pouvez inclure dans la navigation primaire.
+À considérer ici comme un emplacement réservé  pour lister quelques futurs projets. 
 
-Ce peut être un bon endroit pour lister vos propres projets. Mais avant de démarrer, voici quelques guides pratiques : 
+Premier projet pour 2016 : **parvenir à dompter la motorisation Jekyll** avec quelques blocs de construction basiques de l'indieweb. 
 
 - [Liste des sites web motorisés par Jekyll](https://github.com/jekyll/jekyll/wiki/Sites)
-- [Octopress, un framework de blog basé sur Jekyll](https://github.com/octopress/)
-- [Documentation Jekyll ](http://jekyllrb.com/)
+- La [documentation officielle de Jekyll ](http://jekyllrb.com/)
 - [Le code source Jekyll sur GitHub](https://github.com/jekyll/jekyll)
-- [Extensions disponibles](http://jekyllrb.com/docs/plugins/#available_plugins)
+- Les [extensions disponibles](http://jekyllrb.com/docs/plugins/#available_plugins)
 - [Jekyll vu par les membres de l'Indieweb](http://indiewebcamp.com/Jekyll)
+- [Créer un blog statique Jekyll](http://www.grafikart.fr/tutoriels/html-css/jekyll-505) (vidéo)

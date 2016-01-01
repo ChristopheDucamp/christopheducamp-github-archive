@@ -1,11 +1,10 @@
 ---
 layout: post
 title:  "Les Collections !"
+date: 2014-08-03
 redirect_from:
   - /2014-215/
-  - /2014-214/collections/
-  - /jekyll/2014-214/
-tags: [jekyll]
+tags: [jekyll, collections]
 categories: jekyll collections
 ---
 
@@ -58,7 +57,7 @@ il sera restitué en utilisant Liquid et le convertisseur Markdown de votre choi
 
 
 
-Tout comme pour les posts avec des [Permaliens](http://jekyllrb.com/docs/permalinks/), l'URL du document peut se personnaliser en réglant une métdonnée `permalink` à la collection :
+Tout comme pour les posts avec des [Permaliens](http://jekyllrb.com/docs/permalinks/), l'URL du document peut se personnaliser en réglant une métadonnée `permalink` à la collection :
 
 {% highlight yaml %}
 collections:
@@ -110,7 +109,7 @@ Par exemple, si vous avez `_ma_collection/un_sousrep/un_doc.md`, il sera écrit 
 
 ### Collections
 
-Chaque collection est accesible via la variable Liquid `site`. Par exemple, si vous voulez accéder à la collection `albums` trouvée dans `_albums`, vous utiliseriez `site.albums`. Chaque collection est en elle-même une série de documents (par ex. `site.albums` est une série de documents, tout comme `site.pages` et `site.posts`). Voir ci-dessous pour savoir comment accéder aux attributs de ces documents.
+Chaque collection est accessible via la variable Liquid `site`. Par exemple, si vous voulez accéder à la collection `albums` trouvée dans `_albums`, vous utiliseriez `site.albums`. Chaque collection est en elle-même une série de documents (par ex. `site.albums` est une série de documents, tout comme `site.pages` et `site.posts`). Voir ci-dessous pour savoir comment accéder aux attributs de ces documents.
 
 Les collections sont aussi disponibles sous `site.collections`, avec la métadonnée que vous avez spécifiée dans votre `_config.yml` (si présent) et l'information qui suit : 
 

@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Comment Déployer Jekyll"
-date:   2014-01-12 08:30
+date:   2013-01-12 08:30
+author: "Christophe Ducamp"
 categories: jekyll ftp déploiement
 tags: 
 - déploiement 

@@ -1,10 +1,14 @@
 ---
 layout: post
 title:  "Installer Git"
+subtitle: "Au coeur de GitHub,  il y a un système de contrôle de version appelé Git. Comment l'installer."
+author: "Christophe Ducamp"
 date:   2013-12-10 21:44:00
 categories: github git howto tutoriel
 ---
 [lien de référence](https://help.github.com/articles/set-up-git)
+
+## Installer Git
 
 **N.B.** Si vous êtes perdu sur cette page, ... oubliez le terminal ! Vous pouvez à la place utiliser l'[application native de GitHub pour Mac](https://central.github.com/mac/latest) 
 
