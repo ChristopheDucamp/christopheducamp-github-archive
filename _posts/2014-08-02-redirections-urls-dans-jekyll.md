@@ -70,17 +70,32 @@ Pour le premier permalien-raccourci fonctionnel de ce post, j'ai volontairement 
 - citation du permalien-raccourci : (xtof.me 2014-214)
 - Version un peu plus longue : [xtof.me indielog/2014-214](http://xtof.me/indielog/2014-214) 
 
+<<<<<<< HEAD
+## Raccourci Automatique avec Rakefile
+
+Une recherche de patterns est en cours afin de trouver un modèle de raccourci d'[URL parlante et ayant du sens](http://christopheducamp.com/b/2013-04-14/les-urls-sont-pour-les-humains/). 
+
+Pierre Ozoux a automatisé le processus de redirection en [modifiant le fichier Rakefile](http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/) en apportant quelques modifications au fichier Rakefile. 
+
+Par magie, la ligne de commande suivante se charge de générer automatiquement un permalien-raccourci dans le front-matter.
+    
+    `rake post title="Un nouveau post"` 
+    
+Cette commande générant un nouveau permalien-raccourci automatique  fondé sur une numérotation incrémentale (ex à régler pour ce post [xtof.me/s/23.htm](http://xtof.me/s/23.htm)).  
+
+=======
 ## Modifier le Rakefile
 
 Une recherche de patterns est en cours afin de trouver un modèle de raccourci d'[URL parlante et ayant du sens](http://christopheducamp.com/b/2013-04-14/les-urls-sont-pour-les-humains/). 
 
 Pour l'automatisation de ce processus de redirection, référez-vous directement aux [conseils de Pierre](http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/). [Une copie du fichier `Rakefile` de ce site reste déposée sur GitHub](https://github.com/ChristopheDucamp/christopheducamp.github.io/blob/master/rakefile).  
+>>>>>>> master
 
 **Dernier truc à savoir :** Les redirections avec un slash à la fin génèrent un sous-répertoire correspondant contenant un fichier `index.html`, alors que les redirections sans un slash à la fin générent un `nomfichier` correspondant sans extension et sans sous-répertoire.
 
 ## Liens Ressources 
 - Lien de référence : [Jekyll-redirect-from](https://github.com/jekyll/jekyll-redirect-from) - Github
-- Lisez le post technique <cite class="h-cite">**<span class="url p-name">[Permashortlinks](http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/)</span>** de <abbr class="p-author h-card" title="Pierre Ozoux">Pierre</abbr> pour des indications sur la modification du fichier Rakefile (<time class="dt-published">2014-08-02</time>)</cite> 
+- Le post technique de référence <cite class="h-cite">**<span class="url p-name">[Permashortlinks](http://www.pierre-o.fr/blog/2014/08/02/permashortlinks/)</span>** de <abbr class="p-author h-card" title="Pierre Ozoux">Pierre</abbr> pour des indications sur la modification du fichier Rakefile (<time class="dt-published">2014-08-02</time>)</cite> 
 - Les [permaliens de Jekyll](http://jekyllrb.com/docs/permalinks/) : la page de référence pour connaître toutes les variables à utiliser dans vos permaliens.
 
 ## Ailleurs  
