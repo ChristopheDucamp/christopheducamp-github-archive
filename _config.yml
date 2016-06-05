@@ -1,50 +1,37 @@
-#nom du site
+---
 name: sur la route de l'indieweb
 title: christophe ducamp
-
-
-#repository: https://github.com/christopheducamp/christopheducamp.github.io
 description: sur la route de l'indieweb
 url: http://christopheducamp.com
 markdown: kramdown
-highlighter : pygments
-permalink: /:year/:month/:day/:title
-
-# Exclure ces fichiers du _site de production
-exclude: [categories.html, Gemfile, Gemfile.lock, README.md, vendor, README.md, LICENSE]
-
+highlighter: pygments
+permalink: "/:year/:month/:day/:title"
+exclude:
+- categories.html
+- Gemfile
+- Gemfile.lock
+- README.md
+- vendor
+- README.md
+- LICENSE
 gems:
-  - jekyll-redirect-from
-  - jekyll-gist
-  - jemoji
-
-
-#collections :essai en cours
+- jekyll-redirect-from
+- jekyll-gist
+- jemoji
 collections:
   music:
     output: true
   notes:
     output: true
-
-#jekyll social
 twitter_format: "@title @tags (xtof.me@url)"
 twitter_url_length: 22
 twitter_max_length: 140
-
-#########################
-#						#
-#    réglages blog		#
-#	pour le social...   #
-#########################
 blog_title: blog indieweb.
-blog_description: "mes premiers pas dans le code et ailleurs."
+blog_description: mes premiers pas dans le code et ailleurs.
 blog_url: "/"
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      share: twitter --twitter-hashtags # Partage sur twitter avec hashtags par défaut
-
-
+- scope:
+    path: ''
+    type: posts
+  values:
+    share: twitter --twitter-hashtags

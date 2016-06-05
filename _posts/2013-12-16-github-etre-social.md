@@ -1,8 +1,15 @@
 ---
+title: 'GitHub : Être Social'
+date: '2013-12-16 23:35:44'
+categories:
+- jekyll
+- update
+share: twitter --twitter-hashtags
 layout: post
-title:  "GitHub : Être Social"
-date:   2013-12-16 23:35:44
-categories: jekyll update
+slug: github-etre-social
+tags: []
+draft: false
+
 ---
 **Lien de référence** : <span class="h-cite"><cite class="p-name u-url">[Create A Repo](https://help.github.com/articles/be-social)</cite></span>
 

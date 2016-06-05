@@ -1,8 +1,15 @@
 ---
+title: 'Github Pour Mac : Faire des Modifications'
+date: '2013-12-06 00:00:00'
+categories:
+- github
+- git
+share: twitter --twitter-hashtags
 layout: post
-title:  "Github Pour Mac : Faire des Modifications"
-date:   2013-12-06
-categories: github git 
+slug: github-produire-des-modifications
+tags: []
+draft: false
+
 ---
 [Lien de référence](https://help.github.com/articles/making-changes)
 
@@ -11,7 +18,7 @@ Après avoir forké un dépôt et l'[avoir cloné vers GitHub pour Mac](2013/12/
 GitHub pour Mac dispose d'un raccourci très pratique pour que vous puissiez rapidement voir vos dépôts dans le Finder – survolez et posez-vous sur le dépôt dans la vue des dépôts principaux et faites un control-clic, puis sélectionnez "Show in Finder" dans le menu contextuel qui apparaît.
 
 
-![UI Github pour Mac]({{ site.url }}/assets/images/Github-Mac-ShowInFinder.png)
+![UI Github pour Mac]({{ site.baseurl }}/assets/images/Github-Mac-ShowInFinder.png)
 
 ## Faire une modification
 

@@ -1,10 +1,18 @@
 ---
+title: Collections et usage des petites notes
+date: '2014-12-30 00:00:00'
+categories:
+- jekyll,
+- collections,
+- indieweb
 layout: note
-title:  "Collections et usage des petites notes"
-date: "2014-12-30"
-description: "Ajouté un lien Notes dans le Menu... bricolages à venir"
-tags: ownmynotes, indieweb
-categories: jekyll, collections, indieweb
+description: Ajouté un lien Notes dans le Menu... bricolages à venir
+tags:
+- ownmynotes,
+- indieweb
+slug: ceci-est-une-note
+draft: false
+
 ---
 Ajouté rapidement un onglet "Notes" dans le menu pour étudier l'usage des *collections* et *data* dans Jekyll.
 

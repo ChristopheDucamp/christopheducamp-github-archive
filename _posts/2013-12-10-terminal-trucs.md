@@ -1,8 +1,20 @@
 ---
+title: Quelques Astuces sur le Terminal
+date: '2013-12-10 14:36:00'
+categories:
+- github
+- git
+- repo
+- fork
+- howto
+- tutoriel
+- terminal
+share: twitter --twitter-hashtags
 layout: post
-title:  "Quelques Astuces sur le Terminal"
-date:   2013-12-10 14:36:00
-categories: github git repo fork howto tutoriel terminal
+slug: terminal-trucs
+tags: []
+draft: false
+
 ---
 Les [blocs de code comme ceux-ci](/2013/12/09/anti-seche-ligne-de-commande/) sur cette page font partie d'un langage de programmation appelé `Bash`. Pour utiliser des programmes `Bash`, nous devons utiliser Terminal, une application livrée avec votre Mac, généralement trouvée dans /Applications/Utilitaires. 
 

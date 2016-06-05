@@ -1,14 +1,18 @@
 ---
+title: 'Comptabilité en Ligne pour Freelance et TPE : Que Choisir ?'
+date: '2015-01-03 00:00:00'
+categories: []
 layout: note
-title: "Comptabilité en Ligne pour Freelance et TPE : Que Choisir ?"
-date: "2015-01-03"
-subtitle: "Jeff Porter recommande @FreeAgent. Essai en cours"
-tags: 
-    - entrepreneur
-    - service
-    - comptabilité
-    - technologie
-    - business 
+subtitle: Jeff Porter recommande @FreeAgent. Essai en cours
+tags:
+- entrepreneur
+- service
+- comptabilité
+- technologie
+- business
+slug: compta-en-ligne-que-choisir
+draft: false
+
 ---
 Inspiré par la recommandation de <span class="h-card microcard">[Jeff Porter](http://wordius.com)</span> (aka @[Wordius](http://twitter.com/Wordius)) pour essayer pendant un mois le service de compta en ligne @[FreeAgent](freeagent) :
 

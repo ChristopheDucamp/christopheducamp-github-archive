@@ -1,14 +1,17 @@
 ---
-layout: post
 title: Merci @eduardoboucas<br>Just tried Jekyll-Social with tags and it rocks !
-description: "searching how to optimize the first twitter feed"
-date: 2015-12-22 00:11
-tags: 
-  - jekyllsocial 
-  - twitter
+date: '2015-12-22 00:11:00'
+categories: []
 share: twitter --twitter-hashtags
----
+layout: post
+description: searching how to optimize the first twitter feed
+tags:
+- jekyllsocial
+- twitter
+slug: corrections-flux-jekyll-social
+draft: false
 
+---
 Bonjour [Eduard](https://twitter.com/eduardoboucas) et merci.
 
 Just forked and tried [jekyll social](https://github.com/eduardoboucas/jekyll-social) in order to localize it in French. Love the idea, bravo.

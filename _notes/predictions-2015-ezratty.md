@@ -1,10 +1,14 @@
 ---
+title: 'Tsunami numérique : Prédictions 2015 par Olivier Ezratty'
+date: '2015-01-02 00:00:00'
+categories: []
 layout: note
-title: "Tsunami numérique : Prédictions 2015 par Olivier Ezratty"
-date: "2015-01-02"
-description: "Prédictions 2015 : la compile de notre monde de dingues"
----
+description: 'Prédictions 2015 : la compile de notre monde de dingues'
+slug: predictions-2015-ezratty
+tags: []
+draft: false
 
+---
 À l'heure où je m'apprête à jeter mon téléphone dans l'océan pour [trouver le temps de lire](http://austinkleon.com/2014/12/29/how-to-read-more/), et de trouver un futur métier... je tombe sur la compile de prédictions 2015 contée par Oliver... Un must-read.
 
 <blockquote>

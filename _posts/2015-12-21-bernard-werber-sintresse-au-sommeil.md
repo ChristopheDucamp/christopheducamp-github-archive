@@ -1,14 +1,20 @@
 ---
-layout: post
-title: "Bernard Werber s'intéresse au sommeil"
-description: "les routines matinales de Bernard Werber"
-date: 2015-12-21 21:30
+title: Bernard Werber s'intéresse au sommeil
+date: '2015-12-21 21:30:00'
+categories: []
 share: twitter --twitter-hashtags facebook linkedin
-tags: [sommeil, sleeptech]
+layout: post
+description: les routines matinales de Bernard Werber
+tags:
+- sommeil
+- sleeptech
+slug: bernard-werber-sintresse-au-sommeil
+draft: false
+
 ---
 [Withings : Bernard Werber s'intéresse au sommeil](http://blog.withings.com/fr/2015/12/07/bernard-werber-sinteresse-au-sommeil)
 
-<img style="width:300px; float:right; padding:1em 0 1em 0.5em;"  alt="bernard werber" src="/assets/images/bernardwerber.png"> 
+<img style="width:300px; float:right; padding:1em 0 1em 0.5em;"  alt="bernard werber" src="{{ site.baseurl }}/assets/images/bernardwerber.png"> 
 
 <blockquote>C’est à l'occasion de la sortie de son livre Le sixième sommeil que Bernard Werber (auteur du très célèbre livre Les fourmis) a accepté de rencontrer Withings pour échanger sur son œuvre et partager sa vision du sommeil. Withings a été ravi de pouvoir aborder ce sujet avec un spécialiste afin d'élargir son expertise dans ce domaine. (...)</blockquote> 
 

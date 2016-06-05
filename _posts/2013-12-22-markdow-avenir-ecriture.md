@@ -1,8 +1,15 @@
 ---
+title: 'Markdown : Le Futur de l''Écriture'
+date: '2013-12-22 13:00:00'
+categories:
+- "écriture"
+- markdown
+share: twitter --twitter-hashtags
 layout: post
-title:  "Markdown : Le Futur de l'Écriture"
-date: 2013-12-22 13:00
-categories: écriture markdown
+slug: markdow-avenir-ecriture
+tags: []
+draft: false
+
 ---
 En cours d'étude pour [migrer sérieusement vers Jekyll](/2013/12/21/demarrer-avec-pages-github/), parti en séance d'essais de quelques éditeurs de texte pour écrire en Markdown. Cet article original de <span class="p-author h-card">[Robby Ingebretsen](http://nerdplusart.com/about/)</span> publié le <time class="dt-published" value="2013-06-28">28 juin 2013</time> m'a bien éclairé sur ce langage. Comme à l'habitude, seul le [lien original fait référence](http://nerdplusart.com/markdown-is-the-future/). 
 

@@ -1,8 +1,15 @@
 ---
+title: 'GitHub pour Mac : Lancer un dépôt'
+date: '2013-12-07 00:00:00'
+categories:
+- github
+- git
+share: twitter --twitter-hashtags
 layout: post
-title: "GitHub pour Mac : Lancer un dépôt"
-date: 2013-12-07
-categories: github git
+slug: github-lancer-un-depot
+tags: []
+draft: false
+
 ---
 [Lien de référence](https://help.github.com/articles/branching-out)
 

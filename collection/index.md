@@ -1,9 +1,10 @@
 ---
-layout: page
 title: Premier cabinet de curiosités
-date: 2015-01-03
----
+date: '2015-01-03 00:00:00'
+layout: page
+draft: false
 
+---
 **Statut :** Travaux d'ouverture d'un chantier pour [démarrer des collections Jekyll](/2014/12/31/demarrer-des-collections-dans-jekyll/). L'intention est de lister un premier échantillon de collection de notes de toutes sortes.
 
 **Note technique jekyll** : à l'inverse des posts de blog accessibles sur la page principale, ces notes de collection sont classées par ordre chronologique. 

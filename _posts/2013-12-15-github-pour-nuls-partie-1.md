@@ -1,11 +1,18 @@
 ---
+title: 'GitHub Pour les Nuls : Pas de Panique, Lancez-Vous ! (Première Partie)'
+date: '2013-12-15 20:14:00'
+categories: []
+share: twitter --twitter-hashtags
 layout: post
-title: "GitHub Pour les Nuls : Pas de Panique, Lancez-Vous ! (Première Partie)"
-description: "GitHub est plus qu'un simple outil de programmation. Si vous voulez collaborer sur n'importe quoi, vous devriez l'essayer"
-date:   2013-12-15 20:14
+description: GitHub est plus qu'un simple outil de programmation. Si vous voulez collaborer
+  sur n'importe quoi, vous devriez l'essayer
 author: Christophe Ducamp
-header-img: "img/octocat.png"
+header-img: img/octocat.png
 tages: github git tutoriel
+slug: github-pour-nuls-partie-1
+tags: []
+draft: false
+
 ---
 Traduction d'un article original de <span class="p-author h-card">[Lauren Orsini](http://otakujournalist.com/about-the-author/)</span> publié le <time class="dt-published" value="2013-11-30">30 septembre 2013</time> pour ReadWriteWeb. Seul le [lien original fait référence](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#feed=/author/lauren-orsini&awesm=~omyHpouFOs03MN). 
 

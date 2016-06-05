@@ -1,9 +1,10 @@
 ---
+title: "À Propos de ce Site, de Jekyll et du Jeu IndieWeb"
+date: '2015-01-04 00:00:00'
 layout: page
-title: À Propos de ce Site, de Jekyll et du Jeu IndieWeb
-date: 2015-01-04
----
+draft: false
 
+---
 ## Mini-bio : explorations 
 
 Bonjour, je m'appelle Christophe Ducamp et j'ai 54 ans. Père de famille de 3 enfants, je vis à Paris dans le quartier de la Goutte d'Or. Mes champs d'intérêts personnels et professionnels évoluent autour de la _communication, du mieux-vivre, de la culture libre et l'innovation ouverte_.

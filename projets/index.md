@@ -1,6 +1,8 @@
 ---
-layout: page
 title: Projets
+layout: page
+draft: false
+
 ---
 Cette page n'est qu'un premier échantillon d'une autre page incluse dans la navigation primaire.
 

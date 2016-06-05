@@ -1,11 +1,21 @@
 ---
-layout: post
-title:  "Partager des posts Jekyll sur les médias sociaux en utilisant front matter et IFTTT"
-description: "Tutoriel pour publier une copie du lien de vos articles Jekyll sur Facebook, Twitter et LinkedIn"
-date:   2015-12-21 20:02
-categories: blog
-tags: indieweb jekyll socialmedia ifttt 
+title: Partager des posts Jekyll sur les médias sociaux en utilisant front matter
+  et IFTTT
+date: '2015-12-21 20:02:00'
+categories:
+- blog
 share: facebook twitter linkedin
+layout: post
+description: Tutoriel pour publier une copie du lien de vos articles Jekyll sur Facebook,
+  Twitter et LinkedIn
+tags:
+- indieweb
+- jekyll
+- socialmedia
+- ifttt
+slug: partager-posts-Jekyll-social-media-avec-front-matter-ifttt
+draft: false
+
 ---
 <blockquote><abbr title="Publish (on your) Own Site, Syndicate Elsewhere">POSSE</abbr> is tricky with Jekyll
 <footer><a href="https://indiewebcamp.com/Jekyll#Cons">indiewebcamp-jekyll</a></footer></blockquote>
@@ -28,7 +38,7 @@ Au lieu d’utiliser le flux RSS normal comme déclencheur pour notre IFTTT, nou
 
 Voici l’idée :
 
-![Servir différents flux vers différents canaux IFTTT](/assets/images/jekyll-social.png) 
+![Servir différents flux vers différents canaux IFTTT]({{ site.baseurl }}/assets/images/jekyll-social.png) 
 
 Servir différents flux vers différents canaux IFTTT
 
@@ -126,11 +136,11 @@ Une fois tout réglé côté Jekyll, il est temps de tout mettre en place sur [I
 
 La première étape consiste à sélectionner le canal qui déclenche l’action (la partie **This** ) ; dans notre cas, c’est un "Feed" (flux). À l’étape suivante, nous  sélectionnons _New feed item_ comme déclencheur, ce qui signifie que la recette sera exécutée à chaque fois qu’il y a un nouvel élément dans le flux, et puis entrez l’URL du flux. 
 
-<figure><img width="600" src="/assets/images/IFTTT-Facebook-feed.jpg" alt="IFTTT facebook feed settings" /><footer><small>Réglage de mon flux Facebook sur IFTTT (étape 3 de 7)</small></footer></figure>
+<figure><img width="600" src="{{ site.baseurl }}/assets/images/IFTTT-Facebook-feed.jpg" alt="IFTTT facebook feed settings" /><footer><small>Réglage de mon flux Facebook sur IFTTT (étape 3 de 7)</small></footer></figure>
 
 Puis, nous passons à la partie **That**. Dans cet exemple, je règle le flux pour Facebook, aussi je sélectionne l'icône facebook à partir de la liste disponible des canaux d’action — vous avez plein d’autres options à choisir à partir d’ici. À l’étape qui suit, nous allons sur _Create a link post_ parce que cela nous permet de partager un lien vers notre post avec n’importe quel message. Ceci peut être configuré à l’écran qui suit, où vous pouvez utiliser des “Ingredients” pour former votre lien et votre message. Dans cet exemple, je vais utiliser un lien direct vers l’article et un message disant “Nouvel article :” et puis le titre du post.
 
-<figure><img width="600" src="/assets/images/IFTTT-Facebook-feed-2.png" alt="IFTTT facebook feed settings" /><footer><small>Réglage de mon flux Facebook sur IFTTT (étape 6 de 7)</small></footer></figure>
+<figure><img width="600" src="{{ site.baseurl }}/assets/images/IFTTT-Facebook-feed-2.png" alt="IFTTT facebook feed settings" /><footer><small>Réglage de mon flux Facebook sur IFTTT (étape 6 de 7)</small></footer></figure>
 
 ## Franchir une étape supplémentaire : le cas Twitter
 

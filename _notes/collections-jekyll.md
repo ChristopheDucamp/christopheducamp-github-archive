@@ -1,10 +1,17 @@
 ---
+title: Les collections dans Jekyll (doc)
+date: '2014-12-30 00:00:00'
+categories:
+- jekyll
+- collections
 layout: note
-title:  "Les collections dans Jekyll (doc)"
-date: "2014-12-30"
 subtitle: "Étude en cours de la documentation officielle jekyll"
-categories: jekyll collections
-tags: jekyll, collection
+tags:
+- jekyll,
+- collection
+slug: collections-jekyll
+draft: false
+
 ---
 Traduction à mettre à jour.
 [lien de référence](http://jekyllrb.com/docs/collections/)

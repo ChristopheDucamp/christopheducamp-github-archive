@@ -1,8 +1,15 @@
 ---
+title: 'Github Pour Mac : Travailler avec des dépôts'
+date: '2013-12-06 00:00:00'
+categories:
+- github
+- git
+share: twitter --twitter-hashtags
 layout: post
-title:  "Github Pour Mac : Travailler avec des dépôts"
-date:   2013-12-06
-categories: github git 
+slug: github-pour-mac-travailler-avec-des-repos
+tags: []
+draft: false
+
 ---
 [lien de référence](https://help.github.com/articles/working-with-repositories)
 

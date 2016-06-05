@@ -1,8 +1,19 @@
 ---
+title: Forker un Repo sur GitHub
+date: '2013-12-16 14:36:00'
+categories:
+- github
+- git
+- repo
+- fork
+- howto
+- tutoriel
+share: twitter --twitter-hashtags
 layout: post
-title:  "Forker un Repo sur GitHub"
-date:   2013-12-16 14:36:00
-categories: github git repo fork howto tutoriel
+slug: forker-un-repo-github
+tags: []
+draft: false
+
 ---
 Lien de référence : <span class="h-cite"><cite class="p-name u-url">[Fork A Repo](https://help.github.com/articles/fork-a-repo)</cite></span>
 

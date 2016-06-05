@@ -1,6 +1,8 @@
 ---
+title: Ailleurs
 layout: page
-title: "Ailleurs"
+draft: false
+
 ---
 ## Métayers sur quelques Silos Centralisés
 

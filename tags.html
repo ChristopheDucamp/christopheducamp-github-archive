@@ -1,9 +1,10 @@
 ---
-layout: default
 title: Index de Mots-Clés
-description: "Une archive des posts triés par mots-clés."
----
+layout: default
+description: Une archive des posts triés par mots-clés.
+draft: false
 
+---
 <ul class="posts">
 {% assign tags_list = site.tags %}  
   {% if tags_list.first[0] == null %}

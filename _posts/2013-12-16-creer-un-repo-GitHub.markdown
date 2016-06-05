@@ -1,8 +1,19 @@
 ---
+title: Créer un Dépôt sur GitHub
+date: '2013-12-16 10:19:00'
+categories:
+- github
+- git
+- repo
+- remote
+- howto
+- tutoriel
+share: twitter --twitter-hashtags
 layout: post
-title:  "Créer un Dépôt sur GitHub"
-date:   2013-12-16 10:19:00
-categories: github git repo remote howto tutoriel
+slug: creer-un-repo-GitHub
+tags: []
+draft: false
+
 ---
 Lien de référence : <span class="h-cite"><cite class="p-name u-url">[Create A Repo](https://help.github.com/articles/create-a-repo)</cite></span>
 
